@@ -21,7 +21,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.EmptyMessage}
    */
-  public  static final class EmptyMessage extends
+  public static final class EmptyMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.EmptyMessage)
       EmptyMessageOrBuilder {
@@ -445,7 +445,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.NumberMessage}
    */
-  public  static final class NumberMessage extends
+  public static final class NumberMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.NumberMessage)
       NumberMessageOrBuilder {
@@ -530,6 +530,7 @@ public final class GrpcAPI {
      * <code>int64 num = 1;</code>
      * @return The num.
      */
+    @java.lang.Override
     public long getNum() {
       return num_;
     }
@@ -842,6 +843,7 @@ public final class GrpcAPI {
        * <code>int64 num = 1;</code>
        * @return The num.
        */
+      @java.lang.Override
       public long getNum() {
         return num_;
       }
@@ -932,7 +934,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.BytesMessage}
    */
-  public  static final class BytesMessage extends
+  public static final class BytesMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.BytesMessage)
       BytesMessageOrBuilder {
@@ -1018,6 +1020,7 @@ public final class GrpcAPI {
      * <code>bytes value = 1;</code>
      * @return The value.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getValue() {
       return value_;
     }
@@ -1329,6 +1332,7 @@ public final class GrpcAPI {
        * <code>bytes value = 1;</code>
        * @return The value.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getValue() {
         return value_;
       }
@@ -1428,7 +1432,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.BlockLimit}
    */
-  public  static final class BlockLimit extends
+  public static final class BlockLimit extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.BlockLimit)
       BlockLimitOrBuilder {
@@ -1518,6 +1522,7 @@ public final class GrpcAPI {
      * <code>int64 startNum = 1;</code>
      * @return The startNum.
      */
+    @java.lang.Override
     public long getStartNum() {
       return startNum_;
     }
@@ -1528,6 +1533,7 @@ public final class GrpcAPI {
      * <code>int64 endNum = 2;</code>
      * @return The endNum.
      */
+    @java.lang.Override
     public long getEndNum() {
       return endNum_;
     }
@@ -1858,6 +1864,7 @@ public final class GrpcAPI {
        * <code>int64 startNum = 1;</code>
        * @return The startNum.
        */
+      @java.lang.Override
       public long getStartNum() {
         return startNum_;
       }
@@ -1888,6 +1895,7 @@ public final class GrpcAPI {
        * <code>int64 endNum = 2;</code>
        * @return The endNum.
        */
+      @java.lang.Override
       public long getEndNum() {
         return endNum_;
       }
@@ -1982,7 +1990,7 @@ public final class GrpcAPI {
    *
    * Protobuf type {@code protocol.AccountAddressMessage}
    */
-  public  static final class AccountAddressMessage extends
+  public static final class AccountAddressMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AccountAddressMessage)
       AccountAddressMessageOrBuilder {
@@ -2068,6 +2076,7 @@ public final class GrpcAPI {
      * <code>bytes address = 3;</code>
      * @return The address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAddress() {
       return address_;
     }
@@ -2383,6 +2392,7 @@ public final class GrpcAPI {
        * <code>bytes address = 3;</code>
        * @return The address.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAddress() {
         return address_;
       }
@@ -2476,7 +2486,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.AccountIdMessage}
    */
-  public  static final class AccountIdMessage extends
+  public static final class AccountIdMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AccountIdMessage)
       AccountIdMessageOrBuilder {
@@ -2562,6 +2572,7 @@ public final class GrpcAPI {
      * <code>bytes id = 23;</code>
      * @return The id.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getId() {
       return id_;
     }
@@ -2873,6 +2884,7 @@ public final class GrpcAPI {
        * <code>bytes id = 23;</code>
        * @return The id.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getId() {
         return id_;
       }
@@ -2976,7 +2988,7 @@ public final class GrpcAPI {
    *
    * Protobuf type {@code protocol.PaginatedMessage}
    */
-  public  static final class PaginatedMessage extends
+  public static final class PaginatedMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.PaginatedMessage)
       PaginatedMessageOrBuilder {
@@ -3066,6 +3078,7 @@ public final class GrpcAPI {
      * <code>int64 offset = 1;</code>
      * @return The offset.
      */
+    @java.lang.Override
     public long getOffset() {
       return offset_;
     }
@@ -3076,6 +3089,7 @@ public final class GrpcAPI {
      * <code>int64 limit = 2;</code>
      * @return The limit.
      */
+    @java.lang.Override
     public long getLimit() {
       return limit_;
     }
@@ -3410,6 +3424,7 @@ public final class GrpcAPI {
        * <code>int64 offset = 1;</code>
        * @return The offset.
        */
+      @java.lang.Override
       public long getOffset() {
         return offset_;
       }
@@ -3440,6 +3455,7 @@ public final class GrpcAPI {
        * <code>int64 limit = 2;</code>
        * @return The limit.
        */
+      @java.lang.Override
       public long getLimit() {
         return limit_;
       }
@@ -3542,7 +3558,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.EasyTransferMessage}
    */
-  public  static final class EasyTransferMessage extends
+  public static final class EasyTransferMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.EasyTransferMessage)
       EasyTransferMessageOrBuilder {
@@ -3639,6 +3655,7 @@ public final class GrpcAPI {
      * <code>bytes passPhrase = 1;</code>
      * @return The passPhrase.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPassPhrase() {
       return passPhrase_;
     }
@@ -3649,6 +3666,7 @@ public final class GrpcAPI {
      * <code>bytes toAddress = 2;</code>
      * @return The toAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getToAddress() {
       return toAddress_;
     }
@@ -3659,6 +3677,7 @@ public final class GrpcAPI {
      * <code>int64 amount = 3;</code>
      * @return The amount.
      */
+    @java.lang.Override
     public long getAmount() {
       return amount_;
     }
@@ -4005,6 +4024,7 @@ public final class GrpcAPI {
        * <code>bytes passPhrase = 1;</code>
        * @return The passPhrase.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPassPhrase() {
         return passPhrase_;
       }
@@ -4038,6 +4058,7 @@ public final class GrpcAPI {
        * <code>bytes toAddress = 2;</code>
        * @return The toAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getToAddress() {
         return toAddress_;
       }
@@ -4071,6 +4092,7 @@ public final class GrpcAPI {
        * <code>int64 amount = 3;</code>
        * @return The amount.
        */
+      @java.lang.Override
       public long getAmount() {
         return amount_;
       }
@@ -4185,7 +4207,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.EasyTransferAssetMessage}
    */
-  public  static final class EasyTransferAssetMessage extends
+  public static final class EasyTransferAssetMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.EasyTransferAssetMessage)
       EasyTransferAssetMessageOrBuilder {
@@ -4289,6 +4311,7 @@ public final class GrpcAPI {
      * <code>bytes passPhrase = 1;</code>
      * @return The passPhrase.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPassPhrase() {
       return passPhrase_;
     }
@@ -4299,6 +4322,7 @@ public final class GrpcAPI {
      * <code>bytes toAddress = 2;</code>
      * @return The toAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getToAddress() {
       return toAddress_;
     }
@@ -4309,6 +4333,7 @@ public final class GrpcAPI {
      * <code>string assetId = 3;</code>
      * @return The assetId.
      */
+    @java.lang.Override
     public java.lang.String getAssetId() {
       java.lang.Object ref = assetId_;
       if (ref instanceof java.lang.String) {
@@ -4325,6 +4350,7 @@ public final class GrpcAPI {
      * <code>string assetId = 3;</code>
      * @return The bytes for assetId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAssetIdBytes() {
       java.lang.Object ref = assetId_;
@@ -4345,6 +4371,7 @@ public final class GrpcAPI {
      * <code>int64 amount = 4;</code>
      * @return The amount.
      */
+    @java.lang.Override
     public long getAmount() {
       return amount_;
     }
@@ -4369,7 +4396,7 @@ public final class GrpcAPI {
       if (!toAddress_.isEmpty()) {
         output.writeBytes(2, toAddress_);
       }
-      if (!getAssetIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, assetId_);
       }
       if (amount_ != 0L) {
@@ -4392,7 +4419,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(2, toAddress_);
       }
-      if (!getAssetIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetId_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, assetId_);
       }
       if (amount_ != 0L) {
@@ -4708,6 +4735,7 @@ public final class GrpcAPI {
        * <code>bytes passPhrase = 1;</code>
        * @return The passPhrase.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPassPhrase() {
         return passPhrase_;
       }
@@ -4741,6 +4769,7 @@ public final class GrpcAPI {
        * <code>bytes toAddress = 2;</code>
        * @return The toAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getToAddress() {
         return toAddress_;
       }
@@ -4850,6 +4879,7 @@ public final class GrpcAPI {
        * <code>int64 amount = 4;</code>
        * @return The amount.
        */
+      @java.lang.Override
       public long getAmount() {
         return amount_;
       }
@@ -4952,7 +4982,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.EasyTransferByPrivateMessage}
    */
-  public  static final class EasyTransferByPrivateMessage extends
+  public static final class EasyTransferByPrivateMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.EasyTransferByPrivateMessage)
       EasyTransferByPrivateMessageOrBuilder {
@@ -5049,6 +5079,7 @@ public final class GrpcAPI {
      * <code>bytes privateKey = 1;</code>
      * @return The privateKey.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPrivateKey() {
       return privateKey_;
     }
@@ -5059,6 +5090,7 @@ public final class GrpcAPI {
      * <code>bytes toAddress = 2;</code>
      * @return The toAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getToAddress() {
       return toAddress_;
     }
@@ -5069,6 +5101,7 @@ public final class GrpcAPI {
      * <code>int64 amount = 3;</code>
      * @return The amount.
      */
+    @java.lang.Override
     public long getAmount() {
       return amount_;
     }
@@ -5415,6 +5448,7 @@ public final class GrpcAPI {
        * <code>bytes privateKey = 1;</code>
        * @return The privateKey.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPrivateKey() {
         return privateKey_;
       }
@@ -5448,6 +5482,7 @@ public final class GrpcAPI {
        * <code>bytes toAddress = 2;</code>
        * @return The toAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getToAddress() {
         return toAddress_;
       }
@@ -5481,6 +5516,7 @@ public final class GrpcAPI {
        * <code>int64 amount = 3;</code>
        * @return The amount.
        */
+      @java.lang.Override
       public long getAmount() {
         return amount_;
       }
@@ -5595,7 +5631,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.EasyTransferAssetByPrivateMessage}
    */
-  public  static final class EasyTransferAssetByPrivateMessage extends
+  public static final class EasyTransferAssetByPrivateMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.EasyTransferAssetByPrivateMessage)
       EasyTransferAssetByPrivateMessageOrBuilder {
@@ -5699,6 +5735,7 @@ public final class GrpcAPI {
      * <code>bytes privateKey = 1;</code>
      * @return The privateKey.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPrivateKey() {
       return privateKey_;
     }
@@ -5709,6 +5746,7 @@ public final class GrpcAPI {
      * <code>bytes toAddress = 2;</code>
      * @return The toAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getToAddress() {
       return toAddress_;
     }
@@ -5719,6 +5757,7 @@ public final class GrpcAPI {
      * <code>string assetId = 3;</code>
      * @return The assetId.
      */
+    @java.lang.Override
     public java.lang.String getAssetId() {
       java.lang.Object ref = assetId_;
       if (ref instanceof java.lang.String) {
@@ -5735,6 +5774,7 @@ public final class GrpcAPI {
      * <code>string assetId = 3;</code>
      * @return The bytes for assetId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAssetIdBytes() {
       java.lang.Object ref = assetId_;
@@ -5755,6 +5795,7 @@ public final class GrpcAPI {
      * <code>int64 amount = 4;</code>
      * @return The amount.
      */
+    @java.lang.Override
     public long getAmount() {
       return amount_;
     }
@@ -5779,7 +5820,7 @@ public final class GrpcAPI {
       if (!toAddress_.isEmpty()) {
         output.writeBytes(2, toAddress_);
       }
-      if (!getAssetIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, assetId_);
       }
       if (amount_ != 0L) {
@@ -5802,7 +5843,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(2, toAddress_);
       }
-      if (!getAssetIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetId_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, assetId_);
       }
       if (amount_ != 0L) {
@@ -6118,6 +6159,7 @@ public final class GrpcAPI {
        * <code>bytes privateKey = 1;</code>
        * @return The privateKey.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPrivateKey() {
         return privateKey_;
       }
@@ -6151,6 +6193,7 @@ public final class GrpcAPI {
        * <code>bytes toAddress = 2;</code>
        * @return The toAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getToAddress() {
         return toAddress_;
       }
@@ -6260,6 +6303,7 @@ public final class GrpcAPI {
        * <code>int64 amount = 4;</code>
        * @return The amount.
        */
+      @java.lang.Override
       public long getAmount() {
         return amount_;
       }
@@ -6360,7 +6404,7 @@ public final class GrpcAPI {
    *
    * Protobuf type {@code protocol.ViewingKeyMessage}
    */
-  public  static final class ViewingKeyMessage extends
+  public static final class ViewingKeyMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ViewingKeyMessage)
       ViewingKeyMessageOrBuilder {
@@ -6452,6 +6496,7 @@ public final class GrpcAPI {
      * <code>bytes ak = 1;</code>
      * @return The ak.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAk() {
       return ak_;
     }
@@ -6462,6 +6507,7 @@ public final class GrpcAPI {
      * <code>bytes nk = 2;</code>
      * @return The nk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNk() {
       return nk_;
     }
@@ -6794,6 +6840,7 @@ public final class GrpcAPI {
        * <code>bytes ak = 1;</code>
        * @return The ak.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAk() {
         return ak_;
       }
@@ -6827,6 +6874,7 @@ public final class GrpcAPI {
        * <code>bytes nk = 2;</code>
        * @return The nk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNk() {
         return nk_;
       }
@@ -6980,7 +7028,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.ShieldedAddressInfo}
    */
-  public  static final class ShieldedAddressInfo extends
+  public static final class ShieldedAddressInfo extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ShieldedAddressInfo)
       ShieldedAddressInfoOrBuilder {
@@ -7121,6 +7169,7 @@ public final class GrpcAPI {
      * <code>bytes sk = 1;</code>
      * @return The sk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getSk() {
       return sk_;
     }
@@ -7131,6 +7180,7 @@ public final class GrpcAPI {
      * <code>bytes ask = 2;</code>
      * @return The ask.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAsk() {
       return ask_;
     }
@@ -7141,6 +7191,7 @@ public final class GrpcAPI {
      * <code>bytes nsk = 3;</code>
      * @return The nsk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNsk() {
       return nsk_;
     }
@@ -7151,6 +7202,7 @@ public final class GrpcAPI {
      * <code>bytes ovk = 4;</code>
      * @return The ovk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOvk() {
       return ovk_;
     }
@@ -7161,6 +7213,7 @@ public final class GrpcAPI {
      * <code>bytes ak = 5;</code>
      * @return The ak.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAk() {
       return ak_;
     }
@@ -7171,6 +7224,7 @@ public final class GrpcAPI {
      * <code>bytes nk = 6;</code>
      * @return The nk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNk() {
       return nk_;
     }
@@ -7181,6 +7235,7 @@ public final class GrpcAPI {
      * <code>bytes ivk = 7;</code>
      * @return The ivk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getIvk() {
       return ivk_;
     }
@@ -7191,6 +7246,7 @@ public final class GrpcAPI {
      * <code>bytes d = 8;</code>
      * @return The d.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getD() {
       return d_;
     }
@@ -7201,6 +7257,7 @@ public final class GrpcAPI {
      * <code>bytes pkD = 9;</code>
      * @return The pkD.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPkD() {
       return pkD_;
     }
@@ -7211,6 +7268,7 @@ public final class GrpcAPI {
      * <code>string payment_address = 10;</code>
      * @return The paymentAddress.
      */
+    @java.lang.Override
     public java.lang.String getPaymentAddress() {
       java.lang.Object ref = paymentAddress_;
       if (ref instanceof java.lang.String) {
@@ -7227,6 +7285,7 @@ public final class GrpcAPI {
      * <code>string payment_address = 10;</code>
      * @return The bytes for paymentAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getPaymentAddressBytes() {
       java.lang.Object ref = paymentAddress_;
@@ -7282,7 +7341,7 @@ public final class GrpcAPI {
       if (!pkD_.isEmpty()) {
         output.writeBytes(9, pkD_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 10, paymentAddress_);
       }
       unknownFields.writeTo(output);
@@ -7330,7 +7389,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(9, pkD_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, paymentAddress_);
       }
       size += unknownFields.getSerializedSize();
@@ -7701,6 +7760,7 @@ public final class GrpcAPI {
        * <code>bytes sk = 1;</code>
        * @return The sk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getSk() {
         return sk_;
       }
@@ -7734,6 +7794,7 @@ public final class GrpcAPI {
        * <code>bytes ask = 2;</code>
        * @return The ask.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAsk() {
         return ask_;
       }
@@ -7767,6 +7828,7 @@ public final class GrpcAPI {
        * <code>bytes nsk = 3;</code>
        * @return The nsk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNsk() {
         return nsk_;
       }
@@ -7800,6 +7862,7 @@ public final class GrpcAPI {
        * <code>bytes ovk = 4;</code>
        * @return The ovk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOvk() {
         return ovk_;
       }
@@ -7833,6 +7896,7 @@ public final class GrpcAPI {
        * <code>bytes ak = 5;</code>
        * @return The ak.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAk() {
         return ak_;
       }
@@ -7866,6 +7930,7 @@ public final class GrpcAPI {
        * <code>bytes nk = 6;</code>
        * @return The nk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNk() {
         return nk_;
       }
@@ -7899,6 +7964,7 @@ public final class GrpcAPI {
        * <code>bytes ivk = 7;</code>
        * @return The ivk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getIvk() {
         return ivk_;
       }
@@ -7932,6 +7998,7 @@ public final class GrpcAPI {
        * <code>bytes d = 8;</code>
        * @return The d.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getD() {
         return d_;
       }
@@ -7965,6 +8032,7 @@ public final class GrpcAPI {
        * <code>bytes pkD = 9;</code>
        * @return The pkD.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPkD() {
         return pkD_;
       }
@@ -8161,7 +8229,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.PaymentAddressMessage}
    */
-  public  static final class PaymentAddressMessage extends
+  public static final class PaymentAddressMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.PaymentAddressMessage)
       PaymentAddressMessageOrBuilder {
@@ -8267,6 +8335,7 @@ public final class GrpcAPI {
      * <code>.protocol.DiversifierMessage d = 1;</code>
      * @return Whether the d field is set.
      */
+    @java.lang.Override
     public boolean hasD() {
       return d_ != null;
     }
@@ -8274,12 +8343,14 @@ public final class GrpcAPI {
      * <code>.protocol.DiversifierMessage d = 1;</code>
      * @return The d.
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.DiversifierMessage getD() {
       return d_ == null ? org.tron.trident.api.GrpcAPI.DiversifierMessage.getDefaultInstance() : d_;
     }
     /**
      * <code>.protocol.DiversifierMessage d = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.DiversifierMessageOrBuilder getDOrBuilder() {
       return getD();
     }
@@ -8290,6 +8361,7 @@ public final class GrpcAPI {
      * <code>bytes pkD = 2;</code>
      * @return The pkD.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPkD() {
       return pkD_;
     }
@@ -8300,6 +8372,7 @@ public final class GrpcAPI {
      * <code>string payment_address = 3;</code>
      * @return The paymentAddress.
      */
+    @java.lang.Override
     public java.lang.String getPaymentAddress() {
       java.lang.Object ref = paymentAddress_;
       if (ref instanceof java.lang.String) {
@@ -8316,6 +8389,7 @@ public final class GrpcAPI {
      * <code>string payment_address = 3;</code>
      * @return The bytes for paymentAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getPaymentAddressBytes() {
       java.lang.Object ref = paymentAddress_;
@@ -8350,7 +8424,7 @@ public final class GrpcAPI {
       if (!pkD_.isEmpty()) {
         output.writeBytes(2, pkD_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, paymentAddress_);
       }
       unknownFields.writeTo(output);
@@ -8370,7 +8444,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(2, pkD_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, paymentAddress_);
       }
       size += unknownFields.getSerializedSize();
@@ -8803,6 +8877,7 @@ public final class GrpcAPI {
        * <code>bytes pkD = 2;</code>
        * @return The pkD.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPkD() {
         return pkD_;
       }
@@ -8972,7 +9047,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.DiversifierMessage}
    */
-  public  static final class DiversifierMessage extends
+  public static final class DiversifierMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.DiversifierMessage)
       DiversifierMessageOrBuilder {
@@ -9058,6 +9133,7 @@ public final class GrpcAPI {
      * <code>bytes d = 1;</code>
      * @return The d.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getD() {
       return d_;
     }
@@ -9369,6 +9445,7 @@ public final class GrpcAPI {
        * <code>bytes d = 1;</code>
        * @return The d.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getD() {
         return d_;
       }
@@ -9474,7 +9551,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.ExpandedSpendingKeyMessage}
    */
-  public  static final class ExpandedSpendingKeyMessage extends
+  public static final class ExpandedSpendingKeyMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ExpandedSpendingKeyMessage)
       ExpandedSpendingKeyMessageOrBuilder {
@@ -9572,6 +9649,7 @@ public final class GrpcAPI {
      * <code>bytes ask = 1;</code>
      * @return The ask.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAsk() {
       return ask_;
     }
@@ -9582,6 +9660,7 @@ public final class GrpcAPI {
      * <code>bytes nsk = 2;</code>
      * @return The nsk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNsk() {
       return nsk_;
     }
@@ -9592,6 +9671,7 @@ public final class GrpcAPI {
      * <code>bytes ovk = 3;</code>
      * @return The ovk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOvk() {
       return ovk_;
     }
@@ -9937,6 +10017,7 @@ public final class GrpcAPI {
        * <code>bytes ask = 1;</code>
        * @return The ask.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAsk() {
         return ask_;
       }
@@ -9970,6 +10051,7 @@ public final class GrpcAPI {
        * <code>bytes nsk = 2;</code>
        * @return The nsk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNsk() {
         return nsk_;
       }
@@ -10003,6 +10085,7 @@ public final class GrpcAPI {
        * <code>bytes ovk = 3;</code>
        * @return The ovk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOvk() {
         return ovk_;
       }
@@ -10096,7 +10179,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.IncomingViewingKeyMessage}
    */
-  public  static final class IncomingViewingKeyMessage extends
+  public static final class IncomingViewingKeyMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.IncomingViewingKeyMessage)
       IncomingViewingKeyMessageOrBuilder {
@@ -10182,6 +10265,7 @@ public final class GrpcAPI {
      * <code>bytes ivk = 1;</code>
      * @return The ivk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getIvk() {
       return ivk_;
     }
@@ -10493,6 +10577,7 @@ public final class GrpcAPI {
        * <code>bytes ivk = 1;</code>
        * @return The ivk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getIvk() {
         return ivk_;
       }
@@ -10614,7 +10699,7 @@ public final class GrpcAPI {
    *
    * Protobuf type {@code protocol.IncomingViewingKeyDiversifierMessage}
    */
-  public  static final class IncomingViewingKeyDiversifierMessage extends
+  public static final class IncomingViewingKeyDiversifierMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.IncomingViewingKeyDiversifierMessage)
       IncomingViewingKeyDiversifierMessageOrBuilder {
@@ -10720,6 +10805,7 @@ public final class GrpcAPI {
      * <code>.protocol.IncomingViewingKeyMessage ivk = 1;</code>
      * @return Whether the ivk field is set.
      */
+    @java.lang.Override
     public boolean hasIvk() {
       return ivk_ != null;
     }
@@ -10727,12 +10813,14 @@ public final class GrpcAPI {
      * <code>.protocol.IncomingViewingKeyMessage ivk = 1;</code>
      * @return The ivk.
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.IncomingViewingKeyMessage getIvk() {
       return ivk_ == null ? org.tron.trident.api.GrpcAPI.IncomingViewingKeyMessage.getDefaultInstance() : ivk_;
     }
     /**
      * <code>.protocol.IncomingViewingKeyMessage ivk = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.IncomingViewingKeyMessageOrBuilder getIvkOrBuilder() {
       return getIvk();
     }
@@ -10743,6 +10831,7 @@ public final class GrpcAPI {
      * <code>.protocol.DiversifierMessage d = 2;</code>
      * @return Whether the d field is set.
      */
+    @java.lang.Override
     public boolean hasD() {
       return d_ != null;
     }
@@ -10750,12 +10839,14 @@ public final class GrpcAPI {
      * <code>.protocol.DiversifierMessage d = 2;</code>
      * @return The d.
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.DiversifierMessage getD() {
       return d_ == null ? org.tron.trident.api.GrpcAPI.DiversifierMessage.getDefaultInstance() : d_;
     }
     /**
      * <code>.protocol.DiversifierMessage d = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.DiversifierMessageOrBuilder getDOrBuilder() {
       return getD();
     }
@@ -11421,7 +11512,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.ReceiveNote}
    */
-  public  static final class ReceiveNote extends
+  public static final class ReceiveNote extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ReceiveNote)
       ReceiveNoteOrBuilder {
@@ -11514,6 +11605,7 @@ public final class GrpcAPI {
      * <code>.protocol.Note note = 1;</code>
      * @return Whether the note field is set.
      */
+    @java.lang.Override
     public boolean hasNote() {
       return note_ != null;
     }
@@ -11521,12 +11613,14 @@ public final class GrpcAPI {
      * <code>.protocol.Note note = 1;</code>
      * @return The note.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Note getNote() {
       return note_ == null ? org.tron.trident.proto.Common.Note.getDefaultInstance() : note_;
     }
     /**
      * <code>.protocol.Note note = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.NoteOrBuilder getNoteOrBuilder() {
       return getNote();
     }
@@ -12063,7 +12157,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.SpendNoteTRC20}
    */
-  public  static final class SpendNoteTRC20 extends
+  public static final class SpendNoteTRC20 extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.SpendNoteTRC20)
       SpendNoteTRC20OrBuilder {
@@ -12179,6 +12273,7 @@ public final class GrpcAPI {
      * <code>.protocol.Note note = 1;</code>
      * @return Whether the note field is set.
      */
+    @java.lang.Override
     public boolean hasNote() {
       return note_ != null;
     }
@@ -12186,12 +12281,14 @@ public final class GrpcAPI {
      * <code>.protocol.Note note = 1;</code>
      * @return The note.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Note getNote() {
       return note_ == null ? org.tron.trident.proto.Common.Note.getDefaultInstance() : note_;
     }
     /**
      * <code>.protocol.Note note = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.NoteOrBuilder getNoteOrBuilder() {
       return getNote();
     }
@@ -12202,6 +12299,7 @@ public final class GrpcAPI {
      * <code>bytes alpha = 2;</code>
      * @return The alpha.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAlpha() {
       return alpha_;
     }
@@ -12212,6 +12310,7 @@ public final class GrpcAPI {
      * <code>bytes root = 3;</code>
      * @return The root.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getRoot() {
       return root_;
     }
@@ -12222,6 +12321,7 @@ public final class GrpcAPI {
      * <code>bytes path = 4;</code>
      * @return The path.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPath() {
       return path_;
     }
@@ -12232,6 +12332,7 @@ public final class GrpcAPI {
      * <code>int64 pos = 5;</code>
      * @return The pos.
      */
+    @java.lang.Override
     public long getPos() {
       return pos_;
     }
@@ -12744,6 +12845,7 @@ public final class GrpcAPI {
        * <code>bytes alpha = 2;</code>
        * @return The alpha.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAlpha() {
         return alpha_;
       }
@@ -12777,6 +12879,7 @@ public final class GrpcAPI {
        * <code>bytes root = 3;</code>
        * @return The root.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getRoot() {
         return root_;
       }
@@ -12810,6 +12913,7 @@ public final class GrpcAPI {
        * <code>bytes path = 4;</code>
        * @return The path.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPath() {
         return path_;
       }
@@ -12843,6 +12947,7 @@ public final class GrpcAPI {
        * <code>int64 pos = 5;</code>
        * @return The pos.
        */
+      @java.lang.Override
       public long getPos() {
         return pos_;
       }
@@ -13029,7 +13134,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.PrivateShieldedTRC20Parameters}
    */
-  public  static final class PrivateShieldedTRC20Parameters extends
+  public static final class PrivateShieldedTRC20Parameters extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.PrivateShieldedTRC20Parameters)
       PrivateShieldedTRC20ParametersOrBuilder {
@@ -13180,6 +13285,7 @@ public final class GrpcAPI {
      * <code>bytes ask = 1;</code>
      * @return The ask.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAsk() {
       return ask_;
     }
@@ -13190,6 +13296,7 @@ public final class GrpcAPI {
      * <code>bytes nsk = 2;</code>
      * @return The nsk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNsk() {
       return nsk_;
     }
@@ -13200,6 +13307,7 @@ public final class GrpcAPI {
      * <code>bytes ovk = 3;</code>
      * @return The ovk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOvk() {
       return ovk_;
     }
@@ -13210,6 +13318,7 @@ public final class GrpcAPI {
      * <code>string from_amount = 4;</code>
      * @return The fromAmount.
      */
+    @java.lang.Override
     public java.lang.String getFromAmount() {
       java.lang.Object ref = fromAmount_;
       if (ref instanceof java.lang.String) {
@@ -13226,6 +13335,7 @@ public final class GrpcAPI {
      * <code>string from_amount = 4;</code>
      * @return The bytes for fromAmount.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getFromAmountBytes() {
       java.lang.Object ref = fromAmount_;
@@ -13245,12 +13355,14 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.SpendNoteTRC20 shielded_spends = 5;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.api.GrpcAPI.SpendNoteTRC20> getShieldedSpendsList() {
       return shieldedSpends_;
     }
     /**
      * <code>repeated .protocol.SpendNoteTRC20 shielded_spends = 5;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.api.GrpcAPI.SpendNoteTRC20OrBuilder> 
         getShieldedSpendsOrBuilderList() {
       return shieldedSpends_;
@@ -13258,18 +13370,21 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.SpendNoteTRC20 shielded_spends = 5;</code>
      */
+    @java.lang.Override
     public int getShieldedSpendsCount() {
       return shieldedSpends_.size();
     }
     /**
      * <code>repeated .protocol.SpendNoteTRC20 shielded_spends = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.SpendNoteTRC20 getShieldedSpends(int index) {
       return shieldedSpends_.get(index);
     }
     /**
      * <code>repeated .protocol.SpendNoteTRC20 shielded_spends = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.SpendNoteTRC20OrBuilder getShieldedSpendsOrBuilder(
         int index) {
       return shieldedSpends_.get(index);
@@ -13280,12 +13395,14 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.ReceiveNote shielded_receives = 6;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.api.GrpcAPI.ReceiveNote> getShieldedReceivesList() {
       return shieldedReceives_;
     }
     /**
      * <code>repeated .protocol.ReceiveNote shielded_receives = 6;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.api.GrpcAPI.ReceiveNoteOrBuilder> 
         getShieldedReceivesOrBuilderList() {
       return shieldedReceives_;
@@ -13293,18 +13410,21 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.ReceiveNote shielded_receives = 6;</code>
      */
+    @java.lang.Override
     public int getShieldedReceivesCount() {
       return shieldedReceives_.size();
     }
     /**
      * <code>repeated .protocol.ReceiveNote shielded_receives = 6;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.ReceiveNote getShieldedReceives(int index) {
       return shieldedReceives_.get(index);
     }
     /**
      * <code>repeated .protocol.ReceiveNote shielded_receives = 6;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.ReceiveNoteOrBuilder getShieldedReceivesOrBuilder(
         int index) {
       return shieldedReceives_.get(index);
@@ -13316,6 +13436,7 @@ public final class GrpcAPI {
      * <code>bytes transparent_to_address = 7;</code>
      * @return The transparentToAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTransparentToAddress() {
       return transparentToAddress_;
     }
@@ -13326,6 +13447,7 @@ public final class GrpcAPI {
      * <code>string to_amount = 8;</code>
      * @return The toAmount.
      */
+    @java.lang.Override
     public java.lang.String getToAmount() {
       java.lang.Object ref = toAmount_;
       if (ref instanceof java.lang.String) {
@@ -13342,6 +13464,7 @@ public final class GrpcAPI {
      * <code>string to_amount = 8;</code>
      * @return The bytes for toAmount.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getToAmountBytes() {
       java.lang.Object ref = toAmount_;
@@ -13362,6 +13485,7 @@ public final class GrpcAPI {
      * <code>bytes shielded_TRC20_contract_address = 9;</code>
      * @return The shieldedTRC20ContractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getShieldedTRC20ContractAddress() {
       return shieldedTRC20ContractAddress_;
     }
@@ -13389,7 +13513,7 @@ public final class GrpcAPI {
       if (!ovk_.isEmpty()) {
         output.writeBytes(3, ovk_);
       }
-      if (!getFromAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fromAmount_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, fromAmount_);
       }
       for (int i = 0; i < shieldedSpends_.size(); i++) {
@@ -13401,7 +13525,7 @@ public final class GrpcAPI {
       if (!transparentToAddress_.isEmpty()) {
         output.writeBytes(7, transparentToAddress_);
       }
-      if (!getToAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 8, toAmount_);
       }
       if (!shieldedTRC20ContractAddress_.isEmpty()) {
@@ -13428,7 +13552,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(3, ovk_);
       }
-      if (!getFromAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fromAmount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, fromAmount_);
       }
       for (int i = 0; i < shieldedSpends_.size(); i++) {
@@ -13443,7 +13567,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(7, transparentToAddress_);
       }
-      if (!getToAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, toAmount_);
       }
       if (!shieldedTRC20ContractAddress_.isEmpty()) {
@@ -13887,6 +14011,7 @@ public final class GrpcAPI {
        * <code>bytes ask = 1;</code>
        * @return The ask.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAsk() {
         return ask_;
       }
@@ -13920,6 +14045,7 @@ public final class GrpcAPI {
        * <code>bytes nsk = 2;</code>
        * @return The nsk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNsk() {
         return nsk_;
       }
@@ -13953,6 +14079,7 @@ public final class GrpcAPI {
        * <code>bytes ovk = 3;</code>
        * @return The ovk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOvk() {
         return ovk_;
       }
@@ -14542,6 +14669,7 @@ public final class GrpcAPI {
        * <code>bytes transparent_to_address = 7;</code>
        * @return The transparentToAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTransparentToAddress() {
         return transparentToAddress_;
       }
@@ -14651,6 +14779,7 @@ public final class GrpcAPI {
        * <code>bytes shielded_TRC20_contract_address = 9;</code>
        * @return The shieldedTRC20ContractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getShieldedTRC20ContractAddress() {
         return shieldedTRC20ContractAddress_;
       }
@@ -14840,7 +14969,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.PrivateShieldedTRC20ParametersWithoutAsk}
    */
-  public  static final class PrivateShieldedTRC20ParametersWithoutAsk extends
+  public static final class PrivateShieldedTRC20ParametersWithoutAsk extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.PrivateShieldedTRC20ParametersWithoutAsk)
       PrivateShieldedTRC20ParametersWithoutAskOrBuilder {
@@ -14991,6 +15120,7 @@ public final class GrpcAPI {
      * <code>bytes ak = 1;</code>
      * @return The ak.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAk() {
       return ak_;
     }
@@ -15001,6 +15131,7 @@ public final class GrpcAPI {
      * <code>bytes nsk = 2;</code>
      * @return The nsk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNsk() {
       return nsk_;
     }
@@ -15011,6 +15142,7 @@ public final class GrpcAPI {
      * <code>bytes ovk = 3;</code>
      * @return The ovk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOvk() {
       return ovk_;
     }
@@ -15021,6 +15153,7 @@ public final class GrpcAPI {
      * <code>string from_amount = 4;</code>
      * @return The fromAmount.
      */
+    @java.lang.Override
     public java.lang.String getFromAmount() {
       java.lang.Object ref = fromAmount_;
       if (ref instanceof java.lang.String) {
@@ -15037,6 +15170,7 @@ public final class GrpcAPI {
      * <code>string from_amount = 4;</code>
      * @return The bytes for fromAmount.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getFromAmountBytes() {
       java.lang.Object ref = fromAmount_;
@@ -15056,12 +15190,14 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.SpendNoteTRC20 shielded_spends = 5;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.api.GrpcAPI.SpendNoteTRC20> getShieldedSpendsList() {
       return shieldedSpends_;
     }
     /**
      * <code>repeated .protocol.SpendNoteTRC20 shielded_spends = 5;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.api.GrpcAPI.SpendNoteTRC20OrBuilder> 
         getShieldedSpendsOrBuilderList() {
       return shieldedSpends_;
@@ -15069,18 +15205,21 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.SpendNoteTRC20 shielded_spends = 5;</code>
      */
+    @java.lang.Override
     public int getShieldedSpendsCount() {
       return shieldedSpends_.size();
     }
     /**
      * <code>repeated .protocol.SpendNoteTRC20 shielded_spends = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.SpendNoteTRC20 getShieldedSpends(int index) {
       return shieldedSpends_.get(index);
     }
     /**
      * <code>repeated .protocol.SpendNoteTRC20 shielded_spends = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.SpendNoteTRC20OrBuilder getShieldedSpendsOrBuilder(
         int index) {
       return shieldedSpends_.get(index);
@@ -15091,12 +15230,14 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.ReceiveNote shielded_receives = 6;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.api.GrpcAPI.ReceiveNote> getShieldedReceivesList() {
       return shieldedReceives_;
     }
     /**
      * <code>repeated .protocol.ReceiveNote shielded_receives = 6;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.api.GrpcAPI.ReceiveNoteOrBuilder> 
         getShieldedReceivesOrBuilderList() {
       return shieldedReceives_;
@@ -15104,18 +15245,21 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.ReceiveNote shielded_receives = 6;</code>
      */
+    @java.lang.Override
     public int getShieldedReceivesCount() {
       return shieldedReceives_.size();
     }
     /**
      * <code>repeated .protocol.ReceiveNote shielded_receives = 6;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.ReceiveNote getShieldedReceives(int index) {
       return shieldedReceives_.get(index);
     }
     /**
      * <code>repeated .protocol.ReceiveNote shielded_receives = 6;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.ReceiveNoteOrBuilder getShieldedReceivesOrBuilder(
         int index) {
       return shieldedReceives_.get(index);
@@ -15127,6 +15271,7 @@ public final class GrpcAPI {
      * <code>bytes transparent_to_address = 7;</code>
      * @return The transparentToAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTransparentToAddress() {
       return transparentToAddress_;
     }
@@ -15137,6 +15282,7 @@ public final class GrpcAPI {
      * <code>string to_amount = 8;</code>
      * @return The toAmount.
      */
+    @java.lang.Override
     public java.lang.String getToAmount() {
       java.lang.Object ref = toAmount_;
       if (ref instanceof java.lang.String) {
@@ -15153,6 +15299,7 @@ public final class GrpcAPI {
      * <code>string to_amount = 8;</code>
      * @return The bytes for toAmount.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getToAmountBytes() {
       java.lang.Object ref = toAmount_;
@@ -15173,6 +15320,7 @@ public final class GrpcAPI {
      * <code>bytes shielded_TRC20_contract_address = 9;</code>
      * @return The shieldedTRC20ContractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getShieldedTRC20ContractAddress() {
       return shieldedTRC20ContractAddress_;
     }
@@ -15200,7 +15348,7 @@ public final class GrpcAPI {
       if (!ovk_.isEmpty()) {
         output.writeBytes(3, ovk_);
       }
-      if (!getFromAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fromAmount_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, fromAmount_);
       }
       for (int i = 0; i < shieldedSpends_.size(); i++) {
@@ -15212,7 +15360,7 @@ public final class GrpcAPI {
       if (!transparentToAddress_.isEmpty()) {
         output.writeBytes(7, transparentToAddress_);
       }
-      if (!getToAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 8, toAmount_);
       }
       if (!shieldedTRC20ContractAddress_.isEmpty()) {
@@ -15239,7 +15387,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(3, ovk_);
       }
-      if (!getFromAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(fromAmount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, fromAmount_);
       }
       for (int i = 0; i < shieldedSpends_.size(); i++) {
@@ -15254,7 +15402,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(7, transparentToAddress_);
       }
-      if (!getToAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, toAmount_);
       }
       if (!shieldedTRC20ContractAddress_.isEmpty()) {
@@ -15698,6 +15846,7 @@ public final class GrpcAPI {
        * <code>bytes ak = 1;</code>
        * @return The ak.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAk() {
         return ak_;
       }
@@ -15731,6 +15880,7 @@ public final class GrpcAPI {
        * <code>bytes nsk = 2;</code>
        * @return The nsk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNsk() {
         return nsk_;
       }
@@ -15764,6 +15914,7 @@ public final class GrpcAPI {
        * <code>bytes ovk = 3;</code>
        * @return The ovk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOvk() {
         return ovk_;
       }
@@ -16353,6 +16504,7 @@ public final class GrpcAPI {
        * <code>bytes transparent_to_address = 7;</code>
        * @return The transparentToAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTransparentToAddress() {
         return transparentToAddress_;
       }
@@ -16462,6 +16614,7 @@ public final class GrpcAPI {
        * <code>bytes shielded_TRC20_contract_address = 9;</code>
        * @return The shieldedTRC20ContractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getShieldedTRC20ContractAddress() {
         return shieldedTRC20ContractAddress_;
       }
@@ -16597,7 +16750,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.SpendDescription}
    */
-  public  static final class SpendDescription extends
+  public static final class SpendDescription extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.SpendDescription)
       SpendDescriptionOrBuilder {
@@ -16713,6 +16866,7 @@ public final class GrpcAPI {
      * <code>bytes value_commitment = 1;</code>
      * @return The valueCommitment.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getValueCommitment() {
       return valueCommitment_;
     }
@@ -16727,6 +16881,7 @@ public final class GrpcAPI {
      * <code>bytes anchor = 2;</code>
      * @return The anchor.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAnchor() {
       return anchor_;
     }
@@ -16741,6 +16896,7 @@ public final class GrpcAPI {
      * <code>bytes nullifier = 3;</code>
      * @return The nullifier.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNullifier() {
       return nullifier_;
     }
@@ -16755,6 +16911,7 @@ public final class GrpcAPI {
      * <code>bytes rk = 4;</code>
      * @return The rk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getRk() {
       return rk_;
     }
@@ -16765,6 +16922,7 @@ public final class GrpcAPI {
      * <code>bytes zkproof = 5;</code>
      * @return The zkproof.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getZkproof() {
       return zkproof_;
     }
@@ -16775,6 +16933,7 @@ public final class GrpcAPI {
      * <code>bytes spend_authority_signature = 6;</code>
      * @return The spendAuthoritySignature.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getSpendAuthoritySignature() {
       return spendAuthoritySignature_;
     }
@@ -17171,6 +17330,7 @@ public final class GrpcAPI {
        * <code>bytes value_commitment = 1;</code>
        * @return The valueCommitment.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getValueCommitment() {
         return valueCommitment_;
       }
@@ -17208,6 +17368,7 @@ public final class GrpcAPI {
        * <code>bytes anchor = 2;</code>
        * @return The anchor.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAnchor() {
         return anchor_;
       }
@@ -17253,6 +17414,7 @@ public final class GrpcAPI {
        * <code>bytes nullifier = 3;</code>
        * @return The nullifier.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNullifier() {
         return nullifier_;
       }
@@ -17298,6 +17460,7 @@ public final class GrpcAPI {
        * <code>bytes rk = 4;</code>
        * @return The rk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getRk() {
         return rk_;
       }
@@ -17339,6 +17502,7 @@ public final class GrpcAPI {
        * <code>bytes zkproof = 5;</code>
        * @return The zkproof.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getZkproof() {
         return zkproof_;
       }
@@ -17372,6 +17536,7 @@ public final class GrpcAPI {
        * <code>bytes spend_authority_signature = 6;</code>
        * @return The spendAuthoritySignature.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getSpendAuthoritySignature() {
         return spendAuthoritySignature_;
       }
@@ -17507,7 +17672,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.ReceiveDescription}
    */
-  public  static final class ReceiveDescription extends
+  public static final class ReceiveDescription extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ReceiveDescription)
       ReceiveDescriptionOrBuilder {
@@ -17623,6 +17788,7 @@ public final class GrpcAPI {
      * <code>bytes value_commitment = 1;</code>
      * @return The valueCommitment.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getValueCommitment() {
       return valueCommitment_;
     }
@@ -17633,6 +17799,7 @@ public final class GrpcAPI {
      * <code>bytes note_commitment = 2;</code>
      * @return The noteCommitment.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNoteCommitment() {
       return noteCommitment_;
     }
@@ -17647,6 +17814,7 @@ public final class GrpcAPI {
      * <code>bytes epk = 3;</code>
      * @return The epk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getEpk() {
       return epk_;
     }
@@ -17661,6 +17829,7 @@ public final class GrpcAPI {
      * <code>bytes c_enc = 4;</code>
      * @return The cEnc.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getCEnc() {
       return cEnc_;
     }
@@ -17675,6 +17844,7 @@ public final class GrpcAPI {
      * <code>bytes c_out = 5;</code>
      * @return The cOut.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getCOut() {
       return cOut_;
     }
@@ -17685,6 +17855,7 @@ public final class GrpcAPI {
      * <code>bytes zkproof = 6;</code>
      * @return The zkproof.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getZkproof() {
       return zkproof_;
     }
@@ -18081,6 +18252,7 @@ public final class GrpcAPI {
        * <code>bytes value_commitment = 1;</code>
        * @return The valueCommitment.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getValueCommitment() {
         return valueCommitment_;
       }
@@ -18114,6 +18286,7 @@ public final class GrpcAPI {
        * <code>bytes note_commitment = 2;</code>
        * @return The noteCommitment.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNoteCommitment() {
         return noteCommitment_;
       }
@@ -18151,6 +18324,7 @@ public final class GrpcAPI {
        * <code>bytes epk = 3;</code>
        * @return The epk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getEpk() {
         return epk_;
       }
@@ -18196,6 +18370,7 @@ public final class GrpcAPI {
        * <code>bytes c_enc = 4;</code>
        * @return The cEnc.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getCEnc() {
         return cEnc_;
       }
@@ -18241,6 +18416,7 @@ public final class GrpcAPI {
        * <code>bytes c_out = 5;</code>
        * @return The cOut.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getCOut() {
         return cOut_;
       }
@@ -18282,6 +18458,7 @@ public final class GrpcAPI {
        * <code>bytes zkproof = 6;</code>
        * @return The zkproof.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getZkproof() {
         return zkproof_;
       }
@@ -18453,7 +18630,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.ShieldedTRC20Parameters}
    */
-  public  static final class ShieldedTRC20Parameters extends
+  public static final class ShieldedTRC20Parameters extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ShieldedTRC20Parameters)
       ShieldedTRC20ParametersOrBuilder {
@@ -18585,12 +18762,14 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.SpendDescription spend_description = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.api.GrpcAPI.SpendDescription> getSpendDescriptionList() {
       return spendDescription_;
     }
     /**
      * <code>repeated .protocol.SpendDescription spend_description = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.api.GrpcAPI.SpendDescriptionOrBuilder> 
         getSpendDescriptionOrBuilderList() {
       return spendDescription_;
@@ -18598,18 +18777,21 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.SpendDescription spend_description = 1;</code>
      */
+    @java.lang.Override
     public int getSpendDescriptionCount() {
       return spendDescription_.size();
     }
     /**
      * <code>repeated .protocol.SpendDescription spend_description = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.SpendDescription getSpendDescription(int index) {
       return spendDescription_.get(index);
     }
     /**
      * <code>repeated .protocol.SpendDescription spend_description = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.SpendDescriptionOrBuilder getSpendDescriptionOrBuilder(
         int index) {
       return spendDescription_.get(index);
@@ -18620,12 +18802,14 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.ReceiveDescription receive_description = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.api.GrpcAPI.ReceiveDescription> getReceiveDescriptionList() {
       return receiveDescription_;
     }
     /**
      * <code>repeated .protocol.ReceiveDescription receive_description = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.api.GrpcAPI.ReceiveDescriptionOrBuilder> 
         getReceiveDescriptionOrBuilderList() {
       return receiveDescription_;
@@ -18633,18 +18817,21 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.ReceiveDescription receive_description = 2;</code>
      */
+    @java.lang.Override
     public int getReceiveDescriptionCount() {
       return receiveDescription_.size();
     }
     /**
      * <code>repeated .protocol.ReceiveDescription receive_description = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.ReceiveDescription getReceiveDescription(int index) {
       return receiveDescription_.get(index);
     }
     /**
      * <code>repeated .protocol.ReceiveDescription receive_description = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.ReceiveDescriptionOrBuilder getReceiveDescriptionOrBuilder(
         int index) {
       return receiveDescription_.get(index);
@@ -18656,6 +18843,7 @@ public final class GrpcAPI {
      * <code>bytes binding_signature = 3;</code>
      * @return The bindingSignature.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getBindingSignature() {
       return bindingSignature_;
     }
@@ -18666,6 +18854,7 @@ public final class GrpcAPI {
      * <code>bytes message_hash = 4;</code>
      * @return The messageHash.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getMessageHash() {
       return messageHash_;
     }
@@ -18676,6 +18865,7 @@ public final class GrpcAPI {
      * <code>string trigger_contract_input = 5;</code>
      * @return The triggerContractInput.
      */
+    @java.lang.Override
     public java.lang.String getTriggerContractInput() {
       java.lang.Object ref = triggerContractInput_;
       if (ref instanceof java.lang.String) {
@@ -18692,6 +18882,7 @@ public final class GrpcAPI {
      * <code>string trigger_contract_input = 5;</code>
      * @return The bytes for triggerContractInput.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getTriggerContractInputBytes() {
       java.lang.Object ref = triggerContractInput_;
@@ -18712,6 +18903,7 @@ public final class GrpcAPI {
      * <code>string parameter_type = 6;</code>
      * @return The parameterType.
      */
+    @java.lang.Override
     public java.lang.String getParameterType() {
       java.lang.Object ref = parameterType_;
       if (ref instanceof java.lang.String) {
@@ -18728,6 +18920,7 @@ public final class GrpcAPI {
      * <code>string parameter_type = 6;</code>
      * @return The bytes for parameterType.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getParameterTypeBytes() {
       java.lang.Object ref = parameterType_;
@@ -18768,10 +18961,10 @@ public final class GrpcAPI {
       if (!messageHash_.isEmpty()) {
         output.writeBytes(4, messageHash_);
       }
-      if (!getTriggerContractInputBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(triggerContractInput_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 5, triggerContractInput_);
       }
-      if (!getParameterTypeBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(parameterType_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, parameterType_);
       }
       unknownFields.writeTo(output);
@@ -18799,10 +18992,10 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(4, messageHash_);
       }
-      if (!getTriggerContractInputBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(triggerContractInput_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, triggerContractInput_);
       }
-      if (!getParameterTypeBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(parameterType_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, parameterType_);
       }
       size += unknownFields.getSerializedSize();
@@ -19692,6 +19885,7 @@ public final class GrpcAPI {
        * <code>bytes binding_signature = 3;</code>
        * @return The bindingSignature.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getBindingSignature() {
         return bindingSignature_;
       }
@@ -19725,6 +19919,7 @@ public final class GrpcAPI {
        * <code>bytes message_hash = 4;</code>
        * @return The messageHash.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getMessageHash() {
         return messageHash_;
       }
@@ -20025,7 +20220,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.IvkDecryptTRC20Parameters}
    */
-  public  static final class IvkDecryptTRC20Parameters extends
+  public static final class IvkDecryptTRC20Parameters extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.IvkDecryptTRC20Parameters)
       IvkDecryptTRC20ParametersOrBuilder {
@@ -20153,6 +20348,7 @@ public final class GrpcAPI {
      * <code>int64 start_block_index = 1;</code>
      * @return The startBlockIndex.
      */
+    @java.lang.Override
     public long getStartBlockIndex() {
       return startBlockIndex_;
     }
@@ -20163,6 +20359,7 @@ public final class GrpcAPI {
      * <code>int64 end_block_index = 2;</code>
      * @return The endBlockIndex.
      */
+    @java.lang.Override
     public long getEndBlockIndex() {
       return endBlockIndex_;
     }
@@ -20173,6 +20370,7 @@ public final class GrpcAPI {
      * <code>bytes shielded_TRC20_contract_address = 3;</code>
      * @return The shieldedTRC20ContractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getShieldedTRC20ContractAddress() {
       return shieldedTRC20ContractAddress_;
     }
@@ -20183,6 +20381,7 @@ public final class GrpcAPI {
      * <code>bytes ivk = 4;</code>
      * @return The ivk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getIvk() {
       return ivk_;
     }
@@ -20193,6 +20392,7 @@ public final class GrpcAPI {
      * <code>bytes ak = 5;</code>
      * @return The ak.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAk() {
       return ak_;
     }
@@ -20203,6 +20403,7 @@ public final class GrpcAPI {
      * <code>bytes nk = 6;</code>
      * @return The nk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNk() {
       return nk_;
     }
@@ -20672,6 +20873,7 @@ public final class GrpcAPI {
        * <code>int64 start_block_index = 1;</code>
        * @return The startBlockIndex.
        */
+      @java.lang.Override
       public long getStartBlockIndex() {
         return startBlockIndex_;
       }
@@ -20702,6 +20904,7 @@ public final class GrpcAPI {
        * <code>int64 end_block_index = 2;</code>
        * @return The endBlockIndex.
        */
+      @java.lang.Override
       public long getEndBlockIndex() {
         return endBlockIndex_;
       }
@@ -20732,6 +20935,7 @@ public final class GrpcAPI {
        * <code>bytes shielded_TRC20_contract_address = 3;</code>
        * @return The shieldedTRC20ContractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getShieldedTRC20ContractAddress() {
         return shieldedTRC20ContractAddress_;
       }
@@ -20765,6 +20969,7 @@ public final class GrpcAPI {
        * <code>bytes ivk = 4;</code>
        * @return The ivk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getIvk() {
         return ivk_;
       }
@@ -20798,6 +21003,7 @@ public final class GrpcAPI {
        * <code>bytes ak = 5;</code>
        * @return The ak.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAk() {
         return ak_;
       }
@@ -20831,6 +21037,7 @@ public final class GrpcAPI {
        * <code>bytes nk = 6;</code>
        * @return The nk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNk() {
         return nk_;
       }
@@ -21077,7 +21284,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.OvkDecryptTRC20Parameters}
    */
-  public  static final class OvkDecryptTRC20Parameters extends
+  public static final class OvkDecryptTRC20Parameters extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.OvkDecryptTRC20Parameters)
       OvkDecryptTRC20ParametersOrBuilder {
@@ -21193,6 +21400,7 @@ public final class GrpcAPI {
      * <code>int64 start_block_index = 1;</code>
      * @return The startBlockIndex.
      */
+    @java.lang.Override
     public long getStartBlockIndex() {
       return startBlockIndex_;
     }
@@ -21203,6 +21411,7 @@ public final class GrpcAPI {
      * <code>int64 end_block_index = 2;</code>
      * @return The endBlockIndex.
      */
+    @java.lang.Override
     public long getEndBlockIndex() {
       return endBlockIndex_;
     }
@@ -21213,6 +21422,7 @@ public final class GrpcAPI {
      * <code>bytes ovk = 3;</code>
      * @return The ovk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOvk() {
       return ovk_;
     }
@@ -21223,6 +21433,7 @@ public final class GrpcAPI {
      * <code>bytes shielded_TRC20_contract_address = 4;</code>
      * @return The shieldedTRC20ContractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getShieldedTRC20ContractAddress() {
       return shieldedTRC20ContractAddress_;
     }
@@ -21658,6 +21869,7 @@ public final class GrpcAPI {
        * <code>int64 start_block_index = 1;</code>
        * @return The startBlockIndex.
        */
+      @java.lang.Override
       public long getStartBlockIndex() {
         return startBlockIndex_;
       }
@@ -21688,6 +21900,7 @@ public final class GrpcAPI {
        * <code>int64 end_block_index = 2;</code>
        * @return The endBlockIndex.
        */
+      @java.lang.Override
       public long getEndBlockIndex() {
         return endBlockIndex_;
       }
@@ -21718,6 +21931,7 @@ public final class GrpcAPI {
        * <code>bytes ovk = 3;</code>
        * @return The ovk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOvk() {
         return ovk_;
       }
@@ -21751,6 +21965,7 @@ public final class GrpcAPI {
        * <code>bytes shielded_TRC20_contract_address = 4;</code>
        * @return The shieldedTRC20ContractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getShieldedTRC20ContractAddress() {
         return shieldedTRC20ContractAddress_;
       }
@@ -21987,7 +22202,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.NfTRC20Parameters}
    */
-  public  static final class NfTRC20Parameters extends
+  public static final class NfTRC20Parameters extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.NfTRC20Parameters)
       NfTRC20ParametersOrBuilder {
@@ -22103,6 +22318,7 @@ public final class GrpcAPI {
      * <code>.protocol.Note note = 1;</code>
      * @return Whether the note field is set.
      */
+    @java.lang.Override
     public boolean hasNote() {
       return note_ != null;
     }
@@ -22110,12 +22326,14 @@ public final class GrpcAPI {
      * <code>.protocol.Note note = 1;</code>
      * @return The note.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Note getNote() {
       return note_ == null ? org.tron.trident.proto.Common.Note.getDefaultInstance() : note_;
     }
     /**
      * <code>.protocol.Note note = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.NoteOrBuilder getNoteOrBuilder() {
       return getNote();
     }
@@ -22126,6 +22344,7 @@ public final class GrpcAPI {
      * <code>bytes ak = 2;</code>
      * @return The ak.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAk() {
       return ak_;
     }
@@ -22136,6 +22355,7 @@ public final class GrpcAPI {
      * <code>bytes nk = 3;</code>
      * @return The nk.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNk() {
       return nk_;
     }
@@ -22146,6 +22366,7 @@ public final class GrpcAPI {
      * <code>int64 position = 4;</code>
      * @return The position.
      */
+    @java.lang.Override
     public long getPosition() {
       return position_;
     }
@@ -22156,6 +22377,7 @@ public final class GrpcAPI {
      * <code>bytes shielded_TRC20_contract_address = 5;</code>
      * @return The shieldedTRC20ContractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getShieldedTRC20ContractAddress() {
       return shieldedTRC20ContractAddress_;
     }
@@ -22668,6 +22890,7 @@ public final class GrpcAPI {
        * <code>bytes ak = 2;</code>
        * @return The ak.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAk() {
         return ak_;
       }
@@ -22701,6 +22924,7 @@ public final class GrpcAPI {
        * <code>bytes nk = 3;</code>
        * @return The nk.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNk() {
         return nk_;
       }
@@ -22734,6 +22958,7 @@ public final class GrpcAPI {
        * <code>int64 position = 4;</code>
        * @return The position.
        */
+      @java.lang.Override
       public long getPosition() {
         return position_;
       }
@@ -22764,6 +22989,7 @@ public final class GrpcAPI {
        * <code>bytes shielded_TRC20_contract_address = 5;</code>
        * @return The shieldedTRC20ContractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getShieldedTRC20ContractAddress() {
         return shieldedTRC20ContractAddress_;
       }
@@ -22908,7 +23134,7 @@ public final class GrpcAPI {
   /**
    * Protobuf type {@code protocol.ShieldedTRC20TriggerContractParameters}
    */
-  public  static final class ShieldedTRC20TriggerContractParameters extends
+  public static final class ShieldedTRC20TriggerContractParameters extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ShieldedTRC20TriggerContractParameters)
       ShieldedTRC20TriggerContractParametersOrBuilder {
@@ -23028,6 +23254,7 @@ public final class GrpcAPI {
      * <code>.protocol.ShieldedTRC20Parameters shielded_TRC20_Parameters = 1;</code>
      * @return Whether the shieldedTRC20Parameters field is set.
      */
+    @java.lang.Override
     public boolean hasShieldedTRC20Parameters() {
       return shieldedTRC20Parameters_ != null;
     }
@@ -23035,12 +23262,14 @@ public final class GrpcAPI {
      * <code>.protocol.ShieldedTRC20Parameters shielded_TRC20_Parameters = 1;</code>
      * @return The shieldedTRC20Parameters.
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters getShieldedTRC20Parameters() {
       return shieldedTRC20Parameters_ == null ? org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters.getDefaultInstance() : shieldedTRC20Parameters_;
     }
     /**
      * <code>.protocol.ShieldedTRC20Parameters shielded_TRC20_Parameters = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.ShieldedTRC20ParametersOrBuilder getShieldedTRC20ParametersOrBuilder() {
       return getShieldedTRC20Parameters();
     }
@@ -23050,12 +23279,14 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.BytesMessage spend_authority_signature = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.api.GrpcAPI.BytesMessage> getSpendAuthoritySignatureList() {
       return spendAuthoritySignature_;
     }
     /**
      * <code>repeated .protocol.BytesMessage spend_authority_signature = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.api.GrpcAPI.BytesMessageOrBuilder> 
         getSpendAuthoritySignatureOrBuilderList() {
       return spendAuthoritySignature_;
@@ -23063,18 +23294,21 @@ public final class GrpcAPI {
     /**
      * <code>repeated .protocol.BytesMessage spend_authority_signature = 2;</code>
      */
+    @java.lang.Override
     public int getSpendAuthoritySignatureCount() {
       return spendAuthoritySignature_.size();
     }
     /**
      * <code>repeated .protocol.BytesMessage spend_authority_signature = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.BytesMessage getSpendAuthoritySignature(int index) {
       return spendAuthoritySignature_.get(index);
     }
     /**
      * <code>repeated .protocol.BytesMessage spend_authority_signature = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.api.GrpcAPI.BytesMessageOrBuilder getSpendAuthoritySignatureOrBuilder(
         int index) {
       return spendAuthoritySignature_.get(index);
@@ -23086,6 +23320,7 @@ public final class GrpcAPI {
      * <code>string amount = 3;</code>
      * @return The amount.
      */
+    @java.lang.Override
     public java.lang.String getAmount() {
       java.lang.Object ref = amount_;
       if (ref instanceof java.lang.String) {
@@ -23102,6 +23337,7 @@ public final class GrpcAPI {
      * <code>string amount = 3;</code>
      * @return The bytes for amount.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAmountBytes() {
       java.lang.Object ref = amount_;
@@ -23122,6 +23358,7 @@ public final class GrpcAPI {
      * <code>bytes transparent_to_address = 4;</code>
      * @return The transparentToAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTransparentToAddress() {
       return transparentToAddress_;
     }
@@ -23146,7 +23383,7 @@ public final class GrpcAPI {
       for (int i = 0; i < spendAuthoritySignature_.size(); i++) {
         output.writeMessage(2, spendAuthoritySignature_.get(i));
       }
-      if (!getAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(amount_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, amount_);
       }
       if (!transparentToAddress_.isEmpty()) {
@@ -23169,7 +23406,7 @@ public final class GrpcAPI {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, spendAuthoritySignature_.get(i));
       }
-      if (!getAmountBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(amount_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, amount_);
       }
       if (!transparentToAddress_.isEmpty()) {
@@ -23972,6 +24209,7 @@ public final class GrpcAPI {
        * <code>bytes transparent_to_address = 4;</code>
        * @return The transparentToAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTransparentToAddress() {
         return transparentToAddress_;
       }

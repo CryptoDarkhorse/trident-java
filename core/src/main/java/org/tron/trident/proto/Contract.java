@@ -44,7 +44,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.AccountCreateContract}
    */
-  public  static final class AccountCreateContract extends
+  public static final class AccountCreateContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AccountCreateContract)
       AccountCreateContractOrBuilder {
@@ -143,6 +143,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -153,6 +154,7 @@ public final class Contract {
      * <code>bytes account_address = 2;</code>
      * @return The accountAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAccountAddress() {
       return accountAddress_;
     }
@@ -163,14 +165,14 @@ public final class Contract {
      * <code>.protocol.AccountType type = 3;</code>
      * @return The enum numeric value on the wire for type.
      */
-    public int getTypeValue() {
+    @java.lang.Override public int getTypeValue() {
       return type_;
     }
     /**
      * <code>.protocol.AccountType type = 3;</code>
      * @return The type.
      */
-    public org.tron.trident.proto.Common.AccountType getType() {
+    @java.lang.Override public org.tron.trident.proto.Common.AccountType getType() {
       @SuppressWarnings("deprecation")
       org.tron.trident.proto.Common.AccountType result = org.tron.trident.proto.Common.AccountType.valueOf(type_);
       return result == null ? org.tron.trident.proto.Common.AccountType.UNRECOGNIZED : result;
@@ -516,6 +518,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -549,6 +552,7 @@ public final class Contract {
        * <code>bytes account_address = 2;</code>
        * @return The accountAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAccountAddress() {
         return accountAddress_;
       }
@@ -582,7 +586,7 @@ public final class Contract {
        * <code>.protocol.AccountType type = 3;</code>
        * @return The enum numeric value on the wire for type.
        */
-      public int getTypeValue() {
+      @java.lang.Override public int getTypeValue() {
         return type_;
       }
       /**
@@ -591,6 +595,7 @@ public final class Contract {
        * @return This builder for chaining.
        */
       public Builder setTypeValue(int value) {
+        
         type_ = value;
         onChanged();
         return this;
@@ -599,6 +604,7 @@ public final class Contract {
        * <code>.protocol.AccountType type = 3;</code>
        * @return The type.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.AccountType getType() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Common.AccountType result = org.tron.trident.proto.Common.AccountType.valueOf(type_);
@@ -704,7 +710,7 @@ public final class Contract {
    *
    * Protobuf type {@code protocol.AccountUpdateContract}
    */
-  public  static final class AccountUpdateContract extends
+  public static final class AccountUpdateContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AccountUpdateContract)
       AccountUpdateContractOrBuilder {
@@ -796,6 +802,7 @@ public final class Contract {
      * <code>bytes account_name = 1;</code>
      * @return The accountName.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAccountName() {
       return accountName_;
     }
@@ -806,6 +813,7 @@ public final class Contract {
      * <code>bytes owner_address = 2;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -1138,6 +1146,7 @@ public final class Contract {
        * <code>bytes account_name = 1;</code>
        * @return The accountName.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAccountName() {
         return accountName_;
       }
@@ -1171,6 +1180,7 @@ public final class Contract {
        * <code>bytes owner_address = 2;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -1275,7 +1285,7 @@ public final class Contract {
    *
    * Protobuf type {@code protocol.SetAccountIdContract}
    */
-  public  static final class SetAccountIdContract extends
+  public static final class SetAccountIdContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.SetAccountIdContract)
       SetAccountIdContractOrBuilder {
@@ -1367,6 +1377,7 @@ public final class Contract {
      * <code>bytes account_id = 1;</code>
      * @return The accountId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAccountId() {
       return accountId_;
     }
@@ -1377,6 +1388,7 @@ public final class Contract {
      * <code>bytes owner_address = 2;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -1710,6 +1722,7 @@ public final class Contract {
        * <code>bytes account_id = 1;</code>
        * @return The accountId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAccountId() {
         return accountId_;
       }
@@ -1743,6 +1756,7 @@ public final class Contract {
        * <code>bytes owner_address = 2;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -1934,7 +1948,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.AccountPermissionUpdateContract}
    */
-  public  static final class AccountPermissionUpdateContract extends
+  public static final class AccountPermissionUpdateContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AccountPermissionUpdateContract)
       AccountPermissionUpdateContractOrBuilder {
@@ -2060,6 +2074,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -2074,6 +2089,7 @@ public final class Contract {
      * <code>.protocol.Permission owner = 2;</code>
      * @return Whether the owner field is set.
      */
+    @java.lang.Override
     public boolean hasOwner() {
       return owner_ != null;
     }
@@ -2085,6 +2101,7 @@ public final class Contract {
      * <code>.protocol.Permission owner = 2;</code>
      * @return The owner.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Permission getOwner() {
       return owner_ == null ? org.tron.trident.proto.Common.Permission.getDefaultInstance() : owner_;
     }
@@ -2095,6 +2112,7 @@ public final class Contract {
      *
      * <code>.protocol.Permission owner = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.PermissionOrBuilder getOwnerOrBuilder() {
       return getOwner();
     }
@@ -2109,6 +2127,7 @@ public final class Contract {
      * <code>.protocol.Permission witness = 3;</code>
      * @return Whether the witness field is set.
      */
+    @java.lang.Override
     public boolean hasWitness() {
       return witness_ != null;
     }
@@ -2120,6 +2139,7 @@ public final class Contract {
      * <code>.protocol.Permission witness = 3;</code>
      * @return The witness.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Permission getWitness() {
       return witness_ == null ? org.tron.trident.proto.Common.Permission.getDefaultInstance() : witness_;
     }
@@ -2130,6 +2150,7 @@ public final class Contract {
      *
      * <code>.protocol.Permission witness = 3;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.PermissionOrBuilder getWitnessOrBuilder() {
       return getWitness();
     }
@@ -2143,6 +2164,7 @@ public final class Contract {
      *
      * <code>repeated .protocol.Permission actives = 4;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Common.Permission> getActivesList() {
       return actives_;
     }
@@ -2153,6 +2175,7 @@ public final class Contract {
      *
      * <code>repeated .protocol.Permission actives = 4;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Common.PermissionOrBuilder> 
         getActivesOrBuilderList() {
       return actives_;
@@ -2164,6 +2187,7 @@ public final class Contract {
      *
      * <code>repeated .protocol.Permission actives = 4;</code>
      */
+    @java.lang.Override
     public int getActivesCount() {
       return actives_.size();
     }
@@ -2174,6 +2198,7 @@ public final class Contract {
      *
      * <code>repeated .protocol.Permission actives = 4;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Permission getActives(int index) {
       return actives_.get(index);
     }
@@ -2184,6 +2209,7 @@ public final class Contract {
      *
      * <code>repeated .protocol.Permission actives = 4;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.PermissionOrBuilder getActivesOrBuilder(
         int index) {
       return actives_.get(index);
@@ -2613,6 +2639,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -3464,7 +3491,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.AssetIssueContract}
    */
-  public  static final class AssetIssueContract extends
+  public static final class AssetIssueContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AssetIssueContract)
       AssetIssueContractOrBuilder {
@@ -3668,7 +3695,7 @@ public final class Contract {
     /**
      * Protobuf type {@code protocol.AssetIssueContract.FrozenSupply}
      */
-    public  static final class FrozenSupply extends
+    public static final class FrozenSupply extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.AssetIssueContract.FrozenSupply)
         FrozenSupplyOrBuilder {
@@ -3758,6 +3785,7 @@ public final class Contract {
        * <code>int64 frozen_amount = 1;</code>
        * @return The frozenAmount.
        */
+      @java.lang.Override
       public long getFrozenAmount() {
         return frozenAmount_;
       }
@@ -3768,6 +3796,7 @@ public final class Contract {
        * <code>int64 frozen_days = 2;</code>
        * @return The frozenDays.
        */
+      @java.lang.Override
       public long getFrozenDays() {
         return frozenDays_;
       }
@@ -4098,6 +4127,7 @@ public final class Contract {
          * <code>int64 frozen_amount = 1;</code>
          * @return The frozenAmount.
          */
+        @java.lang.Override
         public long getFrozenAmount() {
           return frozenAmount_;
         }
@@ -4128,6 +4158,7 @@ public final class Contract {
          * <code>int64 frozen_days = 2;</code>
          * @return The frozenDays.
          */
+        @java.lang.Override
         public long getFrozenDays() {
           return frozenDays_;
         }
@@ -4211,6 +4242,7 @@ public final class Contract {
      * <code>string id = 41;</code>
      * @return The id.
      */
+    @java.lang.Override
     public java.lang.String getId() {
       java.lang.Object ref = id_;
       if (ref instanceof java.lang.String) {
@@ -4227,6 +4259,7 @@ public final class Contract {
      * <code>string id = 41;</code>
      * @return The bytes for id.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getIdBytes() {
       java.lang.Object ref = id_;
@@ -4247,6 +4280,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -4257,6 +4291,7 @@ public final class Contract {
      * <code>bytes name = 2;</code>
      * @return The name.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getName() {
       return name_;
     }
@@ -4267,6 +4302,7 @@ public final class Contract {
      * <code>bytes abbr = 3;</code>
      * @return The abbr.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAbbr() {
       return abbr_;
     }
@@ -4277,6 +4313,7 @@ public final class Contract {
      * <code>int64 total_supply = 4;</code>
      * @return The totalSupply.
      */
+    @java.lang.Override
     public long getTotalSupply() {
       return totalSupply_;
     }
@@ -4286,12 +4323,14 @@ public final class Contract {
     /**
      * <code>repeated .protocol.AssetIssueContract.FrozenSupply frozen_supply = 5;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Contract.AssetIssueContract.FrozenSupply> getFrozenSupplyList() {
       return frozenSupply_;
     }
     /**
      * <code>repeated .protocol.AssetIssueContract.FrozenSupply frozen_supply = 5;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Contract.AssetIssueContract.FrozenSupplyOrBuilder> 
         getFrozenSupplyOrBuilderList() {
       return frozenSupply_;
@@ -4299,18 +4338,21 @@ public final class Contract {
     /**
      * <code>repeated .protocol.AssetIssueContract.FrozenSupply frozen_supply = 5;</code>
      */
+    @java.lang.Override
     public int getFrozenSupplyCount() {
       return frozenSupply_.size();
     }
     /**
      * <code>repeated .protocol.AssetIssueContract.FrozenSupply frozen_supply = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Contract.AssetIssueContract.FrozenSupply getFrozenSupply(int index) {
       return frozenSupply_.get(index);
     }
     /**
      * <code>repeated .protocol.AssetIssueContract.FrozenSupply frozen_supply = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Contract.AssetIssueContract.FrozenSupplyOrBuilder getFrozenSupplyOrBuilder(
         int index) {
       return frozenSupply_.get(index);
@@ -4322,6 +4364,7 @@ public final class Contract {
      * <code>int32 trx_num = 6;</code>
      * @return The trxNum.
      */
+    @java.lang.Override
     public int getTrxNum() {
       return trxNum_;
     }
@@ -4332,6 +4375,7 @@ public final class Contract {
      * <code>int32 precision = 7;</code>
      * @return The precision.
      */
+    @java.lang.Override
     public int getPrecision() {
       return precision_;
     }
@@ -4342,6 +4386,7 @@ public final class Contract {
      * <code>int32 num = 8;</code>
      * @return The num.
      */
+    @java.lang.Override
     public int getNum() {
       return num_;
     }
@@ -4352,6 +4397,7 @@ public final class Contract {
      * <code>int64 start_time = 9;</code>
      * @return The startTime.
      */
+    @java.lang.Override
     public long getStartTime() {
       return startTime_;
     }
@@ -4362,6 +4408,7 @@ public final class Contract {
      * <code>int64 end_time = 10;</code>
      * @return The endTime.
      */
+    @java.lang.Override
     public long getEndTime() {
       return endTime_;
     }
@@ -4376,6 +4423,7 @@ public final class Contract {
      * <code>int64 order = 11;</code>
      * @return The order.
      */
+    @java.lang.Override
     public long getOrder() {
       return order_;
     }
@@ -4386,6 +4434,7 @@ public final class Contract {
      * <code>int32 vote_score = 16;</code>
      * @return The voteScore.
      */
+    @java.lang.Override
     public int getVoteScore() {
       return voteScore_;
     }
@@ -4396,6 +4445,7 @@ public final class Contract {
      * <code>bytes description = 20;</code>
      * @return The description.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getDescription() {
       return description_;
     }
@@ -4406,6 +4456,7 @@ public final class Contract {
      * <code>bytes url = 21;</code>
      * @return The url.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getUrl() {
       return url_;
     }
@@ -4416,6 +4467,7 @@ public final class Contract {
      * <code>int64 free_asset_net_limit = 22;</code>
      * @return The freeAssetNetLimit.
      */
+    @java.lang.Override
     public long getFreeAssetNetLimit() {
       return freeAssetNetLimit_;
     }
@@ -4426,6 +4478,7 @@ public final class Contract {
      * <code>int64 public_free_asset_net_limit = 23;</code>
      * @return The publicFreeAssetNetLimit.
      */
+    @java.lang.Override
     public long getPublicFreeAssetNetLimit() {
       return publicFreeAssetNetLimit_;
     }
@@ -4436,6 +4489,7 @@ public final class Contract {
      * <code>int64 public_free_asset_net_usage = 24;</code>
      * @return The publicFreeAssetNetUsage.
      */
+    @java.lang.Override
     public long getPublicFreeAssetNetUsage() {
       return publicFreeAssetNetUsage_;
     }
@@ -4446,6 +4500,7 @@ public final class Contract {
      * <code>int64 public_latest_free_net_time = 25;</code>
      * @return The publicLatestFreeNetTime.
      */
+    @java.lang.Override
     public long getPublicLatestFreeNetTime() {
       return publicLatestFreeNetTime_;
     }
@@ -4518,7 +4573,7 @@ public final class Contract {
       if (publicLatestFreeNetTime_ != 0L) {
         output.writeInt64(25, publicLatestFreeNetTime_);
       }
-      if (!getIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 41, id_);
       }
       unknownFields.writeTo(output);
@@ -4602,7 +4657,7 @@ public final class Contract {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(25, publicLatestFreeNetTime_);
       }
-      if (!getIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(id_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(41, id_);
       }
       size += unknownFields.getSerializedSize();
@@ -5187,6 +5242,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -5220,6 +5276,7 @@ public final class Contract {
        * <code>bytes name = 2;</code>
        * @return The name.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getName() {
         return name_;
       }
@@ -5253,6 +5310,7 @@ public final class Contract {
        * <code>bytes abbr = 3;</code>
        * @return The abbr.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAbbr() {
         return abbr_;
       }
@@ -5286,6 +5344,7 @@ public final class Contract {
        * <code>int64 total_supply = 4;</code>
        * @return The totalSupply.
        */
+      @java.lang.Override
       public long getTotalSupply() {
         return totalSupply_;
       }
@@ -5556,6 +5615,7 @@ public final class Contract {
        * <code>int32 trx_num = 6;</code>
        * @return The trxNum.
        */
+      @java.lang.Override
       public int getTrxNum() {
         return trxNum_;
       }
@@ -5586,6 +5646,7 @@ public final class Contract {
        * <code>int32 precision = 7;</code>
        * @return The precision.
        */
+      @java.lang.Override
       public int getPrecision() {
         return precision_;
       }
@@ -5616,6 +5677,7 @@ public final class Contract {
        * <code>int32 num = 8;</code>
        * @return The num.
        */
+      @java.lang.Override
       public int getNum() {
         return num_;
       }
@@ -5646,6 +5708,7 @@ public final class Contract {
        * <code>int64 start_time = 9;</code>
        * @return The startTime.
        */
+      @java.lang.Override
       public long getStartTime() {
         return startTime_;
       }
@@ -5676,6 +5739,7 @@ public final class Contract {
        * <code>int64 end_time = 10;</code>
        * @return The endTime.
        */
+      @java.lang.Override
       public long getEndTime() {
         return endTime_;
       }
@@ -5710,6 +5774,7 @@ public final class Contract {
        * <code>int64 order = 11;</code>
        * @return The order.
        */
+      @java.lang.Override
       public long getOrder() {
         return order_;
       }
@@ -5748,6 +5813,7 @@ public final class Contract {
        * <code>int32 vote_score = 16;</code>
        * @return The voteScore.
        */
+      @java.lang.Override
       public int getVoteScore() {
         return voteScore_;
       }
@@ -5778,6 +5844,7 @@ public final class Contract {
        * <code>bytes description = 20;</code>
        * @return The description.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getDescription() {
         return description_;
       }
@@ -5811,6 +5878,7 @@ public final class Contract {
        * <code>bytes url = 21;</code>
        * @return The url.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getUrl() {
         return url_;
       }
@@ -5844,6 +5912,7 @@ public final class Contract {
        * <code>int64 free_asset_net_limit = 22;</code>
        * @return The freeAssetNetLimit.
        */
+      @java.lang.Override
       public long getFreeAssetNetLimit() {
         return freeAssetNetLimit_;
       }
@@ -5874,6 +5943,7 @@ public final class Contract {
        * <code>int64 public_free_asset_net_limit = 23;</code>
        * @return The publicFreeAssetNetLimit.
        */
+      @java.lang.Override
       public long getPublicFreeAssetNetLimit() {
         return publicFreeAssetNetLimit_;
       }
@@ -5904,6 +5974,7 @@ public final class Contract {
        * <code>int64 public_free_asset_net_usage = 24;</code>
        * @return The publicFreeAssetNetUsage.
        */
+      @java.lang.Override
       public long getPublicFreeAssetNetUsage() {
         return publicFreeAssetNetUsage_;
       }
@@ -5934,6 +6005,7 @@ public final class Contract {
        * <code>int64 public_latest_free_net_time = 25;</code>
        * @return The publicLatestFreeNetTime.
        */
+      @java.lang.Override
       public long getPublicLatestFreeNetTime() {
         return publicLatestFreeNetTime_;
       }
@@ -6051,7 +6123,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.TransferAssetContract}
    */
-  public  static final class TransferAssetContract extends
+  public static final class TransferAssetContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TransferAssetContract)
       TransferAssetContractOrBuilder {
@@ -6158,6 +6230,7 @@ public final class Contract {
      * <code>bytes asset_name = 1;</code>
      * @return The assetName.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAssetName() {
       return assetName_;
     }
@@ -6173,6 +6246,7 @@ public final class Contract {
      * <code>bytes owner_address = 2;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -6183,6 +6257,7 @@ public final class Contract {
      * <code>bytes to_address = 3;</code>
      * @return The toAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getToAddress() {
       return toAddress_;
     }
@@ -6193,6 +6268,7 @@ public final class Contract {
      * <code>int64 amount = 4;</code>
      * @return The amount.
      */
+    @java.lang.Override
     public long getAmount() {
       return amount_;
     }
@@ -6560,6 +6636,7 @@ public final class Contract {
        * <code>bytes asset_name = 1;</code>
        * @return The assetName.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAssetName() {
         return assetName_;
       }
@@ -6606,6 +6683,7 @@ public final class Contract {
        * <code>bytes owner_address = 2;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -6649,6 +6727,7 @@ public final class Contract {
        * <code>bytes to_address = 3;</code>
        * @return The toAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getToAddress() {
         return toAddress_;
       }
@@ -6682,6 +6761,7 @@ public final class Contract {
        * <code>int64 amount = 4;</code>
        * @return The amount.
        */
+      @java.lang.Override
       public long getAmount() {
         return amount_;
       }
@@ -6772,7 +6852,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.UnfreezeAssetContract}
    */
-  public  static final class UnfreezeAssetContract extends
+  public static final class UnfreezeAssetContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.UnfreezeAssetContract)
       UnfreezeAssetContractOrBuilder {
@@ -6858,6 +6938,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -7169,6 +7250,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -7286,7 +7368,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.UpdateAssetContract}
    */
-  public  static final class UpdateAssetContract extends
+  public static final class UpdateAssetContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.UpdateAssetContract)
       UpdateAssetContractOrBuilder {
@@ -7394,6 +7476,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -7404,6 +7487,7 @@ public final class Contract {
      * <code>bytes description = 2;</code>
      * @return The description.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getDescription() {
       return description_;
     }
@@ -7414,6 +7498,7 @@ public final class Contract {
      * <code>bytes url = 3;</code>
      * @return The url.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getUrl() {
       return url_;
     }
@@ -7424,6 +7509,7 @@ public final class Contract {
      * <code>int64 new_limit = 4;</code>
      * @return The newLimit.
      */
+    @java.lang.Override
     public long getNewLimit() {
       return newLimit_;
     }
@@ -7434,6 +7520,7 @@ public final class Contract {
      * <code>int64 new_public_limit = 5;</code>
      * @return The newPublicLimit.
      */
+    @java.lang.Override
     public long getNewPublicLimit() {
       return newPublicLimit_;
     }
@@ -7815,6 +7902,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -7848,6 +7936,7 @@ public final class Contract {
        * <code>bytes description = 2;</code>
        * @return The description.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getDescription() {
         return description_;
       }
@@ -7881,6 +7970,7 @@ public final class Contract {
        * <code>bytes url = 3;</code>
        * @return The url.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getUrl() {
         return url_;
       }
@@ -7914,6 +8004,7 @@ public final class Contract {
        * <code>int64 new_limit = 4;</code>
        * @return The newLimit.
        */
+      @java.lang.Override
       public long getNewLimit() {
         return newLimit_;
       }
@@ -7944,6 +8035,7 @@ public final class Contract {
        * <code>int64 new_public_limit = 5;</code>
        * @return The newPublicLimit.
        */
+      @java.lang.Override
       public long getNewPublicLimit() {
         return newPublicLimit_;
       }
@@ -8061,7 +8153,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.ParticipateAssetIssueContract}
    */
-  public  static final class ParticipateAssetIssueContract extends
+  public static final class ParticipateAssetIssueContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ParticipateAssetIssueContract)
       ParticipateAssetIssueContractOrBuilder {
@@ -8164,6 +8256,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -8174,6 +8267,7 @@ public final class Contract {
      * <code>bytes to_address = 2;</code>
      * @return The toAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getToAddress() {
       return toAddress_;
     }
@@ -8188,6 +8282,7 @@ public final class Contract {
      * <code>bytes asset_name = 3;</code>
      * @return The assetName.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAssetName() {
       return assetName_;
     }
@@ -8203,6 +8298,7 @@ public final class Contract {
      * <code>int64 amount = 4;</code>
      * @return The amount.
      */
+    @java.lang.Override
     public long getAmount() {
       return amount_;
     }
@@ -8566,6 +8662,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -8599,6 +8696,7 @@ public final class Contract {
        * <code>bytes to_address = 2;</code>
        * @return The toAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getToAddress() {
         return toAddress_;
       }
@@ -8636,6 +8734,7 @@ public final class Contract {
        * <code>bytes asset_name = 3;</code>
        * @return The assetName.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAssetName() {
         return assetName_;
       }
@@ -8682,6 +8781,7 @@ public final class Contract {
        * <code>int64 amount = 4;</code>
        * @return The amount.
        */
+      @java.lang.Override
       public long getAmount() {
         return amount_;
       }
@@ -8811,7 +8911,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.FreezeBalanceContract}
    */
-  public  static final class FreezeBalanceContract extends
+  public static final class FreezeBalanceContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.FreezeBalanceContract)
       FreezeBalanceContractOrBuilder {
@@ -8920,6 +9020,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -8930,6 +9031,7 @@ public final class Contract {
      * <code>int64 frozen_balance = 2;</code>
      * @return The frozenBalance.
      */
+    @java.lang.Override
     public long getFrozenBalance() {
       return frozenBalance_;
     }
@@ -8940,6 +9042,7 @@ public final class Contract {
      * <code>int64 frozen_duration = 3;</code>
      * @return The frozenDuration.
      */
+    @java.lang.Override
     public long getFrozenDuration() {
       return frozenDuration_;
     }
@@ -8950,14 +9053,14 @@ public final class Contract {
      * <code>.protocol.ResourceCode resource = 10;</code>
      * @return The enum numeric value on the wire for resource.
      */
-    public int getResourceValue() {
+    @java.lang.Override public int getResourceValue() {
       return resource_;
     }
     /**
      * <code>.protocol.ResourceCode resource = 10;</code>
      * @return The resource.
      */
-    public org.tron.trident.proto.Common.ResourceCode getResource() {
+    @java.lang.Override public org.tron.trident.proto.Common.ResourceCode getResource() {
       @SuppressWarnings("deprecation")
       org.tron.trident.proto.Common.ResourceCode result = org.tron.trident.proto.Common.ResourceCode.valueOf(resource_);
       return result == null ? org.tron.trident.proto.Common.ResourceCode.UNRECOGNIZED : result;
@@ -8969,6 +9072,7 @@ public final class Contract {
      * <code>bytes receiver_address = 15;</code>
      * @return The receiverAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getReceiverAddress() {
       return receiverAddress_;
     }
@@ -9349,6 +9453,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -9382,6 +9487,7 @@ public final class Contract {
        * <code>int64 frozen_balance = 2;</code>
        * @return The frozenBalance.
        */
+      @java.lang.Override
       public long getFrozenBalance() {
         return frozenBalance_;
       }
@@ -9412,6 +9518,7 @@ public final class Contract {
        * <code>int64 frozen_duration = 3;</code>
        * @return The frozenDuration.
        */
+      @java.lang.Override
       public long getFrozenDuration() {
         return frozenDuration_;
       }
@@ -9442,7 +9549,7 @@ public final class Contract {
        * <code>.protocol.ResourceCode resource = 10;</code>
        * @return The enum numeric value on the wire for resource.
        */
-      public int getResourceValue() {
+      @java.lang.Override public int getResourceValue() {
         return resource_;
       }
       /**
@@ -9451,6 +9558,7 @@ public final class Contract {
        * @return This builder for chaining.
        */
       public Builder setResourceValue(int value) {
+        
         resource_ = value;
         onChanged();
         return this;
@@ -9459,6 +9567,7 @@ public final class Contract {
        * <code>.protocol.ResourceCode resource = 10;</code>
        * @return The resource.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.ResourceCode getResource() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Common.ResourceCode result = org.tron.trident.proto.Common.ResourceCode.valueOf(resource_);
@@ -9494,6 +9603,7 @@ public final class Contract {
        * <code>bytes receiver_address = 15;</code>
        * @return The receiverAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getReceiverAddress() {
         return receiverAddress_;
       }
@@ -9604,7 +9714,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.UnfreezeBalanceContract}
    */
-  public  static final class UnfreezeBalanceContract extends
+  public static final class UnfreezeBalanceContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.UnfreezeBalanceContract)
       UnfreezeBalanceContractOrBuilder {
@@ -9703,6 +9813,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -9713,14 +9824,14 @@ public final class Contract {
      * <code>.protocol.ResourceCode resource = 10;</code>
      * @return The enum numeric value on the wire for resource.
      */
-    public int getResourceValue() {
+    @java.lang.Override public int getResourceValue() {
       return resource_;
     }
     /**
      * <code>.protocol.ResourceCode resource = 10;</code>
      * @return The resource.
      */
-    public org.tron.trident.proto.Common.ResourceCode getResource() {
+    @java.lang.Override public org.tron.trident.proto.Common.ResourceCode getResource() {
       @SuppressWarnings("deprecation")
       org.tron.trident.proto.Common.ResourceCode result = org.tron.trident.proto.Common.ResourceCode.valueOf(resource_);
       return result == null ? org.tron.trident.proto.Common.ResourceCode.UNRECOGNIZED : result;
@@ -9732,6 +9843,7 @@ public final class Contract {
      * <code>bytes receiver_address = 15;</code>
      * @return The receiverAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getReceiverAddress() {
       return receiverAddress_;
     }
@@ -10076,6 +10188,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -10109,7 +10222,7 @@ public final class Contract {
        * <code>.protocol.ResourceCode resource = 10;</code>
        * @return The enum numeric value on the wire for resource.
        */
-      public int getResourceValue() {
+      @java.lang.Override public int getResourceValue() {
         return resource_;
       }
       /**
@@ -10118,6 +10231,7 @@ public final class Contract {
        * @return This builder for chaining.
        */
       public Builder setResourceValue(int value) {
+        
         resource_ = value;
         onChanged();
         return this;
@@ -10126,6 +10240,7 @@ public final class Contract {
        * <code>.protocol.ResourceCode resource = 10;</code>
        * @return The resource.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.ResourceCode getResource() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Common.ResourceCode result = org.tron.trident.proto.Common.ResourceCode.valueOf(resource_);
@@ -10161,6 +10276,7 @@ public final class Contract {
        * <code>bytes receiver_address = 15;</code>
        * @return The receiverAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getReceiverAddress() {
         return receiverAddress_;
       }
@@ -10254,7 +10370,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.WithdrawBalanceContract}
    */
-  public  static final class WithdrawBalanceContract extends
+  public static final class WithdrawBalanceContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.WithdrawBalanceContract)
       WithdrawBalanceContractOrBuilder {
@@ -10340,6 +10456,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -10651,6 +10768,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -10756,7 +10874,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.TransferContract}
    */
-  public  static final class TransferContract extends
+  public static final class TransferContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TransferContract)
       TransferContractOrBuilder {
@@ -10853,6 +10971,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -10863,6 +10982,7 @@ public final class Contract {
      * <code>bytes to_address = 2;</code>
      * @return The toAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getToAddress() {
       return toAddress_;
     }
@@ -10873,6 +10993,7 @@ public final class Contract {
      * <code>int64 amount = 3;</code>
      * @return The amount.
      */
+    @java.lang.Override
     public long getAmount() {
       return amount_;
     }
@@ -11219,6 +11340,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -11252,6 +11374,7 @@ public final class Contract {
        * <code>bytes to_address = 2;</code>
        * @return The toAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getToAddress() {
         return toAddress_;
       }
@@ -11285,6 +11408,7 @@ public final class Contract {
        * <code>int64 amount = 3;</code>
        * @return The amount.
        */
+      @java.lang.Override
       public long getAmount() {
         return amount_;
       }
@@ -11413,7 +11537,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.MarketSellAssetContract}
    */
-  public  static final class MarketSellAssetContract extends
+  public static final class MarketSellAssetContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.MarketSellAssetContract)
       MarketSellAssetContractOrBuilder {
@@ -11527,6 +11651,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -11537,6 +11662,7 @@ public final class Contract {
      * <code>bytes sell_token_id = 2;</code>
      * @return The sellTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getSellTokenId() {
       return sellTokenId_;
     }
@@ -11547,6 +11673,7 @@ public final class Contract {
      * <code>int64 sell_token_quantity = 3;</code>
      * @return The sellTokenQuantity.
      */
+    @java.lang.Override
     public long getSellTokenQuantity() {
       return sellTokenQuantity_;
     }
@@ -11557,6 +11684,7 @@ public final class Contract {
      * <code>bytes buy_token_id = 4;</code>
      * @return The buyTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getBuyTokenId() {
       return buyTokenId_;
     }
@@ -11571,6 +11699,7 @@ public final class Contract {
      * <code>int64 buy_token_quantity = 5;</code>
      * @return The buyTokenQuantity.
      */
+    @java.lang.Override
     public long getBuyTokenQuantity() {
       return buyTokenQuantity_;
     }
@@ -11585,6 +11714,7 @@ public final class Contract {
      * <code>bytes pre_price_key = 6;</code>
      * @return The prePriceKey.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPrePriceKey() {
       return prePriceKey_;
     }
@@ -11983,6 +12113,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -12016,6 +12147,7 @@ public final class Contract {
        * <code>bytes sell_token_id = 2;</code>
        * @return The sellTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getSellTokenId() {
         return sellTokenId_;
       }
@@ -12049,6 +12181,7 @@ public final class Contract {
        * <code>int64 sell_token_quantity = 3;</code>
        * @return The sellTokenQuantity.
        */
+      @java.lang.Override
       public long getSellTokenQuantity() {
         return sellTokenQuantity_;
       }
@@ -12079,6 +12212,7 @@ public final class Contract {
        * <code>bytes buy_token_id = 4;</code>
        * @return The buyTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getBuyTokenId() {
         return buyTokenId_;
       }
@@ -12116,6 +12250,7 @@ public final class Contract {
        * <code>int64 buy_token_quantity = 5;</code>
        * @return The buyTokenQuantity.
        */
+      @java.lang.Override
       public long getBuyTokenQuantity() {
         return buyTokenQuantity_;
       }
@@ -12158,6 +12293,7 @@ public final class Contract {
        * <code>bytes pre_price_key = 6;</code>
        * @return The prePriceKey.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPrePriceKey() {
         return prePriceKey_;
       }
@@ -12265,7 +12401,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.MarketCancelOrderContract}
    */
-  public  static final class MarketCancelOrderContract extends
+  public static final class MarketCancelOrderContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.MarketCancelOrderContract)
       MarketCancelOrderContractOrBuilder {
@@ -12357,6 +12493,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -12367,6 +12504,7 @@ public final class Contract {
      * <code>bytes order_id = 2;</code>
      * @return The orderId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOrderId() {
       return orderId_;
     }
@@ -12695,6 +12833,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -12728,6 +12867,7 @@ public final class Contract {
        * <code>bytes order_id = 2;</code>
        * @return The orderId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOrderId() {
         return orderId_;
       }
@@ -12837,7 +12977,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.ProposalApproveContract}
    */
-  public  static final class ProposalApproveContract extends
+  public static final class ProposalApproveContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ProposalApproveContract)
       ProposalApproveContractOrBuilder {
@@ -12933,6 +13073,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -12943,6 +13084,7 @@ public final class Contract {
      * <code>int64 proposal_id = 2;</code>
      * @return The proposalId.
      */
+    @java.lang.Override
     public long getProposalId() {
       return proposalId_;
     }
@@ -12957,6 +13099,7 @@ public final class Contract {
      * <code>bool is_add_approval = 3;</code>
      * @return The isAddApproval.
      */
+    @java.lang.Override
     public boolean getIsAddApproval() {
       return isAddApproval_;
     }
@@ -13304,6 +13447,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -13337,6 +13481,7 @@ public final class Contract {
        * <code>int64 proposal_id = 2;</code>
        * @return The proposalId.
        */
+      @java.lang.Override
       public long getProposalId() {
         return proposalId_;
       }
@@ -13371,6 +13516,7 @@ public final class Contract {
        * <code>bool is_add_approval = 3;</code>
        * @return The isAddApproval.
        */
+      @java.lang.Override
       public boolean getIsAddApproval() {
         return isAddApproval_;
       }
@@ -13503,7 +13649,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.ProposalCreateContract}
    */
-  public  static final class ProposalCreateContract extends
+  public static final class ProposalCreateContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ProposalCreateContract)
       ProposalCreateContractOrBuilder {
@@ -13615,6 +13761,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -13649,6 +13796,7 @@ public final class Contract {
      * <code>map&lt;int64, int64&gt; parameters = 2;</code>
      */
 
+    @java.lang.Override
     public boolean containsParameters(
         long key) {
       
@@ -13657,6 +13805,7 @@ public final class Contract {
     /**
      * Use {@link #getParametersMap()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.Long, java.lang.Long> getParameters() {
       return getParametersMap();
@@ -13664,6 +13813,7 @@ public final class Contract {
     /**
      * <code>map&lt;int64, int64&gt; parameters = 2;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.Long, java.lang.Long> getParametersMap() {
       return internalGetParameters().getMap();
@@ -13671,6 +13821,7 @@ public final class Contract {
     /**
      * <code>map&lt;int64, int64&gt; parameters = 2;</code>
      */
+    @java.lang.Override
 
     public long getParametersOrDefault(
         long key,
@@ -13683,6 +13834,7 @@ public final class Contract {
     /**
      * <code>map&lt;int64, int64&gt; parameters = 2;</code>
      */
+    @java.lang.Override
 
     public long getParametersOrThrow(
         long key) {
@@ -14053,6 +14205,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -14111,6 +14264,7 @@ public final class Contract {
        * <code>map&lt;int64, int64&gt; parameters = 2;</code>
        */
 
+      @java.lang.Override
       public boolean containsParameters(
           long key) {
         
@@ -14119,6 +14273,7 @@ public final class Contract {
       /**
        * Use {@link #getParametersMap()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.Long, java.lang.Long> getParameters() {
         return getParametersMap();
@@ -14126,6 +14281,7 @@ public final class Contract {
       /**
        * <code>map&lt;int64, int64&gt; parameters = 2;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.Long, java.lang.Long> getParametersMap() {
         return internalGetParameters().getMap();
@@ -14133,6 +14289,7 @@ public final class Contract {
       /**
        * <code>map&lt;int64, int64&gt; parameters = 2;</code>
        */
+      @java.lang.Override
 
       public long getParametersOrDefault(
           long key,
@@ -14145,6 +14302,7 @@ public final class Contract {
       /**
        * <code>map&lt;int64, int64&gt; parameters = 2;</code>
        */
+      @java.lang.Override
 
       public long getParametersOrThrow(
           long key) {
@@ -14275,7 +14433,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.ProposalDeleteContract}
    */
-  public  static final class ProposalDeleteContract extends
+  public static final class ProposalDeleteContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ProposalDeleteContract)
       ProposalDeleteContractOrBuilder {
@@ -14366,6 +14524,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -14376,6 +14535,7 @@ public final class Contract {
      * <code>int64 proposal_id = 2;</code>
      * @return The proposalId.
      */
+    @java.lang.Override
     public long getProposalId() {
       return proposalId_;
     }
@@ -14705,6 +14865,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -14738,6 +14899,7 @@ public final class Contract {
        * <code>int64 proposal_id = 2;</code>
        * @return The proposalId.
        */
+      @java.lang.Override
       public long getProposalId() {
         return proposalId_;
       }
@@ -14855,7 +15017,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.CreateSmartContract}
    */
-  public  static final class CreateSmartContract extends
+  public static final class CreateSmartContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.CreateSmartContract)
       CreateSmartContractOrBuilder {
@@ -14964,6 +15126,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -14974,6 +15137,7 @@ public final class Contract {
      * <code>.protocol.SmartContract new_contract = 2;</code>
      * @return Whether the newContract field is set.
      */
+    @java.lang.Override
     public boolean hasNewContract() {
       return newContract_ != null;
     }
@@ -14981,12 +15145,14 @@ public final class Contract {
      * <code>.protocol.SmartContract new_contract = 2;</code>
      * @return The newContract.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.SmartContract getNewContract() {
       return newContract_ == null ? org.tron.trident.proto.Common.SmartContract.getDefaultInstance() : newContract_;
     }
     /**
      * <code>.protocol.SmartContract new_contract = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.SmartContractOrBuilder getNewContractOrBuilder() {
       return getNewContract();
     }
@@ -14997,6 +15163,7 @@ public final class Contract {
      * <code>int64 call_token_value = 3;</code>
      * @return The callTokenValue.
      */
+    @java.lang.Override
     public long getCallTokenValue() {
       return callTokenValue_;
     }
@@ -15007,6 +15174,7 @@ public final class Contract {
      * <code>int64 token_id = 4;</code>
      * @return The tokenId.
      */
+    @java.lang.Override
     public long getTokenId() {
       return tokenId_;
     }
@@ -15384,6 +15552,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -15536,6 +15705,7 @@ public final class Contract {
        * <code>int64 call_token_value = 3;</code>
        * @return The callTokenValue.
        */
+      @java.lang.Override
       public long getCallTokenValue() {
         return callTokenValue_;
       }
@@ -15566,6 +15736,7 @@ public final class Contract {
        * <code>int64 token_id = 4;</code>
        * @return The tokenId.
        */
+      @java.lang.Override
       public long getTokenId() {
         return tokenId_;
       }
@@ -15686,7 +15857,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.TriggerSmartContract}
    */
-  public  static final class TriggerSmartContract extends
+  public static final class TriggerSmartContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TriggerSmartContract)
       TriggerSmartContractOrBuilder {
@@ -15799,6 +15970,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -15809,6 +15981,7 @@ public final class Contract {
      * <code>bytes contract_address = 2;</code>
      * @return The contractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getContractAddress() {
       return contractAddress_;
     }
@@ -15819,6 +15992,7 @@ public final class Contract {
      * <code>int64 call_value = 3;</code>
      * @return The callValue.
      */
+    @java.lang.Override
     public long getCallValue() {
       return callValue_;
     }
@@ -15829,6 +16003,7 @@ public final class Contract {
      * <code>bytes data = 4;</code>
      * @return The data.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getData() {
       return data_;
     }
@@ -15839,6 +16014,7 @@ public final class Contract {
      * <code>int64 call_token_value = 5;</code>
      * @return The callTokenValue.
      */
+    @java.lang.Override
     public long getCallTokenValue() {
       return callTokenValue_;
     }
@@ -15849,6 +16025,7 @@ public final class Contract {
      * <code>int64 token_id = 6;</code>
      * @return The tokenId.
      */
+    @java.lang.Override
     public long getTokenId() {
       return tokenId_;
     }
@@ -16248,6 +16425,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -16281,6 +16459,7 @@ public final class Contract {
        * <code>bytes contract_address = 2;</code>
        * @return The contractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getContractAddress() {
         return contractAddress_;
       }
@@ -16314,6 +16493,7 @@ public final class Contract {
        * <code>int64 call_value = 3;</code>
        * @return The callValue.
        */
+      @java.lang.Override
       public long getCallValue() {
         return callValue_;
       }
@@ -16344,6 +16524,7 @@ public final class Contract {
        * <code>bytes data = 4;</code>
        * @return The data.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getData() {
         return data_;
       }
@@ -16377,6 +16558,7 @@ public final class Contract {
        * <code>int64 call_token_value = 5;</code>
        * @return The callTokenValue.
        */
+      @java.lang.Override
       public long getCallTokenValue() {
         return callTokenValue_;
       }
@@ -16407,6 +16589,7 @@ public final class Contract {
        * <code>int64 token_id = 6;</code>
        * @return The tokenId.
        */
+      @java.lang.Override
       public long getTokenId() {
         return tokenId_;
       }
@@ -16503,7 +16686,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.ClearABIContract}
    */
-  public  static final class ClearABIContract extends
+  public static final class ClearABIContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ClearABIContract)
       ClearABIContractOrBuilder {
@@ -16595,6 +16778,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -16605,6 +16789,7 @@ public final class Contract {
      * <code>bytes contract_address = 2;</code>
      * @return The contractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getContractAddress() {
       return contractAddress_;
     }
@@ -16933,6 +17118,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -16966,6 +17152,7 @@ public final class Contract {
        * <code>bytes contract_address = 2;</code>
        * @return The contractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getContractAddress() {
         return contractAddress_;
       }
@@ -17071,7 +17258,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.UpdateSettingContract}
    */
-  public  static final class UpdateSettingContract extends
+  public static final class UpdateSettingContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.UpdateSettingContract)
       UpdateSettingContractOrBuilder {
@@ -17168,6 +17355,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -17178,6 +17366,7 @@ public final class Contract {
      * <code>bytes contract_address = 2;</code>
      * @return The contractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getContractAddress() {
       return contractAddress_;
     }
@@ -17188,6 +17377,7 @@ public final class Contract {
      * <code>int64 consume_user_resource_percent = 3;</code>
      * @return The consumeUserResourcePercent.
      */
+    @java.lang.Override
     public long getConsumeUserResourcePercent() {
       return consumeUserResourcePercent_;
     }
@@ -17534,6 +17724,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -17567,6 +17758,7 @@ public final class Contract {
        * <code>bytes contract_address = 2;</code>
        * @return The contractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getContractAddress() {
         return contractAddress_;
       }
@@ -17600,6 +17792,7 @@ public final class Contract {
        * <code>int64 consume_user_resource_percent = 3;</code>
        * @return The consumeUserResourcePercent.
        */
+      @java.lang.Override
       public long getConsumeUserResourcePercent() {
         return consumeUserResourcePercent_;
       }
@@ -17702,7 +17895,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.UpdateEnergyLimitContract}
    */
-  public  static final class UpdateEnergyLimitContract extends
+  public static final class UpdateEnergyLimitContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.UpdateEnergyLimitContract)
       UpdateEnergyLimitContractOrBuilder {
@@ -17799,6 +17992,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -17809,6 +18003,7 @@ public final class Contract {
      * <code>bytes contract_address = 2;</code>
      * @return The contractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getContractAddress() {
       return contractAddress_;
     }
@@ -17819,6 +18014,7 @@ public final class Contract {
      * <code>int64 origin_energy_limit = 3;</code>
      * @return The originEnergyLimit.
      */
+    @java.lang.Override
     public long getOriginEnergyLimit() {
       return originEnergyLimit_;
     }
@@ -18165,6 +18361,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -18198,6 +18395,7 @@ public final class Contract {
        * <code>bytes contract_address = 2;</code>
        * @return The contractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getContractAddress() {
         return contractAddress_;
       }
@@ -18231,6 +18429,7 @@ public final class Contract {
        * <code>int64 origin_energy_limit = 3;</code>
        * @return The originEnergyLimit.
        */
+      @java.lang.Override
       public long getOriginEnergyLimit() {
         return originEnergyLimit_;
       }
@@ -18331,7 +18530,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.UpdateBrokerageContract}
    */
-  public  static final class UpdateBrokerageContract extends
+  public static final class UpdateBrokerageContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.UpdateBrokerageContract)
       UpdateBrokerageContractOrBuilder {
@@ -18422,6 +18621,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -18436,6 +18636,7 @@ public final class Contract {
      * <code>int32 brokerage = 2;</code>
      * @return The brokerage.
      */
+    @java.lang.Override
     public int getBrokerage() {
       return brokerage_;
     }
@@ -18764,6 +18965,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -18801,6 +19003,7 @@ public final class Contract {
        * <code>int32 brokerage = 2;</code>
        * @return The brokerage.
        */
+      @java.lang.Override
       public int getBrokerage() {
         return brokerage_;
       }
@@ -18928,7 +19131,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.VoteAssetContract}
    */
-  public  static final class VoteAssetContract extends
+  public static final class VoteAssetContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.VoteAssetContract)
       VoteAssetContractOrBuilder {
@@ -19037,6 +19240,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -19047,6 +19251,7 @@ public final class Contract {
      * <code>repeated bytes vote_address = 2;</code>
      * @return A list containing the voteAddress.
      */
+    @java.lang.Override
     public java.util.List<com.google.protobuf.ByteString>
         getVoteAddressList() {
       return voteAddress_;
@@ -19073,6 +19278,7 @@ public final class Contract {
      * <code>bool support = 3;</code>
      * @return The support.
      */
+    @java.lang.Override
     public boolean getSupport() {
       return support_;
     }
@@ -19083,6 +19289,7 @@ public final class Contract {
      * <code>int32 count = 5;</code>
      * @return The count.
      */
+    @java.lang.Override
     public int getCount() {
       return count_;
     }
@@ -19466,6 +19673,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -19584,6 +19792,7 @@ public final class Contract {
        * <code>bool support = 3;</code>
        * @return The support.
        */
+      @java.lang.Override
       public boolean getSupport() {
         return support_;
       }
@@ -19614,6 +19823,7 @@ public final class Contract {
        * <code>int32 count = 5;</code>
        * @return The count.
        */
+      @java.lang.Override
       public int getCount() {
         return count_;
       }
@@ -19710,7 +19920,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.WitnessCreateContract}
    */
-  public  static final class WitnessCreateContract extends
+  public static final class WitnessCreateContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.WitnessCreateContract)
       WitnessCreateContractOrBuilder {
@@ -19802,6 +20012,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -19812,6 +20023,7 @@ public final class Contract {
      * <code>bytes url = 2;</code>
      * @return The url.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getUrl() {
       return url_;
     }
@@ -20140,6 +20352,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -20173,6 +20386,7 @@ public final class Contract {
        * <code>bytes url = 2;</code>
        * @return The url.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getUrl() {
         return url_;
       }
@@ -20272,7 +20486,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.WitnessUpdateContract}
    */
-  public  static final class WitnessUpdateContract extends
+  public static final class WitnessUpdateContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.WitnessUpdateContract)
       WitnessUpdateContractOrBuilder {
@@ -20364,6 +20578,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -20374,6 +20589,7 @@ public final class Contract {
      * <code>bytes update_url = 12;</code>
      * @return The updateUrl.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getUpdateUrl() {
       return updateUrl_;
     }
@@ -20702,6 +20918,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -20735,6 +20952,7 @@ public final class Contract {
        * <code>bytes update_url = 12;</code>
        * @return The updateUrl.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getUpdateUrl() {
         return updateUrl_;
       }
@@ -20858,7 +21076,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.VoteWitnessContract}
    */
-  public  static final class VoteWitnessContract extends
+  public static final class VoteWitnessContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.VoteWitnessContract)
       VoteWitnessContractOrBuilder {
@@ -20976,7 +21194,7 @@ public final class Contract {
     /**
      * Protobuf type {@code protocol.VoteWitnessContract.Vote}
      */
-    public  static final class Vote extends
+    public static final class Vote extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.VoteWitnessContract.Vote)
         VoteOrBuilder {
@@ -21067,6 +21285,7 @@ public final class Contract {
        * <code>bytes vote_address = 1;</code>
        * @return The voteAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getVoteAddress() {
         return voteAddress_;
       }
@@ -21077,6 +21296,7 @@ public final class Contract {
        * <code>int64 vote_count = 2;</code>
        * @return The voteCount.
        */
+      @java.lang.Override
       public long getVoteCount() {
         return voteCount_;
       }
@@ -21406,6 +21626,7 @@ public final class Contract {
          * <code>bytes vote_address = 1;</code>
          * @return The voteAddress.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getVoteAddress() {
           return voteAddress_;
         }
@@ -21439,6 +21660,7 @@ public final class Contract {
          * <code>int64 vote_count = 2;</code>
          * @return The voteCount.
          */
+        @java.lang.Override
         public long getVoteCount() {
           return voteCount_;
         }
@@ -21522,6 +21744,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -21531,12 +21754,14 @@ public final class Contract {
     /**
      * <code>repeated .protocol.VoteWitnessContract.Vote votes = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Contract.VoteWitnessContract.Vote> getVotesList() {
       return votes_;
     }
     /**
      * <code>repeated .protocol.VoteWitnessContract.Vote votes = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Contract.VoteWitnessContract.VoteOrBuilder> 
         getVotesOrBuilderList() {
       return votes_;
@@ -21544,18 +21769,21 @@ public final class Contract {
     /**
      * <code>repeated .protocol.VoteWitnessContract.Vote votes = 2;</code>
      */
+    @java.lang.Override
     public int getVotesCount() {
       return votes_.size();
     }
     /**
      * <code>repeated .protocol.VoteWitnessContract.Vote votes = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Contract.VoteWitnessContract.Vote getVotes(int index) {
       return votes_.get(index);
     }
     /**
      * <code>repeated .protocol.VoteWitnessContract.Vote votes = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Contract.VoteWitnessContract.VoteOrBuilder getVotesOrBuilder(
         int index) {
       return votes_.get(index);
@@ -21567,6 +21795,7 @@ public final class Contract {
      * <code>bool support = 3;</code>
      * @return The support.
      */
+    @java.lang.Override
     public boolean getSupport() {
       return support_;
     }
@@ -21953,6 +22182,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -22226,6 +22456,7 @@ public final class Contract {
        * <code>bool support = 3;</code>
        * @return The support.
        */
+      @java.lang.Override
       public boolean getSupport() {
         return support_;
       }
@@ -22340,7 +22571,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.ExchangeCreateContract}
    */
-  public  static final class ExchangeCreateContract extends
+  public static final class ExchangeCreateContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ExchangeCreateContract)
       ExchangeCreateContractOrBuilder {
@@ -22448,6 +22679,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -22458,6 +22690,7 @@ public final class Contract {
      * <code>bytes first_token_id = 2;</code>
      * @return The firstTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getFirstTokenId() {
       return firstTokenId_;
     }
@@ -22468,6 +22701,7 @@ public final class Contract {
      * <code>int64 first_token_balance = 3;</code>
      * @return The firstTokenBalance.
      */
+    @java.lang.Override
     public long getFirstTokenBalance() {
       return firstTokenBalance_;
     }
@@ -22478,6 +22712,7 @@ public final class Contract {
      * <code>bytes second_token_id = 4;</code>
      * @return The secondTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getSecondTokenId() {
       return secondTokenId_;
     }
@@ -22488,6 +22723,7 @@ public final class Contract {
      * <code>int64 second_token_balance = 5;</code>
      * @return The secondTokenBalance.
      */
+    @java.lang.Override
     public long getSecondTokenBalance() {
       return secondTokenBalance_;
     }
@@ -22869,6 +23105,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -22902,6 +23139,7 @@ public final class Contract {
        * <code>bytes first_token_id = 2;</code>
        * @return The firstTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getFirstTokenId() {
         return firstTokenId_;
       }
@@ -22935,6 +23173,7 @@ public final class Contract {
        * <code>int64 first_token_balance = 3;</code>
        * @return The firstTokenBalance.
        */
+      @java.lang.Override
       public long getFirstTokenBalance() {
         return firstTokenBalance_;
       }
@@ -22965,6 +23204,7 @@ public final class Contract {
        * <code>bytes second_token_id = 4;</code>
        * @return The secondTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getSecondTokenId() {
         return secondTokenId_;
       }
@@ -22998,6 +23238,7 @@ public final class Contract {
        * <code>int64 second_token_balance = 5;</code>
        * @return The secondTokenBalance.
        */
+      @java.lang.Override
       public long getSecondTokenBalance() {
         return secondTokenBalance_;
       }
@@ -23106,7 +23347,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.ExchangeInjectContract}
    */
-  public  static final class ExchangeInjectContract extends
+  public static final class ExchangeInjectContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ExchangeInjectContract)
       ExchangeInjectContractOrBuilder {
@@ -23208,6 +23449,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -23218,6 +23460,7 @@ public final class Contract {
      * <code>int64 exchange_id = 2;</code>
      * @return The exchangeId.
      */
+    @java.lang.Override
     public long getExchangeId() {
       return exchangeId_;
     }
@@ -23228,6 +23471,7 @@ public final class Contract {
      * <code>bytes token_id = 3;</code>
      * @return The tokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTokenId() {
       return tokenId_;
     }
@@ -23238,6 +23482,7 @@ public final class Contract {
      * <code>int64 quant = 4;</code>
      * @return The quant.
      */
+    @java.lang.Override
     public long getQuant() {
       return quant_;
     }
@@ -23602,6 +23847,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -23635,6 +23881,7 @@ public final class Contract {
        * <code>int64 exchange_id = 2;</code>
        * @return The exchangeId.
        */
+      @java.lang.Override
       public long getExchangeId() {
         return exchangeId_;
       }
@@ -23665,6 +23912,7 @@ public final class Contract {
        * <code>bytes token_id = 3;</code>
        * @return The tokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTokenId() {
         return tokenId_;
       }
@@ -23698,6 +23946,7 @@ public final class Contract {
        * <code>int64 quant = 4;</code>
        * @return The quant.
        */
+      @java.lang.Override
       public long getQuant() {
         return quant_;
       }
@@ -23806,7 +24055,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.ExchangeWithdrawContract}
    */
-  public  static final class ExchangeWithdrawContract extends
+  public static final class ExchangeWithdrawContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ExchangeWithdrawContract)
       ExchangeWithdrawContractOrBuilder {
@@ -23908,6 +24157,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -23918,6 +24168,7 @@ public final class Contract {
      * <code>int64 exchange_id = 2;</code>
      * @return The exchangeId.
      */
+    @java.lang.Override
     public long getExchangeId() {
       return exchangeId_;
     }
@@ -23928,6 +24179,7 @@ public final class Contract {
      * <code>bytes token_id = 3;</code>
      * @return The tokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTokenId() {
       return tokenId_;
     }
@@ -23938,6 +24190,7 @@ public final class Contract {
      * <code>int64 quant = 4;</code>
      * @return The quant.
      */
+    @java.lang.Override
     public long getQuant() {
       return quant_;
     }
@@ -24302,6 +24555,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -24335,6 +24589,7 @@ public final class Contract {
        * <code>int64 exchange_id = 2;</code>
        * @return The exchangeId.
        */
+      @java.lang.Override
       public long getExchangeId() {
         return exchangeId_;
       }
@@ -24365,6 +24620,7 @@ public final class Contract {
        * <code>bytes token_id = 3;</code>
        * @return The tokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTokenId() {
         return tokenId_;
       }
@@ -24398,6 +24654,7 @@ public final class Contract {
        * <code>int64 quant = 4;</code>
        * @return The quant.
        */
+      @java.lang.Override
       public long getQuant() {
         return quant_;
       }
@@ -24512,7 +24769,7 @@ public final class Contract {
   /**
    * Protobuf type {@code protocol.ExchangeTransactionContract}
    */
-  public  static final class ExchangeTransactionContract extends
+  public static final class ExchangeTransactionContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ExchangeTransactionContract)
       ExchangeTransactionContractOrBuilder {
@@ -24619,6 +24876,7 @@ public final class Contract {
      * <code>bytes owner_address = 1;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -24629,6 +24887,7 @@ public final class Contract {
      * <code>int64 exchange_id = 2;</code>
      * @return The exchangeId.
      */
+    @java.lang.Override
     public long getExchangeId() {
       return exchangeId_;
     }
@@ -24639,6 +24898,7 @@ public final class Contract {
      * <code>bytes token_id = 3;</code>
      * @return The tokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTokenId() {
       return tokenId_;
     }
@@ -24649,6 +24909,7 @@ public final class Contract {
      * <code>int64 quant = 4;</code>
      * @return The quant.
      */
+    @java.lang.Override
     public long getQuant() {
       return quant_;
     }
@@ -24659,6 +24920,7 @@ public final class Contract {
      * <code>int64 expected = 5;</code>
      * @return The expected.
      */
+    @java.lang.Override
     public long getExpected() {
       return expected_;
     }
@@ -25041,6 +25303,7 @@ public final class Contract {
        * <code>bytes owner_address = 1;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -25074,6 +25337,7 @@ public final class Contract {
        * <code>int64 exchange_id = 2;</code>
        * @return The exchangeId.
        */
+      @java.lang.Override
       public long getExchangeId() {
         return exchangeId_;
       }
@@ -25104,6 +25368,7 @@ public final class Contract {
        * <code>bytes token_id = 3;</code>
        * @return The tokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTokenId() {
         return tokenId_;
       }
@@ -25137,6 +25402,7 @@ public final class Contract {
        * <code>int64 quant = 4;</code>
        * @return The quant.
        */
+      @java.lang.Override
       public long getQuant() {
         return quant_;
       }
@@ -25167,6 +25433,7 @@ public final class Contract {
        * <code>int64 expected = 5;</code>
        * @return The expected.
        */
+      @java.lang.Override
       public long getExpected() {
         return expected_;
       }

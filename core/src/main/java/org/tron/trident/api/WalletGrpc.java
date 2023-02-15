@@ -1,25 +1,13 @@
 package org.tron.trident.api;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
-import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncUnaryCall;
-import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
-import static io.grpc.stub.ClientCalls.blockingUnaryCall;
-import static io.grpc.stub.ClientCalls.futureUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.31.0)",
+    value = "by gRPC proto compiler (version 1.43.0)",
     comments = "Source: api/api.proto")
+@io.grpc.stub.annotations.GrpcGenerated
 public final class WalletGrpc {
 
   private WalletGrpc() {}
@@ -3802,336 +3790,336 @@ public final class WalletGrpc {
      */
     public void broadcastTransaction(org.tron.trident.proto.Chain.Transaction request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionReturn> responseObserver) {
-      asyncUnimplementedUnaryCall(getBroadcastTransactionMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getBroadcastTransactionMethod(), responseObserver);
     }
 
     /**
      */
     public void createCommonTransaction(org.tron.trident.proto.Chain.Transaction request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateCommonTransactionMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateCommonTransactionMethod(), responseObserver);
     }
 
     /**
      */
     public void createAccount(org.tron.trident.proto.Contract.AccountCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateAccountMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateAccountMethod(), responseObserver);
     }
 
     /**
      */
     public void createAccount2(org.tron.trident.proto.Contract.AccountCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateAccount2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateAccount2Method(), responseObserver);
     }
 
     /**
      */
     public void updateAccount(org.tron.trident.proto.Contract.AccountUpdateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateAccountMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateAccountMethod(), responseObserver);
     }
 
     /**
      */
     public void updateAccount2(org.tron.trident.proto.Contract.AccountUpdateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateAccount2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateAccount2Method(), responseObserver);
     }
 
     /**
      */
     public void setAccountId(org.tron.trident.proto.Contract.SetAccountIdContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getSetAccountIdMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSetAccountIdMethod(), responseObserver);
     }
 
     /**
      */
     public void accountPermissionUpdate(org.tron.trident.proto.Contract.AccountPermissionUpdateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getAccountPermissionUpdateMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAccountPermissionUpdateMethod(), responseObserver);
     }
 
     /**
      */
     public void createTransaction(org.tron.trident.proto.Contract.TransferContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateTransactionMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateTransactionMethod(), responseObserver);
     }
 
     /**
      */
     public void createTransaction2(org.tron.trident.proto.Contract.TransferContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateTransaction2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateTransaction2Method(), responseObserver);
     }
 
     /**
      */
     public void createAssetIssue(org.tron.trident.proto.Contract.AssetIssueContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateAssetIssueMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateAssetIssueMethod(), responseObserver);
     }
 
     /**
      */
     public void createAssetIssue2(org.tron.trident.proto.Contract.AssetIssueContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateAssetIssue2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateAssetIssue2Method(), responseObserver);
     }
 
     /**
      */
     public void updateAsset(org.tron.trident.proto.Contract.UpdateAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateAssetMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateAssetMethod(), responseObserver);
     }
 
     /**
      */
     public void updateAsset2(org.tron.trident.proto.Contract.UpdateAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateAsset2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateAsset2Method(), responseObserver);
     }
 
     /**
      */
     public void transferAsset(org.tron.trident.proto.Contract.TransferAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getTransferAssetMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTransferAssetMethod(), responseObserver);
     }
 
     /**
      */
     public void transferAsset2(org.tron.trident.proto.Contract.TransferAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getTransferAsset2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTransferAsset2Method(), responseObserver);
     }
 
     /**
      */
     public void participateAssetIssue(org.tron.trident.proto.Contract.ParticipateAssetIssueContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getParticipateAssetIssueMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getParticipateAssetIssueMethod(), responseObserver);
     }
 
     /**
      */
     public void participateAssetIssue2(org.tron.trident.proto.Contract.ParticipateAssetIssueContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getParticipateAssetIssue2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getParticipateAssetIssue2Method(), responseObserver);
     }
 
     /**
      */
     public void unfreezeAsset(org.tron.trident.proto.Contract.UnfreezeAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getUnfreezeAssetMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUnfreezeAssetMethod(), responseObserver);
     }
 
     /**
      */
     public void unfreezeAsset2(org.tron.trident.proto.Contract.UnfreezeAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getUnfreezeAsset2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUnfreezeAsset2Method(), responseObserver);
     }
 
     /**
      */
     public void createWitness(org.tron.trident.proto.Contract.WitnessCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateWitnessMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateWitnessMethod(), responseObserver);
     }
 
     /**
      */
     public void createWitness2(org.tron.trident.proto.Contract.WitnessCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateWitness2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateWitness2Method(), responseObserver);
     }
 
     /**
      */
     public void updateWitness(org.tron.trident.proto.Contract.WitnessUpdateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateWitnessMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateWitnessMethod(), responseObserver);
     }
 
     /**
      */
     public void updateWitness2(org.tron.trident.proto.Contract.WitnessUpdateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateWitness2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateWitness2Method(), responseObserver);
     }
 
     /**
      */
     public void updateBrokerage(org.tron.trident.proto.Contract.UpdateBrokerageContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateBrokerageMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateBrokerageMethod(), responseObserver);
     }
 
     /**
      */
     public void voteWitnessAccount(org.tron.trident.proto.Contract.VoteWitnessContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getVoteWitnessAccountMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getVoteWitnessAccountMethod(), responseObserver);
     }
 
     /**
      */
     public void voteWitnessAccount2(org.tron.trident.proto.Contract.VoteWitnessContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getVoteWitnessAccount2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getVoteWitnessAccount2Method(), responseObserver);
     }
 
     /**
      */
     public void freezeBalance(org.tron.trident.proto.Contract.FreezeBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getFreezeBalanceMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getFreezeBalanceMethod(), responseObserver);
     }
 
     /**
      */
     public void freezeBalance2(org.tron.trident.proto.Contract.FreezeBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getFreezeBalance2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getFreezeBalance2Method(), responseObserver);
     }
 
     /**
      */
     public void unfreezeBalance(org.tron.trident.proto.Contract.UnfreezeBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getUnfreezeBalanceMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUnfreezeBalanceMethod(), responseObserver);
     }
 
     /**
      */
     public void unfreezeBalance2(org.tron.trident.proto.Contract.UnfreezeBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getUnfreezeBalance2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUnfreezeBalance2Method(), responseObserver);
     }
 
     /**
      */
     public void withdrawBalance(org.tron.trident.proto.Contract.WithdrawBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getWithdrawBalanceMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getWithdrawBalanceMethod(), responseObserver);
     }
 
     /**
      */
     public void withdrawBalance2(org.tron.trident.proto.Contract.WithdrawBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getWithdrawBalance2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getWithdrawBalance2Method(), responseObserver);
     }
 
     /**
      */
     public void proposalCreate(org.tron.trident.proto.Contract.ProposalCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getProposalCreateMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getProposalCreateMethod(), responseObserver);
     }
 
     /**
      */
     public void proposalApprove(org.tron.trident.proto.Contract.ProposalApproveContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getProposalApproveMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getProposalApproveMethod(), responseObserver);
     }
 
     /**
      */
     public void proposalDelete(org.tron.trident.proto.Contract.ProposalDeleteContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getProposalDeleteMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getProposalDeleteMethod(), responseObserver);
     }
 
     /**
      */
     public void deployContract(org.tron.trident.proto.Contract.CreateSmartContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getDeployContractMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeployContractMethod(), responseObserver);
     }
 
     /**
      */
     public void updateSetting(org.tron.trident.proto.Contract.UpdateSettingContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateSettingMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateSettingMethod(), responseObserver);
     }
 
     /**
      */
     public void updateEnergyLimit(org.tron.trident.proto.Contract.UpdateEnergyLimitContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateEnergyLimitMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateEnergyLimitMethod(), responseObserver);
     }
 
     /**
      */
     public void clearContractABI(org.tron.trident.proto.Contract.ClearABIContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getClearContractABIMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getClearContractABIMethod(), responseObserver);
     }
 
     /**
      */
     public void triggerContract(org.tron.trident.proto.Contract.TriggerSmartContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getTriggerContractMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTriggerContractMethod(), responseObserver);
     }
 
     /**
      */
     public void triggerConstantContract(org.tron.trident.proto.Contract.TriggerSmartContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getTriggerConstantContractMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTriggerConstantContractMethod(), responseObserver);
     }
 
     /**
      */
     public void exchangeCreate(org.tron.trident.proto.Contract.ExchangeCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getExchangeCreateMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExchangeCreateMethod(), responseObserver);
     }
 
     /**
      */
     public void exchangeInject(org.tron.trident.proto.Contract.ExchangeInjectContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getExchangeInjectMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExchangeInjectMethod(), responseObserver);
     }
 
     /**
      */
     public void exchangeWithdraw(org.tron.trident.proto.Contract.ExchangeWithdrawContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getExchangeWithdrawMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExchangeWithdrawMethod(), responseObserver);
     }
 
     /**
      */
     public void exchangeTransaction(org.tron.trident.proto.Contract.ExchangeTransactionContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getExchangeTransactionMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExchangeTransactionMethod(), responseObserver);
     }
 
     /**
      */
     public void marketSellAsset(org.tron.trident.proto.Contract.MarketSellAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getMarketSellAssetMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getMarketSellAssetMethod(), responseObserver);
     }
 
     /**
      */
     public void marketCancelOrder(org.tron.trident.proto.Contract.MarketCancelOrderContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getMarketCancelOrderMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getMarketCancelOrderMethod(), responseObserver);
     }
 
     /**
@@ -4141,49 +4129,49 @@ public final class WalletGrpc {
      */
     public void getNodeInfo(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.NodeInfo> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetNodeInfoMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetNodeInfoMethod(), responseObserver);
     }
 
     /**
      */
     public void listNodes(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.NodeList> responseObserver) {
-      asyncUnimplementedUnaryCall(getListNodesMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getListNodesMethod(), responseObserver);
     }
 
     /**
      */
     public void getChainParameters(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.ChainParameters> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetChainParametersMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetChainParametersMethod(), responseObserver);
     }
 
     /**
      */
     public void totalTransaction(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getTotalTransactionMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTotalTransactionMethod(), responseObserver);
     }
 
     /**
      */
     public void getNextMaintenanceTime(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetNextMaintenanceTimeMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetNextMaintenanceTimeMethod(), responseObserver);
     }
 
     /**
      */
     public void getTransactionSignWeight(org.tron.trident.proto.Chain.Transaction request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionSignWeight> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetTransactionSignWeightMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTransactionSignWeightMethod(), responseObserver);
     }
 
     /**
      */
     public void getTransactionApprovedList(org.tron.trident.proto.Chain.Transaction request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionApprovedList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetTransactionApprovedListMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTransactionApprovedListMethod(), responseObserver);
     }
 
     /**
@@ -4193,98 +4181,98 @@ public final class WalletGrpc {
      */
     public void getAccount(org.tron.trident.api.GrpcAPI.AccountAddressMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.Account> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAccountMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAccountMethod(), responseObserver);
     }
 
     /**
      */
     public void getAccountById(org.tron.trident.api.GrpcAPI.AccountIdMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.Account> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAccountByIdMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAccountByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getAccountNet(org.tron.trident.api.GrpcAPI.AccountAddressMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AccountNetMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAccountNetMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAccountNetMethod(), responseObserver);
     }
 
     /**
      */
     public void getAccountResource(org.tron.trident.api.GrpcAPI.AccountAddressMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AccountResourceMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAccountResourceMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAccountResourceMethod(), responseObserver);
     }
 
     /**
      */
     public void getAssetIssueByAccount(org.tron.trident.api.GrpcAPI.AccountAddressMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AssetIssueList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAssetIssueByAccountMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAssetIssueByAccountMethod(), responseObserver);
     }
 
     /**
      */
     public void getAssetIssueByName(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Contract.AssetIssueContract> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAssetIssueByNameMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAssetIssueByNameMethod(), responseObserver);
     }
 
     /**
      */
     public void getAssetIssueListByName(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AssetIssueList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAssetIssueListByNameMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAssetIssueListByNameMethod(), responseObserver);
     }
 
     /**
      */
     public void getAssetIssueById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Contract.AssetIssueContract> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAssetIssueByIdMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAssetIssueByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getAssetIssueList(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AssetIssueList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAssetIssueListMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAssetIssueListMethod(), responseObserver);
     }
 
     /**
      */
     public void getPaginatedAssetIssueList(org.tron.trident.api.GrpcAPI.PaginatedMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AssetIssueList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetPaginatedAssetIssueListMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetPaginatedAssetIssueListMethod(), responseObserver);
     }
 
     /**
      */
     public void getNowBlock(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Block> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetNowBlockMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetNowBlockMethod(), responseObserver);
     }
 
     /**
      */
     public void getNowBlock2(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetNowBlock2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetNowBlock2Method(), responseObserver);
     }
 
     /**
      */
     public void getBlockByNum(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Block> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetBlockByNumMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetBlockByNumMethod(), responseObserver);
     }
 
     /**
      */
     public void getBlockByNum2(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetBlockByNum2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetBlockByNum2Method(), responseObserver);
     }
 
     /**
@@ -4294,70 +4282,70 @@ public final class WalletGrpc {
      */
     public void getBlockById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Block> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetBlockByIdMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetBlockByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getBlockByLimitNext(org.tron.trident.api.GrpcAPI.BlockLimit request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetBlockByLimitNextMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetBlockByLimitNextMethod(), responseObserver);
     }
 
     /**
      */
     public void getBlockByLimitNext2(org.tron.trident.api.GrpcAPI.BlockLimit request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockListExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetBlockByLimitNext2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetBlockByLimitNext2Method(), responseObserver);
     }
 
     /**
      */
     public void getBlockByLatestNum(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetBlockByLatestNumMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetBlockByLatestNumMethod(), responseObserver);
     }
 
     /**
      */
     public void getBlockByLatestNum2(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockListExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetBlockByLatestNum2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetBlockByLatestNum2Method(), responseObserver);
     }
 
     /**
      */
     public void getTransactionCountByBlockNum(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetTransactionCountByBlockNumMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTransactionCountByBlockNumMethod(), responseObserver);
     }
 
     /**
      */
     public void getTransactionById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetTransactionByIdMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTransactionByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getTransactionInfoById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionInfo> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetTransactionInfoByIdMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTransactionInfoByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getTransactionInfoByBlockNum(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionInfoList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetTransactionInfoByBlockNumMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTransactionInfoByBlockNumMethod(), responseObserver);
     }
 
     /**
      */
     public void getContract(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Common.SmartContract> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetContractMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetContractMethod(), responseObserver);
     }
 
     /**
@@ -4367,84 +4355,84 @@ public final class WalletGrpc {
      */
     public void getContractInfo(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.SmartContractDataWrapper> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetContractInfoMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetContractInfoMethod(), responseObserver);
     }
 
     /**
      */
     public void listWitnesses(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.WitnessList> responseObserver) {
-      asyncUnimplementedUnaryCall(getListWitnessesMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getListWitnessesMethod(), responseObserver);
     }
 
     /**
      */
     public void getBrokerageInfo(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetBrokerageInfoMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetBrokerageInfoMethod(), responseObserver);
     }
 
     /**
      */
     public void getRewardInfo(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetRewardInfoMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetRewardInfoMethod(), responseObserver);
     }
 
     /**
      */
     public void getDelegatedResource(org.tron.trident.proto.Response.DelegatedResourceMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.DelegatedResourceList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetDelegatedResourceMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetDelegatedResourceMethod(), responseObserver);
     }
 
     /**
      */
     public void getDelegatedResourceAccountIndex(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.DelegatedResourceAccountIndex> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetDelegatedResourceAccountIndexMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetDelegatedResourceAccountIndexMethod(), responseObserver);
     }
 
     /**
      */
     public void listProposals(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.ProposalList> responseObserver) {
-      asyncUnimplementedUnaryCall(getListProposalsMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getListProposalsMethod(), responseObserver);
     }
 
     /**
      */
     public void getProposalById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.Proposal> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetProposalByIdMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetProposalByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getPaginatedProposalList(org.tron.trident.api.GrpcAPI.PaginatedMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.ProposalList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetPaginatedProposalListMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetPaginatedProposalListMethod(), responseObserver);
     }
 
     /**
      */
     public void listExchanges(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.ExchangeList> responseObserver) {
-      asyncUnimplementedUnaryCall(getListExchangesMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getListExchangesMethod(), responseObserver);
     }
 
     /**
      */
     public void getExchangeById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.Exchange> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetExchangeByIdMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetExchangeByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getPaginatedExchangeList(org.tron.trident.api.GrpcAPI.PaginatedMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.ExchangeList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetPaginatedExchangeListMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetPaginatedExchangeListMethod(), responseObserver);
     }
 
     /**
@@ -4454,21 +4442,21 @@ public final class WalletGrpc {
      */
     public void scanShieldedTRC20NotesByIvk(org.tron.trident.api.GrpcAPI.IvkDecryptTRC20Parameters request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.DecryptNotesTRC20> responseObserver) {
-      asyncUnimplementedUnaryCall(getScanShieldedTRC20NotesByIvkMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getScanShieldedTRC20NotesByIvkMethod(), responseObserver);
     }
 
     /**
      */
     public void scanShieldedTRC20NotesByOvk(org.tron.trident.api.GrpcAPI.OvkDecryptTRC20Parameters request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.DecryptNotesTRC20> responseObserver) {
-      asyncUnimplementedUnaryCall(getScanShieldedTRC20NotesByOvkMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getScanShieldedTRC20NotesByOvkMethod(), responseObserver);
     }
 
     /**
      */
     public void isShieldedTRC20ContractNoteSpent(org.tron.trident.api.GrpcAPI.NfTRC20Parameters request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.NullifierResult> responseObserver) {
-      asyncUnimplementedUnaryCall(getIsShieldedTRC20ContractNoteSpentMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getIsShieldedTRC20ContractNoteSpentMethod(), responseObserver);
     }
 
     /**
@@ -4478,35 +4466,35 @@ public final class WalletGrpc {
      */
     public void getMarketOrderByAccount(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.MarketOrderList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetMarketOrderByAccountMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetMarketOrderByAccountMethod(), responseObserver);
     }
 
     /**
      */
     public void getMarketOrderById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.MarketOrder> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetMarketOrderByIdMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetMarketOrderByIdMethod(), responseObserver);
     }
 
     /**
      */
     public void getMarketPriceByPair(org.tron.trident.proto.Response.MarketOrderPair request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.MarketPriceList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetMarketPriceByPairMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetMarketPriceByPairMethod(), responseObserver);
     }
 
     /**
      */
     public void getMarketOrderListByPair(org.tron.trident.proto.Response.MarketOrderPair request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.MarketOrderList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetMarketOrderListByPairMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetMarketOrderListByPairMethod(), responseObserver);
     }
 
     /**
      */
     public void getMarketPairList(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.MarketOrderPairList> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetMarketPairListMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetMarketPairListMethod(), responseObserver);
     }
 
     /**
@@ -4516,63 +4504,63 @@ public final class WalletGrpc {
      */
     public void getTransactionSign(org.tron.trident.proto.Response.TransactionSign request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetTransactionSignMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTransactionSignMethod(), responseObserver);
     }
 
     /**
      */
     public void getTransactionSign2(org.tron.trident.proto.Response.TransactionSign request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetTransactionSign2Method(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTransactionSign2Method(), responseObserver);
     }
 
     /**
      */
     public void easyTransferAsset(org.tron.trident.api.GrpcAPI.EasyTransferAssetMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.EasyTransferResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(getEasyTransferAssetMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getEasyTransferAssetMethod(), responseObserver);
     }
 
     /**
      */
     public void easyTransferAssetByPrivate(org.tron.trident.api.GrpcAPI.EasyTransferAssetByPrivateMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.EasyTransferResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(getEasyTransferAssetByPrivateMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getEasyTransferAssetByPrivateMethod(), responseObserver);
     }
 
     /**
      */
     public void easyTransfer(org.tron.trident.api.GrpcAPI.EasyTransferMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.EasyTransferResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(getEasyTransferMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getEasyTransferMethod(), responseObserver);
     }
 
     /**
      */
     public void easyTransferByPrivate(org.tron.trident.api.GrpcAPI.EasyTransferByPrivateMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.EasyTransferResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(getEasyTransferByPrivateMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getEasyTransferByPrivateMethod(), responseObserver);
     }
 
     /**
      */
     public void createAddress(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateAddressMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateAddressMethod(), responseObserver);
     }
 
     /**
      */
     public void generateAddress(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AddressPrKeyPairMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGenerateAddressMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGenerateAddressMethod(), responseObserver);
     }
 
     /**
      */
     public void addSign(org.tron.trident.proto.Response.TransactionSign request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnimplementedUnaryCall(getAddSignMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAddSignMethod(), responseObserver);
     }
 
     /**
@@ -4582,924 +4570,924 @@ public final class WalletGrpc {
      */
     public void getSpendingKey(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetSpendingKeyMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetSpendingKeyMethod(), responseObserver);
     }
 
     /**
      */
     public void getExpandedSpendingKey(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.ExpandedSpendingKeyMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetExpandedSpendingKeyMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetExpandedSpendingKeyMethod(), responseObserver);
     }
 
     /**
      */
     public void getAkFromAsk(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetAkFromAskMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAkFromAskMethod(), responseObserver);
     }
 
     /**
      */
     public void getNkFromNsk(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetNkFromNskMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetNkFromNskMethod(), responseObserver);
     }
 
     /**
      */
     public void getIncomingViewingKey(org.tron.trident.api.GrpcAPI.ViewingKeyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.IncomingViewingKeyMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetIncomingViewingKeyMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetIncomingViewingKeyMethod(), responseObserver);
     }
 
     /**
      */
     public void getDiversifier(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.DiversifierMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetDiversifierMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetDiversifierMethod(), responseObserver);
     }
 
     /**
      */
     public void getZenPaymentAddress(org.tron.trident.api.GrpcAPI.IncomingViewingKeyDiversifierMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.PaymentAddressMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetZenPaymentAddressMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetZenPaymentAddressMethod(), responseObserver);
     }
 
     /**
      */
     public void getNewShieldedAddress(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.ShieldedAddressInfo> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetNewShieldedAddressMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetNewShieldedAddressMethod(), responseObserver);
     }
 
     /**
      */
     public void getRcm(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetRcmMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetRcmMethod(), responseObserver);
     }
 
     /**
      */
     public void createShieldedContractParameters(org.tron.trident.api.GrpcAPI.PrivateShieldedTRC20Parameters request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateShieldedContractParametersMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateShieldedContractParametersMethod(), responseObserver);
     }
 
     /**
      */
     public void createShieldedContractParametersWithoutAsk(org.tron.trident.api.GrpcAPI.PrivateShieldedTRC20ParametersWithoutAsk request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateShieldedContractParametersWithoutAskMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateShieldedContractParametersWithoutAskMethod(), responseObserver);
     }
 
     /**
      */
     public void getTriggerInputForShieldedTRC20Contract(org.tron.trident.api.GrpcAPI.ShieldedTRC20TriggerContractParameters request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetTriggerInputForShieldedTRC20ContractMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetTriggerInputForShieldedTRC20ContractMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getBroadcastTransactionMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Chain.Transaction,
                 org.tron.trident.proto.Response.TransactionReturn>(
                   this, METHODID_BROADCAST_TRANSACTION)))
           .addMethod(
             getCreateCommonTransactionMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Chain.Transaction,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_CREATE_COMMON_TRANSACTION)))
           .addMethod(
             getCreateAccountMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.AccountCreateContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_CREATE_ACCOUNT)))
           .addMethod(
             getCreateAccount2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.AccountCreateContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_CREATE_ACCOUNT2)))
           .addMethod(
             getUpdateAccountMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.AccountUpdateContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_UPDATE_ACCOUNT)))
           .addMethod(
             getUpdateAccount2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.AccountUpdateContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_UPDATE_ACCOUNT2)))
           .addMethod(
             getSetAccountIdMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.SetAccountIdContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_SET_ACCOUNT_ID)))
           .addMethod(
             getAccountPermissionUpdateMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.AccountPermissionUpdateContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_ACCOUNT_PERMISSION_UPDATE)))
           .addMethod(
             getCreateTransactionMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.TransferContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_CREATE_TRANSACTION)))
           .addMethod(
             getCreateTransaction2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.TransferContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_CREATE_TRANSACTION2)))
           .addMethod(
             getCreateAssetIssueMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.AssetIssueContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_CREATE_ASSET_ISSUE)))
           .addMethod(
             getCreateAssetIssue2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.AssetIssueContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_CREATE_ASSET_ISSUE2)))
           .addMethod(
             getUpdateAssetMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.UpdateAssetContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_UPDATE_ASSET)))
           .addMethod(
             getUpdateAsset2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.UpdateAssetContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_UPDATE_ASSET2)))
           .addMethod(
             getTransferAssetMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.TransferAssetContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_TRANSFER_ASSET)))
           .addMethod(
             getTransferAsset2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.TransferAssetContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_TRANSFER_ASSET2)))
           .addMethod(
             getParticipateAssetIssueMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.ParticipateAssetIssueContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_PARTICIPATE_ASSET_ISSUE)))
           .addMethod(
             getParticipateAssetIssue2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.ParticipateAssetIssueContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_PARTICIPATE_ASSET_ISSUE2)))
           .addMethod(
             getUnfreezeAssetMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.UnfreezeAssetContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_UNFREEZE_ASSET)))
           .addMethod(
             getUnfreezeAsset2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.UnfreezeAssetContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_UNFREEZE_ASSET2)))
           .addMethod(
             getCreateWitnessMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.WitnessCreateContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_CREATE_WITNESS)))
           .addMethod(
             getCreateWitness2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.WitnessCreateContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_CREATE_WITNESS2)))
           .addMethod(
             getUpdateWitnessMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.WitnessUpdateContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_UPDATE_WITNESS)))
           .addMethod(
             getUpdateWitness2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.WitnessUpdateContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_UPDATE_WITNESS2)))
           .addMethod(
             getUpdateBrokerageMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.UpdateBrokerageContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_UPDATE_BROKERAGE)))
           .addMethod(
             getVoteWitnessAccountMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.VoteWitnessContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_VOTE_WITNESS_ACCOUNT)))
           .addMethod(
             getVoteWitnessAccount2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.VoteWitnessContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_VOTE_WITNESS_ACCOUNT2)))
           .addMethod(
             getFreezeBalanceMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.FreezeBalanceContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_FREEZE_BALANCE)))
           .addMethod(
             getFreezeBalance2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.FreezeBalanceContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_FREEZE_BALANCE2)))
           .addMethod(
             getUnfreezeBalanceMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.UnfreezeBalanceContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_UNFREEZE_BALANCE)))
           .addMethod(
             getUnfreezeBalance2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.UnfreezeBalanceContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_UNFREEZE_BALANCE2)))
           .addMethod(
             getWithdrawBalanceMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.WithdrawBalanceContract,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_WITHDRAW_BALANCE)))
           .addMethod(
             getWithdrawBalance2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.WithdrawBalanceContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_WITHDRAW_BALANCE2)))
           .addMethod(
             getProposalCreateMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.ProposalCreateContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_PROPOSAL_CREATE)))
           .addMethod(
             getProposalApproveMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.ProposalApproveContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_PROPOSAL_APPROVE)))
           .addMethod(
             getProposalDeleteMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.ProposalDeleteContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_PROPOSAL_DELETE)))
           .addMethod(
             getDeployContractMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.CreateSmartContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_DEPLOY_CONTRACT)))
           .addMethod(
             getUpdateSettingMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.UpdateSettingContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_UPDATE_SETTING)))
           .addMethod(
             getUpdateEnergyLimitMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.UpdateEnergyLimitContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_UPDATE_ENERGY_LIMIT)))
           .addMethod(
             getClearContractABIMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.ClearABIContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_CLEAR_CONTRACT_ABI)))
           .addMethod(
             getTriggerContractMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.TriggerSmartContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_TRIGGER_CONTRACT)))
           .addMethod(
             getTriggerConstantContractMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.TriggerSmartContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_TRIGGER_CONSTANT_CONTRACT)))
           .addMethod(
             getExchangeCreateMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.ExchangeCreateContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_EXCHANGE_CREATE)))
           .addMethod(
             getExchangeInjectMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.ExchangeInjectContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_EXCHANGE_INJECT)))
           .addMethod(
             getExchangeWithdrawMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.ExchangeWithdrawContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_EXCHANGE_WITHDRAW)))
           .addMethod(
             getExchangeTransactionMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.ExchangeTransactionContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_EXCHANGE_TRANSACTION)))
           .addMethod(
             getMarketSellAssetMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.MarketSellAssetContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_MARKET_SELL_ASSET)))
           .addMethod(
             getMarketCancelOrderMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Contract.MarketCancelOrderContract,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_MARKET_CANCEL_ORDER)))
           .addMethod(
             getGetNodeInfoMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.NodeInfo>(
                   this, METHODID_GET_NODE_INFO)))
           .addMethod(
             getListNodesMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.NodeList>(
                   this, METHODID_LIST_NODES)))
           .addMethod(
             getGetChainParametersMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.ChainParameters>(
                   this, METHODID_GET_CHAIN_PARAMETERS)))
           .addMethod(
             getTotalTransactionMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.api.GrpcAPI.NumberMessage>(
                   this, METHODID_TOTAL_TRANSACTION)))
           .addMethod(
             getGetNextMaintenanceTimeMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.api.GrpcAPI.NumberMessage>(
                   this, METHODID_GET_NEXT_MAINTENANCE_TIME)))
           .addMethod(
             getGetTransactionSignWeightMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Chain.Transaction,
                 org.tron.trident.proto.Response.TransactionSignWeight>(
                   this, METHODID_GET_TRANSACTION_SIGN_WEIGHT)))
           .addMethod(
             getGetTransactionApprovedListMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Chain.Transaction,
                 org.tron.trident.proto.Response.TransactionApprovedList>(
                   this, METHODID_GET_TRANSACTION_APPROVED_LIST)))
           .addMethod(
             getGetAccountMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.AccountAddressMessage,
                 org.tron.trident.proto.Response.Account>(
                   this, METHODID_GET_ACCOUNT)))
           .addMethod(
             getGetAccountByIdMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.AccountIdMessage,
                 org.tron.trident.proto.Response.Account>(
                   this, METHODID_GET_ACCOUNT_BY_ID)))
           .addMethod(
             getGetAccountNetMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.AccountAddressMessage,
                 org.tron.trident.proto.Response.AccountNetMessage>(
                   this, METHODID_GET_ACCOUNT_NET)))
           .addMethod(
             getGetAccountResourceMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.AccountAddressMessage,
                 org.tron.trident.proto.Response.AccountResourceMessage>(
                   this, METHODID_GET_ACCOUNT_RESOURCE)))
           .addMethod(
             getGetAssetIssueByAccountMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.AccountAddressMessage,
                 org.tron.trident.proto.Response.AssetIssueList>(
                   this, METHODID_GET_ASSET_ISSUE_BY_ACCOUNT)))
           .addMethod(
             getGetAssetIssueByNameMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Contract.AssetIssueContract>(
                   this, METHODID_GET_ASSET_ISSUE_BY_NAME)))
           .addMethod(
             getGetAssetIssueListByNameMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Response.AssetIssueList>(
                   this, METHODID_GET_ASSET_ISSUE_LIST_BY_NAME)))
           .addMethod(
             getGetAssetIssueByIdMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Contract.AssetIssueContract>(
                   this, METHODID_GET_ASSET_ISSUE_BY_ID)))
           .addMethod(
             getGetAssetIssueListMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.AssetIssueList>(
                   this, METHODID_GET_ASSET_ISSUE_LIST)))
           .addMethod(
             getGetPaginatedAssetIssueListMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.PaginatedMessage,
                 org.tron.trident.proto.Response.AssetIssueList>(
                   this, METHODID_GET_PAGINATED_ASSET_ISSUE_LIST)))
           .addMethod(
             getGetNowBlockMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Chain.Block>(
                   this, METHODID_GET_NOW_BLOCK)))
           .addMethod(
             getGetNowBlock2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.BlockExtention>(
                   this, METHODID_GET_NOW_BLOCK2)))
           .addMethod(
             getGetBlockByNumMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.NumberMessage,
                 org.tron.trident.proto.Chain.Block>(
                   this, METHODID_GET_BLOCK_BY_NUM)))
           .addMethod(
             getGetBlockByNum2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.NumberMessage,
                 org.tron.trident.proto.Response.BlockExtention>(
                   this, METHODID_GET_BLOCK_BY_NUM2)))
           .addMethod(
             getGetBlockByIdMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Chain.Block>(
                   this, METHODID_GET_BLOCK_BY_ID)))
           .addMethod(
             getGetBlockByLimitNextMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BlockLimit,
                 org.tron.trident.proto.Response.BlockList>(
                   this, METHODID_GET_BLOCK_BY_LIMIT_NEXT)))
           .addMethod(
             getGetBlockByLimitNext2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BlockLimit,
                 org.tron.trident.proto.Response.BlockListExtention>(
                   this, METHODID_GET_BLOCK_BY_LIMIT_NEXT2)))
           .addMethod(
             getGetBlockByLatestNumMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.NumberMessage,
                 org.tron.trident.proto.Response.BlockList>(
                   this, METHODID_GET_BLOCK_BY_LATEST_NUM)))
           .addMethod(
             getGetBlockByLatestNum2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.NumberMessage,
                 org.tron.trident.proto.Response.BlockListExtention>(
                   this, METHODID_GET_BLOCK_BY_LATEST_NUM2)))
           .addMethod(
             getGetTransactionCountByBlockNumMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.NumberMessage,
                 org.tron.trident.api.GrpcAPI.NumberMessage>(
                   this, METHODID_GET_TRANSACTION_COUNT_BY_BLOCK_NUM)))
           .addMethod(
             getGetTransactionByIdMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_GET_TRANSACTION_BY_ID)))
           .addMethod(
             getGetTransactionInfoByIdMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Response.TransactionInfo>(
                   this, METHODID_GET_TRANSACTION_INFO_BY_ID)))
           .addMethod(
             getGetTransactionInfoByBlockNumMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.NumberMessage,
                 org.tron.trident.proto.Response.TransactionInfoList>(
                   this, METHODID_GET_TRANSACTION_INFO_BY_BLOCK_NUM)))
           .addMethod(
             getGetContractMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Common.SmartContract>(
                   this, METHODID_GET_CONTRACT)))
           .addMethod(
             getGetContractInfoMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Response.SmartContractDataWrapper>(
                   this, METHODID_GET_CONTRACT_INFO)))
           .addMethod(
             getListWitnessesMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.WitnessList>(
                   this, METHODID_LIST_WITNESSES)))
           .addMethod(
             getGetBrokerageInfoMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.api.GrpcAPI.NumberMessage>(
                   this, METHODID_GET_BROKERAGE_INFO)))
           .addMethod(
             getGetRewardInfoMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.api.GrpcAPI.NumberMessage>(
                   this, METHODID_GET_REWARD_INFO)))
           .addMethod(
             getGetDelegatedResourceMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Response.DelegatedResourceMessage,
                 org.tron.trident.proto.Response.DelegatedResourceList>(
                   this, METHODID_GET_DELEGATED_RESOURCE)))
           .addMethod(
             getGetDelegatedResourceAccountIndexMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Response.DelegatedResourceAccountIndex>(
                   this, METHODID_GET_DELEGATED_RESOURCE_ACCOUNT_INDEX)))
           .addMethod(
             getListProposalsMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.ProposalList>(
                   this, METHODID_LIST_PROPOSALS)))
           .addMethod(
             getGetProposalByIdMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Response.Proposal>(
                   this, METHODID_GET_PROPOSAL_BY_ID)))
           .addMethod(
             getGetPaginatedProposalListMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.PaginatedMessage,
                 org.tron.trident.proto.Response.ProposalList>(
                   this, METHODID_GET_PAGINATED_PROPOSAL_LIST)))
           .addMethod(
             getListExchangesMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.ExchangeList>(
                   this, METHODID_LIST_EXCHANGES)))
           .addMethod(
             getGetExchangeByIdMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Response.Exchange>(
                   this, METHODID_GET_EXCHANGE_BY_ID)))
           .addMethod(
             getGetPaginatedExchangeListMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.PaginatedMessage,
                 org.tron.trident.proto.Response.ExchangeList>(
                   this, METHODID_GET_PAGINATED_EXCHANGE_LIST)))
           .addMethod(
             getScanShieldedTRC20NotesByIvkMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.IvkDecryptTRC20Parameters,
                 org.tron.trident.proto.Response.DecryptNotesTRC20>(
                   this, METHODID_SCAN_SHIELDED_TRC20NOTES_BY_IVK)))
           .addMethod(
             getScanShieldedTRC20NotesByOvkMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.OvkDecryptTRC20Parameters,
                 org.tron.trident.proto.Response.DecryptNotesTRC20>(
                   this, METHODID_SCAN_SHIELDED_TRC20NOTES_BY_OVK)))
           .addMethod(
             getIsShieldedTRC20ContractNoteSpentMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.NfTRC20Parameters,
                 org.tron.trident.proto.Response.NullifierResult>(
                   this, METHODID_IS_SHIELDED_TRC20CONTRACT_NOTE_SPENT)))
           .addMethod(
             getGetMarketOrderByAccountMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Response.MarketOrderList>(
                   this, METHODID_GET_MARKET_ORDER_BY_ACCOUNT)))
           .addMethod(
             getGetMarketOrderByIdMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.proto.Response.MarketOrder>(
                   this, METHODID_GET_MARKET_ORDER_BY_ID)))
           .addMethod(
             getGetMarketPriceByPairMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Response.MarketOrderPair,
                 org.tron.trident.proto.Response.MarketPriceList>(
                   this, METHODID_GET_MARKET_PRICE_BY_PAIR)))
           .addMethod(
             getGetMarketOrderListByPairMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Response.MarketOrderPair,
                 org.tron.trident.proto.Response.MarketOrderList>(
                   this, METHODID_GET_MARKET_ORDER_LIST_BY_PAIR)))
           .addMethod(
             getGetMarketPairListMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.MarketOrderPairList>(
                   this, METHODID_GET_MARKET_PAIR_LIST)))
           .addMethod(
             getGetTransactionSignMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Response.TransactionSign,
                 org.tron.trident.proto.Chain.Transaction>(
                   this, METHODID_GET_TRANSACTION_SIGN)))
           .addMethod(
             getGetTransactionSign2Method(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Response.TransactionSign,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_GET_TRANSACTION_SIGN2)))
           .addMethod(
             getEasyTransferAssetMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EasyTransferAssetMessage,
                 org.tron.trident.proto.Response.EasyTransferResponse>(
                   this, METHODID_EASY_TRANSFER_ASSET)))
           .addMethod(
             getEasyTransferAssetByPrivateMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EasyTransferAssetByPrivateMessage,
                 org.tron.trident.proto.Response.EasyTransferResponse>(
                   this, METHODID_EASY_TRANSFER_ASSET_BY_PRIVATE)))
           .addMethod(
             getEasyTransferMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EasyTransferMessage,
                 org.tron.trident.proto.Response.EasyTransferResponse>(
                   this, METHODID_EASY_TRANSFER)))
           .addMethod(
             getEasyTransferByPrivateMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EasyTransferByPrivateMessage,
                 org.tron.trident.proto.Response.EasyTransferResponse>(
                   this, METHODID_EASY_TRANSFER_BY_PRIVATE)))
           .addMethod(
             getCreateAddressMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.api.GrpcAPI.BytesMessage>(
                   this, METHODID_CREATE_ADDRESS)))
           .addMethod(
             getGenerateAddressMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.proto.Response.AddressPrKeyPairMessage>(
                   this, METHODID_GENERATE_ADDRESS)))
           .addMethod(
             getAddSignMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.proto.Response.TransactionSign,
                 org.tron.trident.proto.Response.TransactionExtention>(
                   this, METHODID_ADD_SIGN)))
           .addMethod(
             getGetSpendingKeyMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.api.GrpcAPI.BytesMessage>(
                   this, METHODID_GET_SPENDING_KEY)))
           .addMethod(
             getGetExpandedSpendingKeyMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.api.GrpcAPI.ExpandedSpendingKeyMessage>(
                   this, METHODID_GET_EXPANDED_SPENDING_KEY)))
           .addMethod(
             getGetAkFromAskMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.api.GrpcAPI.BytesMessage>(
                   this, METHODID_GET_AK_FROM_ASK)))
           .addMethod(
             getGetNkFromNskMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.BytesMessage,
                 org.tron.trident.api.GrpcAPI.BytesMessage>(
                   this, METHODID_GET_NK_FROM_NSK)))
           .addMethod(
             getGetIncomingViewingKeyMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.ViewingKeyMessage,
                 org.tron.trident.api.GrpcAPI.IncomingViewingKeyMessage>(
                   this, METHODID_GET_INCOMING_VIEWING_KEY)))
           .addMethod(
             getGetDiversifierMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.api.GrpcAPI.DiversifierMessage>(
                   this, METHODID_GET_DIVERSIFIER)))
           .addMethod(
             getGetZenPaymentAddressMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.IncomingViewingKeyDiversifierMessage,
                 org.tron.trident.api.GrpcAPI.PaymentAddressMessage>(
                   this, METHODID_GET_ZEN_PAYMENT_ADDRESS)))
           .addMethod(
             getGetNewShieldedAddressMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.api.GrpcAPI.ShieldedAddressInfo>(
                   this, METHODID_GET_NEW_SHIELDED_ADDRESS)))
           .addMethod(
             getGetRcmMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.EmptyMessage,
                 org.tron.trident.api.GrpcAPI.BytesMessage>(
                   this, METHODID_GET_RCM)))
           .addMethod(
             getCreateShieldedContractParametersMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.PrivateShieldedTRC20Parameters,
                 org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters>(
                   this, METHODID_CREATE_SHIELDED_CONTRACT_PARAMETERS)))
           .addMethod(
             getCreateShieldedContractParametersWithoutAskMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.PrivateShieldedTRC20ParametersWithoutAsk,
                 org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters>(
                   this, METHODID_CREATE_SHIELDED_CONTRACT_PARAMETERS_WITHOUT_ASK)))
           .addMethod(
             getGetTriggerInputForShieldedTRC20ContractMethod(),
-            asyncUnaryCall(
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 org.tron.trident.api.GrpcAPI.ShieldedTRC20TriggerContractParameters,
                 org.tron.trident.api.GrpcAPI.BytesMessage>(
@@ -5529,7 +5517,7 @@ public final class WalletGrpc {
      */
     public void broadcastTransaction(org.tron.trident.proto.Chain.Transaction request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionReturn> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getBroadcastTransactionMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5537,7 +5525,7 @@ public final class WalletGrpc {
      */
     public void createCommonTransaction(org.tron.trident.proto.Chain.Transaction request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateCommonTransactionMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5545,7 +5533,7 @@ public final class WalletGrpc {
      */
     public void createAccount(org.tron.trident.proto.Contract.AccountCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateAccountMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5553,7 +5541,7 @@ public final class WalletGrpc {
      */
     public void createAccount2(org.tron.trident.proto.Contract.AccountCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateAccount2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5561,7 +5549,7 @@ public final class WalletGrpc {
      */
     public void updateAccount(org.tron.trident.proto.Contract.AccountUpdateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateAccountMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5569,7 +5557,7 @@ public final class WalletGrpc {
      */
     public void updateAccount2(org.tron.trident.proto.Contract.AccountUpdateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateAccount2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5577,7 +5565,7 @@ public final class WalletGrpc {
      */
     public void setAccountId(org.tron.trident.proto.Contract.SetAccountIdContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getSetAccountIdMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5585,7 +5573,7 @@ public final class WalletGrpc {
      */
     public void accountPermissionUpdate(org.tron.trident.proto.Contract.AccountPermissionUpdateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAccountPermissionUpdateMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5593,7 +5581,7 @@ public final class WalletGrpc {
      */
     public void createTransaction(org.tron.trident.proto.Contract.TransferContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateTransactionMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5601,7 +5589,7 @@ public final class WalletGrpc {
      */
     public void createTransaction2(org.tron.trident.proto.Contract.TransferContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateTransaction2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5609,7 +5597,7 @@ public final class WalletGrpc {
      */
     public void createAssetIssue(org.tron.trident.proto.Contract.AssetIssueContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateAssetIssueMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5617,7 +5605,7 @@ public final class WalletGrpc {
      */
     public void createAssetIssue2(org.tron.trident.proto.Contract.AssetIssueContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateAssetIssue2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5625,7 +5613,7 @@ public final class WalletGrpc {
      */
     public void updateAsset(org.tron.trident.proto.Contract.UpdateAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateAssetMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5633,7 +5621,7 @@ public final class WalletGrpc {
      */
     public void updateAsset2(org.tron.trident.proto.Contract.UpdateAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateAsset2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5641,7 +5629,7 @@ public final class WalletGrpc {
      */
     public void transferAsset(org.tron.trident.proto.Contract.TransferAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTransferAssetMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5649,7 +5637,7 @@ public final class WalletGrpc {
      */
     public void transferAsset2(org.tron.trident.proto.Contract.TransferAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTransferAsset2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5657,7 +5645,7 @@ public final class WalletGrpc {
      */
     public void participateAssetIssue(org.tron.trident.proto.Contract.ParticipateAssetIssueContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getParticipateAssetIssueMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5665,7 +5653,7 @@ public final class WalletGrpc {
      */
     public void participateAssetIssue2(org.tron.trident.proto.Contract.ParticipateAssetIssueContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getParticipateAssetIssue2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5673,7 +5661,7 @@ public final class WalletGrpc {
      */
     public void unfreezeAsset(org.tron.trident.proto.Contract.UnfreezeAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUnfreezeAssetMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5681,7 +5669,7 @@ public final class WalletGrpc {
      */
     public void unfreezeAsset2(org.tron.trident.proto.Contract.UnfreezeAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUnfreezeAsset2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5689,7 +5677,7 @@ public final class WalletGrpc {
      */
     public void createWitness(org.tron.trident.proto.Contract.WitnessCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateWitnessMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5697,7 +5685,7 @@ public final class WalletGrpc {
      */
     public void createWitness2(org.tron.trident.proto.Contract.WitnessCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateWitness2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5705,7 +5693,7 @@ public final class WalletGrpc {
      */
     public void updateWitness(org.tron.trident.proto.Contract.WitnessUpdateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateWitnessMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5713,7 +5701,7 @@ public final class WalletGrpc {
      */
     public void updateWitness2(org.tron.trident.proto.Contract.WitnessUpdateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateWitness2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5721,7 +5709,7 @@ public final class WalletGrpc {
      */
     public void updateBrokerage(org.tron.trident.proto.Contract.UpdateBrokerageContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateBrokerageMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5729,7 +5717,7 @@ public final class WalletGrpc {
      */
     public void voteWitnessAccount(org.tron.trident.proto.Contract.VoteWitnessContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getVoteWitnessAccountMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5737,7 +5725,7 @@ public final class WalletGrpc {
      */
     public void voteWitnessAccount2(org.tron.trident.proto.Contract.VoteWitnessContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getVoteWitnessAccount2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5745,7 +5733,7 @@ public final class WalletGrpc {
      */
     public void freezeBalance(org.tron.trident.proto.Contract.FreezeBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getFreezeBalanceMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5753,7 +5741,7 @@ public final class WalletGrpc {
      */
     public void freezeBalance2(org.tron.trident.proto.Contract.FreezeBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getFreezeBalance2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5761,7 +5749,7 @@ public final class WalletGrpc {
      */
     public void unfreezeBalance(org.tron.trident.proto.Contract.UnfreezeBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUnfreezeBalanceMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5769,7 +5757,7 @@ public final class WalletGrpc {
      */
     public void unfreezeBalance2(org.tron.trident.proto.Contract.UnfreezeBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUnfreezeBalance2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5777,7 +5765,7 @@ public final class WalletGrpc {
      */
     public void withdrawBalance(org.tron.trident.proto.Contract.WithdrawBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getWithdrawBalanceMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5785,7 +5773,7 @@ public final class WalletGrpc {
      */
     public void withdrawBalance2(org.tron.trident.proto.Contract.WithdrawBalanceContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getWithdrawBalance2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -5793,7 +5781,7 @@ public final class WalletGrpc {
      */
     public void proposalCreate(org.tron.trident.proto.Contract.ProposalCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getProposalCreateMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5801,7 +5789,7 @@ public final class WalletGrpc {
      */
     public void proposalApprove(org.tron.trident.proto.Contract.ProposalApproveContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getProposalApproveMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5809,7 +5797,7 @@ public final class WalletGrpc {
      */
     public void proposalDelete(org.tron.trident.proto.Contract.ProposalDeleteContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getProposalDeleteMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5817,7 +5805,7 @@ public final class WalletGrpc {
      */
     public void deployContract(org.tron.trident.proto.Contract.CreateSmartContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDeployContractMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5825,7 +5813,7 @@ public final class WalletGrpc {
      */
     public void updateSetting(org.tron.trident.proto.Contract.UpdateSettingContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateSettingMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5833,7 +5821,7 @@ public final class WalletGrpc {
      */
     public void updateEnergyLimit(org.tron.trident.proto.Contract.UpdateEnergyLimitContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateEnergyLimitMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5841,7 +5829,7 @@ public final class WalletGrpc {
      */
     public void clearContractABI(org.tron.trident.proto.Contract.ClearABIContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getClearContractABIMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5849,7 +5837,7 @@ public final class WalletGrpc {
      */
     public void triggerContract(org.tron.trident.proto.Contract.TriggerSmartContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTriggerContractMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5857,7 +5845,7 @@ public final class WalletGrpc {
      */
     public void triggerConstantContract(org.tron.trident.proto.Contract.TriggerSmartContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTriggerConstantContractMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5865,7 +5853,7 @@ public final class WalletGrpc {
      */
     public void exchangeCreate(org.tron.trident.proto.Contract.ExchangeCreateContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getExchangeCreateMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5873,7 +5861,7 @@ public final class WalletGrpc {
      */
     public void exchangeInject(org.tron.trident.proto.Contract.ExchangeInjectContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getExchangeInjectMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5881,7 +5869,7 @@ public final class WalletGrpc {
      */
     public void exchangeWithdraw(org.tron.trident.proto.Contract.ExchangeWithdrawContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getExchangeWithdrawMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5889,7 +5877,7 @@ public final class WalletGrpc {
      */
     public void exchangeTransaction(org.tron.trident.proto.Contract.ExchangeTransactionContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getExchangeTransactionMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5897,7 +5885,7 @@ public final class WalletGrpc {
      */
     public void marketSellAsset(org.tron.trident.proto.Contract.MarketSellAssetContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getMarketSellAssetMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5905,7 +5893,7 @@ public final class WalletGrpc {
      */
     public void marketCancelOrder(org.tron.trident.proto.Contract.MarketCancelOrderContract request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getMarketCancelOrderMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5916,7 +5904,7 @@ public final class WalletGrpc {
      */
     public void getNodeInfo(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.NodeInfo> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetNodeInfoMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5924,7 +5912,7 @@ public final class WalletGrpc {
      */
     public void listNodes(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.NodeList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getListNodesMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5932,7 +5920,7 @@ public final class WalletGrpc {
      */
     public void getChainParameters(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.ChainParameters> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetChainParametersMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5940,7 +5928,7 @@ public final class WalletGrpc {
      */
     public void totalTransaction(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTotalTransactionMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5948,7 +5936,7 @@ public final class WalletGrpc {
      */
     public void getNextMaintenanceTime(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetNextMaintenanceTimeMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5956,7 +5944,7 @@ public final class WalletGrpc {
      */
     public void getTransactionSignWeight(org.tron.trident.proto.Chain.Transaction request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionSignWeight> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTransactionSignWeightMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5964,7 +5952,7 @@ public final class WalletGrpc {
      */
     public void getTransactionApprovedList(org.tron.trident.proto.Chain.Transaction request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionApprovedList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTransactionApprovedListMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5975,7 +5963,7 @@ public final class WalletGrpc {
      */
     public void getAccount(org.tron.trident.api.GrpcAPI.AccountAddressMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.Account> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAccountMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5983,7 +5971,7 @@ public final class WalletGrpc {
      */
     public void getAccountById(org.tron.trident.api.GrpcAPI.AccountIdMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.Account> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAccountByIdMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5991,7 +5979,7 @@ public final class WalletGrpc {
      */
     public void getAccountNet(org.tron.trident.api.GrpcAPI.AccountAddressMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AccountNetMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAccountNetMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -5999,7 +5987,7 @@ public final class WalletGrpc {
      */
     public void getAccountResource(org.tron.trident.api.GrpcAPI.AccountAddressMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AccountResourceMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAccountResourceMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6007,7 +5995,7 @@ public final class WalletGrpc {
      */
     public void getAssetIssueByAccount(org.tron.trident.api.GrpcAPI.AccountAddressMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AssetIssueList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAssetIssueByAccountMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6015,7 +6003,7 @@ public final class WalletGrpc {
      */
     public void getAssetIssueByName(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Contract.AssetIssueContract> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAssetIssueByNameMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6023,7 +6011,7 @@ public final class WalletGrpc {
      */
     public void getAssetIssueListByName(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AssetIssueList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAssetIssueListByNameMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6031,7 +6019,7 @@ public final class WalletGrpc {
      */
     public void getAssetIssueById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Contract.AssetIssueContract> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAssetIssueByIdMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6039,7 +6027,7 @@ public final class WalletGrpc {
      */
     public void getAssetIssueList(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AssetIssueList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAssetIssueListMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6047,7 +6035,7 @@ public final class WalletGrpc {
      */
     public void getPaginatedAssetIssueList(org.tron.trident.api.GrpcAPI.PaginatedMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AssetIssueList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetPaginatedAssetIssueListMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6055,7 +6043,7 @@ public final class WalletGrpc {
      */
     public void getNowBlock(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Block> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetNowBlockMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6063,7 +6051,7 @@ public final class WalletGrpc {
      */
     public void getNowBlock2(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetNowBlock2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -6071,7 +6059,7 @@ public final class WalletGrpc {
      */
     public void getBlockByNum(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Block> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetBlockByNumMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6079,7 +6067,7 @@ public final class WalletGrpc {
      */
     public void getBlockByNum2(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetBlockByNum2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -6090,7 +6078,7 @@ public final class WalletGrpc {
      */
     public void getBlockById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Block> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetBlockByIdMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6098,7 +6086,7 @@ public final class WalletGrpc {
      */
     public void getBlockByLimitNext(org.tron.trident.api.GrpcAPI.BlockLimit request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetBlockByLimitNextMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6106,7 +6094,7 @@ public final class WalletGrpc {
      */
     public void getBlockByLimitNext2(org.tron.trident.api.GrpcAPI.BlockLimit request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockListExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetBlockByLimitNext2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -6114,7 +6102,7 @@ public final class WalletGrpc {
      */
     public void getBlockByLatestNum(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetBlockByLatestNumMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6122,7 +6110,7 @@ public final class WalletGrpc {
      */
     public void getBlockByLatestNum2(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.BlockListExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetBlockByLatestNum2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -6130,7 +6118,7 @@ public final class WalletGrpc {
      */
     public void getTransactionCountByBlockNum(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTransactionCountByBlockNumMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6138,7 +6126,7 @@ public final class WalletGrpc {
      */
     public void getTransactionById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTransactionByIdMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6146,7 +6134,7 @@ public final class WalletGrpc {
      */
     public void getTransactionInfoById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionInfo> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTransactionInfoByIdMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6154,7 +6142,7 @@ public final class WalletGrpc {
      */
     public void getTransactionInfoByBlockNum(org.tron.trident.api.GrpcAPI.NumberMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionInfoList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTransactionInfoByBlockNumMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6162,7 +6150,7 @@ public final class WalletGrpc {
      */
     public void getContract(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Common.SmartContract> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetContractMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6173,7 +6161,7 @@ public final class WalletGrpc {
      */
     public void getContractInfo(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.SmartContractDataWrapper> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetContractInfoMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6181,7 +6169,7 @@ public final class WalletGrpc {
      */
     public void listWitnesses(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.WitnessList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getListWitnessesMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6189,7 +6177,7 @@ public final class WalletGrpc {
      */
     public void getBrokerageInfo(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetBrokerageInfoMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6197,7 +6185,7 @@ public final class WalletGrpc {
      */
     public void getRewardInfo(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.NumberMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetRewardInfoMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6205,7 +6193,7 @@ public final class WalletGrpc {
      */
     public void getDelegatedResource(org.tron.trident.proto.Response.DelegatedResourceMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.DelegatedResourceList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetDelegatedResourceMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6213,7 +6201,7 @@ public final class WalletGrpc {
      */
     public void getDelegatedResourceAccountIndex(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.DelegatedResourceAccountIndex> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetDelegatedResourceAccountIndexMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6221,7 +6209,7 @@ public final class WalletGrpc {
      */
     public void listProposals(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.ProposalList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getListProposalsMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6229,7 +6217,7 @@ public final class WalletGrpc {
      */
     public void getProposalById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.Proposal> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetProposalByIdMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6237,7 +6225,7 @@ public final class WalletGrpc {
      */
     public void getPaginatedProposalList(org.tron.trident.api.GrpcAPI.PaginatedMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.ProposalList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetPaginatedProposalListMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6245,7 +6233,7 @@ public final class WalletGrpc {
      */
     public void listExchanges(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.ExchangeList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getListExchangesMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6253,7 +6241,7 @@ public final class WalletGrpc {
      */
     public void getExchangeById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.Exchange> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetExchangeByIdMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6261,7 +6249,7 @@ public final class WalletGrpc {
      */
     public void getPaginatedExchangeList(org.tron.trident.api.GrpcAPI.PaginatedMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.ExchangeList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetPaginatedExchangeListMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6272,7 +6260,7 @@ public final class WalletGrpc {
      */
     public void scanShieldedTRC20NotesByIvk(org.tron.trident.api.GrpcAPI.IvkDecryptTRC20Parameters request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.DecryptNotesTRC20> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getScanShieldedTRC20NotesByIvkMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6280,7 +6268,7 @@ public final class WalletGrpc {
      */
     public void scanShieldedTRC20NotesByOvk(org.tron.trident.api.GrpcAPI.OvkDecryptTRC20Parameters request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.DecryptNotesTRC20> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getScanShieldedTRC20NotesByOvkMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6288,7 +6276,7 @@ public final class WalletGrpc {
      */
     public void isShieldedTRC20ContractNoteSpent(org.tron.trident.api.GrpcAPI.NfTRC20Parameters request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.NullifierResult> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getIsShieldedTRC20ContractNoteSpentMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6299,7 +6287,7 @@ public final class WalletGrpc {
      */
     public void getMarketOrderByAccount(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.MarketOrderList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetMarketOrderByAccountMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6307,7 +6295,7 @@ public final class WalletGrpc {
      */
     public void getMarketOrderById(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.MarketOrder> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetMarketOrderByIdMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6315,7 +6303,7 @@ public final class WalletGrpc {
      */
     public void getMarketPriceByPair(org.tron.trident.proto.Response.MarketOrderPair request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.MarketPriceList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetMarketPriceByPairMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6323,7 +6311,7 @@ public final class WalletGrpc {
      */
     public void getMarketOrderListByPair(org.tron.trident.proto.Response.MarketOrderPair request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.MarketOrderList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetMarketOrderListByPairMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6331,7 +6319,7 @@ public final class WalletGrpc {
      */
     public void getMarketPairList(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.MarketOrderPairList> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetMarketPairListMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6342,7 +6330,7 @@ public final class WalletGrpc {
      */
     public void getTransactionSign(org.tron.trident.proto.Response.TransactionSign request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Chain.Transaction> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTransactionSignMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6350,7 +6338,7 @@ public final class WalletGrpc {
      */
     public void getTransactionSign2(org.tron.trident.proto.Response.TransactionSign request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTransactionSign2Method(), getCallOptions()), request, responseObserver);
     }
 
@@ -6358,7 +6346,7 @@ public final class WalletGrpc {
      */
     public void easyTransferAsset(org.tron.trident.api.GrpcAPI.EasyTransferAssetMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.EasyTransferResponse> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getEasyTransferAssetMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6366,7 +6354,7 @@ public final class WalletGrpc {
      */
     public void easyTransferAssetByPrivate(org.tron.trident.api.GrpcAPI.EasyTransferAssetByPrivateMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.EasyTransferResponse> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getEasyTransferAssetByPrivateMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6374,7 +6362,7 @@ public final class WalletGrpc {
      */
     public void easyTransfer(org.tron.trident.api.GrpcAPI.EasyTransferMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.EasyTransferResponse> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getEasyTransferMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6382,7 +6370,7 @@ public final class WalletGrpc {
      */
     public void easyTransferByPrivate(org.tron.trident.api.GrpcAPI.EasyTransferByPrivateMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.EasyTransferResponse> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getEasyTransferByPrivateMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6390,7 +6378,7 @@ public final class WalletGrpc {
      */
     public void createAddress(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateAddressMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6398,7 +6386,7 @@ public final class WalletGrpc {
      */
     public void generateAddress(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.AddressPrKeyPairMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGenerateAddressMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6406,7 +6394,7 @@ public final class WalletGrpc {
      */
     public void addSign(org.tron.trident.proto.Response.TransactionSign request,
         io.grpc.stub.StreamObserver<org.tron.trident.proto.Response.TransactionExtention> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAddSignMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6417,7 +6405,7 @@ public final class WalletGrpc {
      */
     public void getSpendingKey(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetSpendingKeyMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6425,7 +6413,7 @@ public final class WalletGrpc {
      */
     public void getExpandedSpendingKey(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.ExpandedSpendingKeyMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetExpandedSpendingKeyMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6433,7 +6421,7 @@ public final class WalletGrpc {
      */
     public void getAkFromAsk(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAkFromAskMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6441,7 +6429,7 @@ public final class WalletGrpc {
      */
     public void getNkFromNsk(org.tron.trident.api.GrpcAPI.BytesMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetNkFromNskMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6449,7 +6437,7 @@ public final class WalletGrpc {
      */
     public void getIncomingViewingKey(org.tron.trident.api.GrpcAPI.ViewingKeyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.IncomingViewingKeyMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetIncomingViewingKeyMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6457,7 +6445,7 @@ public final class WalletGrpc {
      */
     public void getDiversifier(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.DiversifierMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetDiversifierMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6465,7 +6453,7 @@ public final class WalletGrpc {
      */
     public void getZenPaymentAddress(org.tron.trident.api.GrpcAPI.IncomingViewingKeyDiversifierMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.PaymentAddressMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetZenPaymentAddressMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6473,7 +6461,7 @@ public final class WalletGrpc {
      */
     public void getNewShieldedAddress(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.ShieldedAddressInfo> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetNewShieldedAddressMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6481,7 +6469,7 @@ public final class WalletGrpc {
      */
     public void getRcm(org.tron.trident.api.GrpcAPI.EmptyMessage request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetRcmMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6489,7 +6477,7 @@ public final class WalletGrpc {
      */
     public void createShieldedContractParameters(org.tron.trident.api.GrpcAPI.PrivateShieldedTRC20Parameters request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateShieldedContractParametersMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6497,7 +6485,7 @@ public final class WalletGrpc {
      */
     public void createShieldedContractParametersWithoutAsk(org.tron.trident.api.GrpcAPI.PrivateShieldedTRC20ParametersWithoutAsk request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateShieldedContractParametersWithoutAskMethod(), getCallOptions()), request, responseObserver);
     }
 
@@ -6505,7 +6493,7 @@ public final class WalletGrpc {
      */
     public void getTriggerInputForShieldedTRC20Contract(org.tron.trident.api.GrpcAPI.ShieldedTRC20TriggerContractParameters request,
         io.grpc.stub.StreamObserver<org.tron.trident.api.GrpcAPI.BytesMessage> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetTriggerInputForShieldedTRC20ContractMethod(), getCallOptions()), request, responseObserver);
     }
   }
@@ -6530,336 +6518,336 @@ public final class WalletGrpc {
      * </pre>
      */
     public org.tron.trident.proto.Response.TransactionReturn broadcastTransaction(org.tron.trident.proto.Chain.Transaction request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getBroadcastTransactionMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention createCommonTransaction(org.tron.trident.proto.Chain.Transaction request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateCommonTransactionMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction createAccount(org.tron.trident.proto.Contract.AccountCreateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateAccountMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention createAccount2(org.tron.trident.proto.Contract.AccountCreateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateAccount2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction updateAccount(org.tron.trident.proto.Contract.AccountUpdateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateAccountMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention updateAccount2(org.tron.trident.proto.Contract.AccountUpdateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateAccount2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction setAccountId(org.tron.trident.proto.Contract.SetAccountIdContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getSetAccountIdMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention accountPermissionUpdate(org.tron.trident.proto.Contract.AccountPermissionUpdateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAccountPermissionUpdateMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction createTransaction(org.tron.trident.proto.Contract.TransferContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateTransactionMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention createTransaction2(org.tron.trident.proto.Contract.TransferContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateTransaction2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction createAssetIssue(org.tron.trident.proto.Contract.AssetIssueContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateAssetIssueMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention createAssetIssue2(org.tron.trident.proto.Contract.AssetIssueContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateAssetIssue2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction updateAsset(org.tron.trident.proto.Contract.UpdateAssetContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateAssetMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention updateAsset2(org.tron.trident.proto.Contract.UpdateAssetContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateAsset2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction transferAsset(org.tron.trident.proto.Contract.TransferAssetContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTransferAssetMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention transferAsset2(org.tron.trident.proto.Contract.TransferAssetContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTransferAsset2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction participateAssetIssue(org.tron.trident.proto.Contract.ParticipateAssetIssueContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getParticipateAssetIssueMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention participateAssetIssue2(org.tron.trident.proto.Contract.ParticipateAssetIssueContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getParticipateAssetIssue2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction unfreezeAsset(org.tron.trident.proto.Contract.UnfreezeAssetContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUnfreezeAssetMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention unfreezeAsset2(org.tron.trident.proto.Contract.UnfreezeAssetContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUnfreezeAsset2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction createWitness(org.tron.trident.proto.Contract.WitnessCreateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateWitnessMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention createWitness2(org.tron.trident.proto.Contract.WitnessCreateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateWitness2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction updateWitness(org.tron.trident.proto.Contract.WitnessUpdateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateWitnessMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention updateWitness2(org.tron.trident.proto.Contract.WitnessUpdateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateWitness2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention updateBrokerage(org.tron.trident.proto.Contract.UpdateBrokerageContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateBrokerageMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction voteWitnessAccount(org.tron.trident.proto.Contract.VoteWitnessContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getVoteWitnessAccountMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention voteWitnessAccount2(org.tron.trident.proto.Contract.VoteWitnessContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getVoteWitnessAccount2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction freezeBalance(org.tron.trident.proto.Contract.FreezeBalanceContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getFreezeBalanceMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention freezeBalance2(org.tron.trident.proto.Contract.FreezeBalanceContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getFreezeBalance2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction unfreezeBalance(org.tron.trident.proto.Contract.UnfreezeBalanceContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUnfreezeBalanceMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention unfreezeBalance2(org.tron.trident.proto.Contract.UnfreezeBalanceContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUnfreezeBalance2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction withdrawBalance(org.tron.trident.proto.Contract.WithdrawBalanceContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getWithdrawBalanceMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention withdrawBalance2(org.tron.trident.proto.Contract.WithdrawBalanceContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getWithdrawBalance2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention proposalCreate(org.tron.trident.proto.Contract.ProposalCreateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getProposalCreateMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention proposalApprove(org.tron.trident.proto.Contract.ProposalApproveContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getProposalApproveMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention proposalDelete(org.tron.trident.proto.Contract.ProposalDeleteContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getProposalDeleteMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention deployContract(org.tron.trident.proto.Contract.CreateSmartContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDeployContractMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention updateSetting(org.tron.trident.proto.Contract.UpdateSettingContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateSettingMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention updateEnergyLimit(org.tron.trident.proto.Contract.UpdateEnergyLimitContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateEnergyLimitMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention clearContractABI(org.tron.trident.proto.Contract.ClearABIContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getClearContractABIMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention triggerContract(org.tron.trident.proto.Contract.TriggerSmartContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTriggerContractMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention triggerConstantContract(org.tron.trident.proto.Contract.TriggerSmartContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTriggerConstantContractMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention exchangeCreate(org.tron.trident.proto.Contract.ExchangeCreateContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getExchangeCreateMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention exchangeInject(org.tron.trident.proto.Contract.ExchangeInjectContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getExchangeInjectMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention exchangeWithdraw(org.tron.trident.proto.Contract.ExchangeWithdrawContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getExchangeWithdrawMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention exchangeTransaction(org.tron.trident.proto.Contract.ExchangeTransactionContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getExchangeTransactionMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention marketSellAsset(org.tron.trident.proto.Contract.MarketSellAssetContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getMarketSellAssetMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention marketCancelOrder(org.tron.trident.proto.Contract.MarketCancelOrderContract request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getMarketCancelOrderMethod(), getCallOptions(), request);
     }
 
@@ -6869,49 +6857,49 @@ public final class WalletGrpc {
      * </pre>
      */
     public org.tron.trident.proto.Response.NodeInfo getNodeInfo(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetNodeInfoMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.NodeList listNodes(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getListNodesMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.ChainParameters getChainParameters(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetChainParametersMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.NumberMessage totalTransaction(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTotalTransactionMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.NumberMessage getNextMaintenanceTime(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetNextMaintenanceTimeMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionSignWeight getTransactionSignWeight(org.tron.trident.proto.Chain.Transaction request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTransactionSignWeightMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionApprovedList getTransactionApprovedList(org.tron.trident.proto.Chain.Transaction request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTransactionApprovedListMethod(), getCallOptions(), request);
     }
 
@@ -6921,98 +6909,98 @@ public final class WalletGrpc {
      * </pre>
      */
     public org.tron.trident.proto.Response.Account getAccount(org.tron.trident.api.GrpcAPI.AccountAddressMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAccountMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.Account getAccountById(org.tron.trident.api.GrpcAPI.AccountIdMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAccountByIdMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.AccountNetMessage getAccountNet(org.tron.trident.api.GrpcAPI.AccountAddressMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAccountNetMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.AccountResourceMessage getAccountResource(org.tron.trident.api.GrpcAPI.AccountAddressMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAccountResourceMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.AssetIssueList getAssetIssueByAccount(org.tron.trident.api.GrpcAPI.AccountAddressMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAssetIssueByAccountMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Contract.AssetIssueContract getAssetIssueByName(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAssetIssueByNameMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.AssetIssueList getAssetIssueListByName(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAssetIssueListByNameMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Contract.AssetIssueContract getAssetIssueById(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAssetIssueByIdMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.AssetIssueList getAssetIssueList(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAssetIssueListMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.AssetIssueList getPaginatedAssetIssueList(org.tron.trident.api.GrpcAPI.PaginatedMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetPaginatedAssetIssueListMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Block getNowBlock(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetNowBlockMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.BlockExtention getNowBlock2(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetNowBlock2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Block getBlockByNum(org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetBlockByNumMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.BlockExtention getBlockByNum2(org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetBlockByNum2Method(), getCallOptions(), request);
     }
 
@@ -7022,70 +7010,70 @@ public final class WalletGrpc {
      * </pre>
      */
     public org.tron.trident.proto.Chain.Block getBlockById(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetBlockByIdMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.BlockList getBlockByLimitNext(org.tron.trident.api.GrpcAPI.BlockLimit request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetBlockByLimitNextMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.BlockListExtention getBlockByLimitNext2(org.tron.trident.api.GrpcAPI.BlockLimit request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetBlockByLimitNext2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.BlockList getBlockByLatestNum(org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetBlockByLatestNumMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.BlockListExtention getBlockByLatestNum2(org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetBlockByLatestNum2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.NumberMessage getTransactionCountByBlockNum(org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTransactionCountByBlockNumMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Chain.Transaction getTransactionById(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTransactionByIdMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionInfo getTransactionInfoById(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTransactionInfoByIdMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionInfoList getTransactionInfoByBlockNum(org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTransactionInfoByBlockNumMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Common.SmartContract getContract(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetContractMethod(), getCallOptions(), request);
     }
 
@@ -7095,84 +7083,84 @@ public final class WalletGrpc {
      * </pre>
      */
     public org.tron.trident.proto.Response.SmartContractDataWrapper getContractInfo(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetContractInfoMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.WitnessList listWitnesses(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getListWitnessesMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.NumberMessage getBrokerageInfo(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetBrokerageInfoMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.NumberMessage getRewardInfo(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetRewardInfoMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.DelegatedResourceList getDelegatedResource(org.tron.trident.proto.Response.DelegatedResourceMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetDelegatedResourceMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.DelegatedResourceAccountIndex getDelegatedResourceAccountIndex(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetDelegatedResourceAccountIndexMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.ProposalList listProposals(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getListProposalsMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.Proposal getProposalById(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetProposalByIdMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.ProposalList getPaginatedProposalList(org.tron.trident.api.GrpcAPI.PaginatedMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetPaginatedProposalListMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.ExchangeList listExchanges(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getListExchangesMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.Exchange getExchangeById(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetExchangeByIdMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.ExchangeList getPaginatedExchangeList(org.tron.trident.api.GrpcAPI.PaginatedMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetPaginatedExchangeListMethod(), getCallOptions(), request);
     }
 
@@ -7182,21 +7170,21 @@ public final class WalletGrpc {
      * </pre>
      */
     public org.tron.trident.proto.Response.DecryptNotesTRC20 scanShieldedTRC20NotesByIvk(org.tron.trident.api.GrpcAPI.IvkDecryptTRC20Parameters request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getScanShieldedTRC20NotesByIvkMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.DecryptNotesTRC20 scanShieldedTRC20NotesByOvk(org.tron.trident.api.GrpcAPI.OvkDecryptTRC20Parameters request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getScanShieldedTRC20NotesByOvkMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.NullifierResult isShieldedTRC20ContractNoteSpent(org.tron.trident.api.GrpcAPI.NfTRC20Parameters request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getIsShieldedTRC20ContractNoteSpentMethod(), getCallOptions(), request);
     }
 
@@ -7206,35 +7194,35 @@ public final class WalletGrpc {
      * </pre>
      */
     public org.tron.trident.proto.Response.MarketOrderList getMarketOrderByAccount(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetMarketOrderByAccountMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.MarketOrder getMarketOrderById(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetMarketOrderByIdMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.MarketPriceList getMarketPriceByPair(org.tron.trident.proto.Response.MarketOrderPair request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetMarketPriceByPairMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.MarketOrderList getMarketOrderListByPair(org.tron.trident.proto.Response.MarketOrderPair request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetMarketOrderListByPairMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.MarketOrderPairList getMarketPairList(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetMarketPairListMethod(), getCallOptions(), request);
     }
 
@@ -7244,63 +7232,63 @@ public final class WalletGrpc {
      * </pre>
      */
     public org.tron.trident.proto.Chain.Transaction getTransactionSign(org.tron.trident.proto.Response.TransactionSign request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTransactionSignMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention getTransactionSign2(org.tron.trident.proto.Response.TransactionSign request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTransactionSign2Method(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.EasyTransferResponse easyTransferAsset(org.tron.trident.api.GrpcAPI.EasyTransferAssetMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getEasyTransferAssetMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.EasyTransferResponse easyTransferAssetByPrivate(org.tron.trident.api.GrpcAPI.EasyTransferAssetByPrivateMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getEasyTransferAssetByPrivateMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.EasyTransferResponse easyTransfer(org.tron.trident.api.GrpcAPI.EasyTransferMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getEasyTransferMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.EasyTransferResponse easyTransferByPrivate(org.tron.trident.api.GrpcAPI.EasyTransferByPrivateMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getEasyTransferByPrivateMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.BytesMessage createAddress(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateAddressMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.AddressPrKeyPairMessage generateAddress(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGenerateAddressMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.proto.Response.TransactionExtention addSign(org.tron.trident.proto.Response.TransactionSign request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAddSignMethod(), getCallOptions(), request);
     }
 
@@ -7310,84 +7298,84 @@ public final class WalletGrpc {
      * </pre>
      */
     public org.tron.trident.api.GrpcAPI.BytesMessage getSpendingKey(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetSpendingKeyMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.ExpandedSpendingKeyMessage getExpandedSpendingKey(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetExpandedSpendingKeyMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.BytesMessage getAkFromAsk(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAkFromAskMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.BytesMessage getNkFromNsk(org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetNkFromNskMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.IncomingViewingKeyMessage getIncomingViewingKey(org.tron.trident.api.GrpcAPI.ViewingKeyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetIncomingViewingKeyMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.DiversifierMessage getDiversifier(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetDiversifierMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.PaymentAddressMessage getZenPaymentAddress(org.tron.trident.api.GrpcAPI.IncomingViewingKeyDiversifierMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetZenPaymentAddressMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.ShieldedAddressInfo getNewShieldedAddress(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetNewShieldedAddressMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.BytesMessage getRcm(org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetRcmMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters createShieldedContractParameters(org.tron.trident.api.GrpcAPI.PrivateShieldedTRC20Parameters request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateShieldedContractParametersMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters createShieldedContractParametersWithoutAsk(org.tron.trident.api.GrpcAPI.PrivateShieldedTRC20ParametersWithoutAsk request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateShieldedContractParametersWithoutAskMethod(), getCallOptions(), request);
     }
 
     /**
      */
     public org.tron.trident.api.GrpcAPI.BytesMessage getTriggerInputForShieldedTRC20Contract(org.tron.trident.api.GrpcAPI.ShieldedTRC20TriggerContractParameters request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetTriggerInputForShieldedTRC20ContractMethod(), getCallOptions(), request);
     }
   }
@@ -7413,7 +7401,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionReturn> broadcastTransaction(
         org.tron.trident.proto.Chain.Transaction request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getBroadcastTransactionMethod(), getCallOptions()), request);
     }
 
@@ -7421,7 +7409,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> createCommonTransaction(
         org.tron.trident.proto.Chain.Transaction request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateCommonTransactionMethod(), getCallOptions()), request);
     }
 
@@ -7429,7 +7417,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> createAccount(
         org.tron.trident.proto.Contract.AccountCreateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateAccountMethod(), getCallOptions()), request);
     }
 
@@ -7437,7 +7425,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> createAccount2(
         org.tron.trident.proto.Contract.AccountCreateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateAccount2Method(), getCallOptions()), request);
     }
 
@@ -7445,7 +7433,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> updateAccount(
         org.tron.trident.proto.Contract.AccountUpdateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateAccountMethod(), getCallOptions()), request);
     }
 
@@ -7453,7 +7441,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> updateAccount2(
         org.tron.trident.proto.Contract.AccountUpdateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateAccount2Method(), getCallOptions()), request);
     }
 
@@ -7461,7 +7449,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> setAccountId(
         org.tron.trident.proto.Contract.SetAccountIdContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getSetAccountIdMethod(), getCallOptions()), request);
     }
 
@@ -7469,7 +7457,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> accountPermissionUpdate(
         org.tron.trident.proto.Contract.AccountPermissionUpdateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAccountPermissionUpdateMethod(), getCallOptions()), request);
     }
 
@@ -7477,7 +7465,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> createTransaction(
         org.tron.trident.proto.Contract.TransferContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateTransactionMethod(), getCallOptions()), request);
     }
 
@@ -7485,7 +7473,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> createTransaction2(
         org.tron.trident.proto.Contract.TransferContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateTransaction2Method(), getCallOptions()), request);
     }
 
@@ -7493,7 +7481,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> createAssetIssue(
         org.tron.trident.proto.Contract.AssetIssueContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateAssetIssueMethod(), getCallOptions()), request);
     }
 
@@ -7501,7 +7489,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> createAssetIssue2(
         org.tron.trident.proto.Contract.AssetIssueContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateAssetIssue2Method(), getCallOptions()), request);
     }
 
@@ -7509,7 +7497,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> updateAsset(
         org.tron.trident.proto.Contract.UpdateAssetContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateAssetMethod(), getCallOptions()), request);
     }
 
@@ -7517,7 +7505,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> updateAsset2(
         org.tron.trident.proto.Contract.UpdateAssetContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateAsset2Method(), getCallOptions()), request);
     }
 
@@ -7525,7 +7513,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> transferAsset(
         org.tron.trident.proto.Contract.TransferAssetContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTransferAssetMethod(), getCallOptions()), request);
     }
 
@@ -7533,7 +7521,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> transferAsset2(
         org.tron.trident.proto.Contract.TransferAssetContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTransferAsset2Method(), getCallOptions()), request);
     }
 
@@ -7541,7 +7529,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> participateAssetIssue(
         org.tron.trident.proto.Contract.ParticipateAssetIssueContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getParticipateAssetIssueMethod(), getCallOptions()), request);
     }
 
@@ -7549,7 +7537,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> participateAssetIssue2(
         org.tron.trident.proto.Contract.ParticipateAssetIssueContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getParticipateAssetIssue2Method(), getCallOptions()), request);
     }
 
@@ -7557,7 +7545,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> unfreezeAsset(
         org.tron.trident.proto.Contract.UnfreezeAssetContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUnfreezeAssetMethod(), getCallOptions()), request);
     }
 
@@ -7565,7 +7553,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> unfreezeAsset2(
         org.tron.trident.proto.Contract.UnfreezeAssetContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUnfreezeAsset2Method(), getCallOptions()), request);
     }
 
@@ -7573,7 +7561,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> createWitness(
         org.tron.trident.proto.Contract.WitnessCreateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateWitnessMethod(), getCallOptions()), request);
     }
 
@@ -7581,7 +7569,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> createWitness2(
         org.tron.trident.proto.Contract.WitnessCreateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateWitness2Method(), getCallOptions()), request);
     }
 
@@ -7589,7 +7577,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> updateWitness(
         org.tron.trident.proto.Contract.WitnessUpdateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateWitnessMethod(), getCallOptions()), request);
     }
 
@@ -7597,7 +7585,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> updateWitness2(
         org.tron.trident.proto.Contract.WitnessUpdateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateWitness2Method(), getCallOptions()), request);
     }
 
@@ -7605,7 +7593,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> updateBrokerage(
         org.tron.trident.proto.Contract.UpdateBrokerageContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateBrokerageMethod(), getCallOptions()), request);
     }
 
@@ -7613,7 +7601,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> voteWitnessAccount(
         org.tron.trident.proto.Contract.VoteWitnessContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getVoteWitnessAccountMethod(), getCallOptions()), request);
     }
 
@@ -7621,7 +7609,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> voteWitnessAccount2(
         org.tron.trident.proto.Contract.VoteWitnessContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getVoteWitnessAccount2Method(), getCallOptions()), request);
     }
 
@@ -7629,7 +7617,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> freezeBalance(
         org.tron.trident.proto.Contract.FreezeBalanceContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getFreezeBalanceMethod(), getCallOptions()), request);
     }
 
@@ -7637,7 +7625,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> freezeBalance2(
         org.tron.trident.proto.Contract.FreezeBalanceContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getFreezeBalance2Method(), getCallOptions()), request);
     }
 
@@ -7645,7 +7633,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> unfreezeBalance(
         org.tron.trident.proto.Contract.UnfreezeBalanceContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUnfreezeBalanceMethod(), getCallOptions()), request);
     }
 
@@ -7653,7 +7641,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> unfreezeBalance2(
         org.tron.trident.proto.Contract.UnfreezeBalanceContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUnfreezeBalance2Method(), getCallOptions()), request);
     }
 
@@ -7661,7 +7649,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> withdrawBalance(
         org.tron.trident.proto.Contract.WithdrawBalanceContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getWithdrawBalanceMethod(), getCallOptions()), request);
     }
 
@@ -7669,7 +7657,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> withdrawBalance2(
         org.tron.trident.proto.Contract.WithdrawBalanceContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getWithdrawBalance2Method(), getCallOptions()), request);
     }
 
@@ -7677,7 +7665,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> proposalCreate(
         org.tron.trident.proto.Contract.ProposalCreateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getProposalCreateMethod(), getCallOptions()), request);
     }
 
@@ -7685,7 +7673,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> proposalApprove(
         org.tron.trident.proto.Contract.ProposalApproveContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getProposalApproveMethod(), getCallOptions()), request);
     }
 
@@ -7693,7 +7681,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> proposalDelete(
         org.tron.trident.proto.Contract.ProposalDeleteContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getProposalDeleteMethod(), getCallOptions()), request);
     }
 
@@ -7701,7 +7689,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> deployContract(
         org.tron.trident.proto.Contract.CreateSmartContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDeployContractMethod(), getCallOptions()), request);
     }
 
@@ -7709,7 +7697,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> updateSetting(
         org.tron.trident.proto.Contract.UpdateSettingContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateSettingMethod(), getCallOptions()), request);
     }
 
@@ -7717,7 +7705,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> updateEnergyLimit(
         org.tron.trident.proto.Contract.UpdateEnergyLimitContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateEnergyLimitMethod(), getCallOptions()), request);
     }
 
@@ -7725,7 +7713,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> clearContractABI(
         org.tron.trident.proto.Contract.ClearABIContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getClearContractABIMethod(), getCallOptions()), request);
     }
 
@@ -7733,7 +7721,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> triggerContract(
         org.tron.trident.proto.Contract.TriggerSmartContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTriggerContractMethod(), getCallOptions()), request);
     }
 
@@ -7741,7 +7729,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> triggerConstantContract(
         org.tron.trident.proto.Contract.TriggerSmartContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTriggerConstantContractMethod(), getCallOptions()), request);
     }
 
@@ -7749,7 +7737,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> exchangeCreate(
         org.tron.trident.proto.Contract.ExchangeCreateContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getExchangeCreateMethod(), getCallOptions()), request);
     }
 
@@ -7757,7 +7745,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> exchangeInject(
         org.tron.trident.proto.Contract.ExchangeInjectContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getExchangeInjectMethod(), getCallOptions()), request);
     }
 
@@ -7765,7 +7753,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> exchangeWithdraw(
         org.tron.trident.proto.Contract.ExchangeWithdrawContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getExchangeWithdrawMethod(), getCallOptions()), request);
     }
 
@@ -7773,7 +7761,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> exchangeTransaction(
         org.tron.trident.proto.Contract.ExchangeTransactionContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getExchangeTransactionMethod(), getCallOptions()), request);
     }
 
@@ -7781,7 +7769,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> marketSellAsset(
         org.tron.trident.proto.Contract.MarketSellAssetContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getMarketSellAssetMethod(), getCallOptions()), request);
     }
 
@@ -7789,7 +7777,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> marketCancelOrder(
         org.tron.trident.proto.Contract.MarketCancelOrderContract request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getMarketCancelOrderMethod(), getCallOptions()), request);
     }
 
@@ -7800,7 +7788,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.NodeInfo> getNodeInfo(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetNodeInfoMethod(), getCallOptions()), request);
     }
 
@@ -7808,7 +7796,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.NodeList> listNodes(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getListNodesMethod(), getCallOptions()), request);
     }
 
@@ -7816,7 +7804,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.ChainParameters> getChainParameters(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetChainParametersMethod(), getCallOptions()), request);
     }
 
@@ -7824,7 +7812,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.NumberMessage> totalTransaction(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTotalTransactionMethod(), getCallOptions()), request);
     }
 
@@ -7832,7 +7820,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.NumberMessage> getNextMaintenanceTime(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetNextMaintenanceTimeMethod(), getCallOptions()), request);
     }
 
@@ -7840,7 +7828,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionSignWeight> getTransactionSignWeight(
         org.tron.trident.proto.Chain.Transaction request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTransactionSignWeightMethod(), getCallOptions()), request);
     }
 
@@ -7848,7 +7836,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionApprovedList> getTransactionApprovedList(
         org.tron.trident.proto.Chain.Transaction request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTransactionApprovedListMethod(), getCallOptions()), request);
     }
 
@@ -7859,7 +7847,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.Account> getAccount(
         org.tron.trident.api.GrpcAPI.AccountAddressMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAccountMethod(), getCallOptions()), request);
     }
 
@@ -7867,7 +7855,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.Account> getAccountById(
         org.tron.trident.api.GrpcAPI.AccountIdMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAccountByIdMethod(), getCallOptions()), request);
     }
 
@@ -7875,7 +7863,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.AccountNetMessage> getAccountNet(
         org.tron.trident.api.GrpcAPI.AccountAddressMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAccountNetMethod(), getCallOptions()), request);
     }
 
@@ -7883,7 +7871,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.AccountResourceMessage> getAccountResource(
         org.tron.trident.api.GrpcAPI.AccountAddressMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAccountResourceMethod(), getCallOptions()), request);
     }
 
@@ -7891,7 +7879,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.AssetIssueList> getAssetIssueByAccount(
         org.tron.trident.api.GrpcAPI.AccountAddressMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAssetIssueByAccountMethod(), getCallOptions()), request);
     }
 
@@ -7899,7 +7887,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Contract.AssetIssueContract> getAssetIssueByName(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAssetIssueByNameMethod(), getCallOptions()), request);
     }
 
@@ -7907,7 +7895,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.AssetIssueList> getAssetIssueListByName(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAssetIssueListByNameMethod(), getCallOptions()), request);
     }
 
@@ -7915,7 +7903,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Contract.AssetIssueContract> getAssetIssueById(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAssetIssueByIdMethod(), getCallOptions()), request);
     }
 
@@ -7923,7 +7911,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.AssetIssueList> getAssetIssueList(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAssetIssueListMethod(), getCallOptions()), request);
     }
 
@@ -7931,7 +7919,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.AssetIssueList> getPaginatedAssetIssueList(
         org.tron.trident.api.GrpcAPI.PaginatedMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetPaginatedAssetIssueListMethod(), getCallOptions()), request);
     }
 
@@ -7939,7 +7927,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Block> getNowBlock(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetNowBlockMethod(), getCallOptions()), request);
     }
 
@@ -7947,7 +7935,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.BlockExtention> getNowBlock2(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetNowBlock2Method(), getCallOptions()), request);
     }
 
@@ -7955,7 +7943,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Block> getBlockByNum(
         org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetBlockByNumMethod(), getCallOptions()), request);
     }
 
@@ -7963,7 +7951,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.BlockExtention> getBlockByNum2(
         org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetBlockByNum2Method(), getCallOptions()), request);
     }
 
@@ -7974,7 +7962,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Block> getBlockById(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetBlockByIdMethod(), getCallOptions()), request);
     }
 
@@ -7982,7 +7970,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.BlockList> getBlockByLimitNext(
         org.tron.trident.api.GrpcAPI.BlockLimit request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetBlockByLimitNextMethod(), getCallOptions()), request);
     }
 
@@ -7990,7 +7978,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.BlockListExtention> getBlockByLimitNext2(
         org.tron.trident.api.GrpcAPI.BlockLimit request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetBlockByLimitNext2Method(), getCallOptions()), request);
     }
 
@@ -7998,7 +7986,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.BlockList> getBlockByLatestNum(
         org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetBlockByLatestNumMethod(), getCallOptions()), request);
     }
 
@@ -8006,7 +7994,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.BlockListExtention> getBlockByLatestNum2(
         org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetBlockByLatestNum2Method(), getCallOptions()), request);
     }
 
@@ -8014,7 +8002,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.NumberMessage> getTransactionCountByBlockNum(
         org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTransactionCountByBlockNumMethod(), getCallOptions()), request);
     }
 
@@ -8022,7 +8010,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> getTransactionById(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTransactionByIdMethod(), getCallOptions()), request);
     }
 
@@ -8030,7 +8018,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionInfo> getTransactionInfoById(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTransactionInfoByIdMethod(), getCallOptions()), request);
     }
 
@@ -8038,7 +8026,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionInfoList> getTransactionInfoByBlockNum(
         org.tron.trident.api.GrpcAPI.NumberMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTransactionInfoByBlockNumMethod(), getCallOptions()), request);
     }
 
@@ -8046,7 +8034,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Common.SmartContract> getContract(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetContractMethod(), getCallOptions()), request);
     }
 
@@ -8057,7 +8045,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.SmartContractDataWrapper> getContractInfo(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetContractInfoMethod(), getCallOptions()), request);
     }
 
@@ -8065,7 +8053,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.WitnessList> listWitnesses(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getListWitnessesMethod(), getCallOptions()), request);
     }
 
@@ -8073,7 +8061,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.NumberMessage> getBrokerageInfo(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetBrokerageInfoMethod(), getCallOptions()), request);
     }
 
@@ -8081,7 +8069,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.NumberMessage> getRewardInfo(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetRewardInfoMethod(), getCallOptions()), request);
     }
 
@@ -8089,7 +8077,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.DelegatedResourceList> getDelegatedResource(
         org.tron.trident.proto.Response.DelegatedResourceMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetDelegatedResourceMethod(), getCallOptions()), request);
     }
 
@@ -8097,7 +8085,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.DelegatedResourceAccountIndex> getDelegatedResourceAccountIndex(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetDelegatedResourceAccountIndexMethod(), getCallOptions()), request);
     }
 
@@ -8105,7 +8093,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.ProposalList> listProposals(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getListProposalsMethod(), getCallOptions()), request);
     }
 
@@ -8113,7 +8101,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.Proposal> getProposalById(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetProposalByIdMethod(), getCallOptions()), request);
     }
 
@@ -8121,7 +8109,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.ProposalList> getPaginatedProposalList(
         org.tron.trident.api.GrpcAPI.PaginatedMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetPaginatedProposalListMethod(), getCallOptions()), request);
     }
 
@@ -8129,7 +8117,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.ExchangeList> listExchanges(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getListExchangesMethod(), getCallOptions()), request);
     }
 
@@ -8137,7 +8125,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.Exchange> getExchangeById(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetExchangeByIdMethod(), getCallOptions()), request);
     }
 
@@ -8145,7 +8133,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.ExchangeList> getPaginatedExchangeList(
         org.tron.trident.api.GrpcAPI.PaginatedMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetPaginatedExchangeListMethod(), getCallOptions()), request);
     }
 
@@ -8156,7 +8144,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.DecryptNotesTRC20> scanShieldedTRC20NotesByIvk(
         org.tron.trident.api.GrpcAPI.IvkDecryptTRC20Parameters request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getScanShieldedTRC20NotesByIvkMethod(), getCallOptions()), request);
     }
 
@@ -8164,7 +8152,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.DecryptNotesTRC20> scanShieldedTRC20NotesByOvk(
         org.tron.trident.api.GrpcAPI.OvkDecryptTRC20Parameters request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getScanShieldedTRC20NotesByOvkMethod(), getCallOptions()), request);
     }
 
@@ -8172,7 +8160,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.NullifierResult> isShieldedTRC20ContractNoteSpent(
         org.tron.trident.api.GrpcAPI.NfTRC20Parameters request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getIsShieldedTRC20ContractNoteSpentMethod(), getCallOptions()), request);
     }
 
@@ -8183,7 +8171,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.MarketOrderList> getMarketOrderByAccount(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetMarketOrderByAccountMethod(), getCallOptions()), request);
     }
 
@@ -8191,7 +8179,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.MarketOrder> getMarketOrderById(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetMarketOrderByIdMethod(), getCallOptions()), request);
     }
 
@@ -8199,7 +8187,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.MarketPriceList> getMarketPriceByPair(
         org.tron.trident.proto.Response.MarketOrderPair request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetMarketPriceByPairMethod(), getCallOptions()), request);
     }
 
@@ -8207,7 +8195,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.MarketOrderList> getMarketOrderListByPair(
         org.tron.trident.proto.Response.MarketOrderPair request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetMarketOrderListByPairMethod(), getCallOptions()), request);
     }
 
@@ -8215,7 +8203,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.MarketOrderPairList> getMarketPairList(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetMarketPairListMethod(), getCallOptions()), request);
     }
 
@@ -8226,7 +8214,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Chain.Transaction> getTransactionSign(
         org.tron.trident.proto.Response.TransactionSign request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTransactionSignMethod(), getCallOptions()), request);
     }
 
@@ -8234,7 +8222,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> getTransactionSign2(
         org.tron.trident.proto.Response.TransactionSign request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTransactionSign2Method(), getCallOptions()), request);
     }
 
@@ -8242,7 +8230,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.EasyTransferResponse> easyTransferAsset(
         org.tron.trident.api.GrpcAPI.EasyTransferAssetMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getEasyTransferAssetMethod(), getCallOptions()), request);
     }
 
@@ -8250,7 +8238,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.EasyTransferResponse> easyTransferAssetByPrivate(
         org.tron.trident.api.GrpcAPI.EasyTransferAssetByPrivateMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getEasyTransferAssetByPrivateMethod(), getCallOptions()), request);
     }
 
@@ -8258,7 +8246,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.EasyTransferResponse> easyTransfer(
         org.tron.trident.api.GrpcAPI.EasyTransferMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getEasyTransferMethod(), getCallOptions()), request);
     }
 
@@ -8266,7 +8254,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.EasyTransferResponse> easyTransferByPrivate(
         org.tron.trident.api.GrpcAPI.EasyTransferByPrivateMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getEasyTransferByPrivateMethod(), getCallOptions()), request);
     }
 
@@ -8274,7 +8262,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.BytesMessage> createAddress(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateAddressMethod(), getCallOptions()), request);
     }
 
@@ -8282,7 +8270,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.AddressPrKeyPairMessage> generateAddress(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGenerateAddressMethod(), getCallOptions()), request);
     }
 
@@ -8290,7 +8278,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.proto.Response.TransactionExtention> addSign(
         org.tron.trident.proto.Response.TransactionSign request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAddSignMethod(), getCallOptions()), request);
     }
 
@@ -8301,7 +8289,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.BytesMessage> getSpendingKey(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetSpendingKeyMethod(), getCallOptions()), request);
     }
 
@@ -8309,7 +8297,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.ExpandedSpendingKeyMessage> getExpandedSpendingKey(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetExpandedSpendingKeyMethod(), getCallOptions()), request);
     }
 
@@ -8317,7 +8305,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.BytesMessage> getAkFromAsk(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAkFromAskMethod(), getCallOptions()), request);
     }
 
@@ -8325,7 +8313,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.BytesMessage> getNkFromNsk(
         org.tron.trident.api.GrpcAPI.BytesMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetNkFromNskMethod(), getCallOptions()), request);
     }
 
@@ -8333,7 +8321,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.IncomingViewingKeyMessage> getIncomingViewingKey(
         org.tron.trident.api.GrpcAPI.ViewingKeyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetIncomingViewingKeyMethod(), getCallOptions()), request);
     }
 
@@ -8341,7 +8329,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.DiversifierMessage> getDiversifier(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetDiversifierMethod(), getCallOptions()), request);
     }
 
@@ -8349,7 +8337,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.PaymentAddressMessage> getZenPaymentAddress(
         org.tron.trident.api.GrpcAPI.IncomingViewingKeyDiversifierMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetZenPaymentAddressMethod(), getCallOptions()), request);
     }
 
@@ -8357,7 +8345,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.ShieldedAddressInfo> getNewShieldedAddress(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetNewShieldedAddressMethod(), getCallOptions()), request);
     }
 
@@ -8365,7 +8353,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.BytesMessage> getRcm(
         org.tron.trident.api.GrpcAPI.EmptyMessage request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetRcmMethod(), getCallOptions()), request);
     }
 
@@ -8373,7 +8361,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters> createShieldedContractParameters(
         org.tron.trident.api.GrpcAPI.PrivateShieldedTRC20Parameters request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateShieldedContractParametersMethod(), getCallOptions()), request);
     }
 
@@ -8381,7 +8369,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.ShieldedTRC20Parameters> createShieldedContractParametersWithoutAsk(
         org.tron.trident.api.GrpcAPI.PrivateShieldedTRC20ParametersWithoutAsk request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateShieldedContractParametersWithoutAskMethod(), getCallOptions()), request);
     }
 
@@ -8389,7 +8377,7 @@ public final class WalletGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<org.tron.trident.api.GrpcAPI.BytesMessage> getTriggerInputForShieldedTRC20Contract(
         org.tron.trident.api.GrpcAPI.ShieldedTRC20TriggerContractParameters request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetTriggerInputForShieldedTRC20ContractMethod(), getCallOptions()), request);
     }
   }

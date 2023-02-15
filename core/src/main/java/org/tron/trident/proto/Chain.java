@@ -89,7 +89,7 @@ public final class Chain {
   /**
    * Protobuf type {@code protocol.Transaction}
    */
-  public  static final class Transaction extends
+  public static final class Transaction extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.Transaction)
       TransactionOrBuilder {
@@ -253,7 +253,7 @@ public final class Chain {
     /**
      * Protobuf type {@code protocol.Transaction.Contract}
      */
-    public  static final class Contract extends
+    public static final class Contract extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.Transaction.Contract)
         ContractOrBuilder {
@@ -731,6 +731,10 @@ public final class Chain {
 
         public final com.google.protobuf.Descriptors.EnumValueDescriptor
             getValueDescriptor() {
+          if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalStateException(
+                "Can't get the descriptor of an unrecognized enum value.");
+          }
           return getDescriptor().getValues().get(ordinal());
         }
         public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -771,14 +775,14 @@ public final class Chain {
        * <code>.protocol.Transaction.Contract.ContractType type = 1;</code>
        * @return The enum numeric value on the wire for type.
        */
-      public int getTypeValue() {
+      @java.lang.Override public int getTypeValue() {
         return type_;
       }
       /**
        * <code>.protocol.Transaction.Contract.ContractType type = 1;</code>
        * @return The type.
        */
-      public org.tron.trident.proto.Chain.Transaction.Contract.ContractType getType() {
+      @java.lang.Override public org.tron.trident.proto.Chain.Transaction.Contract.ContractType getType() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Chain.Transaction.Contract.ContractType result = org.tron.trident.proto.Chain.Transaction.Contract.ContractType.valueOf(type_);
         return result == null ? org.tron.trident.proto.Chain.Transaction.Contract.ContractType.UNRECOGNIZED : result;
@@ -790,6 +794,7 @@ public final class Chain {
        * <code>.google.protobuf.Any parameter = 2;</code>
        * @return Whether the parameter field is set.
        */
+      @java.lang.Override
       public boolean hasParameter() {
         return parameter_ != null;
       }
@@ -797,12 +802,14 @@ public final class Chain {
        * <code>.google.protobuf.Any parameter = 2;</code>
        * @return The parameter.
        */
+      @java.lang.Override
       public com.google.protobuf.Any getParameter() {
         return parameter_ == null ? com.google.protobuf.Any.getDefaultInstance() : parameter_;
       }
       /**
        * <code>.google.protobuf.Any parameter = 2;</code>
        */
+      @java.lang.Override
       public com.google.protobuf.AnyOrBuilder getParameterOrBuilder() {
         return getParameter();
       }
@@ -813,6 +820,7 @@ public final class Chain {
        * <code>bytes provider = 3;</code>
        * @return The provider.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getProvider() {
         return provider_;
       }
@@ -823,6 +831,7 @@ public final class Chain {
        * <code>bytes ContractName = 4;</code>
        * @return The contractName.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getContractName() {
         return contractName_;
       }
@@ -833,6 +842,7 @@ public final class Chain {
        * <code>int32 Permission_id = 5;</code>
        * @return The permissionId.
        */
+      @java.lang.Override
       public int getPermissionId() {
         return permissionId_;
       }
@@ -1224,7 +1234,7 @@ public final class Chain {
          * <code>.protocol.Transaction.Contract.ContractType type = 1;</code>
          * @return The enum numeric value on the wire for type.
          */
-        public int getTypeValue() {
+        @java.lang.Override public int getTypeValue() {
           return type_;
         }
         /**
@@ -1233,6 +1243,7 @@ public final class Chain {
          * @return This builder for chaining.
          */
         public Builder setTypeValue(int value) {
+          
           type_ = value;
           onChanged();
           return this;
@@ -1241,6 +1252,7 @@ public final class Chain {
          * <code>.protocol.Transaction.Contract.ContractType type = 1;</code>
          * @return The type.
          */
+        @java.lang.Override
         public org.tron.trident.proto.Chain.Transaction.Contract.ContractType getType() {
           @SuppressWarnings("deprecation")
           org.tron.trident.proto.Chain.Transaction.Contract.ContractType result = org.tron.trident.proto.Chain.Transaction.Contract.ContractType.valueOf(type_);
@@ -1395,6 +1407,7 @@ public final class Chain {
          * <code>bytes provider = 3;</code>
          * @return The provider.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getProvider() {
           return provider_;
         }
@@ -1428,6 +1441,7 @@ public final class Chain {
          * <code>bytes ContractName = 4;</code>
          * @return The contractName.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getContractName() {
           return contractName_;
         }
@@ -1461,6 +1475,7 @@ public final class Chain {
          * <code>int32 Permission_id = 5;</code>
          * @return The permissionId.
          */
+        @java.lang.Override
         public int getPermissionId() {
           return permissionId_;
         }
@@ -1627,7 +1642,7 @@ public final class Chain {
     /**
      * Protobuf type {@code protocol.Transaction.Result}
      */
-    public  static final class Result extends
+    public static final class Result extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.Transaction.Result)
         ResultOrBuilder {
@@ -1832,6 +1847,10 @@ public final class Chain {
 
         public final com.google.protobuf.Descriptors.EnumValueDescriptor
             getValueDescriptor() {
+          if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalStateException(
+                "Can't get the descriptor of an unrecognized enum value.");
+          }
           return getDescriptor().getValues().get(ordinal());
         }
         public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -2053,6 +2072,10 @@ public final class Chain {
 
         public final com.google.protobuf.Descriptors.EnumValueDescriptor
             getValueDescriptor() {
+          if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalStateException(
+                "Can't get the descriptor of an unrecognized enum value.");
+          }
           return getDescriptor().getValues().get(ordinal());
         }
         public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -2093,6 +2116,7 @@ public final class Chain {
        * <code>int64 fee = 1;</code>
        * @return The fee.
        */
+      @java.lang.Override
       public long getFee() {
         return fee_;
       }
@@ -2103,14 +2127,14 @@ public final class Chain {
        * <code>.protocol.Transaction.Result.code ret = 2;</code>
        * @return The enum numeric value on the wire for ret.
        */
-      public int getRetValue() {
+      @java.lang.Override public int getRetValue() {
         return ret_;
       }
       /**
        * <code>.protocol.Transaction.Result.code ret = 2;</code>
        * @return The ret.
        */
-      public org.tron.trident.proto.Chain.Transaction.Result.code getRet() {
+      @java.lang.Override public org.tron.trident.proto.Chain.Transaction.Result.code getRet() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Chain.Transaction.Result.code result = org.tron.trident.proto.Chain.Transaction.Result.code.valueOf(ret_);
         return result == null ? org.tron.trident.proto.Chain.Transaction.Result.code.UNRECOGNIZED : result;
@@ -2122,14 +2146,14 @@ public final class Chain {
        * <code>.protocol.Transaction.Result.contractResult contractRet = 3;</code>
        * @return The enum numeric value on the wire for contractRet.
        */
-      public int getContractRetValue() {
+      @java.lang.Override public int getContractRetValue() {
         return contractRet_;
       }
       /**
        * <code>.protocol.Transaction.Result.contractResult contractRet = 3;</code>
        * @return The contractRet.
        */
-      public org.tron.trident.proto.Chain.Transaction.Result.contractResult getContractRet() {
+      @java.lang.Override public org.tron.trident.proto.Chain.Transaction.Result.contractResult getContractRet() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Chain.Transaction.Result.contractResult result = org.tron.trident.proto.Chain.Transaction.Result.contractResult.valueOf(contractRet_);
         return result == null ? org.tron.trident.proto.Chain.Transaction.Result.contractResult.UNRECOGNIZED : result;
@@ -2141,6 +2165,7 @@ public final class Chain {
        * <code>string assetIssueID = 14;</code>
        * @return The assetIssueID.
        */
+      @java.lang.Override
       public java.lang.String getAssetIssueID() {
         java.lang.Object ref = assetIssueID_;
         if (ref instanceof java.lang.String) {
@@ -2157,6 +2182,7 @@ public final class Chain {
        * <code>string assetIssueID = 14;</code>
        * @return The bytes for assetIssueID.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getAssetIssueIDBytes() {
         java.lang.Object ref = assetIssueID_;
@@ -2177,6 +2203,7 @@ public final class Chain {
        * <code>int64 withdraw_amount = 15;</code>
        * @return The withdrawAmount.
        */
+      @java.lang.Override
       public long getWithdrawAmount() {
         return withdrawAmount_;
       }
@@ -2187,6 +2214,7 @@ public final class Chain {
        * <code>int64 unfreeze_amount = 16;</code>
        * @return The unfreezeAmount.
        */
+      @java.lang.Override
       public long getUnfreezeAmount() {
         return unfreezeAmount_;
       }
@@ -2197,6 +2225,7 @@ public final class Chain {
        * <code>int64 exchange_received_amount = 18;</code>
        * @return The exchangeReceivedAmount.
        */
+      @java.lang.Override
       public long getExchangeReceivedAmount() {
         return exchangeReceivedAmount_;
       }
@@ -2207,6 +2236,7 @@ public final class Chain {
        * <code>int64 exchange_inject_another_amount = 19;</code>
        * @return The exchangeInjectAnotherAmount.
        */
+      @java.lang.Override
       public long getExchangeInjectAnotherAmount() {
         return exchangeInjectAnotherAmount_;
       }
@@ -2217,6 +2247,7 @@ public final class Chain {
        * <code>int64 exchange_withdraw_another_amount = 20;</code>
        * @return The exchangeWithdrawAnotherAmount.
        */
+      @java.lang.Override
       public long getExchangeWithdrawAnotherAmount() {
         return exchangeWithdrawAnotherAmount_;
       }
@@ -2227,6 +2258,7 @@ public final class Chain {
        * <code>int64 exchange_id = 21;</code>
        * @return The exchangeId.
        */
+      @java.lang.Override
       public long getExchangeId() {
         return exchangeId_;
       }
@@ -2237,6 +2269,7 @@ public final class Chain {
        * <code>int64 shielded_transaction_fee = 22;</code>
        * @return The shieldedTransactionFee.
        */
+      @java.lang.Override
       public long getShieldedTransactionFee() {
         return shieldedTransactionFee_;
       }
@@ -2264,7 +2297,7 @@ public final class Chain {
         if (contractRet_ != org.tron.trident.proto.Chain.Transaction.Result.contractResult.DEFAULT.getNumber()) {
           output.writeEnum(3, contractRet_);
         }
-        if (!getAssetIssueIDBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetIssueID_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 14, assetIssueID_);
         }
         if (withdrawAmount_ != 0L) {
@@ -2309,7 +2342,7 @@ public final class Chain {
           size += com.google.protobuf.CodedOutputStream
             .computeEnumSize(3, contractRet_);
         }
-        if (!getAssetIssueIDBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetIssueID_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, assetIssueID_);
         }
         if (withdrawAmount_ != 0L) {
@@ -2724,6 +2757,7 @@ public final class Chain {
          * <code>int64 fee = 1;</code>
          * @return The fee.
          */
+        @java.lang.Override
         public long getFee() {
           return fee_;
         }
@@ -2754,7 +2788,7 @@ public final class Chain {
          * <code>.protocol.Transaction.Result.code ret = 2;</code>
          * @return The enum numeric value on the wire for ret.
          */
-        public int getRetValue() {
+        @java.lang.Override public int getRetValue() {
           return ret_;
         }
         /**
@@ -2763,6 +2797,7 @@ public final class Chain {
          * @return This builder for chaining.
          */
         public Builder setRetValue(int value) {
+          
           ret_ = value;
           onChanged();
           return this;
@@ -2771,6 +2806,7 @@ public final class Chain {
          * <code>.protocol.Transaction.Result.code ret = 2;</code>
          * @return The ret.
          */
+        @java.lang.Override
         public org.tron.trident.proto.Chain.Transaction.Result.code getRet() {
           @SuppressWarnings("deprecation")
           org.tron.trident.proto.Chain.Transaction.Result.code result = org.tron.trident.proto.Chain.Transaction.Result.code.valueOf(ret_);
@@ -2806,7 +2842,7 @@ public final class Chain {
          * <code>.protocol.Transaction.Result.contractResult contractRet = 3;</code>
          * @return The enum numeric value on the wire for contractRet.
          */
-        public int getContractRetValue() {
+        @java.lang.Override public int getContractRetValue() {
           return contractRet_;
         }
         /**
@@ -2815,6 +2851,7 @@ public final class Chain {
          * @return This builder for chaining.
          */
         public Builder setContractRetValue(int value) {
+          
           contractRet_ = value;
           onChanged();
           return this;
@@ -2823,6 +2860,7 @@ public final class Chain {
          * <code>.protocol.Transaction.Result.contractResult contractRet = 3;</code>
          * @return The contractRet.
          */
+        @java.lang.Override
         public org.tron.trident.proto.Chain.Transaction.Result.contractResult getContractRet() {
           @SuppressWarnings("deprecation")
           org.tron.trident.proto.Chain.Transaction.Result.contractResult result = org.tron.trident.proto.Chain.Transaction.Result.contractResult.valueOf(contractRet_);
@@ -2934,6 +2972,7 @@ public final class Chain {
          * <code>int64 withdraw_amount = 15;</code>
          * @return The withdrawAmount.
          */
+        @java.lang.Override
         public long getWithdrawAmount() {
           return withdrawAmount_;
         }
@@ -2964,6 +3003,7 @@ public final class Chain {
          * <code>int64 unfreeze_amount = 16;</code>
          * @return The unfreezeAmount.
          */
+        @java.lang.Override
         public long getUnfreezeAmount() {
           return unfreezeAmount_;
         }
@@ -2994,6 +3034,7 @@ public final class Chain {
          * <code>int64 exchange_received_amount = 18;</code>
          * @return The exchangeReceivedAmount.
          */
+        @java.lang.Override
         public long getExchangeReceivedAmount() {
           return exchangeReceivedAmount_;
         }
@@ -3024,6 +3065,7 @@ public final class Chain {
          * <code>int64 exchange_inject_another_amount = 19;</code>
          * @return The exchangeInjectAnotherAmount.
          */
+        @java.lang.Override
         public long getExchangeInjectAnotherAmount() {
           return exchangeInjectAnotherAmount_;
         }
@@ -3054,6 +3096,7 @@ public final class Chain {
          * <code>int64 exchange_withdraw_another_amount = 20;</code>
          * @return The exchangeWithdrawAnotherAmount.
          */
+        @java.lang.Override
         public long getExchangeWithdrawAnotherAmount() {
           return exchangeWithdrawAnotherAmount_;
         }
@@ -3084,6 +3127,7 @@ public final class Chain {
          * <code>int64 exchange_id = 21;</code>
          * @return The exchangeId.
          */
+        @java.lang.Override
         public long getExchangeId() {
           return exchangeId_;
         }
@@ -3114,6 +3158,7 @@ public final class Chain {
          * <code>int64 shielded_transaction_fee = 22;</code>
          * @return The shieldedTransactionFee.
          */
+        @java.lang.Override
         public long getShieldedTransactionFee() {
           return shieldedTransactionFee_;
         }
@@ -3322,7 +3367,7 @@ public final class Chain {
     /**
      * Protobuf type {@code protocol.Transaction.raw}
      */
-    public  static final class raw extends
+    public static final class raw extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.Transaction.raw)
         rawOrBuilder {
@@ -3473,6 +3518,7 @@ public final class Chain {
        * <code>bytes ref_block_bytes = 1;</code>
        * @return The refBlockBytes.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getRefBlockBytes() {
         return refBlockBytes_;
       }
@@ -3483,6 +3529,7 @@ public final class Chain {
        * <code>int64 ref_block_num = 3;</code>
        * @return The refBlockNum.
        */
+      @java.lang.Override
       public long getRefBlockNum() {
         return refBlockNum_;
       }
@@ -3493,6 +3540,7 @@ public final class Chain {
        * <code>bytes ref_block_hash = 4;</code>
        * @return The refBlockHash.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getRefBlockHash() {
         return refBlockHash_;
       }
@@ -3503,6 +3551,7 @@ public final class Chain {
        * <code>int64 expiration = 8;</code>
        * @return The expiration.
        */
+      @java.lang.Override
       public long getExpiration() {
         return expiration_;
       }
@@ -3512,12 +3561,14 @@ public final class Chain {
       /**
        * <code>repeated .protocol.authority auths = 9;</code>
        */
+      @java.lang.Override
       public java.util.List<org.tron.trident.proto.Common.authority> getAuthsList() {
         return auths_;
       }
       /**
        * <code>repeated .protocol.authority auths = 9;</code>
        */
+      @java.lang.Override
       public java.util.List<? extends org.tron.trident.proto.Common.authorityOrBuilder> 
           getAuthsOrBuilderList() {
         return auths_;
@@ -3525,18 +3576,21 @@ public final class Chain {
       /**
        * <code>repeated .protocol.authority auths = 9;</code>
        */
+      @java.lang.Override
       public int getAuthsCount() {
         return auths_.size();
       }
       /**
        * <code>repeated .protocol.authority auths = 9;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.authority getAuths(int index) {
         return auths_.get(index);
       }
       /**
        * <code>repeated .protocol.authority auths = 9;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.authorityOrBuilder getAuthsOrBuilder(
           int index) {
         return auths_.get(index);
@@ -3552,6 +3606,7 @@ public final class Chain {
        * <code>bytes data = 10;</code>
        * @return The data.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getData() {
         return data_;
       }
@@ -3565,6 +3620,7 @@ public final class Chain {
        *
        * <code>repeated .protocol.Transaction.Contract contract = 11;</code>
        */
+      @java.lang.Override
       public java.util.List<org.tron.trident.proto.Chain.Transaction.Contract> getContractList() {
         return contract_;
       }
@@ -3575,6 +3631,7 @@ public final class Chain {
        *
        * <code>repeated .protocol.Transaction.Contract contract = 11;</code>
        */
+      @java.lang.Override
       public java.util.List<? extends org.tron.trident.proto.Chain.Transaction.ContractOrBuilder> 
           getContractOrBuilderList() {
         return contract_;
@@ -3586,6 +3643,7 @@ public final class Chain {
        *
        * <code>repeated .protocol.Transaction.Contract contract = 11;</code>
        */
+      @java.lang.Override
       public int getContractCount() {
         return contract_.size();
       }
@@ -3596,6 +3654,7 @@ public final class Chain {
        *
        * <code>repeated .protocol.Transaction.Contract contract = 11;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Chain.Transaction.Contract getContract(int index) {
         return contract_.get(index);
       }
@@ -3606,6 +3665,7 @@ public final class Chain {
        *
        * <code>repeated .protocol.Transaction.Contract contract = 11;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Chain.Transaction.ContractOrBuilder getContractOrBuilder(
           int index) {
         return contract_.get(index);
@@ -3621,6 +3681,7 @@ public final class Chain {
        * <code>bytes scripts = 12;</code>
        * @return The scripts.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getScripts() {
         return scripts_;
       }
@@ -3631,6 +3692,7 @@ public final class Chain {
        * <code>int64 timestamp = 14;</code>
        * @return The timestamp.
        */
+      @java.lang.Override
       public long getTimestamp() {
         return timestamp_;
       }
@@ -3641,6 +3703,7 @@ public final class Chain {
        * <code>int64 fee_limit = 18;</code>
        * @return The feeLimit.
        */
+      @java.lang.Override
       public long getFeeLimit() {
         return feeLimit_;
       }
@@ -4187,6 +4250,7 @@ public final class Chain {
          * <code>bytes ref_block_bytes = 1;</code>
          * @return The refBlockBytes.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getRefBlockBytes() {
           return refBlockBytes_;
         }
@@ -4220,6 +4284,7 @@ public final class Chain {
          * <code>int64 ref_block_num = 3;</code>
          * @return The refBlockNum.
          */
+        @java.lang.Override
         public long getRefBlockNum() {
           return refBlockNum_;
         }
@@ -4250,6 +4315,7 @@ public final class Chain {
          * <code>bytes ref_block_hash = 4;</code>
          * @return The refBlockHash.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getRefBlockHash() {
           return refBlockHash_;
         }
@@ -4283,6 +4349,7 @@ public final class Chain {
          * <code>int64 expiration = 8;</code>
          * @return The expiration.
          */
+        @java.lang.Override
         public long getExpiration() {
           return expiration_;
         }
@@ -4557,6 +4624,7 @@ public final class Chain {
          * <code>bytes data = 10;</code>
          * @return The data.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getData() {
           return data_;
         }
@@ -4914,6 +4982,7 @@ public final class Chain {
          * <code>bytes scripts = 12;</code>
          * @return The scripts.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getScripts() {
           return scripts_;
         }
@@ -4955,6 +5024,7 @@ public final class Chain {
          * <code>int64 timestamp = 14;</code>
          * @return The timestamp.
          */
+        @java.lang.Override
         public long getTimestamp() {
           return timestamp_;
         }
@@ -4985,6 +5055,7 @@ public final class Chain {
          * <code>int64 fee_limit = 18;</code>
          * @return The feeLimit.
          */
+        @java.lang.Override
         public long getFeeLimit() {
           return feeLimit_;
         }
@@ -5068,6 +5139,7 @@ public final class Chain {
      * <code>.protocol.Transaction.raw raw_data = 1;</code>
      * @return Whether the rawData field is set.
      */
+    @java.lang.Override
     public boolean hasRawData() {
       return rawData_ != null;
     }
@@ -5075,12 +5147,14 @@ public final class Chain {
      * <code>.protocol.Transaction.raw raw_data = 1;</code>
      * @return The rawData.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.Transaction.raw getRawData() {
       return rawData_ == null ? org.tron.trident.proto.Chain.Transaction.raw.getDefaultInstance() : rawData_;
     }
     /**
      * <code>.protocol.Transaction.raw raw_data = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.Transaction.rawOrBuilder getRawDataOrBuilder() {
       return getRawData();
     }
@@ -5095,6 +5169,7 @@ public final class Chain {
      * <code>repeated bytes signature = 2;</code>
      * @return A list containing the signature.
      */
+    @java.lang.Override
     public java.util.List<com.google.protobuf.ByteString>
         getSignatureList() {
       return signature_;
@@ -5128,12 +5203,14 @@ public final class Chain {
     /**
      * <code>repeated .protocol.Transaction.Result ret = 5;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Chain.Transaction.Result> getRetList() {
       return ret_;
     }
     /**
      * <code>repeated .protocol.Transaction.Result ret = 5;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Chain.Transaction.ResultOrBuilder> 
         getRetOrBuilderList() {
       return ret_;
@@ -5141,18 +5218,21 @@ public final class Chain {
     /**
      * <code>repeated .protocol.Transaction.Result ret = 5;</code>
      */
+    @java.lang.Override
     public int getRetCount() {
       return ret_.size();
     }
     /**
      * <code>repeated .protocol.Transaction.Result ret = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.Transaction.Result getRet(int index) {
       return ret_.get(index);
     }
     /**
      * <code>repeated .protocol.Transaction.Result ret = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.Transaction.ResultOrBuilder getRetOrBuilder(
         int index) {
       return ret_.get(index);
@@ -6117,7 +6197,7 @@ public final class Chain {
   /**
    * Protobuf type {@code protocol.BlockHeader}
    */
-  public  static final class BlockHeader extends
+  public static final class BlockHeader extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.BlockHeader)
       BlockHeaderOrBuilder {
@@ -6270,7 +6350,7 @@ public final class Chain {
     /**
      * Protobuf type {@code protocol.BlockHeader.raw}
      */
-    public  static final class raw extends
+    public static final class raw extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.BlockHeader.raw)
         rawOrBuilder {
@@ -6394,6 +6474,7 @@ public final class Chain {
        * <code>int64 timestamp = 1;</code>
        * @return The timestamp.
        */
+      @java.lang.Override
       public long getTimestamp() {
         return timestamp_;
       }
@@ -6404,6 +6485,7 @@ public final class Chain {
        * <code>bytes txTrieRoot = 2;</code>
        * @return The txTrieRoot.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTxTrieRoot() {
         return txTrieRoot_;
       }
@@ -6414,6 +6496,7 @@ public final class Chain {
        * <code>bytes parentHash = 3;</code>
        * @return The parentHash.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getParentHash() {
         return parentHash_;
       }
@@ -6429,6 +6512,7 @@ public final class Chain {
        * <code>int64 number = 7;</code>
        * @return The number.
        */
+      @java.lang.Override
       public long getNumber() {
         return number_;
       }
@@ -6439,6 +6523,7 @@ public final class Chain {
        * <code>int64 witness_id = 8;</code>
        * @return The witnessId.
        */
+      @java.lang.Override
       public long getWitnessId() {
         return witnessId_;
       }
@@ -6449,6 +6534,7 @@ public final class Chain {
        * <code>bytes witness_address = 9;</code>
        * @return The witnessAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getWitnessAddress() {
         return witnessAddress_;
       }
@@ -6459,6 +6545,7 @@ public final class Chain {
        * <code>int32 version = 10;</code>
        * @return The version.
        */
+      @java.lang.Override
       public int getVersion() {
         return version_;
       }
@@ -6469,6 +6556,7 @@ public final class Chain {
        * <code>bytes accountStateRoot = 11;</code>
        * @return The accountStateRoot.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAccountStateRoot() {
         return accountStateRoot_;
       }
@@ -6902,6 +6990,7 @@ public final class Chain {
          * <code>int64 timestamp = 1;</code>
          * @return The timestamp.
          */
+        @java.lang.Override
         public long getTimestamp() {
           return timestamp_;
         }
@@ -6932,6 +7021,7 @@ public final class Chain {
          * <code>bytes txTrieRoot = 2;</code>
          * @return The txTrieRoot.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getTxTrieRoot() {
           return txTrieRoot_;
         }
@@ -6965,6 +7055,7 @@ public final class Chain {
          * <code>bytes parentHash = 3;</code>
          * @return The parentHash.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getParentHash() {
           return parentHash_;
         }
@@ -7003,6 +7094,7 @@ public final class Chain {
          * <code>int64 number = 7;</code>
          * @return The number.
          */
+        @java.lang.Override
         public long getNumber() {
           return number_;
         }
@@ -7043,6 +7135,7 @@ public final class Chain {
          * <code>int64 witness_id = 8;</code>
          * @return The witnessId.
          */
+        @java.lang.Override
         public long getWitnessId() {
           return witnessId_;
         }
@@ -7073,6 +7166,7 @@ public final class Chain {
          * <code>bytes witness_address = 9;</code>
          * @return The witnessAddress.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getWitnessAddress() {
           return witnessAddress_;
         }
@@ -7106,6 +7200,7 @@ public final class Chain {
          * <code>int32 version = 10;</code>
          * @return The version.
          */
+        @java.lang.Override
         public int getVersion() {
           return version_;
         }
@@ -7136,6 +7231,7 @@ public final class Chain {
          * <code>bytes accountStateRoot = 11;</code>
          * @return The accountStateRoot.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getAccountStateRoot() {
           return accountStateRoot_;
         }
@@ -7222,6 +7318,7 @@ public final class Chain {
      * <code>.protocol.BlockHeader.raw raw_data = 1;</code>
      * @return Whether the rawData field is set.
      */
+    @java.lang.Override
     public boolean hasRawData() {
       return rawData_ != null;
     }
@@ -7229,12 +7326,14 @@ public final class Chain {
      * <code>.protocol.BlockHeader.raw raw_data = 1;</code>
      * @return The rawData.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.BlockHeader.raw getRawData() {
       return rawData_ == null ? org.tron.trident.proto.Chain.BlockHeader.raw.getDefaultInstance() : rawData_;
     }
     /**
      * <code>.protocol.BlockHeader.raw raw_data = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.BlockHeader.rawOrBuilder getRawDataOrBuilder() {
       return getRawData();
     }
@@ -7245,6 +7344,7 @@ public final class Chain {
      * <code>bytes witness_signature = 2;</code>
      * @return The witnessSignature.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getWitnessSignature() {
       return witnessSignature_;
     }
@@ -7705,6 +7805,7 @@ public final class Chain {
        * <code>bytes witness_signature = 2;</code>
        * @return The witnessSignature.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getWitnessSignature() {
         return witnessSignature_;
       }
@@ -7835,7 +7936,7 @@ public final class Chain {
    *
    * Protobuf type {@code protocol.Block}
    */
-  public  static final class Block extends
+  public static final class Block extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.Block)
       BlockOrBuilder {
@@ -7941,12 +8042,14 @@ public final class Chain {
     /**
      * <code>repeated .protocol.Transaction transactions = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Chain.Transaction> getTransactionsList() {
       return transactions_;
     }
     /**
      * <code>repeated .protocol.Transaction transactions = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Chain.TransactionOrBuilder> 
         getTransactionsOrBuilderList() {
       return transactions_;
@@ -7954,18 +8057,21 @@ public final class Chain {
     /**
      * <code>repeated .protocol.Transaction transactions = 1;</code>
      */
+    @java.lang.Override
     public int getTransactionsCount() {
       return transactions_.size();
     }
     /**
      * <code>repeated .protocol.Transaction transactions = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.Transaction getTransactions(int index) {
       return transactions_.get(index);
     }
     /**
      * <code>repeated .protocol.Transaction transactions = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.TransactionOrBuilder getTransactionsOrBuilder(
         int index) {
       return transactions_.get(index);
@@ -7977,6 +8083,7 @@ public final class Chain {
      * <code>.protocol.BlockHeader block_header = 2;</code>
      * @return Whether the blockHeader field is set.
      */
+    @java.lang.Override
     public boolean hasBlockHeader() {
       return blockHeader_ != null;
     }
@@ -7984,12 +8091,14 @@ public final class Chain {
      * <code>.protocol.BlockHeader block_header = 2;</code>
      * @return The blockHeader.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.BlockHeader getBlockHeader() {
       return blockHeader_ == null ? org.tron.trident.proto.Chain.BlockHeader.getDefaultInstance() : blockHeader_;
     }
     /**
      * <code>.protocol.BlockHeader block_header = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.BlockHeaderOrBuilder getBlockHeaderOrBuilder() {
       return getBlockHeader();
     }

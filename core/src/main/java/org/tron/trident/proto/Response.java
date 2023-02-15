@@ -66,7 +66,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.BlockExtention}
    */
-  public  static final class BlockExtention extends
+  public static final class BlockExtention extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.BlockExtention)
       BlockExtentionOrBuilder {
@@ -178,12 +178,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.TransactionExtention transactions = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.TransactionExtention> getTransactionsList() {
       return transactions_;
     }
     /**
      * <code>repeated .protocol.TransactionExtention transactions = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.TransactionExtentionOrBuilder> 
         getTransactionsOrBuilderList() {
       return transactions_;
@@ -191,18 +193,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.TransactionExtention transactions = 1;</code>
      */
+    @java.lang.Override
     public int getTransactionsCount() {
       return transactions_.size();
     }
     /**
      * <code>repeated .protocol.TransactionExtention transactions = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionExtention getTransactions(int index) {
       return transactions_.get(index);
     }
     /**
      * <code>repeated .protocol.TransactionExtention transactions = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionExtentionOrBuilder getTransactionsOrBuilder(
         int index) {
       return transactions_.get(index);
@@ -214,6 +219,7 @@ public final class Response {
      * <code>.protocol.BlockHeader block_header = 2;</code>
      * @return Whether the blockHeader field is set.
      */
+    @java.lang.Override
     public boolean hasBlockHeader() {
       return blockHeader_ != null;
     }
@@ -221,12 +227,14 @@ public final class Response {
      * <code>.protocol.BlockHeader block_header = 2;</code>
      * @return The blockHeader.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.BlockHeader getBlockHeader() {
       return blockHeader_ == null ? org.tron.trident.proto.Chain.BlockHeader.getDefaultInstance() : blockHeader_;
     }
     /**
      * <code>.protocol.BlockHeader block_header = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.BlockHeaderOrBuilder getBlockHeaderOrBuilder() {
       return getBlockHeader();
     }
@@ -237,6 +245,7 @@ public final class Response {
      * <code>bytes blockid = 3;</code>
      * @return The blockid.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getBlockid() {
       return blockid_;
     }
@@ -994,6 +1003,7 @@ public final class Response {
        * <code>bytes blockid = 3;</code>
        * @return The blockid.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getBlockid() {
         return blockid_;
       }
@@ -1105,7 +1115,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.BlockListExtention}
    */
-  public  static final class BlockListExtention extends
+  public static final class BlockListExtention extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.BlockListExtention)
       BlockListExtentionOrBuilder {
@@ -1198,12 +1208,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.BlockExtention block = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.BlockExtention> getBlockList() {
       return block_;
     }
     /**
      * <code>repeated .protocol.BlockExtention block = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.BlockExtentionOrBuilder> 
         getBlockOrBuilderList() {
       return block_;
@@ -1211,18 +1223,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.BlockExtention block = 1;</code>
      */
+    @java.lang.Override
     public int getBlockCount() {
       return block_.size();
     }
     /**
      * <code>repeated .protocol.BlockExtention block = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.BlockExtention getBlock(int index) {
       return block_.get(index);
     }
     /**
      * <code>repeated .protocol.BlockExtention block = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.BlockExtentionOrBuilder getBlockOrBuilder(
         int index) {
       return block_.get(index);
@@ -1892,7 +1907,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.TransactionReturn}
    */
-  public  static final class TransactionReturn extends
+  public static final class TransactionReturn extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TransactionReturn)
       TransactionReturnOrBuilder {
@@ -2161,6 +2176,10 @@ public final class Response {
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -2201,6 +2220,7 @@ public final class Response {
      * <code>bool result = 1;</code>
      * @return The result.
      */
+    @java.lang.Override
     public boolean getResult() {
       return result_;
     }
@@ -2211,14 +2231,14 @@ public final class Response {
      * <code>.protocol.TransactionReturn.response_code code = 2;</code>
      * @return The enum numeric value on the wire for code.
      */
-    public int getCodeValue() {
+    @java.lang.Override public int getCodeValue() {
       return code_;
     }
     /**
      * <code>.protocol.TransactionReturn.response_code code = 2;</code>
      * @return The code.
      */
-    public org.tron.trident.proto.Response.TransactionReturn.response_code getCode() {
+    @java.lang.Override public org.tron.trident.proto.Response.TransactionReturn.response_code getCode() {
       @SuppressWarnings("deprecation")
       org.tron.trident.proto.Response.TransactionReturn.response_code result = org.tron.trident.proto.Response.TransactionReturn.response_code.valueOf(code_);
       return result == null ? org.tron.trident.proto.Response.TransactionReturn.response_code.UNRECOGNIZED : result;
@@ -2230,6 +2250,7 @@ public final class Response {
      * <code>bytes message = 3;</code>
      * @return The message.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getMessage() {
       return message_;
     }
@@ -2575,6 +2596,7 @@ public final class Response {
        * <code>bool result = 1;</code>
        * @return The result.
        */
+      @java.lang.Override
       public boolean getResult() {
         return result_;
       }
@@ -2605,7 +2627,7 @@ public final class Response {
        * <code>.protocol.TransactionReturn.response_code code = 2;</code>
        * @return The enum numeric value on the wire for code.
        */
-      public int getCodeValue() {
+      @java.lang.Override public int getCodeValue() {
         return code_;
       }
       /**
@@ -2614,6 +2636,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setCodeValue(int value) {
+        
         code_ = value;
         onChanged();
         return this;
@@ -2622,6 +2645,7 @@ public final class Response {
        * <code>.protocol.TransactionReturn.response_code code = 2;</code>
        * @return The code.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.TransactionReturn.response_code getCode() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Response.TransactionReturn.response_code result = org.tron.trident.proto.Response.TransactionReturn.response_code.valueOf(code_);
@@ -2657,6 +2681,7 @@ public final class Response {
        * <code>bytes message = 3;</code>
        * @return The message.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getMessage() {
         return message_;
       }
@@ -2807,7 +2832,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.TransactionExtention}
    */
-  public  static final class TransactionExtention extends
+  public static final class TransactionExtention extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TransactionExtention)
       TransactionExtentionOrBuilder {
@@ -2937,6 +2962,7 @@ public final class Response {
      * <code>.protocol.Transaction transaction = 1;</code>
      * @return Whether the transaction field is set.
      */
+    @java.lang.Override
     public boolean hasTransaction() {
       return transaction_ != null;
     }
@@ -2944,12 +2970,14 @@ public final class Response {
      * <code>.protocol.Transaction transaction = 1;</code>
      * @return The transaction.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.Transaction getTransaction() {
       return transaction_ == null ? org.tron.trident.proto.Chain.Transaction.getDefaultInstance() : transaction_;
     }
     /**
      * <code>.protocol.Transaction transaction = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.TransactionOrBuilder getTransactionOrBuilder() {
       return getTransaction();
     }
@@ -2964,6 +2992,7 @@ public final class Response {
      * <code>bytes txid = 2;</code>
      * @return The txid.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTxid() {
       return txid_;
     }
@@ -2974,6 +3003,7 @@ public final class Response {
      * <code>repeated bytes constant_result = 3;</code>
      * @return A list containing the constantResult.
      */
+    @java.lang.Override
     public java.util.List<com.google.protobuf.ByteString>
         getConstantResultList() {
       return constantResult_;
@@ -3000,6 +3030,7 @@ public final class Response {
      * <code>.protocol.TransactionReturn result = 4;</code>
      * @return Whether the result field is set.
      */
+    @java.lang.Override
     public boolean hasResult() {
       return result_ != null;
     }
@@ -3007,12 +3038,14 @@ public final class Response {
      * <code>.protocol.TransactionReturn result = 4;</code>
      * @return The result.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionReturn getResult() {
       return result_ == null ? org.tron.trident.proto.Response.TransactionReturn.getDefaultInstance() : result_;
     }
     /**
      * <code>.protocol.TransactionReturn result = 4;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionReturnOrBuilder getResultOrBuilder() {
       return getResult();
     }
@@ -3023,6 +3056,7 @@ public final class Response {
      * <code>int64 energy_used = 5;</code>
      * @return The energyUsed.
      */
+    @java.lang.Override
     public long getEnergyUsed() {
       return energyUsed_;
     }
@@ -3572,6 +3606,7 @@ public final class Response {
        * <code>bytes txid = 2;</code>
        * @return The txid.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTxid() {
         return txid_;
       }
@@ -3817,6 +3852,7 @@ public final class Response {
        * <code>int64 energy_used = 5;</code>
        * @return The energyUsed.
        */
+      @java.lang.Override
       public long getEnergyUsed() {
         return energyUsed_;
       }
@@ -3925,7 +3961,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.WitnessList}
    */
-  public  static final class WitnessList extends
+  public static final class WitnessList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.WitnessList)
       WitnessListOrBuilder {
@@ -4018,12 +4054,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.Witness witnesses = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.Witness> getWitnessesList() {
       return witnesses_;
     }
     /**
      * <code>repeated .protocol.Witness witnesses = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.WitnessOrBuilder> 
         getWitnessesOrBuilderList() {
       return witnesses_;
@@ -4031,18 +4069,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.Witness witnesses = 1;</code>
      */
+    @java.lang.Override
     public int getWitnessesCount() {
       return witnesses_.size();
     }
     /**
      * <code>repeated .protocol.Witness witnesses = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.Witness getWitnesses(int index) {
       return witnesses_.get(index);
     }
     /**
      * <code>repeated .protocol.Witness witnesses = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.WitnessOrBuilder getWitnessesOrBuilder(
         int index) {
       return witnesses_.get(index);
@@ -4713,7 +4754,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.ProposalList}
    */
-  public  static final class ProposalList extends
+  public static final class ProposalList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ProposalList)
       ProposalListOrBuilder {
@@ -4806,12 +4847,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.Proposal proposals = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.Proposal> getProposalsList() {
       return proposals_;
     }
     /**
      * <code>repeated .protocol.Proposal proposals = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.ProposalOrBuilder> 
         getProposalsOrBuilderList() {
       return proposals_;
@@ -4819,18 +4862,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.Proposal proposals = 1;</code>
      */
+    @java.lang.Override
     public int getProposalsCount() {
       return proposals_.size();
     }
     /**
      * <code>repeated .protocol.Proposal proposals = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.Proposal getProposals(int index) {
       return proposals_.get(index);
     }
     /**
      * <code>repeated .protocol.Proposal proposals = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.ProposalOrBuilder getProposalsOrBuilder(
         int index) {
       return proposals_.get(index);
@@ -5501,7 +5547,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.ExchangeList}
    */
-  public  static final class ExchangeList extends
+  public static final class ExchangeList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ExchangeList)
       ExchangeListOrBuilder {
@@ -5594,12 +5640,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.Exchange exchanges = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.Exchange> getExchangesList() {
       return exchanges_;
     }
     /**
      * <code>repeated .protocol.Exchange exchanges = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.ExchangeOrBuilder> 
         getExchangesOrBuilderList() {
       return exchanges_;
@@ -5607,18 +5655,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.Exchange exchanges = 1;</code>
      */
+    @java.lang.Override
     public int getExchangesCount() {
       return exchanges_.size();
     }
     /**
      * <code>repeated .protocol.Exchange exchanges = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.Exchange getExchanges(int index) {
       return exchanges_.get(index);
     }
     /**
      * <code>repeated .protocol.Exchange exchanges = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.ExchangeOrBuilder getExchangesOrBuilder(
         int index) {
       return exchanges_.get(index);
@@ -6289,7 +6340,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.AssetIssueList}
    */
-  public  static final class AssetIssueList extends
+  public static final class AssetIssueList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AssetIssueList)
       AssetIssueListOrBuilder {
@@ -6382,12 +6433,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.AssetIssueContract assets = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Contract.AssetIssueContract> getAssetsList() {
       return assets_;
     }
     /**
      * <code>repeated .protocol.AssetIssueContract assets = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Contract.AssetIssueContractOrBuilder> 
         getAssetsOrBuilderList() {
       return assets_;
@@ -6395,18 +6448,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.AssetIssueContract assets = 1;</code>
      */
+    @java.lang.Override
     public int getAssetsCount() {
       return assets_.size();
     }
     /**
      * <code>repeated .protocol.AssetIssueContract assets = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Contract.AssetIssueContract getAssets(int index) {
       return assets_.get(index);
     }
     /**
      * <code>repeated .protocol.AssetIssueContract assets = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Contract.AssetIssueContractOrBuilder getAssetsOrBuilder(
         int index) {
       return assets_.get(index);
@@ -7077,7 +7133,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.BlockList}
    */
-  public  static final class BlockList extends
+  public static final class BlockList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.BlockList)
       BlockListOrBuilder {
@@ -7170,12 +7226,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.Block block = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Chain.Block> getBlockList() {
       return block_;
     }
     /**
      * <code>repeated .protocol.Block block = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Chain.BlockOrBuilder> 
         getBlockOrBuilderList() {
       return block_;
@@ -7183,18 +7241,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.Block block = 1;</code>
      */
+    @java.lang.Override
     public int getBlockCount() {
       return block_.size();
     }
     /**
      * <code>repeated .protocol.Block block = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.Block getBlock(int index) {
       return block_.get(index);
     }
     /**
      * <code>repeated .protocol.Block block = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.BlockOrBuilder getBlockOrBuilder(
         int index) {
       return block_.get(index);
@@ -7865,7 +7926,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.TransactionList}
    */
-  public  static final class TransactionList extends
+  public static final class TransactionList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TransactionList)
       TransactionListOrBuilder {
@@ -7958,12 +8019,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.Transaction transaction = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Chain.Transaction> getTransactionList() {
       return transaction_;
     }
     /**
      * <code>repeated .protocol.Transaction transaction = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Chain.TransactionOrBuilder> 
         getTransactionOrBuilderList() {
       return transaction_;
@@ -7971,18 +8034,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.Transaction transaction = 1;</code>
      */
+    @java.lang.Override
     public int getTransactionCount() {
       return transaction_.size();
     }
     /**
      * <code>repeated .protocol.Transaction transaction = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.Transaction getTransaction(int index) {
       return transaction_.get(index);
     }
     /**
      * <code>repeated .protocol.Transaction transaction = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.TransactionOrBuilder getTransactionOrBuilder(
         int index) {
       return transaction_.get(index);
@@ -8641,7 +8707,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.DelegatedResourceMessage}
    */
-  public  static final class DelegatedResourceMessage extends
+  public static final class DelegatedResourceMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.DelegatedResourceMessage)
       DelegatedResourceMessageOrBuilder {
@@ -8733,6 +8799,7 @@ public final class Response {
      * <code>bytes from_address = 1;</code>
      * @return The fromAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getFromAddress() {
       return fromAddress_;
     }
@@ -8743,6 +8810,7 @@ public final class Response {
      * <code>bytes to_address = 2;</code>
      * @return The toAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getToAddress() {
       return toAddress_;
     }
@@ -9071,6 +9139,7 @@ public final class Response {
        * <code>bytes from_address = 1;</code>
        * @return The fromAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getFromAddress() {
         return fromAddress_;
       }
@@ -9104,6 +9173,7 @@ public final class Response {
        * <code>bytes to_address = 2;</code>
        * @return The toAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getToAddress() {
         return toAddress_;
       }
@@ -9215,7 +9285,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.DelegatedResourceList}
    */
-  public  static final class DelegatedResourceList extends
+  public static final class DelegatedResourceList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.DelegatedResourceList)
       DelegatedResourceListOrBuilder {
@@ -9308,12 +9378,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.DelegatedResource delegatedResource = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.DelegatedResource> getDelegatedResourceList() {
       return delegatedResource_;
     }
     /**
      * <code>repeated .protocol.DelegatedResource delegatedResource = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.DelegatedResourceOrBuilder> 
         getDelegatedResourceOrBuilderList() {
       return delegatedResource_;
@@ -9321,18 +9393,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.DelegatedResource delegatedResource = 1;</code>
      */
+    @java.lang.Override
     public int getDelegatedResourceCount() {
       return delegatedResource_.size();
     }
     /**
      * <code>repeated .protocol.DelegatedResource delegatedResource = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.DelegatedResource getDelegatedResource(int index) {
       return delegatedResource_.get(index);
     }
     /**
      * <code>repeated .protocol.DelegatedResource delegatedResource = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.DelegatedResourceOrBuilder getDelegatedResourceOrBuilder(
         int index) {
       return delegatedResource_.get(index);
@@ -10003,7 +10078,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.AddressPrKeyPairMessage}
    */
-  public  static final class AddressPrKeyPairMessage extends
+  public static final class AddressPrKeyPairMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AddressPrKeyPairMessage)
       AddressPrKeyPairMessageOrBuilder {
@@ -10097,6 +10172,7 @@ public final class Response {
      * <code>string address = 1;</code>
      * @return The address.
      */
+    @java.lang.Override
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
       if (ref instanceof java.lang.String) {
@@ -10113,6 +10189,7 @@ public final class Response {
      * <code>string address = 1;</code>
      * @return The bytes for address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAddressBytes() {
       java.lang.Object ref = address_;
@@ -10133,6 +10210,7 @@ public final class Response {
      * <code>string privateKey = 2;</code>
      * @return The privateKey.
      */
+    @java.lang.Override
     public java.lang.String getPrivateKey() {
       java.lang.Object ref = privateKey_;
       if (ref instanceof java.lang.String) {
@@ -10149,6 +10227,7 @@ public final class Response {
      * <code>string privateKey = 2;</code>
      * @return The bytes for privateKey.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getPrivateKeyBytes() {
       java.lang.Object ref = privateKey_;
@@ -10177,10 +10256,10 @@ public final class Response {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(address_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, address_);
       }
-      if (!getPrivateKeyBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(privateKey_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, privateKey_);
       }
       unknownFields.writeTo(output);
@@ -10192,10 +10271,10 @@ public final class Response {
       if (size != -1) return size;
 
       size = 0;
-      if (!getAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(address_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, address_);
       }
-      if (!getPrivateKeyBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(privateKey_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, privateKey_);
       }
       size += unknownFields.getSerializedSize();
@@ -10733,7 +10812,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.EasyTransferResponse}
    */
-  public  static final class EasyTransferResponse extends
+  public static final class EasyTransferResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.EasyTransferResponse)
       EasyTransferResponseOrBuilder {
@@ -10845,6 +10924,7 @@ public final class Response {
      * <code>.protocol.Transaction transaction = 1;</code>
      * @return Whether the transaction field is set.
      */
+    @java.lang.Override
     public boolean hasTransaction() {
       return transaction_ != null;
     }
@@ -10852,12 +10932,14 @@ public final class Response {
      * <code>.protocol.Transaction transaction = 1;</code>
      * @return The transaction.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.Transaction getTransaction() {
       return transaction_ == null ? org.tron.trident.proto.Chain.Transaction.getDefaultInstance() : transaction_;
     }
     /**
      * <code>.protocol.Transaction transaction = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.TransactionOrBuilder getTransactionOrBuilder() {
       return getTransaction();
     }
@@ -10868,6 +10950,7 @@ public final class Response {
      * <code>.protocol.TransactionReturn result = 2;</code>
      * @return Whether the result field is set.
      */
+    @java.lang.Override
     public boolean hasResult() {
       return result_ != null;
     }
@@ -10875,12 +10958,14 @@ public final class Response {
      * <code>.protocol.TransactionReturn result = 2;</code>
      * @return The result.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionReturn getResult() {
       return result_ == null ? org.tron.trident.proto.Response.TransactionReturn.getDefaultInstance() : result_;
     }
     /**
      * <code>.protocol.TransactionReturn result = 2;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionReturnOrBuilder getResultOrBuilder() {
       return getResult();
     }
@@ -10895,6 +10980,7 @@ public final class Response {
      * <code>bytes txid = 3;</code>
      * @return The txid.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTxid() {
       return txid_;
     }
@@ -11508,6 +11594,7 @@ public final class Response {
        * <code>bytes txid = 3;</code>
        * @return The txid.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTxid() {
         return txid_;
       }
@@ -11624,7 +11711,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.SmartContractDataWrapper}
    */
-  public  static final class SmartContractDataWrapper extends
+  public static final class SmartContractDataWrapper extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.SmartContractDataWrapper)
       SmartContractDataWrapperOrBuilder {
@@ -11723,6 +11810,7 @@ public final class Response {
      * <code>.protocol.SmartContract smart_contract = 1;</code>
      * @return Whether the smartContract field is set.
      */
+    @java.lang.Override
     public boolean hasSmartContract() {
       return smartContract_ != null;
     }
@@ -11730,12 +11818,14 @@ public final class Response {
      * <code>.protocol.SmartContract smart_contract = 1;</code>
      * @return The smartContract.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.SmartContract getSmartContract() {
       return smartContract_ == null ? org.tron.trident.proto.Common.SmartContract.getDefaultInstance() : smartContract_;
     }
     /**
      * <code>.protocol.SmartContract smart_contract = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.SmartContractOrBuilder getSmartContractOrBuilder() {
       return getSmartContract();
     }
@@ -11746,6 +11836,7 @@ public final class Response {
      * <code>bytes runtime_code = 2;</code>
      * @return The runtimeCode.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getRuntimeCode() {
       return runtimeCode_;
     }
@@ -12206,6 +12297,7 @@ public final class Response {
        * <code>bytes runtime_code = 2;</code>
        * @return The runtimeCode.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getRuntimeCode() {
         return runtimeCode_;
       }
@@ -12360,7 +12452,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.InternalTransaction}
    */
-  public  static final class InternalTransaction extends
+  public static final class InternalTransaction extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.InternalTransaction)
       InternalTransactionOrBuilder {
@@ -12514,7 +12606,7 @@ public final class Response {
     /**
      * Protobuf type {@code protocol.InternalTransaction.CallValueInfo}
      */
-    public  static final class CallValueInfo extends
+    public static final class CallValueInfo extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.InternalTransaction.CallValueInfo)
         CallValueInfoOrBuilder {
@@ -12610,6 +12702,7 @@ public final class Response {
        * <code>int64 callValue = 1;</code>
        * @return The callValue.
        */
+      @java.lang.Override
       public long getCallValue() {
         return callValue_;
       }
@@ -12624,6 +12717,7 @@ public final class Response {
        * <code>string tokenId = 2;</code>
        * @return The tokenId.
        */
+      @java.lang.Override
       public java.lang.String getTokenId() {
         java.lang.Object ref = tokenId_;
         if (ref instanceof java.lang.String) {
@@ -12644,6 +12738,7 @@ public final class Response {
        * <code>string tokenId = 2;</code>
        * @return The bytes for tokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getTokenIdBytes() {
         java.lang.Object ref = tokenId_;
@@ -12675,7 +12770,7 @@ public final class Response {
         if (callValue_ != 0L) {
           output.writeInt64(1, callValue_);
         }
-        if (!getTokenIdBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(tokenId_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, tokenId_);
         }
         unknownFields.writeTo(output);
@@ -12691,7 +12786,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(1, callValue_);
         }
-        if (!getTokenIdBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(tokenId_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, tokenId_);
         }
         size += unknownFields.getSerializedSize();
@@ -12987,6 +13082,7 @@ public final class Response {
          * <code>int64 callValue = 1;</code>
          * @return The callValue.
          */
+        @java.lang.Override
         public long getCallValue() {
           return callValue_;
         }
@@ -13179,6 +13275,7 @@ public final class Response {
      * <code>bytes hash = 1;</code>
      * @return The hash.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getHash() {
       return hash_;
     }
@@ -13193,6 +13290,7 @@ public final class Response {
      * <code>bytes caller_address = 2;</code>
      * @return The callerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getCallerAddress() {
       return callerAddress_;
     }
@@ -13207,6 +13305,7 @@ public final class Response {
      * <code>bytes transferTo_address = 3;</code>
      * @return The transferToAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTransferToAddress() {
       return transferToAddress_;
     }
@@ -13216,12 +13315,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.InternalTransaction.CallValueInfo callValueInfo = 4;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.InternalTransaction.CallValueInfo> getCallValueInfoList() {
       return callValueInfo_;
     }
     /**
      * <code>repeated .protocol.InternalTransaction.CallValueInfo callValueInfo = 4;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.InternalTransaction.CallValueInfoOrBuilder> 
         getCallValueInfoOrBuilderList() {
       return callValueInfo_;
@@ -13229,18 +13330,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.InternalTransaction.CallValueInfo callValueInfo = 4;</code>
      */
+    @java.lang.Override
     public int getCallValueInfoCount() {
       return callValueInfo_.size();
     }
     /**
      * <code>repeated .protocol.InternalTransaction.CallValueInfo callValueInfo = 4;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.InternalTransaction.CallValueInfo getCallValueInfo(int index) {
       return callValueInfo_.get(index);
     }
     /**
      * <code>repeated .protocol.InternalTransaction.CallValueInfo callValueInfo = 4;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.InternalTransaction.CallValueInfoOrBuilder getCallValueInfoOrBuilder(
         int index) {
       return callValueInfo_.get(index);
@@ -13252,6 +13356,7 @@ public final class Response {
      * <code>bytes note = 5;</code>
      * @return The note.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNote() {
       return note_;
     }
@@ -13262,6 +13367,7 @@ public final class Response {
      * <code>bool rejected = 6;</code>
      * @return The rejected.
      */
+    @java.lang.Override
     public boolean getRejected() {
       return rejected_;
     }
@@ -13704,6 +13810,7 @@ public final class Response {
        * <code>bytes hash = 1;</code>
        * @return The hash.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getHash() {
         return hash_;
       }
@@ -13751,6 +13858,7 @@ public final class Response {
        * <code>bytes caller_address = 2;</code>
        * @return The callerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getCallerAddress() {
         return callerAddress_;
       }
@@ -13796,6 +13904,7 @@ public final class Response {
        * <code>bytes transferTo_address = 3;</code>
        * @return The transferToAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTransferToAddress() {
         return transferToAddress_;
       }
@@ -14077,6 +14186,7 @@ public final class Response {
        * <code>bytes note = 5;</code>
        * @return The note.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNote() {
         return note_;
       }
@@ -14110,6 +14220,7 @@ public final class Response {
        * <code>bool rejected = 6;</code>
        * @return The rejected.
        */
+      @java.lang.Override
       public boolean getRejected() {
         return rejected_;
       }
@@ -14241,7 +14352,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.ResourceReceipt}
    */
-  public  static final class ResourceReceipt extends
+  public static final class ResourceReceipt extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ResourceReceipt)
       ResourceReceiptOrBuilder {
@@ -14358,6 +14469,7 @@ public final class Response {
      * <code>int64 energy_usage = 1;</code>
      * @return The energyUsage.
      */
+    @java.lang.Override
     public long getEnergyUsage() {
       return energyUsage_;
     }
@@ -14368,6 +14480,7 @@ public final class Response {
      * <code>int64 energy_fee = 2;</code>
      * @return The energyFee.
      */
+    @java.lang.Override
     public long getEnergyFee() {
       return energyFee_;
     }
@@ -14378,6 +14491,7 @@ public final class Response {
      * <code>int64 origin_energy_usage = 3;</code>
      * @return The originEnergyUsage.
      */
+    @java.lang.Override
     public long getOriginEnergyUsage() {
       return originEnergyUsage_;
     }
@@ -14388,6 +14502,7 @@ public final class Response {
      * <code>int64 energy_usage_total = 4;</code>
      * @return The energyUsageTotal.
      */
+    @java.lang.Override
     public long getEnergyUsageTotal() {
       return energyUsageTotal_;
     }
@@ -14398,6 +14513,7 @@ public final class Response {
      * <code>int64 net_usage = 5;</code>
      * @return The netUsage.
      */
+    @java.lang.Override
     public long getNetUsage() {
       return netUsage_;
     }
@@ -14408,6 +14524,7 @@ public final class Response {
      * <code>int64 net_fee = 6;</code>
      * @return The netFee.
      */
+    @java.lang.Override
     public long getNetFee() {
       return netFee_;
     }
@@ -14418,14 +14535,14 @@ public final class Response {
      * <code>.protocol.Transaction.Result.contractResult result = 7;</code>
      * @return The enum numeric value on the wire for result.
      */
-    public int getResultValue() {
+    @java.lang.Override public int getResultValue() {
       return result_;
     }
     /**
      * <code>.protocol.Transaction.Result.contractResult result = 7;</code>
      * @return The result.
      */
-    public org.tron.trident.proto.Chain.Transaction.Result.contractResult getResult() {
+    @java.lang.Override public org.tron.trident.proto.Chain.Transaction.Result.contractResult getResult() {
       @SuppressWarnings("deprecation")
       org.tron.trident.proto.Chain.Transaction.Result.contractResult result = org.tron.trident.proto.Chain.Transaction.Result.contractResult.valueOf(result_);
       return result == null ? org.tron.trident.proto.Chain.Transaction.Result.contractResult.UNRECOGNIZED : result;
@@ -14845,6 +14962,7 @@ public final class Response {
        * <code>int64 energy_usage = 1;</code>
        * @return The energyUsage.
        */
+      @java.lang.Override
       public long getEnergyUsage() {
         return energyUsage_;
       }
@@ -14875,6 +14993,7 @@ public final class Response {
        * <code>int64 energy_fee = 2;</code>
        * @return The energyFee.
        */
+      @java.lang.Override
       public long getEnergyFee() {
         return energyFee_;
       }
@@ -14905,6 +15024,7 @@ public final class Response {
        * <code>int64 origin_energy_usage = 3;</code>
        * @return The originEnergyUsage.
        */
+      @java.lang.Override
       public long getOriginEnergyUsage() {
         return originEnergyUsage_;
       }
@@ -14935,6 +15055,7 @@ public final class Response {
        * <code>int64 energy_usage_total = 4;</code>
        * @return The energyUsageTotal.
        */
+      @java.lang.Override
       public long getEnergyUsageTotal() {
         return energyUsageTotal_;
       }
@@ -14965,6 +15086,7 @@ public final class Response {
        * <code>int64 net_usage = 5;</code>
        * @return The netUsage.
        */
+      @java.lang.Override
       public long getNetUsage() {
         return netUsage_;
       }
@@ -14995,6 +15117,7 @@ public final class Response {
        * <code>int64 net_fee = 6;</code>
        * @return The netFee.
        */
+      @java.lang.Override
       public long getNetFee() {
         return netFee_;
       }
@@ -15025,7 +15148,7 @@ public final class Response {
        * <code>.protocol.Transaction.Result.contractResult result = 7;</code>
        * @return The enum numeric value on the wire for result.
        */
-      public int getResultValue() {
+      @java.lang.Override public int getResultValue() {
         return result_;
       }
       /**
@@ -15034,6 +15157,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setResultValue(int value) {
+        
         result_ = value;
         onChanged();
         return this;
@@ -15042,6 +15166,7 @@ public final class Response {
        * <code>.protocol.Transaction.Result.contractResult result = 7;</code>
        * @return The result.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Chain.Transaction.Result.contractResult getResult() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Chain.Transaction.Result.contractResult result = org.tron.trident.proto.Chain.Transaction.Result.contractResult.valueOf(result_);
@@ -15342,7 +15467,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.TransactionInfo}
    */
-  public  static final class TransactionInfo extends
+  public static final class TransactionInfo extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TransactionInfo)
       TransactionInfoOrBuilder {
@@ -15639,6 +15764,10 @@ public final class Response {
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -15709,7 +15838,7 @@ public final class Response {
     /**
      * Protobuf type {@code protocol.TransactionInfo.Log}
      */
-    public  static final class Log extends
+    public static final class Log extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.TransactionInfo.Log)
         LogOrBuilder {
@@ -15814,6 +15943,7 @@ public final class Response {
        * <code>bytes address = 1;</code>
        * @return The address.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAddress() {
         return address_;
       }
@@ -15824,6 +15954,7 @@ public final class Response {
        * <code>repeated bytes topics = 2;</code>
        * @return A list containing the topics.
        */
+      @java.lang.Override
       public java.util.List<com.google.protobuf.ByteString>
           getTopicsList() {
         return topics_;
@@ -15850,6 +15981,7 @@ public final class Response {
        * <code>bytes data = 3;</code>
        * @return The data.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getData() {
         return data_;
       }
@@ -16215,6 +16347,7 @@ public final class Response {
          * <code>bytes address = 1;</code>
          * @return The address.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getAddress() {
           return address_;
         }
@@ -16333,6 +16466,7 @@ public final class Response {
          * <code>bytes data = 3;</code>
          * @return The data.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getData() {
           return data_;
         }
@@ -16419,6 +16553,7 @@ public final class Response {
      * <code>bytes id = 1;</code>
      * @return The id.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getId() {
       return id_;
     }
@@ -16429,6 +16564,7 @@ public final class Response {
      * <code>int64 fee = 2;</code>
      * @return The fee.
      */
+    @java.lang.Override
     public long getFee() {
       return fee_;
     }
@@ -16439,6 +16575,7 @@ public final class Response {
      * <code>int64 blockNumber = 3;</code>
      * @return The blockNumber.
      */
+    @java.lang.Override
     public long getBlockNumber() {
       return blockNumber_;
     }
@@ -16449,6 +16586,7 @@ public final class Response {
      * <code>int64 blockTimeStamp = 4;</code>
      * @return The blockTimeStamp.
      */
+    @java.lang.Override
     public long getBlockTimeStamp() {
       return blockTimeStamp_;
     }
@@ -16459,6 +16597,7 @@ public final class Response {
      * <code>repeated bytes contractResult = 5;</code>
      * @return A list containing the contractResult.
      */
+    @java.lang.Override
     public java.util.List<com.google.protobuf.ByteString>
         getContractResultList() {
       return contractResult_;
@@ -16485,6 +16624,7 @@ public final class Response {
      * <code>bytes contract_address = 6;</code>
      * @return The contractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getContractAddress() {
       return contractAddress_;
     }
@@ -16495,6 +16635,7 @@ public final class Response {
      * <code>.protocol.ResourceReceipt receipt = 7;</code>
      * @return Whether the receipt field is set.
      */
+    @java.lang.Override
     public boolean hasReceipt() {
       return receipt_ != null;
     }
@@ -16502,12 +16643,14 @@ public final class Response {
      * <code>.protocol.ResourceReceipt receipt = 7;</code>
      * @return The receipt.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.ResourceReceipt getReceipt() {
       return receipt_ == null ? org.tron.trident.proto.Response.ResourceReceipt.getDefaultInstance() : receipt_;
     }
     /**
      * <code>.protocol.ResourceReceipt receipt = 7;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.ResourceReceiptOrBuilder getReceiptOrBuilder() {
       return getReceipt();
     }
@@ -16517,12 +16660,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.TransactionInfo.Log log = 8;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.TransactionInfo.Log> getLogList() {
       return log_;
     }
     /**
      * <code>repeated .protocol.TransactionInfo.Log log = 8;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.TransactionInfo.LogOrBuilder> 
         getLogOrBuilderList() {
       return log_;
@@ -16530,18 +16675,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.TransactionInfo.Log log = 8;</code>
      */
+    @java.lang.Override
     public int getLogCount() {
       return log_.size();
     }
     /**
      * <code>repeated .protocol.TransactionInfo.Log log = 8;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionInfo.Log getLog(int index) {
       return log_.get(index);
     }
     /**
      * <code>repeated .protocol.TransactionInfo.Log log = 8;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionInfo.LogOrBuilder getLogOrBuilder(
         int index) {
       return log_.get(index);
@@ -16553,14 +16701,14 @@ public final class Response {
      * <code>.protocol.TransactionInfo.code result = 9;</code>
      * @return The enum numeric value on the wire for result.
      */
-    public int getResultValue() {
+    @java.lang.Override public int getResultValue() {
       return result_;
     }
     /**
      * <code>.protocol.TransactionInfo.code result = 9;</code>
      * @return The result.
      */
-    public org.tron.trident.proto.Response.TransactionInfo.code getResult() {
+    @java.lang.Override public org.tron.trident.proto.Response.TransactionInfo.code getResult() {
       @SuppressWarnings("deprecation")
       org.tron.trident.proto.Response.TransactionInfo.code result = org.tron.trident.proto.Response.TransactionInfo.code.valueOf(result_);
       return result == null ? org.tron.trident.proto.Response.TransactionInfo.code.UNRECOGNIZED : result;
@@ -16572,6 +16720,7 @@ public final class Response {
      * <code>bytes resMessage = 10;</code>
      * @return The resMessage.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getResMessage() {
       return resMessage_;
     }
@@ -16582,6 +16731,7 @@ public final class Response {
      * <code>string assetIssueID = 14;</code>
      * @return The assetIssueID.
      */
+    @java.lang.Override
     public java.lang.String getAssetIssueID() {
       java.lang.Object ref = assetIssueID_;
       if (ref instanceof java.lang.String) {
@@ -16598,6 +16748,7 @@ public final class Response {
      * <code>string assetIssueID = 14;</code>
      * @return The bytes for assetIssueID.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAssetIssueIDBytes() {
       java.lang.Object ref = assetIssueID_;
@@ -16618,6 +16769,7 @@ public final class Response {
      * <code>int64 withdraw_amount = 15;</code>
      * @return The withdrawAmount.
      */
+    @java.lang.Override
     public long getWithdrawAmount() {
       return withdrawAmount_;
     }
@@ -16628,6 +16780,7 @@ public final class Response {
      * <code>int64 unfreeze_amount = 16;</code>
      * @return The unfreezeAmount.
      */
+    @java.lang.Override
     public long getUnfreezeAmount() {
       return unfreezeAmount_;
     }
@@ -16637,12 +16790,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.InternalTransaction internal_transactions = 17;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.InternalTransaction> getInternalTransactionsList() {
       return internalTransactions_;
     }
     /**
      * <code>repeated .protocol.InternalTransaction internal_transactions = 17;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.InternalTransactionOrBuilder> 
         getInternalTransactionsOrBuilderList() {
       return internalTransactions_;
@@ -16650,18 +16805,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.InternalTransaction internal_transactions = 17;</code>
      */
+    @java.lang.Override
     public int getInternalTransactionsCount() {
       return internalTransactions_.size();
     }
     /**
      * <code>repeated .protocol.InternalTransaction internal_transactions = 17;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.InternalTransaction getInternalTransactions(int index) {
       return internalTransactions_.get(index);
     }
     /**
      * <code>repeated .protocol.InternalTransaction internal_transactions = 17;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.InternalTransactionOrBuilder getInternalTransactionsOrBuilder(
         int index) {
       return internalTransactions_.get(index);
@@ -16673,6 +16831,7 @@ public final class Response {
      * <code>int64 exchange_received_amount = 18;</code>
      * @return The exchangeReceivedAmount.
      */
+    @java.lang.Override
     public long getExchangeReceivedAmount() {
       return exchangeReceivedAmount_;
     }
@@ -16683,6 +16842,7 @@ public final class Response {
      * <code>int64 exchange_inject_another_amount = 19;</code>
      * @return The exchangeInjectAnotherAmount.
      */
+    @java.lang.Override
     public long getExchangeInjectAnotherAmount() {
       return exchangeInjectAnotherAmount_;
     }
@@ -16693,6 +16853,7 @@ public final class Response {
      * <code>int64 exchange_withdraw_another_amount = 20;</code>
      * @return The exchangeWithdrawAnotherAmount.
      */
+    @java.lang.Override
     public long getExchangeWithdrawAnotherAmount() {
       return exchangeWithdrawAnotherAmount_;
     }
@@ -16703,6 +16864,7 @@ public final class Response {
      * <code>int64 exchange_id = 21;</code>
      * @return The exchangeId.
      */
+    @java.lang.Override
     public long getExchangeId() {
       return exchangeId_;
     }
@@ -16713,6 +16875,7 @@ public final class Response {
      * <code>int64 shielded_transaction_fee = 22;</code>
      * @return The shieldedTransactionFee.
      */
+    @java.lang.Override
     public long getShieldedTransactionFee() {
       return shieldedTransactionFee_;
     }
@@ -16723,6 +16886,7 @@ public final class Response {
      * <code>bytes orderId = 25;</code>
      * @return The orderId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOrderId() {
       return orderId_;
     }
@@ -16732,12 +16896,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.MarketOrderDetail orderDetails = 26;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.MarketOrderDetail> getOrderDetailsList() {
       return orderDetails_;
     }
     /**
      * <code>repeated .protocol.MarketOrderDetail orderDetails = 26;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.MarketOrderDetailOrBuilder> 
         getOrderDetailsOrBuilderList() {
       return orderDetails_;
@@ -16745,18 +16911,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.MarketOrderDetail orderDetails = 26;</code>
      */
+    @java.lang.Override
     public int getOrderDetailsCount() {
       return orderDetails_.size();
     }
     /**
      * <code>repeated .protocol.MarketOrderDetail orderDetails = 26;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.MarketOrderDetail getOrderDetails(int index) {
       return orderDetails_.get(index);
     }
     /**
      * <code>repeated .protocol.MarketOrderDetail orderDetails = 26;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.MarketOrderDetailOrBuilder getOrderDetailsOrBuilder(
         int index) {
       return orderDetails_.get(index);
@@ -16806,7 +16975,7 @@ public final class Response {
       if (!resMessage_.isEmpty()) {
         output.writeBytes(10, resMessage_);
       }
-      if (!getAssetIssueIDBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetIssueID_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 14, assetIssueID_);
       }
       if (withdrawAmount_ != 0L) {
@@ -16893,7 +17062,7 @@ public final class Response {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(10, resMessage_);
       }
-      if (!getAssetIssueIDBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(assetIssueID_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, assetIssueID_);
       }
       if (withdrawAmount_ != 0L) {
@@ -17565,6 +17734,7 @@ public final class Response {
        * <code>bytes id = 1;</code>
        * @return The id.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getId() {
         return id_;
       }
@@ -17598,6 +17768,7 @@ public final class Response {
        * <code>int64 fee = 2;</code>
        * @return The fee.
        */
+      @java.lang.Override
       public long getFee() {
         return fee_;
       }
@@ -17628,6 +17799,7 @@ public final class Response {
        * <code>int64 blockNumber = 3;</code>
        * @return The blockNumber.
        */
+      @java.lang.Override
       public long getBlockNumber() {
         return blockNumber_;
       }
@@ -17658,6 +17830,7 @@ public final class Response {
        * <code>int64 blockTimeStamp = 4;</code>
        * @return The blockTimeStamp.
        */
+      @java.lang.Override
       public long getBlockTimeStamp() {
         return blockTimeStamp_;
       }
@@ -17773,6 +17946,7 @@ public final class Response {
        * <code>bytes contract_address = 6;</code>
        * @return The contractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getContractAddress() {
         return contractAddress_;
       }
@@ -18165,7 +18339,7 @@ public final class Response {
        * <code>.protocol.TransactionInfo.code result = 9;</code>
        * @return The enum numeric value on the wire for result.
        */
-      public int getResultValue() {
+      @java.lang.Override public int getResultValue() {
         return result_;
       }
       /**
@@ -18174,6 +18348,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setResultValue(int value) {
+        
         result_ = value;
         onChanged();
         return this;
@@ -18182,6 +18357,7 @@ public final class Response {
        * <code>.protocol.TransactionInfo.code result = 9;</code>
        * @return The result.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.TransactionInfo.code getResult() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Response.TransactionInfo.code result = org.tron.trident.proto.Response.TransactionInfo.code.valueOf(result_);
@@ -18217,6 +18393,7 @@ public final class Response {
        * <code>bytes resMessage = 10;</code>
        * @return The resMessage.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getResMessage() {
         return resMessage_;
       }
@@ -18326,6 +18503,7 @@ public final class Response {
        * <code>int64 withdraw_amount = 15;</code>
        * @return The withdrawAmount.
        */
+      @java.lang.Override
       public long getWithdrawAmount() {
         return withdrawAmount_;
       }
@@ -18356,6 +18534,7 @@ public final class Response {
        * <code>int64 unfreeze_amount = 16;</code>
        * @return The unfreezeAmount.
        */
+      @java.lang.Override
       public long getUnfreezeAmount() {
         return unfreezeAmount_;
       }
@@ -18626,6 +18805,7 @@ public final class Response {
        * <code>int64 exchange_received_amount = 18;</code>
        * @return The exchangeReceivedAmount.
        */
+      @java.lang.Override
       public long getExchangeReceivedAmount() {
         return exchangeReceivedAmount_;
       }
@@ -18656,6 +18836,7 @@ public final class Response {
        * <code>int64 exchange_inject_another_amount = 19;</code>
        * @return The exchangeInjectAnotherAmount.
        */
+      @java.lang.Override
       public long getExchangeInjectAnotherAmount() {
         return exchangeInjectAnotherAmount_;
       }
@@ -18686,6 +18867,7 @@ public final class Response {
        * <code>int64 exchange_withdraw_another_amount = 20;</code>
        * @return The exchangeWithdrawAnotherAmount.
        */
+      @java.lang.Override
       public long getExchangeWithdrawAnotherAmount() {
         return exchangeWithdrawAnotherAmount_;
       }
@@ -18716,6 +18898,7 @@ public final class Response {
        * <code>int64 exchange_id = 21;</code>
        * @return The exchangeId.
        */
+      @java.lang.Override
       public long getExchangeId() {
         return exchangeId_;
       }
@@ -18746,6 +18929,7 @@ public final class Response {
        * <code>int64 shielded_transaction_fee = 22;</code>
        * @return The shieldedTransactionFee.
        */
+      @java.lang.Override
       public long getShieldedTransactionFee() {
         return shieldedTransactionFee_;
       }
@@ -18776,6 +18960,7 @@ public final class Response {
        * <code>bytes orderId = 25;</code>
        * @return The orderId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOrderId() {
         return orderId_;
       }
@@ -19167,7 +19352,7 @@ public final class Response {
    *
    * Protobuf type {@code protocol.Witness}
    */
-  public  static final class Witness extends
+  public static final class Witness extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.Witness)
       WitnessOrBuilder {
@@ -19296,6 +19481,7 @@ public final class Response {
      * <code>bytes address = 1;</code>
      * @return The address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAddress() {
       return address_;
     }
@@ -19306,6 +19492,7 @@ public final class Response {
      * <code>int64 voteCount = 2;</code>
      * @return The voteCount.
      */
+    @java.lang.Override
     public long getVoteCount() {
       return voteCount_;
     }
@@ -19316,6 +19503,7 @@ public final class Response {
      * <code>bytes pubKey = 3;</code>
      * @return The pubKey.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPubKey() {
       return pubKey_;
     }
@@ -19326,6 +19514,7 @@ public final class Response {
      * <code>string url = 4;</code>
      * @return The url.
      */
+    @java.lang.Override
     public java.lang.String getUrl() {
       java.lang.Object ref = url_;
       if (ref instanceof java.lang.String) {
@@ -19342,6 +19531,7 @@ public final class Response {
      * <code>string url = 4;</code>
      * @return The bytes for url.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getUrlBytes() {
       java.lang.Object ref = url_;
@@ -19362,6 +19552,7 @@ public final class Response {
      * <code>int64 totalProduced = 5;</code>
      * @return The totalProduced.
      */
+    @java.lang.Override
     public long getTotalProduced() {
       return totalProduced_;
     }
@@ -19372,6 +19563,7 @@ public final class Response {
      * <code>int64 totalMissed = 6;</code>
      * @return The totalMissed.
      */
+    @java.lang.Override
     public long getTotalMissed() {
       return totalMissed_;
     }
@@ -19382,6 +19574,7 @@ public final class Response {
      * <code>int64 latestBlockNum = 7;</code>
      * @return The latestBlockNum.
      */
+    @java.lang.Override
     public long getLatestBlockNum() {
       return latestBlockNum_;
     }
@@ -19392,6 +19585,7 @@ public final class Response {
      * <code>int64 latestSlotNum = 8;</code>
      * @return The latestSlotNum.
      */
+    @java.lang.Override
     public long getLatestSlotNum() {
       return latestSlotNum_;
     }
@@ -19402,6 +19596,7 @@ public final class Response {
      * <code>bool isJobs = 9;</code>
      * @return The isJobs.
      */
+    @java.lang.Override
     public boolean getIsJobs() {
       return isJobs_;
     }
@@ -19429,7 +19624,7 @@ public final class Response {
       if (!pubKey_.isEmpty()) {
         output.writeBytes(3, pubKey_);
       }
-      if (!getUrlBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, url_);
       }
       if (totalProduced_ != 0L) {
@@ -19468,7 +19663,7 @@ public final class Response {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(3, pubKey_);
       }
-      if (!getUrlBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, url_);
       }
       if (totalProduced_ != 0L) {
@@ -19859,6 +20054,7 @@ public final class Response {
        * <code>bytes address = 1;</code>
        * @return The address.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAddress() {
         return address_;
       }
@@ -19892,6 +20088,7 @@ public final class Response {
        * <code>int64 voteCount = 2;</code>
        * @return The voteCount.
        */
+      @java.lang.Override
       public long getVoteCount() {
         return voteCount_;
       }
@@ -19922,6 +20119,7 @@ public final class Response {
        * <code>bytes pubKey = 3;</code>
        * @return The pubKey.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPubKey() {
         return pubKey_;
       }
@@ -20031,6 +20229,7 @@ public final class Response {
        * <code>int64 totalProduced = 5;</code>
        * @return The totalProduced.
        */
+      @java.lang.Override
       public long getTotalProduced() {
         return totalProduced_;
       }
@@ -20061,6 +20260,7 @@ public final class Response {
        * <code>int64 totalMissed = 6;</code>
        * @return The totalMissed.
        */
+      @java.lang.Override
       public long getTotalMissed() {
         return totalMissed_;
       }
@@ -20091,6 +20291,7 @@ public final class Response {
        * <code>int64 latestBlockNum = 7;</code>
        * @return The latestBlockNum.
        */
+      @java.lang.Override
       public long getLatestBlockNum() {
         return latestBlockNum_;
       }
@@ -20121,6 +20322,7 @@ public final class Response {
        * <code>int64 latestSlotNum = 8;</code>
        * @return The latestSlotNum.
        */
+      @java.lang.Override
       public long getLatestSlotNum() {
         return latestSlotNum_;
       }
@@ -20151,6 +20353,7 @@ public final class Response {
        * <code>bool isJobs = 9;</code>
        * @return The isJobs.
        */
+      @java.lang.Override
       public boolean getIsJobs() {
         return isJobs_;
       }
@@ -20868,7 +21071,7 @@ public final class Response {
    *
    * Protobuf type {@code protocol.Account}
    */
-  public  static final class Account extends
+  public static final class Account extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.Account)
       AccountOrBuilder {
@@ -21279,7 +21482,7 @@ public final class Response {
      *
      * Protobuf type {@code protocol.Account.Frozen}
      */
-    public  static final class Frozen extends
+    public static final class Frozen extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.Account.Frozen)
         FrozenOrBuilder {
@@ -21373,6 +21576,7 @@ public final class Response {
        * <code>int64 frozen_balance = 1;</code>
        * @return The frozenBalance.
        */
+      @java.lang.Override
       public long getFrozenBalance() {
         return frozenBalance_;
       }
@@ -21387,6 +21591,7 @@ public final class Response {
        * <code>int64 expire_time = 2;</code>
        * @return The expireTime.
        */
+      @java.lang.Override
       public long getExpireTime() {
         return expireTime_;
       }
@@ -21725,6 +21930,7 @@ public final class Response {
          * <code>int64 frozen_balance = 1;</code>
          * @return The frozenBalance.
          */
+        @java.lang.Override
         public long getFrozenBalance() {
           return frozenBalance_;
         }
@@ -21767,6 +21973,7 @@ public final class Response {
          * <code>int64 expire_time = 2;</code>
          * @return The expireTime.
          */
+        @java.lang.Override
         public long getExpireTime() {
           return expireTime_;
         }
@@ -21944,7 +22151,7 @@ public final class Response {
     /**
      * Protobuf type {@code protocol.Account.AccountResource}
      */
-    public  static final class AccountResource extends
+    public static final class AccountResource extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.Account.AccountResource)
         AccountResourceOrBuilder {
@@ -22076,6 +22283,7 @@ public final class Response {
        * <code>int64 energy_usage = 1;</code>
        * @return The energyUsage.
        */
+      @java.lang.Override
       public long getEnergyUsage() {
         return energyUsage_;
       }
@@ -22090,6 +22298,7 @@ public final class Response {
        * <code>.protocol.Account.Frozen frozen_balance_for_energy = 2;</code>
        * @return Whether the frozenBalanceForEnergy field is set.
        */
+      @java.lang.Override
       public boolean hasFrozenBalanceForEnergy() {
         return frozenBalanceForEnergy_ != null;
       }
@@ -22101,6 +22310,7 @@ public final class Response {
        * <code>.protocol.Account.Frozen frozen_balance_for_energy = 2;</code>
        * @return The frozenBalanceForEnergy.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.Account.Frozen getFrozenBalanceForEnergy() {
         return frozenBalanceForEnergy_ == null ? org.tron.trident.proto.Response.Account.Frozen.getDefaultInstance() : frozenBalanceForEnergy_;
       }
@@ -22111,6 +22321,7 @@ public final class Response {
        *
        * <code>.protocol.Account.Frozen frozen_balance_for_energy = 2;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.Account.FrozenOrBuilder getFrozenBalanceForEnergyOrBuilder() {
         return getFrozenBalanceForEnergy();
       }
@@ -22121,6 +22332,7 @@ public final class Response {
        * <code>int64 latest_consume_time_for_energy = 3;</code>
        * @return The latestConsumeTimeForEnergy.
        */
+      @java.lang.Override
       public long getLatestConsumeTimeForEnergy() {
         return latestConsumeTimeForEnergy_;
       }
@@ -22135,6 +22347,7 @@ public final class Response {
        * <code>int64 acquired_delegated_frozen_balance_for_energy = 4;</code>
        * @return The acquiredDelegatedFrozenBalanceForEnergy.
        */
+      @java.lang.Override
       public long getAcquiredDelegatedFrozenBalanceForEnergy() {
         return acquiredDelegatedFrozenBalanceForEnergy_;
       }
@@ -22149,6 +22362,7 @@ public final class Response {
        * <code>int64 delegated_frozen_balance_for_energy = 5;</code>
        * @return The delegatedFrozenBalanceForEnergy.
        */
+      @java.lang.Override
       public long getDelegatedFrozenBalanceForEnergy() {
         return delegatedFrozenBalanceForEnergy_;
       }
@@ -22163,6 +22377,7 @@ public final class Response {
        * <code>int64 storage_limit = 6;</code>
        * @return The storageLimit.
        */
+      @java.lang.Override
       public long getStorageLimit() {
         return storageLimit_;
       }
@@ -22173,6 +22388,7 @@ public final class Response {
        * <code>int64 storage_usage = 7;</code>
        * @return The storageUsage.
        */
+      @java.lang.Override
       public long getStorageUsage() {
         return storageUsage_;
       }
@@ -22183,6 +22399,7 @@ public final class Response {
        * <code>int64 latest_exchange_storage_time = 8;</code>
        * @return The latestExchangeStorageTime.
        */
+      @java.lang.Override
       public long getLatestExchangeStorageTime() {
         return latestExchangeStorageTime_;
       }
@@ -22637,6 +22854,7 @@ public final class Response {
          * <code>int64 energy_usage = 1;</code>
          * @return The energyUsage.
          */
+        @java.lang.Override
         public long getEnergyUsage() {
           return energyUsage_;
         }
@@ -22830,6 +23048,7 @@ public final class Response {
          * <code>int64 latest_consume_time_for_energy = 3;</code>
          * @return The latestConsumeTimeForEnergy.
          */
+        @java.lang.Override
         public long getLatestConsumeTimeForEnergy() {
           return latestConsumeTimeForEnergy_;
         }
@@ -22864,6 +23083,7 @@ public final class Response {
          * <code>int64 acquired_delegated_frozen_balance_for_energy = 4;</code>
          * @return The acquiredDelegatedFrozenBalanceForEnergy.
          */
+        @java.lang.Override
         public long getAcquiredDelegatedFrozenBalanceForEnergy() {
           return acquiredDelegatedFrozenBalanceForEnergy_;
         }
@@ -22906,6 +23126,7 @@ public final class Response {
          * <code>int64 delegated_frozen_balance_for_energy = 5;</code>
          * @return The delegatedFrozenBalanceForEnergy.
          */
+        @java.lang.Override
         public long getDelegatedFrozenBalanceForEnergy() {
           return delegatedFrozenBalanceForEnergy_;
         }
@@ -22948,6 +23169,7 @@ public final class Response {
          * <code>int64 storage_limit = 6;</code>
          * @return The storageLimit.
          */
+        @java.lang.Override
         public long getStorageLimit() {
           return storageLimit_;
         }
@@ -22986,6 +23208,7 @@ public final class Response {
          * <code>int64 storage_usage = 7;</code>
          * @return The storageUsage.
          */
+        @java.lang.Override
         public long getStorageUsage() {
           return storageUsage_;
         }
@@ -23016,6 +23239,7 @@ public final class Response {
          * <code>int64 latest_exchange_storage_time = 8;</code>
          * @return The latestExchangeStorageTime.
          */
+        @java.lang.Override
         public long getLatestExchangeStorageTime() {
           return latestExchangeStorageTime_;
         }
@@ -23103,6 +23327,7 @@ public final class Response {
      * <code>bytes account_name = 1;</code>
      * @return The accountName.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAccountName() {
       return accountName_;
     }
@@ -23113,14 +23338,14 @@ public final class Response {
      * <code>.protocol.AccountType type = 2;</code>
      * @return The enum numeric value on the wire for type.
      */
-    public int getTypeValue() {
+    @java.lang.Override public int getTypeValue() {
       return type_;
     }
     /**
      * <code>.protocol.AccountType type = 2;</code>
      * @return The type.
      */
-    public org.tron.trident.proto.Common.AccountType getType() {
+    @java.lang.Override public org.tron.trident.proto.Common.AccountType getType() {
       @SuppressWarnings("deprecation")
       org.tron.trident.proto.Common.AccountType result = org.tron.trident.proto.Common.AccountType.valueOf(type_);
       return result == null ? org.tron.trident.proto.Common.AccountType.UNRECOGNIZED : result;
@@ -23136,6 +23361,7 @@ public final class Response {
      * <code>bytes address = 3;</code>
      * @return The address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAddress() {
       return address_;
     }
@@ -23150,6 +23376,7 @@ public final class Response {
      * <code>int64 balance = 4;</code>
      * @return The balance.
      */
+    @java.lang.Override
     public long getBalance() {
       return balance_;
     }
@@ -23163,6 +23390,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Vote votes = 5;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Common.Vote> getVotesList() {
       return votes_;
     }
@@ -23173,6 +23401,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Vote votes = 5;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Common.VoteOrBuilder> 
         getVotesOrBuilderList() {
       return votes_;
@@ -23184,6 +23413,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Vote votes = 5;</code>
      */
+    @java.lang.Override
     public int getVotesCount() {
       return votes_.size();
     }
@@ -23194,6 +23424,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Vote votes = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Vote getVotes(int index) {
       return votes_.get(index);
     }
@@ -23204,6 +23435,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Vote votes = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.VoteOrBuilder getVotesOrBuilder(
         int index) {
       return votes_.get(index);
@@ -23243,14 +23475,16 @@ public final class Response {
      * <code>map&lt;string, int64&gt; asset = 6;</code>
      */
 
+    @java.lang.Override
     public boolean containsAsset(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAsset().getMap().containsKey(key);
     }
     /**
      * Use {@link #getAssetMap()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Long> getAsset() {
       return getAssetMap();
@@ -23262,6 +23496,7 @@ public final class Response {
      *
      * <code>map&lt;string, int64&gt; asset = 6;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.Long> getAssetMap() {
       return internalGetAsset().getMap();
@@ -23273,11 +23508,12 @@ public final class Response {
      *
      * <code>map&lt;string, int64&gt; asset = 6;</code>
      */
+    @java.lang.Override
 
     public long getAssetOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAsset().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -23289,10 +23525,11 @@ public final class Response {
      *
      * <code>map&lt;string, int64&gt; asset = 6;</code>
      */
+    @java.lang.Override
 
     public long getAssetOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAsset().getMap();
       if (!map.containsKey(key)) {
@@ -23335,14 +23572,16 @@ public final class Response {
      * <code>map&lt;string, int64&gt; assetV2 = 56;</code>
      */
 
+    @java.lang.Override
     public boolean containsAssetV2(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAssetV2().getMap().containsKey(key);
     }
     /**
      * Use {@link #getAssetV2Map()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Long> getAssetV2() {
       return getAssetV2Map();
@@ -23354,6 +23593,7 @@ public final class Response {
      *
      * <code>map&lt;string, int64&gt; assetV2 = 56;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.Long> getAssetV2Map() {
       return internalGetAssetV2().getMap();
@@ -23365,11 +23605,12 @@ public final class Response {
      *
      * <code>map&lt;string, int64&gt; assetV2 = 56;</code>
      */
+    @java.lang.Override
 
     public long getAssetV2OrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetV2().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -23381,10 +23622,11 @@ public final class Response {
      *
      * <code>map&lt;string, int64&gt; assetV2 = 56;</code>
      */
+    @java.lang.Override
 
     public long getAssetV2OrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetV2().getMap();
       if (!map.containsKey(key)) {
@@ -23402,6 +23644,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Account.Frozen frozen = 7;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.Account.Frozen> getFrozenList() {
       return frozen_;
     }
@@ -23412,6 +23655,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Account.Frozen frozen = 7;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.Account.FrozenOrBuilder> 
         getFrozenOrBuilderList() {
       return frozen_;
@@ -23423,6 +23667,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Account.Frozen frozen = 7;</code>
      */
+    @java.lang.Override
     public int getFrozenCount() {
       return frozen_.size();
     }
@@ -23433,6 +23678,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Account.Frozen frozen = 7;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.Account.Frozen getFrozen(int index) {
       return frozen_.get(index);
     }
@@ -23443,6 +23689,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Account.Frozen frozen = 7;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.Account.FrozenOrBuilder getFrozenOrBuilder(
         int index) {
       return frozen_.get(index);
@@ -23458,6 +23705,7 @@ public final class Response {
      * <code>int64 net_usage = 8;</code>
      * @return The netUsage.
      */
+    @java.lang.Override
     public long getNetUsage() {
       return netUsage_;
     }
@@ -23472,6 +23720,7 @@ public final class Response {
      * <code>int64 acquired_delegated_frozen_balance_for_bandwidth = 41;</code>
      * @return The acquiredDelegatedFrozenBalanceForBandwidth.
      */
+    @java.lang.Override
     public long getAcquiredDelegatedFrozenBalanceForBandwidth() {
       return acquiredDelegatedFrozenBalanceForBandwidth_;
     }
@@ -23486,6 +23735,7 @@ public final class Response {
      * <code>int64 delegated_frozen_balance_for_bandwidth = 42;</code>
      * @return The delegatedFrozenBalanceForBandwidth.
      */
+    @java.lang.Override
     public long getDelegatedFrozenBalanceForBandwidth() {
       return delegatedFrozenBalanceForBandwidth_;
     }
@@ -23500,6 +23750,7 @@ public final class Response {
      * <code>int64 create_time = 9;</code>
      * @return The createTime.
      */
+    @java.lang.Override
     public long getCreateTime() {
       return createTime_;
     }
@@ -23515,6 +23766,7 @@ public final class Response {
      * <code>int64 latest_opration_time = 10;</code>
      * @return The latestOprationTime.
      */
+    @java.lang.Override
     public long getLatestOprationTime() {
       return latestOprationTime_;
     }
@@ -23529,6 +23781,7 @@ public final class Response {
      * <code>int64 allowance = 11;</code>
      * @return The allowance.
      */
+    @java.lang.Override
     public long getAllowance() {
       return allowance_;
     }
@@ -23543,6 +23796,7 @@ public final class Response {
      * <code>int64 latest_withdraw_time = 12;</code>
      * @return The latestWithdrawTime.
      */
+    @java.lang.Override
     public long getLatestWithdrawTime() {
       return latestWithdrawTime_;
     }
@@ -23557,6 +23811,7 @@ public final class Response {
      * <code>bytes code = 13;</code>
      * @return The code.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getCode() {
       return code_;
     }
@@ -23567,6 +23822,7 @@ public final class Response {
      * <code>bool is_witness = 14;</code>
      * @return The isWitness.
      */
+    @java.lang.Override
     public boolean getIsWitness() {
       return isWitness_;
     }
@@ -23577,6 +23833,7 @@ public final class Response {
      * <code>bool is_committee = 15;</code>
      * @return The isCommittee.
      */
+    @java.lang.Override
     public boolean getIsCommittee() {
       return isCommittee_;
     }
@@ -23590,6 +23847,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Account.Frozen frozen_supply = 16;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.Account.Frozen> getFrozenSupplyList() {
       return frozenSupply_;
     }
@@ -23600,6 +23858,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Account.Frozen frozen_supply = 16;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.Account.FrozenOrBuilder> 
         getFrozenSupplyOrBuilderList() {
       return frozenSupply_;
@@ -23611,6 +23870,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Account.Frozen frozen_supply = 16;</code>
      */
+    @java.lang.Override
     public int getFrozenSupplyCount() {
       return frozenSupply_.size();
     }
@@ -23621,6 +23881,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Account.Frozen frozen_supply = 16;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.Account.Frozen getFrozenSupply(int index) {
       return frozenSupply_.get(index);
     }
@@ -23631,6 +23892,7 @@ public final class Response {
      *
      * <code>repeated .protocol.Account.Frozen frozen_supply = 16;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.Account.FrozenOrBuilder getFrozenSupplyOrBuilder(
         int index) {
       return frozenSupply_.get(index);
@@ -23646,6 +23908,7 @@ public final class Response {
      * <code>bytes asset_issued_name = 17;</code>
      * @return The assetIssuedName.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAssetIssuedName() {
       return assetIssuedName_;
     }
@@ -23656,6 +23919,7 @@ public final class Response {
      * <code>bytes asset_issued_ID = 57;</code>
      * @return The assetIssuedID.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAssetIssuedID() {
       return assetIssuedID_;
     }
@@ -23690,14 +23954,16 @@ public final class Response {
      * <code>map&lt;string, int64&gt; latest_asset_operation_time = 18;</code>
      */
 
+    @java.lang.Override
     public boolean containsLatestAssetOperationTime(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetLatestAssetOperationTime().getMap().containsKey(key);
     }
     /**
      * Use {@link #getLatestAssetOperationTimeMap()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Long> getLatestAssetOperationTime() {
       return getLatestAssetOperationTimeMap();
@@ -23705,6 +23971,7 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; latest_asset_operation_time = 18;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.Long> getLatestAssetOperationTimeMap() {
       return internalGetLatestAssetOperationTime().getMap();
@@ -23712,11 +23979,12 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; latest_asset_operation_time = 18;</code>
      */
+    @java.lang.Override
 
     public long getLatestAssetOperationTimeOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetLatestAssetOperationTime().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -23724,10 +23992,11 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; latest_asset_operation_time = 18;</code>
      */
+    @java.lang.Override
 
     public long getLatestAssetOperationTimeOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetLatestAssetOperationTime().getMap();
       if (!map.containsKey(key)) {
@@ -23766,14 +24035,16 @@ public final class Response {
      * <code>map&lt;string, int64&gt; latest_asset_operation_timeV2 = 58;</code>
      */
 
+    @java.lang.Override
     public boolean containsLatestAssetOperationTimeV2(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetLatestAssetOperationTimeV2().getMap().containsKey(key);
     }
     /**
      * Use {@link #getLatestAssetOperationTimeV2Map()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Long> getLatestAssetOperationTimeV2() {
       return getLatestAssetOperationTimeV2Map();
@@ -23781,6 +24052,7 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; latest_asset_operation_timeV2 = 58;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.Long> getLatestAssetOperationTimeV2Map() {
       return internalGetLatestAssetOperationTimeV2().getMap();
@@ -23788,11 +24060,12 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; latest_asset_operation_timeV2 = 58;</code>
      */
+    @java.lang.Override
 
     public long getLatestAssetOperationTimeV2OrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetLatestAssetOperationTimeV2().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -23800,10 +24073,11 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; latest_asset_operation_timeV2 = 58;</code>
      */
+    @java.lang.Override
 
     public long getLatestAssetOperationTimeV2OrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetLatestAssetOperationTimeV2().getMap();
       if (!map.containsKey(key)) {
@@ -23818,6 +24092,7 @@ public final class Response {
      * <code>int64 free_net_usage = 19;</code>
      * @return The freeNetUsage.
      */
+    @java.lang.Override
     public long getFreeNetUsage() {
       return freeNetUsage_;
     }
@@ -23852,14 +24127,16 @@ public final class Response {
      * <code>map&lt;string, int64&gt; free_asset_net_usage = 20;</code>
      */
 
+    @java.lang.Override
     public boolean containsFreeAssetNetUsage(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetFreeAssetNetUsage().getMap().containsKey(key);
     }
     /**
      * Use {@link #getFreeAssetNetUsageMap()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Long> getFreeAssetNetUsage() {
       return getFreeAssetNetUsageMap();
@@ -23867,6 +24144,7 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; free_asset_net_usage = 20;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.Long> getFreeAssetNetUsageMap() {
       return internalGetFreeAssetNetUsage().getMap();
@@ -23874,11 +24152,12 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; free_asset_net_usage = 20;</code>
      */
+    @java.lang.Override
 
     public long getFreeAssetNetUsageOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetFreeAssetNetUsage().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -23886,10 +24165,11 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; free_asset_net_usage = 20;</code>
      */
+    @java.lang.Override
 
     public long getFreeAssetNetUsageOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetFreeAssetNetUsage().getMap();
       if (!map.containsKey(key)) {
@@ -23928,14 +24208,16 @@ public final class Response {
      * <code>map&lt;string, int64&gt; free_asset_net_usageV2 = 59;</code>
      */
 
+    @java.lang.Override
     public boolean containsFreeAssetNetUsageV2(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetFreeAssetNetUsageV2().getMap().containsKey(key);
     }
     /**
      * Use {@link #getFreeAssetNetUsageV2Map()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Long> getFreeAssetNetUsageV2() {
       return getFreeAssetNetUsageV2Map();
@@ -23943,6 +24225,7 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; free_asset_net_usageV2 = 59;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.Long> getFreeAssetNetUsageV2Map() {
       return internalGetFreeAssetNetUsageV2().getMap();
@@ -23950,11 +24233,12 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; free_asset_net_usageV2 = 59;</code>
      */
+    @java.lang.Override
 
     public long getFreeAssetNetUsageV2OrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetFreeAssetNetUsageV2().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -23962,10 +24246,11 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; free_asset_net_usageV2 = 59;</code>
      */
+    @java.lang.Override
 
     public long getFreeAssetNetUsageV2OrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetFreeAssetNetUsageV2().getMap();
       if (!map.containsKey(key)) {
@@ -23980,6 +24265,7 @@ public final class Response {
      * <code>int64 latest_consume_time = 21;</code>
      * @return The latestConsumeTime.
      */
+    @java.lang.Override
     public long getLatestConsumeTime() {
       return latestConsumeTime_;
     }
@@ -23990,6 +24276,7 @@ public final class Response {
      * <code>int64 latest_consume_free_time = 22;</code>
      * @return The latestConsumeFreeTime.
      */
+    @java.lang.Override
     public long getLatestConsumeFreeTime() {
       return latestConsumeFreeTime_;
     }
@@ -24004,6 +24291,7 @@ public final class Response {
      * <code>bytes account_id = 23;</code>
      * @return The accountId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAccountId() {
       return accountId_;
     }
@@ -24014,6 +24302,7 @@ public final class Response {
      * <code>.protocol.Account.AccountResource account_resource = 26;</code>
      * @return Whether the accountResource field is set.
      */
+    @java.lang.Override
     public boolean hasAccountResource() {
       return accountResource_ != null;
     }
@@ -24021,12 +24310,14 @@ public final class Response {
      * <code>.protocol.Account.AccountResource account_resource = 26;</code>
      * @return The accountResource.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.Account.AccountResource getAccountResource() {
       return accountResource_ == null ? org.tron.trident.proto.Response.Account.AccountResource.getDefaultInstance() : accountResource_;
     }
     /**
      * <code>.protocol.Account.AccountResource account_resource = 26;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.Account.AccountResourceOrBuilder getAccountResourceOrBuilder() {
       return getAccountResource();
     }
@@ -24037,6 +24328,7 @@ public final class Response {
      * <code>bytes codeHash = 30;</code>
      * @return The codeHash.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getCodeHash() {
       return codeHash_;
     }
@@ -24047,6 +24339,7 @@ public final class Response {
      * <code>.protocol.Permission owner_permission = 31;</code>
      * @return Whether the ownerPermission field is set.
      */
+    @java.lang.Override
     public boolean hasOwnerPermission() {
       return ownerPermission_ != null;
     }
@@ -24054,12 +24347,14 @@ public final class Response {
      * <code>.protocol.Permission owner_permission = 31;</code>
      * @return The ownerPermission.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Permission getOwnerPermission() {
       return ownerPermission_ == null ? org.tron.trident.proto.Common.Permission.getDefaultInstance() : ownerPermission_;
     }
     /**
      * <code>.protocol.Permission owner_permission = 31;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.PermissionOrBuilder getOwnerPermissionOrBuilder() {
       return getOwnerPermission();
     }
@@ -24070,6 +24365,7 @@ public final class Response {
      * <code>.protocol.Permission witness_permission = 32;</code>
      * @return Whether the witnessPermission field is set.
      */
+    @java.lang.Override
     public boolean hasWitnessPermission() {
       return witnessPermission_ != null;
     }
@@ -24077,12 +24373,14 @@ public final class Response {
      * <code>.protocol.Permission witness_permission = 32;</code>
      * @return The witnessPermission.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Permission getWitnessPermission() {
       return witnessPermission_ == null ? org.tron.trident.proto.Common.Permission.getDefaultInstance() : witnessPermission_;
     }
     /**
      * <code>.protocol.Permission witness_permission = 32;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.PermissionOrBuilder getWitnessPermissionOrBuilder() {
       return getWitnessPermission();
     }
@@ -24092,12 +24390,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.Permission active_permission = 33;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Common.Permission> getActivePermissionList() {
       return activePermission_;
     }
     /**
      * <code>repeated .protocol.Permission active_permission = 33;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Common.PermissionOrBuilder> 
         getActivePermissionOrBuilderList() {
       return activePermission_;
@@ -24105,18 +24405,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.Permission active_permission = 33;</code>
      */
+    @java.lang.Override
     public int getActivePermissionCount() {
       return activePermission_.size();
     }
     /**
      * <code>repeated .protocol.Permission active_permission = 33;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Permission getActivePermission(int index) {
       return activePermission_.get(index);
     }
     /**
      * <code>repeated .protocol.Permission active_permission = 33;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.PermissionOrBuilder getActivePermissionOrBuilder(
         int index) {
       return activePermission_.get(index);
@@ -25305,6 +25608,7 @@ public final class Response {
        * <code>bytes account_name = 1;</code>
        * @return The accountName.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAccountName() {
         return accountName_;
       }
@@ -25346,7 +25650,7 @@ public final class Response {
        * <code>.protocol.AccountType type = 2;</code>
        * @return The enum numeric value on the wire for type.
        */
-      public int getTypeValue() {
+      @java.lang.Override public int getTypeValue() {
         return type_;
       }
       /**
@@ -25355,6 +25659,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setTypeValue(int value) {
+        
         type_ = value;
         onChanged();
         return this;
@@ -25363,6 +25668,7 @@ public final class Response {
        * <code>.protocol.AccountType type = 2;</code>
        * @return The type.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.AccountType getType() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Common.AccountType result = org.tron.trident.proto.Common.AccountType.valueOf(type_);
@@ -25402,6 +25708,7 @@ public final class Response {
        * <code>bytes address = 3;</code>
        * @return The address.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAddress() {
         return address_;
       }
@@ -25447,6 +25754,7 @@ public final class Response {
        * <code>int64 balance = 4;</code>
        * @return The balance.
        */
+      @java.lang.Override
       public long getBalance() {
         return balance_;
       }
@@ -25826,14 +26134,16 @@ public final class Response {
        * <code>map&lt;string, int64&gt; asset = 6;</code>
        */
 
+      @java.lang.Override
       public boolean containsAsset(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAsset().getMap().containsKey(key);
       }
       /**
        * Use {@link #getAssetMap()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Long> getAsset() {
         return getAssetMap();
@@ -25845,6 +26155,7 @@ public final class Response {
        *
        * <code>map&lt;string, int64&gt; asset = 6;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.Long> getAssetMap() {
         return internalGetAsset().getMap();
@@ -25856,11 +26167,12 @@ public final class Response {
        *
        * <code>map&lt;string, int64&gt; asset = 6;</code>
        */
+      @java.lang.Override
 
       public long getAssetOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAsset().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -25872,10 +26184,11 @@ public final class Response {
        *
        * <code>map&lt;string, int64&gt; asset = 6;</code>
        */
+      @java.lang.Override
 
       public long getAssetOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAsset().getMap();
         if (!map.containsKey(key)) {
@@ -25899,7 +26212,7 @@ public final class Response {
 
       public Builder removeAsset(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAsset().getMutableMap()
             .remove(key);
         return this;
@@ -25922,7 +26235,7 @@ public final class Response {
       public Builder putAsset(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAsset().getMutableMap()
             .put(key, value);
@@ -25977,14 +26290,16 @@ public final class Response {
        * <code>map&lt;string, int64&gt; assetV2 = 56;</code>
        */
 
+      @java.lang.Override
       public boolean containsAssetV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAssetV2().getMap().containsKey(key);
       }
       /**
        * Use {@link #getAssetV2Map()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Long> getAssetV2() {
         return getAssetV2Map();
@@ -25996,6 +26311,7 @@ public final class Response {
        *
        * <code>map&lt;string, int64&gt; assetV2 = 56;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.Long> getAssetV2Map() {
         return internalGetAssetV2().getMap();
@@ -26007,11 +26323,12 @@ public final class Response {
        *
        * <code>map&lt;string, int64&gt; assetV2 = 56;</code>
        */
+      @java.lang.Override
 
       public long getAssetV2OrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetV2().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -26023,10 +26340,11 @@ public final class Response {
        *
        * <code>map&lt;string, int64&gt; assetV2 = 56;</code>
        */
+      @java.lang.Override
 
       public long getAssetV2OrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetV2().getMap();
         if (!map.containsKey(key)) {
@@ -26050,7 +26368,7 @@ public final class Response {
 
       public Builder removeAssetV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAssetV2().getMutableMap()
             .remove(key);
         return this;
@@ -26073,7 +26391,7 @@ public final class Response {
       public Builder putAssetV2(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAssetV2().getMutableMap()
             .put(key, value);
@@ -26415,6 +26733,7 @@ public final class Response {
        * <code>int64 net_usage = 8;</code>
        * @return The netUsage.
        */
+      @java.lang.Override
       public long getNetUsage() {
         return netUsage_;
       }
@@ -26457,6 +26776,7 @@ public final class Response {
        * <code>int64 acquired_delegated_frozen_balance_for_bandwidth = 41;</code>
        * @return The acquiredDelegatedFrozenBalanceForBandwidth.
        */
+      @java.lang.Override
       public long getAcquiredDelegatedFrozenBalanceForBandwidth() {
         return acquiredDelegatedFrozenBalanceForBandwidth_;
       }
@@ -26499,6 +26819,7 @@ public final class Response {
        * <code>int64 delegated_frozen_balance_for_bandwidth = 42;</code>
        * @return The delegatedFrozenBalanceForBandwidth.
        */
+      @java.lang.Override
       public long getDelegatedFrozenBalanceForBandwidth() {
         return delegatedFrozenBalanceForBandwidth_;
       }
@@ -26541,6 +26862,7 @@ public final class Response {
        * <code>int64 create_time = 9;</code>
        * @return The createTime.
        */
+      @java.lang.Override
       public long getCreateTime() {
         return createTime_;
       }
@@ -26584,6 +26906,7 @@ public final class Response {
        * <code>int64 latest_opration_time = 10;</code>
        * @return The latestOprationTime.
        */
+      @java.lang.Override
       public long getLatestOprationTime() {
         return latestOprationTime_;
       }
@@ -26628,6 +26951,7 @@ public final class Response {
        * <code>int64 allowance = 11;</code>
        * @return The allowance.
        */
+      @java.lang.Override
       public long getAllowance() {
         return allowance_;
       }
@@ -26670,6 +26994,7 @@ public final class Response {
        * <code>int64 latest_withdraw_time = 12;</code>
        * @return The latestWithdrawTime.
        */
+      @java.lang.Override
       public long getLatestWithdrawTime() {
         return latestWithdrawTime_;
       }
@@ -26712,6 +27037,7 @@ public final class Response {
        * <code>bytes code = 13;</code>
        * @return The code.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getCode() {
         return code_;
       }
@@ -26753,6 +27079,7 @@ public final class Response {
        * <code>bool is_witness = 14;</code>
        * @return The isWitness.
        */
+      @java.lang.Override
       public boolean getIsWitness() {
         return isWitness_;
       }
@@ -26783,6 +27110,7 @@ public final class Response {
        * <code>bool is_committee = 15;</code>
        * @return The isCommittee.
        */
+      @java.lang.Override
       public boolean getIsCommittee() {
         return isCommittee_;
       }
@@ -27129,6 +27457,7 @@ public final class Response {
        * <code>bytes asset_issued_name = 17;</code>
        * @return The assetIssuedName.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAssetIssuedName() {
         return assetIssuedName_;
       }
@@ -27170,6 +27499,7 @@ public final class Response {
        * <code>bytes asset_issued_ID = 57;</code>
        * @return The assetIssuedID.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAssetIssuedID() {
         return assetIssuedID_;
       }
@@ -27228,14 +27558,16 @@ public final class Response {
        * <code>map&lt;string, int64&gt; latest_asset_operation_time = 18;</code>
        */
 
+      @java.lang.Override
       public boolean containsLatestAssetOperationTime(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetLatestAssetOperationTime().getMap().containsKey(key);
       }
       /**
        * Use {@link #getLatestAssetOperationTimeMap()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Long> getLatestAssetOperationTime() {
         return getLatestAssetOperationTimeMap();
@@ -27243,6 +27575,7 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; latest_asset_operation_time = 18;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.Long> getLatestAssetOperationTimeMap() {
         return internalGetLatestAssetOperationTime().getMap();
@@ -27250,11 +27583,12 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; latest_asset_operation_time = 18;</code>
        */
+      @java.lang.Override
 
       public long getLatestAssetOperationTimeOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetLatestAssetOperationTime().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -27262,10 +27596,11 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; latest_asset_operation_time = 18;</code>
        */
+      @java.lang.Override
 
       public long getLatestAssetOperationTimeOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetLatestAssetOperationTime().getMap();
         if (!map.containsKey(key)) {
@@ -27285,7 +27620,7 @@ public final class Response {
 
       public Builder removeLatestAssetOperationTime(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableLatestAssetOperationTime().getMutableMap()
             .remove(key);
         return this;
@@ -27304,7 +27639,7 @@ public final class Response {
       public Builder putLatestAssetOperationTime(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableLatestAssetOperationTime().getMutableMap()
             .put(key, value);
@@ -27351,14 +27686,16 @@ public final class Response {
        * <code>map&lt;string, int64&gt; latest_asset_operation_timeV2 = 58;</code>
        */
 
+      @java.lang.Override
       public boolean containsLatestAssetOperationTimeV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetLatestAssetOperationTimeV2().getMap().containsKey(key);
       }
       /**
        * Use {@link #getLatestAssetOperationTimeV2Map()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Long> getLatestAssetOperationTimeV2() {
         return getLatestAssetOperationTimeV2Map();
@@ -27366,6 +27703,7 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; latest_asset_operation_timeV2 = 58;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.Long> getLatestAssetOperationTimeV2Map() {
         return internalGetLatestAssetOperationTimeV2().getMap();
@@ -27373,11 +27711,12 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; latest_asset_operation_timeV2 = 58;</code>
        */
+      @java.lang.Override
 
       public long getLatestAssetOperationTimeV2OrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetLatestAssetOperationTimeV2().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -27385,10 +27724,11 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; latest_asset_operation_timeV2 = 58;</code>
        */
+      @java.lang.Override
 
       public long getLatestAssetOperationTimeV2OrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetLatestAssetOperationTimeV2().getMap();
         if (!map.containsKey(key)) {
@@ -27408,7 +27748,7 @@ public final class Response {
 
       public Builder removeLatestAssetOperationTimeV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableLatestAssetOperationTimeV2().getMutableMap()
             .remove(key);
         return this;
@@ -27427,7 +27767,7 @@ public final class Response {
       public Builder putLatestAssetOperationTimeV2(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableLatestAssetOperationTimeV2().getMutableMap()
             .put(key, value);
@@ -27449,6 +27789,7 @@ public final class Response {
        * <code>int64 free_net_usage = 19;</code>
        * @return The freeNetUsage.
        */
+      @java.lang.Override
       public long getFreeNetUsage() {
         return freeNetUsage_;
       }
@@ -27504,14 +27845,16 @@ public final class Response {
        * <code>map&lt;string, int64&gt; free_asset_net_usage = 20;</code>
        */
 
+      @java.lang.Override
       public boolean containsFreeAssetNetUsage(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetFreeAssetNetUsage().getMap().containsKey(key);
       }
       /**
        * Use {@link #getFreeAssetNetUsageMap()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Long> getFreeAssetNetUsage() {
         return getFreeAssetNetUsageMap();
@@ -27519,6 +27862,7 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; free_asset_net_usage = 20;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.Long> getFreeAssetNetUsageMap() {
         return internalGetFreeAssetNetUsage().getMap();
@@ -27526,11 +27870,12 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; free_asset_net_usage = 20;</code>
        */
+      @java.lang.Override
 
       public long getFreeAssetNetUsageOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetFreeAssetNetUsage().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -27538,10 +27883,11 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; free_asset_net_usage = 20;</code>
        */
+      @java.lang.Override
 
       public long getFreeAssetNetUsageOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetFreeAssetNetUsage().getMap();
         if (!map.containsKey(key)) {
@@ -27561,7 +27907,7 @@ public final class Response {
 
       public Builder removeFreeAssetNetUsage(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableFreeAssetNetUsage().getMutableMap()
             .remove(key);
         return this;
@@ -27580,7 +27926,7 @@ public final class Response {
       public Builder putFreeAssetNetUsage(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableFreeAssetNetUsage().getMutableMap()
             .put(key, value);
@@ -27627,14 +27973,16 @@ public final class Response {
        * <code>map&lt;string, int64&gt; free_asset_net_usageV2 = 59;</code>
        */
 
+      @java.lang.Override
       public boolean containsFreeAssetNetUsageV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetFreeAssetNetUsageV2().getMap().containsKey(key);
       }
       /**
        * Use {@link #getFreeAssetNetUsageV2Map()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Long> getFreeAssetNetUsageV2() {
         return getFreeAssetNetUsageV2Map();
@@ -27642,6 +27990,7 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; free_asset_net_usageV2 = 59;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.Long> getFreeAssetNetUsageV2Map() {
         return internalGetFreeAssetNetUsageV2().getMap();
@@ -27649,11 +27998,12 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; free_asset_net_usageV2 = 59;</code>
        */
+      @java.lang.Override
 
       public long getFreeAssetNetUsageV2OrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetFreeAssetNetUsageV2().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -27661,10 +28011,11 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; free_asset_net_usageV2 = 59;</code>
        */
+      @java.lang.Override
 
       public long getFreeAssetNetUsageV2OrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetFreeAssetNetUsageV2().getMap();
         if (!map.containsKey(key)) {
@@ -27684,7 +28035,7 @@ public final class Response {
 
       public Builder removeFreeAssetNetUsageV2(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableFreeAssetNetUsageV2().getMutableMap()
             .remove(key);
         return this;
@@ -27703,7 +28054,7 @@ public final class Response {
       public Builder putFreeAssetNetUsageV2(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableFreeAssetNetUsageV2().getMutableMap()
             .put(key, value);
@@ -27725,6 +28076,7 @@ public final class Response {
        * <code>int64 latest_consume_time = 21;</code>
        * @return The latestConsumeTime.
        */
+      @java.lang.Override
       public long getLatestConsumeTime() {
         return latestConsumeTime_;
       }
@@ -27755,6 +28107,7 @@ public final class Response {
        * <code>int64 latest_consume_free_time = 22;</code>
        * @return The latestConsumeFreeTime.
        */
+      @java.lang.Override
       public long getLatestConsumeFreeTime() {
         return latestConsumeFreeTime_;
       }
@@ -27789,6 +28142,7 @@ public final class Response {
        * <code>bytes account_id = 23;</code>
        * @return The accountId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAccountId() {
         return accountId_;
       }
@@ -27949,6 +28303,7 @@ public final class Response {
        * <code>bytes codeHash = 30;</code>
        * @return The codeHash.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getCodeHash() {
         return codeHash_;
       }
@@ -28538,7 +28893,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.MarketOrderDetail}
    */
-  public  static final class MarketOrderDetail extends
+  public static final class MarketOrderDetail extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.MarketOrderDetail)
       MarketOrderDetailOrBuilder {
@@ -28640,6 +28995,7 @@ public final class Response {
      * <code>bytes makerOrderId = 1;</code>
      * @return The makerOrderId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getMakerOrderId() {
       return makerOrderId_;
     }
@@ -28650,6 +29006,7 @@ public final class Response {
      * <code>bytes takerOrderId = 2;</code>
      * @return The takerOrderId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTakerOrderId() {
       return takerOrderId_;
     }
@@ -28660,6 +29017,7 @@ public final class Response {
      * <code>int64 fillSellQuantity = 3;</code>
      * @return The fillSellQuantity.
      */
+    @java.lang.Override
     public long getFillSellQuantity() {
       return fillSellQuantity_;
     }
@@ -28670,6 +29028,7 @@ public final class Response {
      * <code>int64 fillBuyQuantity = 4;</code>
      * @return The fillBuyQuantity.
      */
+    @java.lang.Override
     public long getFillBuyQuantity() {
       return fillBuyQuantity_;
     }
@@ -29034,6 +29393,7 @@ public final class Response {
        * <code>bytes makerOrderId = 1;</code>
        * @return The makerOrderId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getMakerOrderId() {
         return makerOrderId_;
       }
@@ -29067,6 +29427,7 @@ public final class Response {
        * <code>bytes takerOrderId = 2;</code>
        * @return The takerOrderId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTakerOrderId() {
         return takerOrderId_;
       }
@@ -29100,6 +29461,7 @@ public final class Response {
        * <code>int64 fillSellQuantity = 3;</code>
        * @return The fillSellQuantity.
        */
+      @java.lang.Override
       public long getFillSellQuantity() {
         return fillSellQuantity_;
       }
@@ -29130,6 +29492,7 @@ public final class Response {
        * <code>int64 fillBuyQuantity = 4;</code>
        * @return The fillBuyQuantity.
        */
+      @java.lang.Override
       public long getFillBuyQuantity() {
         return fillBuyQuantity_;
       }
@@ -29300,7 +29663,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.Proposal}
    */
-  public  static final class Proposal extends
+  public static final class Proposal extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.Proposal)
       ProposalOrBuilder {
@@ -29528,6 +29891,10 @@ public final class Response {
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -29568,6 +29935,7 @@ public final class Response {
      * <code>int64 proposal_id = 1;</code>
      * @return The proposalId.
      */
+    @java.lang.Override
     public long getProposalId() {
       return proposalId_;
     }
@@ -29578,6 +29946,7 @@ public final class Response {
      * <code>bytes proposer_address = 2;</code>
      * @return The proposerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getProposerAddress() {
       return proposerAddress_;
     }
@@ -29612,6 +29981,7 @@ public final class Response {
      * <code>map&lt;int64, int64&gt; parameters = 3;</code>
      */
 
+    @java.lang.Override
     public boolean containsParameters(
         long key) {
       
@@ -29620,6 +29990,7 @@ public final class Response {
     /**
      * Use {@link #getParametersMap()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.Long, java.lang.Long> getParameters() {
       return getParametersMap();
@@ -29627,6 +29998,7 @@ public final class Response {
     /**
      * <code>map&lt;int64, int64&gt; parameters = 3;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.Long, java.lang.Long> getParametersMap() {
       return internalGetParameters().getMap();
@@ -29634,6 +30006,7 @@ public final class Response {
     /**
      * <code>map&lt;int64, int64&gt; parameters = 3;</code>
      */
+    @java.lang.Override
 
     public long getParametersOrDefault(
         long key,
@@ -29646,6 +30019,7 @@ public final class Response {
     /**
      * <code>map&lt;int64, int64&gt; parameters = 3;</code>
      */
+    @java.lang.Override
 
     public long getParametersOrThrow(
         long key) {
@@ -29664,6 +30038,7 @@ public final class Response {
      * <code>int64 expiration_time = 4;</code>
      * @return The expirationTime.
      */
+    @java.lang.Override
     public long getExpirationTime() {
       return expirationTime_;
     }
@@ -29674,6 +30049,7 @@ public final class Response {
      * <code>int64 create_time = 5;</code>
      * @return The createTime.
      */
+    @java.lang.Override
     public long getCreateTime() {
       return createTime_;
     }
@@ -29684,6 +30060,7 @@ public final class Response {
      * <code>repeated bytes approvals = 6;</code>
      * @return A list containing the approvals.
      */
+    @java.lang.Override
     public java.util.List<com.google.protobuf.ByteString>
         getApprovalsList() {
       return approvals_;
@@ -29710,14 +30087,14 @@ public final class Response {
      * <code>.protocol.Proposal.State state = 7;</code>
      * @return The enum numeric value on the wire for state.
      */
-    public int getStateValue() {
+    @java.lang.Override public int getStateValue() {
       return state_;
     }
     /**
      * <code>.protocol.Proposal.State state = 7;</code>
      * @return The state.
      */
-    public org.tron.trident.proto.Response.Proposal.State getState() {
+    @java.lang.Override public org.tron.trident.proto.Response.Proposal.State getState() {
       @SuppressWarnings("deprecation")
       org.tron.trident.proto.Response.Proposal.State result = org.tron.trident.proto.Response.Proposal.State.valueOf(state_);
       return result == null ? org.tron.trident.proto.Response.Proposal.State.UNRECOGNIZED : result;
@@ -30186,6 +30563,7 @@ public final class Response {
        * <code>int64 proposal_id = 1;</code>
        * @return The proposalId.
        */
+      @java.lang.Override
       public long getProposalId() {
         return proposalId_;
       }
@@ -30216,6 +30594,7 @@ public final class Response {
        * <code>bytes proposer_address = 2;</code>
        * @return The proposerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getProposerAddress() {
         return proposerAddress_;
       }
@@ -30274,6 +30653,7 @@ public final class Response {
        * <code>map&lt;int64, int64&gt; parameters = 3;</code>
        */
 
+      @java.lang.Override
       public boolean containsParameters(
           long key) {
         
@@ -30282,6 +30662,7 @@ public final class Response {
       /**
        * Use {@link #getParametersMap()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.Long, java.lang.Long> getParameters() {
         return getParametersMap();
@@ -30289,6 +30670,7 @@ public final class Response {
       /**
        * <code>map&lt;int64, int64&gt; parameters = 3;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.Long, java.lang.Long> getParametersMap() {
         return internalGetParameters().getMap();
@@ -30296,6 +30678,7 @@ public final class Response {
       /**
        * <code>map&lt;int64, int64&gt; parameters = 3;</code>
        */
+      @java.lang.Override
 
       public long getParametersOrDefault(
           long key,
@@ -30308,6 +30691,7 @@ public final class Response {
       /**
        * <code>map&lt;int64, int64&gt; parameters = 3;</code>
        */
+      @java.lang.Override
 
       public long getParametersOrThrow(
           long key) {
@@ -30372,6 +30756,7 @@ public final class Response {
        * <code>int64 expiration_time = 4;</code>
        * @return The expirationTime.
        */
+      @java.lang.Override
       public long getExpirationTime() {
         return expirationTime_;
       }
@@ -30402,6 +30787,7 @@ public final class Response {
        * <code>int64 create_time = 5;</code>
        * @return The createTime.
        */
+      @java.lang.Override
       public long getCreateTime() {
         return createTime_;
       }
@@ -30517,7 +30903,7 @@ public final class Response {
        * <code>.protocol.Proposal.State state = 7;</code>
        * @return The enum numeric value on the wire for state.
        */
-      public int getStateValue() {
+      @java.lang.Override public int getStateValue() {
         return state_;
       }
       /**
@@ -30526,6 +30912,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setStateValue(int value) {
+        
         state_ = value;
         onChanged();
         return this;
@@ -30534,6 +30921,7 @@ public final class Response {
        * <code>.protocol.Proposal.State state = 7;</code>
        * @return The state.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.Proposal.State getState() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Response.Proposal.State result = org.tron.trident.proto.Response.Proposal.State.valueOf(state_);
@@ -30665,7 +31053,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.Exchange}
    */
-  public  static final class Exchange extends
+  public static final class Exchange extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.Exchange)
       ExchangeOrBuilder {
@@ -30783,6 +31171,7 @@ public final class Response {
      * <code>int64 exchange_id = 1;</code>
      * @return The exchangeId.
      */
+    @java.lang.Override
     public long getExchangeId() {
       return exchangeId_;
     }
@@ -30793,6 +31182,7 @@ public final class Response {
      * <code>bytes creator_address = 2;</code>
      * @return The creatorAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getCreatorAddress() {
       return creatorAddress_;
     }
@@ -30803,6 +31193,7 @@ public final class Response {
      * <code>int64 create_time = 3;</code>
      * @return The createTime.
      */
+    @java.lang.Override
     public long getCreateTime() {
       return createTime_;
     }
@@ -30813,6 +31204,7 @@ public final class Response {
      * <code>bytes first_token_id = 6;</code>
      * @return The firstTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getFirstTokenId() {
       return firstTokenId_;
     }
@@ -30823,6 +31215,7 @@ public final class Response {
      * <code>int64 first_token_balance = 7;</code>
      * @return The firstTokenBalance.
      */
+    @java.lang.Override
     public long getFirstTokenBalance() {
       return firstTokenBalance_;
     }
@@ -30833,6 +31226,7 @@ public final class Response {
      * <code>bytes second_token_id = 8;</code>
      * @return The secondTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getSecondTokenId() {
       return secondTokenId_;
     }
@@ -30843,6 +31237,7 @@ public final class Response {
      * <code>int64 second_token_balance = 9;</code>
      * @return The secondTokenBalance.
      */
+    @java.lang.Override
     public long getSecondTokenBalance() {
       return secondTokenBalance_;
     }
@@ -31260,6 +31655,7 @@ public final class Response {
        * <code>int64 exchange_id = 1;</code>
        * @return The exchangeId.
        */
+      @java.lang.Override
       public long getExchangeId() {
         return exchangeId_;
       }
@@ -31290,6 +31686,7 @@ public final class Response {
        * <code>bytes creator_address = 2;</code>
        * @return The creatorAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getCreatorAddress() {
         return creatorAddress_;
       }
@@ -31323,6 +31720,7 @@ public final class Response {
        * <code>int64 create_time = 3;</code>
        * @return The createTime.
        */
+      @java.lang.Override
       public long getCreateTime() {
         return createTime_;
       }
@@ -31353,6 +31751,7 @@ public final class Response {
        * <code>bytes first_token_id = 6;</code>
        * @return The firstTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getFirstTokenId() {
         return firstTokenId_;
       }
@@ -31386,6 +31785,7 @@ public final class Response {
        * <code>int64 first_token_balance = 7;</code>
        * @return The firstTokenBalance.
        */
+      @java.lang.Override
       public long getFirstTokenBalance() {
         return firstTokenBalance_;
       }
@@ -31416,6 +31816,7 @@ public final class Response {
        * <code>bytes second_token_id = 8;</code>
        * @return The secondTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getSecondTokenId() {
         return secondTokenId_;
       }
@@ -31449,6 +31850,7 @@ public final class Response {
        * <code>int64 second_token_balance = 9;</code>
        * @return The secondTokenBalance.
        */
+      @java.lang.Override
       public long getSecondTokenBalance() {
         return secondTokenBalance_;
       }
@@ -31569,7 +31971,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.DelegatedResource}
    */
-  public  static final class DelegatedResource extends
+  public static final class DelegatedResource extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.DelegatedResource)
       DelegatedResourceOrBuilder {
@@ -31681,6 +32083,7 @@ public final class Response {
      * <code>bytes from = 1;</code>
      * @return The from.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getFrom() {
       return from_;
     }
@@ -31691,6 +32094,7 @@ public final class Response {
      * <code>bytes to = 2;</code>
      * @return The to.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTo() {
       return to_;
     }
@@ -31701,6 +32105,7 @@ public final class Response {
      * <code>int64 frozen_balance_for_bandwidth = 3;</code>
      * @return The frozenBalanceForBandwidth.
      */
+    @java.lang.Override
     public long getFrozenBalanceForBandwidth() {
       return frozenBalanceForBandwidth_;
     }
@@ -31711,6 +32116,7 @@ public final class Response {
      * <code>int64 frozen_balance_for_energy = 4;</code>
      * @return The frozenBalanceForEnergy.
      */
+    @java.lang.Override
     public long getFrozenBalanceForEnergy() {
       return frozenBalanceForEnergy_;
     }
@@ -31721,6 +32127,7 @@ public final class Response {
      * <code>int64 expire_time_for_bandwidth = 5;</code>
      * @return The expireTimeForBandwidth.
      */
+    @java.lang.Override
     public long getExpireTimeForBandwidth() {
       return expireTimeForBandwidth_;
     }
@@ -31731,6 +32138,7 @@ public final class Response {
      * <code>int64 expire_time_for_energy = 6;</code>
      * @return The expireTimeForEnergy.
      */
+    @java.lang.Override
     public long getExpireTimeForEnergy() {
       return expireTimeForEnergy_;
     }
@@ -32131,6 +32539,7 @@ public final class Response {
        * <code>bytes from = 1;</code>
        * @return The from.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getFrom() {
         return from_;
       }
@@ -32164,6 +32573,7 @@ public final class Response {
        * <code>bytes to = 2;</code>
        * @return The to.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTo() {
         return to_;
       }
@@ -32197,6 +32607,7 @@ public final class Response {
        * <code>int64 frozen_balance_for_bandwidth = 3;</code>
        * @return The frozenBalanceForBandwidth.
        */
+      @java.lang.Override
       public long getFrozenBalanceForBandwidth() {
         return frozenBalanceForBandwidth_;
       }
@@ -32227,6 +32638,7 @@ public final class Response {
        * <code>int64 frozen_balance_for_energy = 4;</code>
        * @return The frozenBalanceForEnergy.
        */
+      @java.lang.Override
       public long getFrozenBalanceForEnergy() {
         return frozenBalanceForEnergy_;
       }
@@ -32257,6 +32669,7 @@ public final class Response {
        * <code>int64 expire_time_for_bandwidth = 5;</code>
        * @return The expireTimeForBandwidth.
        */
+      @java.lang.Override
       public long getExpireTimeForBandwidth() {
         return expireTimeForBandwidth_;
       }
@@ -32287,6 +32700,7 @@ public final class Response {
        * <code>int64 expire_time_for_energy = 6;</code>
        * @return The expireTimeForEnergy.
        */
+      @java.lang.Override
       public long getExpireTimeForEnergy() {
         return expireTimeForEnergy_;
       }
@@ -32411,7 +32825,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.DelegatedResourceAccountIndex}
    */
-  public  static final class DelegatedResourceAccountIndex extends
+  public static final class DelegatedResourceAccountIndex extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.DelegatedResourceAccountIndex)
       DelegatedResourceAccountIndexOrBuilder {
@@ -32522,6 +32936,7 @@ public final class Response {
      * <code>bytes account = 1;</code>
      * @return The account.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAccount() {
       return account_;
     }
@@ -32532,6 +32947,7 @@ public final class Response {
      * <code>repeated bytes fromAccounts = 2;</code>
      * @return A list containing the fromAccounts.
      */
+    @java.lang.Override
     public java.util.List<com.google.protobuf.ByteString>
         getFromAccountsList() {
       return fromAccounts_;
@@ -32558,6 +32974,7 @@ public final class Response {
      * <code>repeated bytes toAccounts = 3;</code>
      * @return A list containing the toAccounts.
      */
+    @java.lang.Override
     public java.util.List<com.google.protobuf.ByteString>
         getToAccountsList() {
       return toAccounts_;
@@ -32957,6 +33374,7 @@ public final class Response {
        * <code>bytes account = 1;</code>
        * @return The account.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAccount() {
         return account_;
       }
@@ -33235,7 +33653,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.TransactionSign}
    */
-  public  static final class TransactionSign extends
+  public static final class TransactionSign extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TransactionSign)
       TransactionSignOrBuilder {
@@ -33334,6 +33752,7 @@ public final class Response {
      * <code>.protocol.Transaction transaction = 1;</code>
      * @return Whether the transaction field is set.
      */
+    @java.lang.Override
     public boolean hasTransaction() {
       return transaction_ != null;
     }
@@ -33341,12 +33760,14 @@ public final class Response {
      * <code>.protocol.Transaction transaction = 1;</code>
      * @return The transaction.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.Transaction getTransaction() {
       return transaction_ == null ? org.tron.trident.proto.Chain.Transaction.getDefaultInstance() : transaction_;
     }
     /**
      * <code>.protocol.Transaction transaction = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Chain.TransactionOrBuilder getTransactionOrBuilder() {
       return getTransaction();
     }
@@ -33357,6 +33778,7 @@ public final class Response {
      * <code>bytes privateKey = 2;</code>
      * @return The privateKey.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPrivateKey() {
       return privateKey_;
     }
@@ -33817,6 +34239,7 @@ public final class Response {
        * <code>bytes privateKey = 2;</code>
        * @return The privateKey.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPrivateKey() {
         return privateKey_;
       }
@@ -33928,7 +34351,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.ChainParameters}
    */
-  public  static final class ChainParameters extends
+  public static final class ChainParameters extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.ChainParameters)
       ChainParametersOrBuilder {
@@ -34041,7 +34464,7 @@ public final class Response {
     /**
      * Protobuf type {@code protocol.ChainParameters.ChainParameter}
      */
-    public  static final class ChainParameter extends
+    public static final class ChainParameter extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.ChainParameters.ChainParameter)
         ChainParameterOrBuilder {
@@ -34133,6 +34556,7 @@ public final class Response {
        * <code>string key = 1;</code>
        * @return The key.
        */
+      @java.lang.Override
       public java.lang.String getKey() {
         java.lang.Object ref = key_;
         if (ref instanceof java.lang.String) {
@@ -34149,6 +34573,7 @@ public final class Response {
        * <code>string key = 1;</code>
        * @return The bytes for key.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getKeyBytes() {
         java.lang.Object ref = key_;
@@ -34169,6 +34594,7 @@ public final class Response {
        * <code>int64 value = 2;</code>
        * @return The value.
        */
+      @java.lang.Override
       public long getValue() {
         return value_;
       }
@@ -34187,7 +34613,7 @@ public final class Response {
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (!getKeyBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(key_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 1, key_);
         }
         if (value_ != 0L) {
@@ -34202,7 +34628,7 @@ public final class Response {
         if (size != -1) return size;
 
         size = 0;
-        if (!getKeyBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(key_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, key_);
         }
         if (value_ != 0L) {
@@ -34574,6 +35000,7 @@ public final class Response {
          * <code>int64 value = 2;</code>
          * @return The value.
          */
+        @java.lang.Override
         public long getValue() {
           return value_;
         }
@@ -34656,12 +35083,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.ChainParameters.ChainParameter chainParameter = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.ChainParameters.ChainParameter> getChainParameterList() {
       return chainParameter_;
     }
     /**
      * <code>repeated .protocol.ChainParameters.ChainParameter chainParameter = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.ChainParameters.ChainParameterOrBuilder> 
         getChainParameterOrBuilderList() {
       return chainParameter_;
@@ -34669,18 +35098,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.ChainParameters.ChainParameter chainParameter = 1;</code>
      */
+    @java.lang.Override
     public int getChainParameterCount() {
       return chainParameter_.size();
     }
     /**
      * <code>repeated .protocol.ChainParameters.ChainParameter chainParameter = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.ChainParameters.ChainParameter getChainParameter(int index) {
       return chainParameter_.get(index);
     }
     /**
      * <code>repeated .protocol.ChainParameters.ChainParameter chainParameter = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.ChainParameters.ChainParameterOrBuilder getChainParameterOrBuilder(
         int index) {
       return chainParameter_.get(index);
@@ -35473,7 +35905,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.NodeInfo}
    */
-  public  static final class NodeInfo extends
+  public static final class NodeInfo extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.NodeInfo)
       NodeInfoOrBuilder {
@@ -35844,7 +36276,7 @@ public final class Response {
     /**
      * Protobuf type {@code protocol.NodeInfo.PeerInfo}
      */
-    public  static final class PeerInfo extends
+    public static final class PeerInfo extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.NodeInfo.PeerInfo)
         PeerInfoOrBuilder {
@@ -36061,6 +36493,7 @@ public final class Response {
        * <code>string lastSyncBlock = 1;</code>
        * @return The lastSyncBlock.
        */
+      @java.lang.Override
       public java.lang.String getLastSyncBlock() {
         java.lang.Object ref = lastSyncBlock_;
         if (ref instanceof java.lang.String) {
@@ -36077,6 +36510,7 @@ public final class Response {
        * <code>string lastSyncBlock = 1;</code>
        * @return The bytes for lastSyncBlock.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getLastSyncBlockBytes() {
         java.lang.Object ref = lastSyncBlock_;
@@ -36097,6 +36531,7 @@ public final class Response {
        * <code>int64 remainNum = 2;</code>
        * @return The remainNum.
        */
+      @java.lang.Override
       public long getRemainNum() {
         return remainNum_;
       }
@@ -36107,6 +36542,7 @@ public final class Response {
        * <code>int64 lastBlockUpdateTime = 3;</code>
        * @return The lastBlockUpdateTime.
        */
+      @java.lang.Override
       public long getLastBlockUpdateTime() {
         return lastBlockUpdateTime_;
       }
@@ -36117,6 +36553,7 @@ public final class Response {
        * <code>bool syncFlag = 4;</code>
        * @return The syncFlag.
        */
+      @java.lang.Override
       public boolean getSyncFlag() {
         return syncFlag_;
       }
@@ -36127,6 +36564,7 @@ public final class Response {
        * <code>int64 headBlockTimeWeBothHave = 5;</code>
        * @return The headBlockTimeWeBothHave.
        */
+      @java.lang.Override
       public long getHeadBlockTimeWeBothHave() {
         return headBlockTimeWeBothHave_;
       }
@@ -36137,6 +36575,7 @@ public final class Response {
        * <code>bool needSyncFromPeer = 6;</code>
        * @return The needSyncFromPeer.
        */
+      @java.lang.Override
       public boolean getNeedSyncFromPeer() {
         return needSyncFromPeer_;
       }
@@ -36147,6 +36586,7 @@ public final class Response {
        * <code>bool needSyncFromUs = 7;</code>
        * @return The needSyncFromUs.
        */
+      @java.lang.Override
       public boolean getNeedSyncFromUs() {
         return needSyncFromUs_;
       }
@@ -36157,6 +36597,7 @@ public final class Response {
        * <code>string host = 8;</code>
        * @return The host.
        */
+      @java.lang.Override
       public java.lang.String getHost() {
         java.lang.Object ref = host_;
         if (ref instanceof java.lang.String) {
@@ -36173,6 +36614,7 @@ public final class Response {
        * <code>string host = 8;</code>
        * @return The bytes for host.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getHostBytes() {
         java.lang.Object ref = host_;
@@ -36193,6 +36635,7 @@ public final class Response {
        * <code>int32 port = 9;</code>
        * @return The port.
        */
+      @java.lang.Override
       public int getPort() {
         return port_;
       }
@@ -36203,6 +36646,7 @@ public final class Response {
        * <code>string nodeId = 10;</code>
        * @return The nodeId.
        */
+      @java.lang.Override
       public java.lang.String getNodeId() {
         java.lang.Object ref = nodeId_;
         if (ref instanceof java.lang.String) {
@@ -36219,6 +36663,7 @@ public final class Response {
        * <code>string nodeId = 10;</code>
        * @return The bytes for nodeId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getNodeIdBytes() {
         java.lang.Object ref = nodeId_;
@@ -36239,6 +36684,7 @@ public final class Response {
        * <code>int64 connectTime = 11;</code>
        * @return The connectTime.
        */
+      @java.lang.Override
       public long getConnectTime() {
         return connectTime_;
       }
@@ -36249,6 +36695,7 @@ public final class Response {
        * <code>double avgLatency = 12;</code>
        * @return The avgLatency.
        */
+      @java.lang.Override
       public double getAvgLatency() {
         return avgLatency_;
       }
@@ -36259,6 +36706,7 @@ public final class Response {
        * <code>int32 syncToFetchSize = 13;</code>
        * @return The syncToFetchSize.
        */
+      @java.lang.Override
       public int getSyncToFetchSize() {
         return syncToFetchSize_;
       }
@@ -36269,6 +36717,7 @@ public final class Response {
        * <code>int64 syncToFetchSizePeekNum = 14;</code>
        * @return The syncToFetchSizePeekNum.
        */
+      @java.lang.Override
       public long getSyncToFetchSizePeekNum() {
         return syncToFetchSizePeekNum_;
       }
@@ -36279,6 +36728,7 @@ public final class Response {
        * <code>int32 syncBlockRequestedSize = 15;</code>
        * @return The syncBlockRequestedSize.
        */
+      @java.lang.Override
       public int getSyncBlockRequestedSize() {
         return syncBlockRequestedSize_;
       }
@@ -36289,6 +36739,7 @@ public final class Response {
        * <code>int64 unFetchSynNum = 16;</code>
        * @return The unFetchSynNum.
        */
+      @java.lang.Override
       public long getUnFetchSynNum() {
         return unFetchSynNum_;
       }
@@ -36299,6 +36750,7 @@ public final class Response {
        * <code>int32 blockInPorcSize = 17;</code>
        * @return The blockInPorcSize.
        */
+      @java.lang.Override
       public int getBlockInPorcSize() {
         return blockInPorcSize_;
       }
@@ -36309,6 +36761,7 @@ public final class Response {
        * <code>string headBlockWeBothHave = 18;</code>
        * @return The headBlockWeBothHave.
        */
+      @java.lang.Override
       public java.lang.String getHeadBlockWeBothHave() {
         java.lang.Object ref = headBlockWeBothHave_;
         if (ref instanceof java.lang.String) {
@@ -36325,6 +36778,7 @@ public final class Response {
        * <code>string headBlockWeBothHave = 18;</code>
        * @return The bytes for headBlockWeBothHave.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getHeadBlockWeBothHaveBytes() {
         java.lang.Object ref = headBlockWeBothHave_;
@@ -36345,6 +36799,7 @@ public final class Response {
        * <code>bool isActive = 19;</code>
        * @return The isActive.
        */
+      @java.lang.Override
       public boolean getIsActive() {
         return isActive_;
       }
@@ -36355,6 +36810,7 @@ public final class Response {
        * <code>int32 score = 20;</code>
        * @return The score.
        */
+      @java.lang.Override
       public int getScore() {
         return score_;
       }
@@ -36365,6 +36821,7 @@ public final class Response {
        * <code>int32 nodeCount = 21;</code>
        * @return The nodeCount.
        */
+      @java.lang.Override
       public int getNodeCount() {
         return nodeCount_;
       }
@@ -36375,6 +36832,7 @@ public final class Response {
        * <code>int64 inFlow = 22;</code>
        * @return The inFlow.
        */
+      @java.lang.Override
       public long getInFlow() {
         return inFlow_;
       }
@@ -36385,6 +36843,7 @@ public final class Response {
        * <code>int32 disconnectTimes = 23;</code>
        * @return The disconnectTimes.
        */
+      @java.lang.Override
       public int getDisconnectTimes() {
         return disconnectTimes_;
       }
@@ -36395,6 +36854,7 @@ public final class Response {
        * <code>string localDisconnectReason = 24;</code>
        * @return The localDisconnectReason.
        */
+      @java.lang.Override
       public java.lang.String getLocalDisconnectReason() {
         java.lang.Object ref = localDisconnectReason_;
         if (ref instanceof java.lang.String) {
@@ -36411,6 +36871,7 @@ public final class Response {
        * <code>string localDisconnectReason = 24;</code>
        * @return The bytes for localDisconnectReason.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getLocalDisconnectReasonBytes() {
         java.lang.Object ref = localDisconnectReason_;
@@ -36431,6 +36892,7 @@ public final class Response {
        * <code>string remoteDisconnectReason = 25;</code>
        * @return The remoteDisconnectReason.
        */
+      @java.lang.Override
       public java.lang.String getRemoteDisconnectReason() {
         java.lang.Object ref = remoteDisconnectReason_;
         if (ref instanceof java.lang.String) {
@@ -36447,6 +36909,7 @@ public final class Response {
        * <code>string remoteDisconnectReason = 25;</code>
        * @return The bytes for remoteDisconnectReason.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getRemoteDisconnectReasonBytes() {
         java.lang.Object ref = remoteDisconnectReason_;
@@ -36475,7 +36938,7 @@ public final class Response {
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (!getLastSyncBlockBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lastSyncBlock_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 1, lastSyncBlock_);
         }
         if (remainNum_ != 0L) {
@@ -36496,19 +36959,19 @@ public final class Response {
         if (needSyncFromUs_ != false) {
           output.writeBool(7, needSyncFromUs_);
         }
-        if (!getHostBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(host_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 8, host_);
         }
         if (port_ != 0) {
           output.writeInt32(9, port_);
         }
-        if (!getNodeIdBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nodeId_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 10, nodeId_);
         }
         if (connectTime_ != 0L) {
           output.writeInt64(11, connectTime_);
         }
-        if (avgLatency_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(avgLatency_) != 0) {
           output.writeDouble(12, avgLatency_);
         }
         if (syncToFetchSize_ != 0) {
@@ -36526,7 +36989,7 @@ public final class Response {
         if (blockInPorcSize_ != 0) {
           output.writeInt32(17, blockInPorcSize_);
         }
-        if (!getHeadBlockWeBothHaveBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(headBlockWeBothHave_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 18, headBlockWeBothHave_);
         }
         if (isActive_ != false) {
@@ -36544,10 +37007,10 @@ public final class Response {
         if (disconnectTimes_ != 0) {
           output.writeInt32(23, disconnectTimes_);
         }
-        if (!getLocalDisconnectReasonBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(localDisconnectReason_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 24, localDisconnectReason_);
         }
-        if (!getRemoteDisconnectReasonBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remoteDisconnectReason_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 25, remoteDisconnectReason_);
         }
         unknownFields.writeTo(output);
@@ -36559,7 +37022,7 @@ public final class Response {
         if (size != -1) return size;
 
         size = 0;
-        if (!getLastSyncBlockBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lastSyncBlock_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, lastSyncBlock_);
         }
         if (remainNum_ != 0L) {
@@ -36586,21 +37049,21 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeBoolSize(7, needSyncFromUs_);
         }
-        if (!getHostBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(host_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, host_);
         }
         if (port_ != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeInt32Size(9, port_);
         }
-        if (!getNodeIdBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nodeId_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, nodeId_);
         }
         if (connectTime_ != 0L) {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(11, connectTime_);
         }
-        if (avgLatency_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(avgLatency_) != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeDoubleSize(12, avgLatency_);
         }
@@ -36624,7 +37087,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt32Size(17, blockInPorcSize_);
         }
-        if (!getHeadBlockWeBothHaveBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(headBlockWeBothHave_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(18, headBlockWeBothHave_);
         }
         if (isActive_ != false) {
@@ -36647,10 +37110,10 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt32Size(23, disconnectTimes_);
         }
-        if (!getLocalDisconnectReasonBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(localDisconnectReason_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(24, localDisconnectReason_);
         }
-        if (!getRemoteDisconnectReasonBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remoteDisconnectReason_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(25, remoteDisconnectReason_);
         }
         size += unknownFields.getSerializedSize();
@@ -37265,6 +37728,7 @@ public final class Response {
          * <code>int64 remainNum = 2;</code>
          * @return The remainNum.
          */
+        @java.lang.Override
         public long getRemainNum() {
           return remainNum_;
         }
@@ -37295,6 +37759,7 @@ public final class Response {
          * <code>int64 lastBlockUpdateTime = 3;</code>
          * @return The lastBlockUpdateTime.
          */
+        @java.lang.Override
         public long getLastBlockUpdateTime() {
           return lastBlockUpdateTime_;
         }
@@ -37325,6 +37790,7 @@ public final class Response {
          * <code>bool syncFlag = 4;</code>
          * @return The syncFlag.
          */
+        @java.lang.Override
         public boolean getSyncFlag() {
           return syncFlag_;
         }
@@ -37355,6 +37821,7 @@ public final class Response {
          * <code>int64 headBlockTimeWeBothHave = 5;</code>
          * @return The headBlockTimeWeBothHave.
          */
+        @java.lang.Override
         public long getHeadBlockTimeWeBothHave() {
           return headBlockTimeWeBothHave_;
         }
@@ -37385,6 +37852,7 @@ public final class Response {
          * <code>bool needSyncFromPeer = 6;</code>
          * @return The needSyncFromPeer.
          */
+        @java.lang.Override
         public boolean getNeedSyncFromPeer() {
           return needSyncFromPeer_;
         }
@@ -37415,6 +37883,7 @@ public final class Response {
          * <code>bool needSyncFromUs = 7;</code>
          * @return The needSyncFromUs.
          */
+        @java.lang.Override
         public boolean getNeedSyncFromUs() {
           return needSyncFromUs_;
         }
@@ -37521,6 +37990,7 @@ public final class Response {
          * <code>int32 port = 9;</code>
          * @return The port.
          */
+        @java.lang.Override
         public int getPort() {
           return port_;
         }
@@ -37627,6 +38097,7 @@ public final class Response {
          * <code>int64 connectTime = 11;</code>
          * @return The connectTime.
          */
+        @java.lang.Override
         public long getConnectTime() {
           return connectTime_;
         }
@@ -37657,6 +38128,7 @@ public final class Response {
          * <code>double avgLatency = 12;</code>
          * @return The avgLatency.
          */
+        @java.lang.Override
         public double getAvgLatency() {
           return avgLatency_;
         }
@@ -37687,6 +38159,7 @@ public final class Response {
          * <code>int32 syncToFetchSize = 13;</code>
          * @return The syncToFetchSize.
          */
+        @java.lang.Override
         public int getSyncToFetchSize() {
           return syncToFetchSize_;
         }
@@ -37717,6 +38190,7 @@ public final class Response {
          * <code>int64 syncToFetchSizePeekNum = 14;</code>
          * @return The syncToFetchSizePeekNum.
          */
+        @java.lang.Override
         public long getSyncToFetchSizePeekNum() {
           return syncToFetchSizePeekNum_;
         }
@@ -37747,6 +38221,7 @@ public final class Response {
          * <code>int32 syncBlockRequestedSize = 15;</code>
          * @return The syncBlockRequestedSize.
          */
+        @java.lang.Override
         public int getSyncBlockRequestedSize() {
           return syncBlockRequestedSize_;
         }
@@ -37777,6 +38252,7 @@ public final class Response {
          * <code>int64 unFetchSynNum = 16;</code>
          * @return The unFetchSynNum.
          */
+        @java.lang.Override
         public long getUnFetchSynNum() {
           return unFetchSynNum_;
         }
@@ -37807,6 +38283,7 @@ public final class Response {
          * <code>int32 blockInPorcSize = 17;</code>
          * @return The blockInPorcSize.
          */
+        @java.lang.Override
         public int getBlockInPorcSize() {
           return blockInPorcSize_;
         }
@@ -37913,6 +38390,7 @@ public final class Response {
          * <code>bool isActive = 19;</code>
          * @return The isActive.
          */
+        @java.lang.Override
         public boolean getIsActive() {
           return isActive_;
         }
@@ -37943,6 +38421,7 @@ public final class Response {
          * <code>int32 score = 20;</code>
          * @return The score.
          */
+        @java.lang.Override
         public int getScore() {
           return score_;
         }
@@ -37973,6 +38452,7 @@ public final class Response {
          * <code>int32 nodeCount = 21;</code>
          * @return The nodeCount.
          */
+        @java.lang.Override
         public int getNodeCount() {
           return nodeCount_;
         }
@@ -38003,6 +38483,7 @@ public final class Response {
          * <code>int64 inFlow = 22;</code>
          * @return The inFlow.
          */
+        @java.lang.Override
         public long getInFlow() {
           return inFlow_;
         }
@@ -38033,6 +38514,7 @@ public final class Response {
          * <code>int32 disconnectTimes = 23;</code>
          * @return The disconnectTimes.
          */
+        @java.lang.Override
         public int getDisconnectTimes() {
           return disconnectTimes_;
         }
@@ -38395,7 +38877,7 @@ public final class Response {
     /**
      * Protobuf type {@code protocol.NodeInfo.ConfigNodeInfo}
      */
-    public  static final class ConfigNodeInfo extends
+    public static final class ConfigNodeInfo extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.NodeInfo.ConfigNodeInfo)
         ConfigNodeInfoOrBuilder {
@@ -38574,6 +39056,7 @@ public final class Response {
        * <code>string codeVersion = 1;</code>
        * @return The codeVersion.
        */
+      @java.lang.Override
       public java.lang.String getCodeVersion() {
         java.lang.Object ref = codeVersion_;
         if (ref instanceof java.lang.String) {
@@ -38590,6 +39073,7 @@ public final class Response {
        * <code>string codeVersion = 1;</code>
        * @return The bytes for codeVersion.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getCodeVersionBytes() {
         java.lang.Object ref = codeVersion_;
@@ -38610,6 +39094,7 @@ public final class Response {
        * <code>string p2pVersion = 2;</code>
        * @return The p2pVersion.
        */
+      @java.lang.Override
       public java.lang.String getP2PVersion() {
         java.lang.Object ref = p2PVersion_;
         if (ref instanceof java.lang.String) {
@@ -38626,6 +39111,7 @@ public final class Response {
        * <code>string p2pVersion = 2;</code>
        * @return The bytes for p2pVersion.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getP2PVersionBytes() {
         java.lang.Object ref = p2PVersion_;
@@ -38646,6 +39132,7 @@ public final class Response {
        * <code>int32 listenPort = 3;</code>
        * @return The listenPort.
        */
+      @java.lang.Override
       public int getListenPort() {
         return listenPort_;
       }
@@ -38656,6 +39143,7 @@ public final class Response {
        * <code>bool discoverEnable = 4;</code>
        * @return The discoverEnable.
        */
+      @java.lang.Override
       public boolean getDiscoverEnable() {
         return discoverEnable_;
       }
@@ -38666,6 +39154,7 @@ public final class Response {
        * <code>int32 activeNodeSize = 5;</code>
        * @return The activeNodeSize.
        */
+      @java.lang.Override
       public int getActiveNodeSize() {
         return activeNodeSize_;
       }
@@ -38676,6 +39165,7 @@ public final class Response {
        * <code>int32 passiveNodeSize = 6;</code>
        * @return The passiveNodeSize.
        */
+      @java.lang.Override
       public int getPassiveNodeSize() {
         return passiveNodeSize_;
       }
@@ -38686,6 +39176,7 @@ public final class Response {
        * <code>int32 sendNodeSize = 7;</code>
        * @return The sendNodeSize.
        */
+      @java.lang.Override
       public int getSendNodeSize() {
         return sendNodeSize_;
       }
@@ -38696,6 +39187,7 @@ public final class Response {
        * <code>int32 maxConnectCount = 8;</code>
        * @return The maxConnectCount.
        */
+      @java.lang.Override
       public int getMaxConnectCount() {
         return maxConnectCount_;
       }
@@ -38706,6 +39198,7 @@ public final class Response {
        * <code>int32 sameIpMaxConnectCount = 9;</code>
        * @return The sameIpMaxConnectCount.
        */
+      @java.lang.Override
       public int getSameIpMaxConnectCount() {
         return sameIpMaxConnectCount_;
       }
@@ -38716,6 +39209,7 @@ public final class Response {
        * <code>int32 backupListenPort = 10;</code>
        * @return The backupListenPort.
        */
+      @java.lang.Override
       public int getBackupListenPort() {
         return backupListenPort_;
       }
@@ -38726,6 +39220,7 @@ public final class Response {
        * <code>int32 backupMemberSize = 11;</code>
        * @return The backupMemberSize.
        */
+      @java.lang.Override
       public int getBackupMemberSize() {
         return backupMemberSize_;
       }
@@ -38736,6 +39231,7 @@ public final class Response {
        * <code>int32 backupPriority = 12;</code>
        * @return The backupPriority.
        */
+      @java.lang.Override
       public int getBackupPriority() {
         return backupPriority_;
       }
@@ -38746,6 +39242,7 @@ public final class Response {
        * <code>int32 dbVersion = 13;</code>
        * @return The dbVersion.
        */
+      @java.lang.Override
       public int getDbVersion() {
         return dbVersion_;
       }
@@ -38756,6 +39253,7 @@ public final class Response {
        * <code>int32 minParticipationRate = 14;</code>
        * @return The minParticipationRate.
        */
+      @java.lang.Override
       public int getMinParticipationRate() {
         return minParticipationRate_;
       }
@@ -38766,6 +39264,7 @@ public final class Response {
        * <code>bool supportConstant = 15;</code>
        * @return The supportConstant.
        */
+      @java.lang.Override
       public boolean getSupportConstant() {
         return supportConstant_;
       }
@@ -38776,6 +39275,7 @@ public final class Response {
        * <code>double minTimeRatio = 16;</code>
        * @return The minTimeRatio.
        */
+      @java.lang.Override
       public double getMinTimeRatio() {
         return minTimeRatio_;
       }
@@ -38786,6 +39286,7 @@ public final class Response {
        * <code>double maxTimeRatio = 17;</code>
        * @return The maxTimeRatio.
        */
+      @java.lang.Override
       public double getMaxTimeRatio() {
         return maxTimeRatio_;
       }
@@ -38796,6 +39297,7 @@ public final class Response {
        * <code>int64 allowCreationOfContracts = 18;</code>
        * @return The allowCreationOfContracts.
        */
+      @java.lang.Override
       public long getAllowCreationOfContracts() {
         return allowCreationOfContracts_;
       }
@@ -38806,6 +39308,7 @@ public final class Response {
        * <code>int64 allowAdaptiveEnergy = 19;</code>
        * @return The allowAdaptiveEnergy.
        */
+      @java.lang.Override
       public long getAllowAdaptiveEnergy() {
         return allowAdaptiveEnergy_;
       }
@@ -38824,10 +39327,10 @@ public final class Response {
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (!getCodeVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(codeVersion_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 1, codeVersion_);
         }
-        if (!getP2PVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(p2PVersion_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, p2PVersion_);
         }
         if (listenPort_ != 0) {
@@ -38869,10 +39372,10 @@ public final class Response {
         if (supportConstant_ != false) {
           output.writeBool(15, supportConstant_);
         }
-        if (minTimeRatio_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(minTimeRatio_) != 0) {
           output.writeDouble(16, minTimeRatio_);
         }
-        if (maxTimeRatio_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(maxTimeRatio_) != 0) {
           output.writeDouble(17, maxTimeRatio_);
         }
         if (allowCreationOfContracts_ != 0L) {
@@ -38890,10 +39393,10 @@ public final class Response {
         if (size != -1) return size;
 
         size = 0;
-        if (!getCodeVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(codeVersion_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, codeVersion_);
         }
-        if (!getP2PVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(p2PVersion_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, p2PVersion_);
         }
         if (listenPort_ != 0) {
@@ -38948,11 +39451,11 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeBoolSize(15, supportConstant_);
         }
-        if (minTimeRatio_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(minTimeRatio_) != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeDoubleSize(16, minTimeRatio_);
         }
-        if (maxTimeRatio_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(maxTimeRatio_) != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeDoubleSize(17, maxTimeRatio_);
         }
@@ -39583,6 +40086,7 @@ public final class Response {
          * <code>int32 listenPort = 3;</code>
          * @return The listenPort.
          */
+        @java.lang.Override
         public int getListenPort() {
           return listenPort_;
         }
@@ -39613,6 +40117,7 @@ public final class Response {
          * <code>bool discoverEnable = 4;</code>
          * @return The discoverEnable.
          */
+        @java.lang.Override
         public boolean getDiscoverEnable() {
           return discoverEnable_;
         }
@@ -39643,6 +40148,7 @@ public final class Response {
          * <code>int32 activeNodeSize = 5;</code>
          * @return The activeNodeSize.
          */
+        @java.lang.Override
         public int getActiveNodeSize() {
           return activeNodeSize_;
         }
@@ -39673,6 +40179,7 @@ public final class Response {
          * <code>int32 passiveNodeSize = 6;</code>
          * @return The passiveNodeSize.
          */
+        @java.lang.Override
         public int getPassiveNodeSize() {
           return passiveNodeSize_;
         }
@@ -39703,6 +40210,7 @@ public final class Response {
          * <code>int32 sendNodeSize = 7;</code>
          * @return The sendNodeSize.
          */
+        @java.lang.Override
         public int getSendNodeSize() {
           return sendNodeSize_;
         }
@@ -39733,6 +40241,7 @@ public final class Response {
          * <code>int32 maxConnectCount = 8;</code>
          * @return The maxConnectCount.
          */
+        @java.lang.Override
         public int getMaxConnectCount() {
           return maxConnectCount_;
         }
@@ -39763,6 +40272,7 @@ public final class Response {
          * <code>int32 sameIpMaxConnectCount = 9;</code>
          * @return The sameIpMaxConnectCount.
          */
+        @java.lang.Override
         public int getSameIpMaxConnectCount() {
           return sameIpMaxConnectCount_;
         }
@@ -39793,6 +40303,7 @@ public final class Response {
          * <code>int32 backupListenPort = 10;</code>
          * @return The backupListenPort.
          */
+        @java.lang.Override
         public int getBackupListenPort() {
           return backupListenPort_;
         }
@@ -39823,6 +40334,7 @@ public final class Response {
          * <code>int32 backupMemberSize = 11;</code>
          * @return The backupMemberSize.
          */
+        @java.lang.Override
         public int getBackupMemberSize() {
           return backupMemberSize_;
         }
@@ -39853,6 +40365,7 @@ public final class Response {
          * <code>int32 backupPriority = 12;</code>
          * @return The backupPriority.
          */
+        @java.lang.Override
         public int getBackupPriority() {
           return backupPriority_;
         }
@@ -39883,6 +40396,7 @@ public final class Response {
          * <code>int32 dbVersion = 13;</code>
          * @return The dbVersion.
          */
+        @java.lang.Override
         public int getDbVersion() {
           return dbVersion_;
         }
@@ -39913,6 +40427,7 @@ public final class Response {
          * <code>int32 minParticipationRate = 14;</code>
          * @return The minParticipationRate.
          */
+        @java.lang.Override
         public int getMinParticipationRate() {
           return minParticipationRate_;
         }
@@ -39943,6 +40458,7 @@ public final class Response {
          * <code>bool supportConstant = 15;</code>
          * @return The supportConstant.
          */
+        @java.lang.Override
         public boolean getSupportConstant() {
           return supportConstant_;
         }
@@ -39973,6 +40489,7 @@ public final class Response {
          * <code>double minTimeRatio = 16;</code>
          * @return The minTimeRatio.
          */
+        @java.lang.Override
         public double getMinTimeRatio() {
           return minTimeRatio_;
         }
@@ -40003,6 +40520,7 @@ public final class Response {
          * <code>double maxTimeRatio = 17;</code>
          * @return The maxTimeRatio.
          */
+        @java.lang.Override
         public double getMaxTimeRatio() {
           return maxTimeRatio_;
         }
@@ -40033,6 +40551,7 @@ public final class Response {
          * <code>int64 allowCreationOfContracts = 18;</code>
          * @return The allowCreationOfContracts.
          */
+        @java.lang.Override
         public long getAllowCreationOfContracts() {
           return allowCreationOfContracts_;
         }
@@ -40063,6 +40582,7 @@ public final class Response {
          * <code>int64 allowAdaptiveEnergy = 19;</code>
          * @return The allowAdaptiveEnergy.
          */
+        @java.lang.Override
         public long getAllowAdaptiveEnergy() {
           return allowAdaptiveEnergy_;
         }
@@ -40273,7 +40793,7 @@ public final class Response {
     /**
      * Protobuf type {@code protocol.NodeInfo.MachineInfo}
      */
-    public  static final class MachineInfo extends
+    public static final class MachineInfo extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.NodeInfo.MachineInfo)
         MachineInfoOrBuilder {
@@ -40476,7 +40996,7 @@ public final class Response {
       /**
        * Protobuf type {@code protocol.NodeInfo.MachineInfo.MemoryDescInfo}
        */
-      public  static final class MemoryDescInfo extends
+      public static final class MemoryDescInfo extends
           com.google.protobuf.GeneratedMessageV3 implements
           // @@protoc_insertion_point(message_implements:protocol.NodeInfo.MachineInfo.MemoryDescInfo)
           MemoryDescInfoOrBuilder {
@@ -40583,6 +41103,7 @@ public final class Response {
          * <code>string name = 1;</code>
          * @return The name.
          */
+        @java.lang.Override
         public java.lang.String getName() {
           java.lang.Object ref = name_;
           if (ref instanceof java.lang.String) {
@@ -40599,6 +41120,7 @@ public final class Response {
          * <code>string name = 1;</code>
          * @return The bytes for name.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString
             getNameBytes() {
           java.lang.Object ref = name_;
@@ -40619,6 +41141,7 @@ public final class Response {
          * <code>int64 initSize = 2;</code>
          * @return The initSize.
          */
+        @java.lang.Override
         public long getInitSize() {
           return initSize_;
         }
@@ -40629,6 +41152,7 @@ public final class Response {
          * <code>int64 useSize = 3;</code>
          * @return The useSize.
          */
+        @java.lang.Override
         public long getUseSize() {
           return useSize_;
         }
@@ -40639,6 +41163,7 @@ public final class Response {
          * <code>int64 maxSize = 4;</code>
          * @return The maxSize.
          */
+        @java.lang.Override
         public long getMaxSize() {
           return maxSize_;
         }
@@ -40649,6 +41174,7 @@ public final class Response {
          * <code>double useRate = 5;</code>
          * @return The useRate.
          */
+        @java.lang.Override
         public double getUseRate() {
           return useRate_;
         }
@@ -40667,7 +41193,7 @@ public final class Response {
         @java.lang.Override
         public void writeTo(com.google.protobuf.CodedOutputStream output)
                             throws java.io.IOException {
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
           }
           if (initSize_ != 0L) {
@@ -40679,7 +41205,7 @@ public final class Response {
           if (maxSize_ != 0L) {
             output.writeInt64(4, maxSize_);
           }
-          if (useRate_ != 0D) {
+          if (java.lang.Double.doubleToRawLongBits(useRate_) != 0) {
             output.writeDouble(5, useRate_);
           }
           unknownFields.writeTo(output);
@@ -40691,7 +41217,7 @@ public final class Response {
           if (size != -1) return size;
 
           size = 0;
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
           }
           if (initSize_ != 0L) {
@@ -40706,7 +41232,7 @@ public final class Response {
             size += com.google.protobuf.CodedOutputStream
               .computeInt64Size(4, maxSize_);
           }
-          if (useRate_ != 0D) {
+          if (java.lang.Double.doubleToRawLongBits(useRate_) != 0) {
             size += com.google.protobuf.CodedOutputStream
               .computeDoubleSize(5, useRate_);
           }
@@ -41109,6 +41635,7 @@ public final class Response {
            * <code>int64 initSize = 2;</code>
            * @return The initSize.
            */
+          @java.lang.Override
           public long getInitSize() {
             return initSize_;
           }
@@ -41139,6 +41666,7 @@ public final class Response {
            * <code>int64 useSize = 3;</code>
            * @return The useSize.
            */
+          @java.lang.Override
           public long getUseSize() {
             return useSize_;
           }
@@ -41169,6 +41697,7 @@ public final class Response {
            * <code>int64 maxSize = 4;</code>
            * @return The maxSize.
            */
+          @java.lang.Override
           public long getMaxSize() {
             return maxSize_;
           }
@@ -41199,6 +41728,7 @@ public final class Response {
            * <code>double useRate = 5;</code>
            * @return The useRate.
            */
+          @java.lang.Override
           public double getUseRate() {
             return useRate_;
           }
@@ -41355,7 +41885,7 @@ public final class Response {
       /**
        * Protobuf type {@code protocol.NodeInfo.MachineInfo.DeadLockThreadInfo}
        */
-      public  static final class DeadLockThreadInfo extends
+      public static final class DeadLockThreadInfo extends
           com.google.protobuf.GeneratedMessageV3 implements
           // @@protoc_insertion_point(message_implements:protocol.NodeInfo.MachineInfo.DeadLockThreadInfo)
           DeadLockThreadInfoOrBuilder {
@@ -41480,6 +42010,7 @@ public final class Response {
          * <code>string name = 1;</code>
          * @return The name.
          */
+        @java.lang.Override
         public java.lang.String getName() {
           java.lang.Object ref = name_;
           if (ref instanceof java.lang.String) {
@@ -41496,6 +42027,7 @@ public final class Response {
          * <code>string name = 1;</code>
          * @return The bytes for name.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString
             getNameBytes() {
           java.lang.Object ref = name_;
@@ -41516,6 +42048,7 @@ public final class Response {
          * <code>string lockName = 2;</code>
          * @return The lockName.
          */
+        @java.lang.Override
         public java.lang.String getLockName() {
           java.lang.Object ref = lockName_;
           if (ref instanceof java.lang.String) {
@@ -41532,6 +42065,7 @@ public final class Response {
          * <code>string lockName = 2;</code>
          * @return The bytes for lockName.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString
             getLockNameBytes() {
           java.lang.Object ref = lockName_;
@@ -41552,6 +42086,7 @@ public final class Response {
          * <code>string lockOwner = 3;</code>
          * @return The lockOwner.
          */
+        @java.lang.Override
         public java.lang.String getLockOwner() {
           java.lang.Object ref = lockOwner_;
           if (ref instanceof java.lang.String) {
@@ -41568,6 +42103,7 @@ public final class Response {
          * <code>string lockOwner = 3;</code>
          * @return The bytes for lockOwner.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString
             getLockOwnerBytes() {
           java.lang.Object ref = lockOwner_;
@@ -41588,6 +42124,7 @@ public final class Response {
          * <code>string state = 4;</code>
          * @return The state.
          */
+        @java.lang.Override
         public java.lang.String getState() {
           java.lang.Object ref = state_;
           if (ref instanceof java.lang.String) {
@@ -41604,6 +42141,7 @@ public final class Response {
          * <code>string state = 4;</code>
          * @return The bytes for state.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString
             getStateBytes() {
           java.lang.Object ref = state_;
@@ -41624,6 +42162,7 @@ public final class Response {
          * <code>int64 blockTime = 5;</code>
          * @return The blockTime.
          */
+        @java.lang.Override
         public long getBlockTime() {
           return blockTime_;
         }
@@ -41634,6 +42173,7 @@ public final class Response {
          * <code>int64 waitTime = 6;</code>
          * @return The waitTime.
          */
+        @java.lang.Override
         public long getWaitTime() {
           return waitTime_;
         }
@@ -41644,6 +42184,7 @@ public final class Response {
          * <code>string stackTrace = 7;</code>
          * @return The stackTrace.
          */
+        @java.lang.Override
         public java.lang.String getStackTrace() {
           java.lang.Object ref = stackTrace_;
           if (ref instanceof java.lang.String) {
@@ -41660,6 +42201,7 @@ public final class Response {
          * <code>string stackTrace = 7;</code>
          * @return The bytes for stackTrace.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString
             getStackTraceBytes() {
           java.lang.Object ref = stackTrace_;
@@ -41688,16 +42230,16 @@ public final class Response {
         @java.lang.Override
         public void writeTo(com.google.protobuf.CodedOutputStream output)
                             throws java.io.IOException {
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
           }
-          if (!getLockNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lockName_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 2, lockName_);
           }
-          if (!getLockOwnerBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lockOwner_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 3, lockOwner_);
           }
-          if (!getStateBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(state_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 4, state_);
           }
           if (blockTime_ != 0L) {
@@ -41706,7 +42248,7 @@ public final class Response {
           if (waitTime_ != 0L) {
             output.writeInt64(6, waitTime_);
           }
-          if (!getStackTraceBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(stackTrace_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 7, stackTrace_);
           }
           unknownFields.writeTo(output);
@@ -41718,16 +42260,16 @@ public final class Response {
           if (size != -1) return size;
 
           size = 0;
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
           }
-          if (!getLockNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lockName_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, lockName_);
           }
-          if (!getLockOwnerBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(lockOwner_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, lockOwner_);
           }
-          if (!getStateBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(state_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, state_);
           }
           if (blockTime_ != 0L) {
@@ -41738,7 +42280,7 @@ public final class Response {
             size += com.google.protobuf.CodedOutputStream
               .computeInt64Size(6, waitTime_);
           }
-          if (!getStackTraceBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(stackTrace_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, stackTrace_);
           }
           size += unknownFields.getSerializedSize();
@@ -42389,6 +42931,7 @@ public final class Response {
            * <code>int64 blockTime = 5;</code>
            * @return The blockTime.
            */
+          @java.lang.Override
           public long getBlockTime() {
             return blockTime_;
           }
@@ -42419,6 +42962,7 @@ public final class Response {
            * <code>int64 waitTime = 6;</code>
            * @return The waitTime.
            */
+          @java.lang.Override
           public long getWaitTime() {
             return waitTime_;
           }
@@ -42578,6 +43122,7 @@ public final class Response {
        * <code>int32 threadCount = 1;</code>
        * @return The threadCount.
        */
+      @java.lang.Override
       public int getThreadCount() {
         return threadCount_;
       }
@@ -42588,6 +43133,7 @@ public final class Response {
        * <code>int32 deadLockThreadCount = 2;</code>
        * @return The deadLockThreadCount.
        */
+      @java.lang.Override
       public int getDeadLockThreadCount() {
         return deadLockThreadCount_;
       }
@@ -42598,6 +43144,7 @@ public final class Response {
        * <code>int32 cpuCount = 3;</code>
        * @return The cpuCount.
        */
+      @java.lang.Override
       public int getCpuCount() {
         return cpuCount_;
       }
@@ -42608,6 +43155,7 @@ public final class Response {
        * <code>int64 totalMemory = 4;</code>
        * @return The totalMemory.
        */
+      @java.lang.Override
       public long getTotalMemory() {
         return totalMemory_;
       }
@@ -42618,6 +43166,7 @@ public final class Response {
        * <code>int64 freeMemory = 5;</code>
        * @return The freeMemory.
        */
+      @java.lang.Override
       public long getFreeMemory() {
         return freeMemory_;
       }
@@ -42628,6 +43177,7 @@ public final class Response {
        * <code>double cpuRate = 6;</code>
        * @return The cpuRate.
        */
+      @java.lang.Override
       public double getCpuRate() {
         return cpuRate_;
       }
@@ -42638,6 +43188,7 @@ public final class Response {
        * <code>string javaVersion = 7;</code>
        * @return The javaVersion.
        */
+      @java.lang.Override
       public java.lang.String getJavaVersion() {
         java.lang.Object ref = javaVersion_;
         if (ref instanceof java.lang.String) {
@@ -42654,6 +43205,7 @@ public final class Response {
        * <code>string javaVersion = 7;</code>
        * @return The bytes for javaVersion.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getJavaVersionBytes() {
         java.lang.Object ref = javaVersion_;
@@ -42674,6 +43226,7 @@ public final class Response {
        * <code>string osName = 8;</code>
        * @return The osName.
        */
+      @java.lang.Override
       public java.lang.String getOsName() {
         java.lang.Object ref = osName_;
         if (ref instanceof java.lang.String) {
@@ -42690,6 +43243,7 @@ public final class Response {
        * <code>string osName = 8;</code>
        * @return The bytes for osName.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getOsNameBytes() {
         java.lang.Object ref = osName_;
@@ -42710,6 +43264,7 @@ public final class Response {
        * <code>int64 jvmTotalMemoery = 9;</code>
        * @return The jvmTotalMemoery.
        */
+      @java.lang.Override
       public long getJvmTotalMemoery() {
         return jvmTotalMemoery_;
       }
@@ -42720,6 +43275,7 @@ public final class Response {
        * <code>int64 jvmFreeMemory = 10;</code>
        * @return The jvmFreeMemory.
        */
+      @java.lang.Override
       public long getJvmFreeMemory() {
         return jvmFreeMemory_;
       }
@@ -42730,6 +43286,7 @@ public final class Response {
        * <code>double processCpuRate = 11;</code>
        * @return The processCpuRate.
        */
+      @java.lang.Override
       public double getProcessCpuRate() {
         return processCpuRate_;
       }
@@ -42739,12 +43296,14 @@ public final class Response {
       /**
        * <code>repeated .protocol.NodeInfo.MachineInfo.MemoryDescInfo memoryDescInfoList = 12;</code>
        */
+      @java.lang.Override
       public java.util.List<org.tron.trident.proto.Response.NodeInfo.MachineInfo.MemoryDescInfo> getMemoryDescInfoListList() {
         return memoryDescInfoList_;
       }
       /**
        * <code>repeated .protocol.NodeInfo.MachineInfo.MemoryDescInfo memoryDescInfoList = 12;</code>
        */
+      @java.lang.Override
       public java.util.List<? extends org.tron.trident.proto.Response.NodeInfo.MachineInfo.MemoryDescInfoOrBuilder> 
           getMemoryDescInfoListOrBuilderList() {
         return memoryDescInfoList_;
@@ -42752,18 +43311,21 @@ public final class Response {
       /**
        * <code>repeated .protocol.NodeInfo.MachineInfo.MemoryDescInfo memoryDescInfoList = 12;</code>
        */
+      @java.lang.Override
       public int getMemoryDescInfoListCount() {
         return memoryDescInfoList_.size();
       }
       /**
        * <code>repeated .protocol.NodeInfo.MachineInfo.MemoryDescInfo memoryDescInfoList = 12;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.NodeInfo.MachineInfo.MemoryDescInfo getMemoryDescInfoList(int index) {
         return memoryDescInfoList_.get(index);
       }
       /**
        * <code>repeated .protocol.NodeInfo.MachineInfo.MemoryDescInfo memoryDescInfoList = 12;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.NodeInfo.MachineInfo.MemoryDescInfoOrBuilder getMemoryDescInfoListOrBuilder(
           int index) {
         return memoryDescInfoList_.get(index);
@@ -42774,12 +43336,14 @@ public final class Response {
       /**
        * <code>repeated .protocol.NodeInfo.MachineInfo.DeadLockThreadInfo deadLockThreadInfoList = 13;</code>
        */
+      @java.lang.Override
       public java.util.List<org.tron.trident.proto.Response.NodeInfo.MachineInfo.DeadLockThreadInfo> getDeadLockThreadInfoListList() {
         return deadLockThreadInfoList_;
       }
       /**
        * <code>repeated .protocol.NodeInfo.MachineInfo.DeadLockThreadInfo deadLockThreadInfoList = 13;</code>
        */
+      @java.lang.Override
       public java.util.List<? extends org.tron.trident.proto.Response.NodeInfo.MachineInfo.DeadLockThreadInfoOrBuilder> 
           getDeadLockThreadInfoListOrBuilderList() {
         return deadLockThreadInfoList_;
@@ -42787,18 +43351,21 @@ public final class Response {
       /**
        * <code>repeated .protocol.NodeInfo.MachineInfo.DeadLockThreadInfo deadLockThreadInfoList = 13;</code>
        */
+      @java.lang.Override
       public int getDeadLockThreadInfoListCount() {
         return deadLockThreadInfoList_.size();
       }
       /**
        * <code>repeated .protocol.NodeInfo.MachineInfo.DeadLockThreadInfo deadLockThreadInfoList = 13;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.NodeInfo.MachineInfo.DeadLockThreadInfo getDeadLockThreadInfoList(int index) {
         return deadLockThreadInfoList_.get(index);
       }
       /**
        * <code>repeated .protocol.NodeInfo.MachineInfo.DeadLockThreadInfo deadLockThreadInfoList = 13;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.NodeInfo.MachineInfo.DeadLockThreadInfoOrBuilder getDeadLockThreadInfoListOrBuilder(
           int index) {
         return deadLockThreadInfoList_.get(index);
@@ -42833,13 +43400,13 @@ public final class Response {
         if (freeMemory_ != 0L) {
           output.writeInt64(5, freeMemory_);
         }
-        if (cpuRate_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(cpuRate_) != 0) {
           output.writeDouble(6, cpuRate_);
         }
-        if (!getJavaVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(javaVersion_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 7, javaVersion_);
         }
-        if (!getOsNameBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(osName_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 8, osName_);
         }
         if (jvmTotalMemoery_ != 0L) {
@@ -42848,7 +43415,7 @@ public final class Response {
         if (jvmFreeMemory_ != 0L) {
           output.writeInt64(10, jvmFreeMemory_);
         }
-        if (processCpuRate_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(processCpuRate_) != 0) {
           output.writeDouble(11, processCpuRate_);
         }
         for (int i = 0; i < memoryDescInfoList_.size(); i++) {
@@ -42886,14 +43453,14 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(5, freeMemory_);
         }
-        if (cpuRate_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(cpuRate_) != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeDoubleSize(6, cpuRate_);
         }
-        if (!getJavaVersionBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(javaVersion_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, javaVersion_);
         }
-        if (!getOsNameBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(osName_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, osName_);
         }
         if (jvmTotalMemoery_ != 0L) {
@@ -42904,7 +43471,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt64Size(10, jvmFreeMemory_);
         }
-        if (processCpuRate_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(processCpuRate_) != 0) {
           size += com.google.protobuf.CodedOutputStream
             .computeDoubleSize(11, processCpuRate_);
         }
@@ -43401,6 +43968,7 @@ public final class Response {
          * <code>int32 threadCount = 1;</code>
          * @return The threadCount.
          */
+        @java.lang.Override
         public int getThreadCount() {
           return threadCount_;
         }
@@ -43431,6 +43999,7 @@ public final class Response {
          * <code>int32 deadLockThreadCount = 2;</code>
          * @return The deadLockThreadCount.
          */
+        @java.lang.Override
         public int getDeadLockThreadCount() {
           return deadLockThreadCount_;
         }
@@ -43461,6 +44030,7 @@ public final class Response {
          * <code>int32 cpuCount = 3;</code>
          * @return The cpuCount.
          */
+        @java.lang.Override
         public int getCpuCount() {
           return cpuCount_;
         }
@@ -43491,6 +44061,7 @@ public final class Response {
          * <code>int64 totalMemory = 4;</code>
          * @return The totalMemory.
          */
+        @java.lang.Override
         public long getTotalMemory() {
           return totalMemory_;
         }
@@ -43521,6 +44092,7 @@ public final class Response {
          * <code>int64 freeMemory = 5;</code>
          * @return The freeMemory.
          */
+        @java.lang.Override
         public long getFreeMemory() {
           return freeMemory_;
         }
@@ -43551,6 +44123,7 @@ public final class Response {
          * <code>double cpuRate = 6;</code>
          * @return The cpuRate.
          */
+        @java.lang.Override
         public double getCpuRate() {
           return cpuRate_;
         }
@@ -43733,6 +44306,7 @@ public final class Response {
          * <code>int64 jvmTotalMemoery = 9;</code>
          * @return The jvmTotalMemoery.
          */
+        @java.lang.Override
         public long getJvmTotalMemoery() {
           return jvmTotalMemoery_;
         }
@@ -43763,6 +44337,7 @@ public final class Response {
          * <code>int64 jvmFreeMemory = 10;</code>
          * @return The jvmFreeMemory.
          */
+        @java.lang.Override
         public long getJvmFreeMemory() {
           return jvmFreeMemory_;
         }
@@ -43793,6 +44368,7 @@ public final class Response {
          * <code>double processCpuRate = 11;</code>
          * @return The processCpuRate.
          */
+        @java.lang.Override
         public double getProcessCpuRate() {
           return processCpuRate_;
         }
@@ -44356,6 +44932,7 @@ public final class Response {
      * <code>int64 beginSyncNum = 1;</code>
      * @return The beginSyncNum.
      */
+    @java.lang.Override
     public long getBeginSyncNum() {
       return beginSyncNum_;
     }
@@ -44366,6 +44943,7 @@ public final class Response {
      * <code>string block = 2;</code>
      * @return The block.
      */
+    @java.lang.Override
     public java.lang.String getBlock() {
       java.lang.Object ref = block_;
       if (ref instanceof java.lang.String) {
@@ -44382,6 +44960,7 @@ public final class Response {
      * <code>string block = 2;</code>
      * @return The bytes for block.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getBlockBytes() {
       java.lang.Object ref = block_;
@@ -44402,6 +44981,7 @@ public final class Response {
      * <code>string solidityBlock = 3;</code>
      * @return The solidityBlock.
      */
+    @java.lang.Override
     public java.lang.String getSolidityBlock() {
       java.lang.Object ref = solidityBlock_;
       if (ref instanceof java.lang.String) {
@@ -44418,6 +44998,7 @@ public final class Response {
      * <code>string solidityBlock = 3;</code>
      * @return The bytes for solidityBlock.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getSolidityBlockBytes() {
       java.lang.Object ref = solidityBlock_;
@@ -44442,6 +45023,7 @@ public final class Response {
      * <code>int32 currentConnectCount = 4;</code>
      * @return The currentConnectCount.
      */
+    @java.lang.Override
     public int getCurrentConnectCount() {
       return currentConnectCount_;
     }
@@ -44452,6 +45034,7 @@ public final class Response {
      * <code>int32 activeConnectCount = 5;</code>
      * @return The activeConnectCount.
      */
+    @java.lang.Override
     public int getActiveConnectCount() {
       return activeConnectCount_;
     }
@@ -44462,6 +45045,7 @@ public final class Response {
      * <code>int32 passiveConnectCount = 6;</code>
      * @return The passiveConnectCount.
      */
+    @java.lang.Override
     public int getPassiveConnectCount() {
       return passiveConnectCount_;
     }
@@ -44472,6 +45056,7 @@ public final class Response {
      * <code>int64 totalFlow = 7;</code>
      * @return The totalFlow.
      */
+    @java.lang.Override
     public long getTotalFlow() {
       return totalFlow_;
     }
@@ -44481,12 +45066,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.NodeInfo.PeerInfo peerInfoList = 8;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.NodeInfo.PeerInfo> getPeerInfoListList() {
       return peerInfoList_;
     }
     /**
      * <code>repeated .protocol.NodeInfo.PeerInfo peerInfoList = 8;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.NodeInfo.PeerInfoOrBuilder> 
         getPeerInfoListOrBuilderList() {
       return peerInfoList_;
@@ -44494,18 +45081,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.NodeInfo.PeerInfo peerInfoList = 8;</code>
      */
+    @java.lang.Override
     public int getPeerInfoListCount() {
       return peerInfoList_.size();
     }
     /**
      * <code>repeated .protocol.NodeInfo.PeerInfo peerInfoList = 8;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.NodeInfo.PeerInfo getPeerInfoList(int index) {
       return peerInfoList_.get(index);
     }
     /**
      * <code>repeated .protocol.NodeInfo.PeerInfo peerInfoList = 8;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.NodeInfo.PeerInfoOrBuilder getPeerInfoListOrBuilder(
         int index) {
       return peerInfoList_.get(index);
@@ -44517,6 +45107,7 @@ public final class Response {
      * <code>.protocol.NodeInfo.ConfigNodeInfo configNodeInfo = 9;</code>
      * @return Whether the configNodeInfo field is set.
      */
+    @java.lang.Override
     public boolean hasConfigNodeInfo() {
       return configNodeInfo_ != null;
     }
@@ -44524,12 +45115,14 @@ public final class Response {
      * <code>.protocol.NodeInfo.ConfigNodeInfo configNodeInfo = 9;</code>
      * @return The configNodeInfo.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.NodeInfo.ConfigNodeInfo getConfigNodeInfo() {
       return configNodeInfo_ == null ? org.tron.trident.proto.Response.NodeInfo.ConfigNodeInfo.getDefaultInstance() : configNodeInfo_;
     }
     /**
      * <code>.protocol.NodeInfo.ConfigNodeInfo configNodeInfo = 9;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.NodeInfo.ConfigNodeInfoOrBuilder getConfigNodeInfoOrBuilder() {
       return getConfigNodeInfo();
     }
@@ -44540,6 +45133,7 @@ public final class Response {
      * <code>.protocol.NodeInfo.MachineInfo machineInfo = 10;</code>
      * @return Whether the machineInfo field is set.
      */
+    @java.lang.Override
     public boolean hasMachineInfo() {
       return machineInfo_ != null;
     }
@@ -44547,12 +45141,14 @@ public final class Response {
      * <code>.protocol.NodeInfo.MachineInfo machineInfo = 10;</code>
      * @return The machineInfo.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.NodeInfo.MachineInfo getMachineInfo() {
       return machineInfo_ == null ? org.tron.trident.proto.Response.NodeInfo.MachineInfo.getDefaultInstance() : machineInfo_;
     }
     /**
      * <code>.protocol.NodeInfo.MachineInfo machineInfo = 10;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.NodeInfo.MachineInfoOrBuilder getMachineInfoOrBuilder() {
       return getMachineInfo();
     }
@@ -44587,14 +45183,16 @@ public final class Response {
      * <code>map&lt;string, string&gt; cheatWitnessInfoMap = 11;</code>
      */
 
+    @java.lang.Override
     public boolean containsCheatWitnessInfoMap(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetCheatWitnessInfoMap().getMap().containsKey(key);
     }
     /**
      * Use {@link #getCheatWitnessInfoMapMap()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getCheatWitnessInfoMap() {
       return getCheatWitnessInfoMapMap();
@@ -44602,6 +45200,7 @@ public final class Response {
     /**
      * <code>map&lt;string, string&gt; cheatWitnessInfoMap = 11;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.String> getCheatWitnessInfoMapMap() {
       return internalGetCheatWitnessInfoMap().getMap();
@@ -44609,11 +45208,12 @@ public final class Response {
     /**
      * <code>map&lt;string, string&gt; cheatWitnessInfoMap = 11;</code>
      */
+    @java.lang.Override
 
     public java.lang.String getCheatWitnessInfoMapOrDefault(
         java.lang.String key,
         java.lang.String defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.String> map =
           internalGetCheatWitnessInfoMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -44621,10 +45221,11 @@ public final class Response {
     /**
      * <code>map&lt;string, string&gt; cheatWitnessInfoMap = 11;</code>
      */
+    @java.lang.Override
 
     public java.lang.String getCheatWitnessInfoMapOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.String> map =
           internalGetCheatWitnessInfoMap().getMap();
       if (!map.containsKey(key)) {
@@ -44650,10 +45251,10 @@ public final class Response {
       if (beginSyncNum_ != 0L) {
         output.writeInt64(1, beginSyncNum_);
       }
-      if (!getBlockBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(block_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, block_);
       }
-      if (!getSolidityBlockBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(solidityBlock_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, solidityBlock_);
       }
       if (currentConnectCount_ != 0) {
@@ -44696,10 +45297,10 @@ public final class Response {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(1, beginSyncNum_);
       }
-      if (!getBlockBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(block_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, block_);
       }
-      if (!getSolidityBlockBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(solidityBlock_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, solidityBlock_);
       }
       if (currentConnectCount_ != 0) {
@@ -45210,6 +45811,7 @@ public final class Response {
        * <code>int64 beginSyncNum = 1;</code>
        * @return The beginSyncNum.
        */
+      @java.lang.Override
       public long getBeginSyncNum() {
         return beginSyncNum_;
       }
@@ -45396,6 +45998,7 @@ public final class Response {
        * <code>int32 currentConnectCount = 4;</code>
        * @return The currentConnectCount.
        */
+      @java.lang.Override
       public int getCurrentConnectCount() {
         return currentConnectCount_;
       }
@@ -45434,6 +46037,7 @@ public final class Response {
        * <code>int32 activeConnectCount = 5;</code>
        * @return The activeConnectCount.
        */
+      @java.lang.Override
       public int getActiveConnectCount() {
         return activeConnectCount_;
       }
@@ -45464,6 +46068,7 @@ public final class Response {
        * <code>int32 passiveConnectCount = 6;</code>
        * @return The passiveConnectCount.
        */
+      @java.lang.Override
       public int getPassiveConnectCount() {
         return passiveConnectCount_;
       }
@@ -45494,6 +46099,7 @@ public final class Response {
        * <code>int64 totalFlow = 7;</code>
        * @return The totalFlow.
        */
+      @java.lang.Override
       public long getTotalFlow() {
         return totalFlow_;
       }
@@ -46027,14 +46633,16 @@ public final class Response {
        * <code>map&lt;string, string&gt; cheatWitnessInfoMap = 11;</code>
        */
 
+      @java.lang.Override
       public boolean containsCheatWitnessInfoMap(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetCheatWitnessInfoMap().getMap().containsKey(key);
       }
       /**
        * Use {@link #getCheatWitnessInfoMapMap()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.String> getCheatWitnessInfoMap() {
         return getCheatWitnessInfoMapMap();
@@ -46042,6 +46650,7 @@ public final class Response {
       /**
        * <code>map&lt;string, string&gt; cheatWitnessInfoMap = 11;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.String> getCheatWitnessInfoMapMap() {
         return internalGetCheatWitnessInfoMap().getMap();
@@ -46049,11 +46658,12 @@ public final class Response {
       /**
        * <code>map&lt;string, string&gt; cheatWitnessInfoMap = 11;</code>
        */
+      @java.lang.Override
 
       public java.lang.String getCheatWitnessInfoMapOrDefault(
           java.lang.String key,
           java.lang.String defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.String> map =
             internalGetCheatWitnessInfoMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -46061,10 +46671,11 @@ public final class Response {
       /**
        * <code>map&lt;string, string&gt; cheatWitnessInfoMap = 11;</code>
        */
+      @java.lang.Override
 
       public java.lang.String getCheatWitnessInfoMapOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.String> map =
             internalGetCheatWitnessInfoMap().getMap();
         if (!map.containsKey(key)) {
@@ -46084,7 +46695,7 @@ public final class Response {
 
       public Builder removeCheatWitnessInfoMap(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableCheatWitnessInfoMap().getMutableMap()
             .remove(key);
         return this;
@@ -46103,8 +46714,11 @@ public final class Response {
       public Builder putCheatWitnessInfoMap(
           java.lang.String key,
           java.lang.String value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
-        if (value == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
+        if (value == null) {
+  throw new NullPointerException("map value");
+}
+
         internalGetMutableCheatWitnessInfoMap().getMutableMap()
             .put(key, value);
         return this;
@@ -46266,7 +46880,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.MarketOrder}
    */
-  public  static final class MarketOrder extends
+  public static final class MarketOrder extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.MarketOrder)
       MarketOrderOrBuilder {
@@ -46487,6 +47101,10 @@ public final class Response {
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -46527,6 +47145,7 @@ public final class Response {
      * <code>bytes order_id = 1;</code>
      * @return The orderId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOrderId() {
       return orderId_;
     }
@@ -46537,6 +47156,7 @@ public final class Response {
      * <code>bytes owner_address = 2;</code>
      * @return The ownerAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOwnerAddress() {
       return ownerAddress_;
     }
@@ -46547,6 +47167,7 @@ public final class Response {
      * <code>int64 create_time = 3;</code>
      * @return The createTime.
      */
+    @java.lang.Override
     public long getCreateTime() {
       return createTime_;
     }
@@ -46557,6 +47178,7 @@ public final class Response {
      * <code>bytes sell_token_id = 4;</code>
      * @return The sellTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getSellTokenId() {
       return sellTokenId_;
     }
@@ -46567,6 +47189,7 @@ public final class Response {
      * <code>int64 sell_token_quantity = 5;</code>
      * @return The sellTokenQuantity.
      */
+    @java.lang.Override
     public long getSellTokenQuantity() {
       return sellTokenQuantity_;
     }
@@ -46577,6 +47200,7 @@ public final class Response {
      * <code>bytes buy_token_id = 6;</code>
      * @return The buyTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getBuyTokenId() {
       return buyTokenId_;
     }
@@ -46591,6 +47215,7 @@ public final class Response {
      * <code>int64 buy_token_quantity = 7;</code>
      * @return The buyTokenQuantity.
      */
+    @java.lang.Override
     public long getBuyTokenQuantity() {
       return buyTokenQuantity_;
     }
@@ -46601,6 +47226,7 @@ public final class Response {
      * <code>int64 sell_token_quantity_remain = 9;</code>
      * @return The sellTokenQuantityRemain.
      */
+    @java.lang.Override
     public long getSellTokenQuantityRemain() {
       return sellTokenQuantityRemain_;
     }
@@ -46617,6 +47243,7 @@ public final class Response {
      * <code>int64 sell_token_quantity_return = 10;</code>
      * @return The sellTokenQuantityReturn.
      */
+    @java.lang.Override
     public long getSellTokenQuantityReturn() {
       return sellTokenQuantityReturn_;
     }
@@ -46627,14 +47254,14 @@ public final class Response {
      * <code>.protocol.MarketOrder.State state = 11;</code>
      * @return The enum numeric value on the wire for state.
      */
-    public int getStateValue() {
+    @java.lang.Override public int getStateValue() {
       return state_;
     }
     /**
      * <code>.protocol.MarketOrder.State state = 11;</code>
      * @return The state.
      */
-    public org.tron.trident.proto.Response.MarketOrder.State getState() {
+    @java.lang.Override public org.tron.trident.proto.Response.MarketOrder.State getState() {
       @SuppressWarnings("deprecation")
       org.tron.trident.proto.Response.MarketOrder.State result = org.tron.trident.proto.Response.MarketOrder.State.valueOf(state_);
       return result == null ? org.tron.trident.proto.Response.MarketOrder.State.UNRECOGNIZED : result;
@@ -46646,6 +47273,7 @@ public final class Response {
      * <code>bytes prev = 12;</code>
      * @return The prev.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPrev() {
       return prev_;
     }
@@ -46656,6 +47284,7 @@ public final class Response {
      * <code>bytes next = 13;</code>
      * @return The next.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getNext() {
       return next_;
     }
@@ -47158,6 +47787,7 @@ public final class Response {
        * <code>bytes order_id = 1;</code>
        * @return The orderId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOrderId() {
         return orderId_;
       }
@@ -47191,6 +47821,7 @@ public final class Response {
        * <code>bytes owner_address = 2;</code>
        * @return The ownerAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOwnerAddress() {
         return ownerAddress_;
       }
@@ -47224,6 +47855,7 @@ public final class Response {
        * <code>int64 create_time = 3;</code>
        * @return The createTime.
        */
+      @java.lang.Override
       public long getCreateTime() {
         return createTime_;
       }
@@ -47254,6 +47886,7 @@ public final class Response {
        * <code>bytes sell_token_id = 4;</code>
        * @return The sellTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getSellTokenId() {
         return sellTokenId_;
       }
@@ -47287,6 +47920,7 @@ public final class Response {
        * <code>int64 sell_token_quantity = 5;</code>
        * @return The sellTokenQuantity.
        */
+      @java.lang.Override
       public long getSellTokenQuantity() {
         return sellTokenQuantity_;
       }
@@ -47317,6 +47951,7 @@ public final class Response {
        * <code>bytes buy_token_id = 6;</code>
        * @return The buyTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getBuyTokenId() {
         return buyTokenId_;
       }
@@ -47354,6 +47989,7 @@ public final class Response {
        * <code>int64 buy_token_quantity = 7;</code>
        * @return The buyTokenQuantity.
        */
+      @java.lang.Override
       public long getBuyTokenQuantity() {
         return buyTokenQuantity_;
       }
@@ -47392,6 +48028,7 @@ public final class Response {
        * <code>int64 sell_token_quantity_remain = 9;</code>
        * @return The sellTokenQuantityRemain.
        */
+      @java.lang.Override
       public long getSellTokenQuantityRemain() {
         return sellTokenQuantityRemain_;
       }
@@ -47428,6 +48065,7 @@ public final class Response {
        * <code>int64 sell_token_quantity_return = 10;</code>
        * @return The sellTokenQuantityReturn.
        */
+      @java.lang.Override
       public long getSellTokenQuantityReturn() {
         return sellTokenQuantityReturn_;
       }
@@ -47470,7 +48108,7 @@ public final class Response {
        * <code>.protocol.MarketOrder.State state = 11;</code>
        * @return The enum numeric value on the wire for state.
        */
-      public int getStateValue() {
+      @java.lang.Override public int getStateValue() {
         return state_;
       }
       /**
@@ -47479,6 +48117,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setStateValue(int value) {
+        
         state_ = value;
         onChanged();
         return this;
@@ -47487,6 +48126,7 @@ public final class Response {
        * <code>.protocol.MarketOrder.State state = 11;</code>
        * @return The state.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.MarketOrder.State getState() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Response.MarketOrder.State result = org.tron.trident.proto.Response.MarketOrder.State.valueOf(state_);
@@ -47522,6 +48162,7 @@ public final class Response {
        * <code>bytes prev = 12;</code>
        * @return The prev.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPrev() {
         return prev_;
       }
@@ -47555,6 +48196,7 @@ public final class Response {
        * <code>bytes next = 13;</code>
        * @return The next.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getNext() {
         return next_;
       }
@@ -47666,7 +48308,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.MarketOrderList}
    */
-  public  static final class MarketOrderList extends
+  public static final class MarketOrderList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.MarketOrderList)
       MarketOrderListOrBuilder {
@@ -47759,12 +48401,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.MarketOrder orders = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.MarketOrder> getOrdersList() {
       return orders_;
     }
     /**
      * <code>repeated .protocol.MarketOrder orders = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.MarketOrderOrBuilder> 
         getOrdersOrBuilderList() {
       return orders_;
@@ -47772,18 +48416,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.MarketOrder orders = 1;</code>
      */
+    @java.lang.Override
     public int getOrdersCount() {
       return orders_.size();
     }
     /**
      * <code>repeated .protocol.MarketOrder orders = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.MarketOrder getOrders(int index) {
       return orders_.get(index);
     }
     /**
      * <code>repeated .protocol.MarketOrder orders = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.MarketOrderOrBuilder getOrdersOrBuilder(
         int index) {
       return orders_.get(index);
@@ -48442,7 +49089,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.MarketOrderPair}
    */
-  public  static final class MarketOrderPair extends
+  public static final class MarketOrderPair extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.MarketOrderPair)
       MarketOrderPairOrBuilder {
@@ -48534,6 +49181,7 @@ public final class Response {
      * <code>bytes sell_token_id = 1;</code>
      * @return The sellTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getSellTokenId() {
       return sellTokenId_;
     }
@@ -48544,6 +49192,7 @@ public final class Response {
      * <code>bytes buy_token_id = 2;</code>
      * @return The buyTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getBuyTokenId() {
       return buyTokenId_;
     }
@@ -48872,6 +49521,7 @@ public final class Response {
        * <code>bytes sell_token_id = 1;</code>
        * @return The sellTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getSellTokenId() {
         return sellTokenId_;
       }
@@ -48905,6 +49555,7 @@ public final class Response {
        * <code>bytes buy_token_id = 2;</code>
        * @return The buyTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getBuyTokenId() {
         return buyTokenId_;
       }
@@ -49016,7 +49667,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.MarketOrderPairList}
    */
-  public  static final class MarketOrderPairList extends
+  public static final class MarketOrderPairList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.MarketOrderPairList)
       MarketOrderPairListOrBuilder {
@@ -49109,12 +49760,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.MarketOrderPair orderPair = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.MarketOrderPair> getOrderPairList() {
       return orderPair_;
     }
     /**
      * <code>repeated .protocol.MarketOrderPair orderPair = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.MarketOrderPairOrBuilder> 
         getOrderPairOrBuilderList() {
       return orderPair_;
@@ -49122,18 +49775,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.MarketOrderPair orderPair = 1;</code>
      */
+    @java.lang.Override
     public int getOrderPairCount() {
       return orderPair_.size();
     }
     /**
      * <code>repeated .protocol.MarketOrderPair orderPair = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.MarketOrderPair getOrderPair(int index) {
       return orderPair_.get(index);
     }
     /**
      * <code>repeated .protocol.MarketOrderPair orderPair = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.MarketOrderPairOrBuilder getOrderPairOrBuilder(
         int index) {
       return orderPair_.get(index);
@@ -49792,7 +50448,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.MarketPrice}
    */
-  public  static final class MarketPrice extends
+  public static final class MarketPrice extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.MarketPrice)
       MarketPriceOrBuilder {
@@ -49882,6 +50538,7 @@ public final class Response {
      * <code>int64 sell_token_quantity = 1;</code>
      * @return The sellTokenQuantity.
      */
+    @java.lang.Override
     public long getSellTokenQuantity() {
       return sellTokenQuantity_;
     }
@@ -49892,6 +50549,7 @@ public final class Response {
      * <code>int64 buy_token_quantity = 2;</code>
      * @return The buyTokenQuantity.
      */
+    @java.lang.Override
     public long getBuyTokenQuantity() {
       return buyTokenQuantity_;
     }
@@ -50222,6 +50880,7 @@ public final class Response {
        * <code>int64 sell_token_quantity = 1;</code>
        * @return The sellTokenQuantity.
        */
+      @java.lang.Override
       public long getSellTokenQuantity() {
         return sellTokenQuantity_;
       }
@@ -50252,6 +50911,7 @@ public final class Response {
        * <code>int64 buy_token_quantity = 2;</code>
        * @return The buyTokenQuantity.
        */
+      @java.lang.Override
       public long getBuyTokenQuantity() {
         return buyTokenQuantity_;
       }
@@ -50372,7 +51032,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.MarketPriceList}
    */
-  public  static final class MarketPriceList extends
+  public static final class MarketPriceList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.MarketPriceList)
       MarketPriceListOrBuilder {
@@ -50478,6 +51138,7 @@ public final class Response {
      * <code>bytes sell_token_id = 1;</code>
      * @return The sellTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getSellTokenId() {
       return sellTokenId_;
     }
@@ -50488,6 +51149,7 @@ public final class Response {
      * <code>bytes buy_token_id = 2;</code>
      * @return The buyTokenId.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getBuyTokenId() {
       return buyTokenId_;
     }
@@ -50497,12 +51159,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.MarketPrice prices = 3;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.MarketPrice> getPricesList() {
       return prices_;
     }
     /**
      * <code>repeated .protocol.MarketPrice prices = 3;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.MarketPriceOrBuilder> 
         getPricesOrBuilderList() {
       return prices_;
@@ -50510,18 +51174,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.MarketPrice prices = 3;</code>
      */
+    @java.lang.Override
     public int getPricesCount() {
       return prices_.size();
     }
     /**
      * <code>repeated .protocol.MarketPrice prices = 3;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.MarketPrice getPrices(int index) {
       return prices_.get(index);
     }
     /**
      * <code>repeated .protocol.MarketPrice prices = 3;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.MarketPriceOrBuilder getPricesOrBuilder(
         int index) {
       return prices_.get(index);
@@ -50908,6 +51575,7 @@ public final class Response {
        * <code>bytes sell_token_id = 1;</code>
        * @return The sellTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getSellTokenId() {
         return sellTokenId_;
       }
@@ -50941,6 +51609,7 @@ public final class Response {
        * <code>bytes buy_token_id = 2;</code>
        * @return The buyTokenId.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getBuyTokenId() {
         return buyTokenId_;
       }
@@ -51274,7 +51943,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.NullifierResult}
    */
-  public  static final class NullifierResult extends
+  public static final class NullifierResult extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.NullifierResult)
       NullifierResultOrBuilder {
@@ -51359,6 +52028,7 @@ public final class Response {
      * <code>bool is_spent = 1;</code>
      * @return The isSpent.
      */
+    @java.lang.Override
     public boolean getIsSpent() {
       return isSpent_;
     }
@@ -51671,6 +52341,7 @@ public final class Response {
        * <code>bool is_spent = 1;</code>
        * @return The isSpent.
        */
+      @java.lang.Override
       public boolean getIsSpent() {
         return isSpent_;
       }
@@ -51779,7 +52450,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.DecryptNotesTRC20}
    */
-  public  static final class DecryptNotesTRC20 extends
+  public static final class DecryptNotesTRC20 extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.DecryptNotesTRC20)
       DecryptNotesTRC20OrBuilder {
@@ -51935,7 +52606,7 @@ public final class Response {
     /**
      * Protobuf type {@code protocol.DecryptNotesTRC20.NoteTx}
      */
-    public  static final class NoteTx extends
+    public static final class NoteTx extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.DecryptNotesTRC20.NoteTx)
         NoteTxOrBuilder {
@@ -52062,6 +52733,7 @@ public final class Response {
        * <code>.protocol.Note note = 1;</code>
        * @return Whether the note field is set.
        */
+      @java.lang.Override
       public boolean hasNote() {
         return note_ != null;
       }
@@ -52069,12 +52741,14 @@ public final class Response {
        * <code>.protocol.Note note = 1;</code>
        * @return The note.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.Note getNote() {
         return note_ == null ? org.tron.trident.proto.Common.Note.getDefaultInstance() : note_;
       }
       /**
        * <code>.protocol.Note note = 1;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.NoteOrBuilder getNoteOrBuilder() {
         return getNote();
       }
@@ -52085,6 +52759,7 @@ public final class Response {
        * <code>int64 position = 2;</code>
        * @return The position.
        */
+      @java.lang.Override
       public long getPosition() {
         return position_;
       }
@@ -52095,6 +52770,7 @@ public final class Response {
        * <code>bool is_spent = 3;</code>
        * @return The isSpent.
        */
+      @java.lang.Override
       public boolean getIsSpent() {
         return isSpent_;
       }
@@ -52105,6 +52781,7 @@ public final class Response {
        * <code>bytes txid = 4;</code>
        * @return The txid.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTxid() {
         return txid_;
       }
@@ -52119,6 +52796,7 @@ public final class Response {
        * <code>int32 index = 5;</code>
        * @return The index.
        */
+      @java.lang.Override
       public int getIndex() {
         return index_;
       }
@@ -52129,6 +52807,7 @@ public final class Response {
        * <code>string to_amount = 6;</code>
        * @return The toAmount.
        */
+      @java.lang.Override
       public java.lang.String getToAmount() {
         java.lang.Object ref = toAmount_;
         if (ref instanceof java.lang.String) {
@@ -52145,6 +52824,7 @@ public final class Response {
        * <code>string to_amount = 6;</code>
        * @return The bytes for toAmount.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getToAmountBytes() {
         java.lang.Object ref = toAmount_;
@@ -52165,6 +52845,7 @@ public final class Response {
        * <code>bytes transparent_to_address = 7;</code>
        * @return The transparentToAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTransparentToAddress() {
         return transparentToAddress_;
       }
@@ -52198,7 +52879,7 @@ public final class Response {
         if (index_ != 0) {
           output.writeInt32(5, index_);
         }
-        if (!getToAmountBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 6, toAmount_);
         }
         if (!transparentToAddress_.isEmpty()) {
@@ -52233,7 +52914,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeInt32Size(5, index_);
         }
-        if (!getToAmountBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(toAmount_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, toAmount_);
         }
         if (!transparentToAddress_.isEmpty()) {
@@ -52712,6 +53393,7 @@ public final class Response {
          * <code>int64 position = 2;</code>
          * @return The position.
          */
+        @java.lang.Override
         public long getPosition() {
           return position_;
         }
@@ -52742,6 +53424,7 @@ public final class Response {
          * <code>bool is_spent = 3;</code>
          * @return The isSpent.
          */
+        @java.lang.Override
         public boolean getIsSpent() {
           return isSpent_;
         }
@@ -52772,6 +53455,7 @@ public final class Response {
          * <code>bytes txid = 4;</code>
          * @return The txid.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getTxid() {
           return txid_;
         }
@@ -52809,6 +53493,7 @@ public final class Response {
          * <code>int32 index = 5;</code>
          * @return The index.
          */
+        @java.lang.Override
         public int getIndex() {
           return index_;
         }
@@ -52923,6 +53608,7 @@ public final class Response {
          * <code>bytes transparent_to_address = 7;</code>
          * @return The transparentToAddress.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getTransparentToAddress() {
           return transparentToAddress_;
         }
@@ -53008,12 +53694,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.DecryptNotesTRC20.NoteTx noteTxs = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.DecryptNotesTRC20.NoteTx> getNoteTxsList() {
       return noteTxs_;
     }
     /**
      * <code>repeated .protocol.DecryptNotesTRC20.NoteTx noteTxs = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.DecryptNotesTRC20.NoteTxOrBuilder> 
         getNoteTxsOrBuilderList() {
       return noteTxs_;
@@ -53021,18 +53709,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.DecryptNotesTRC20.NoteTx noteTxs = 1;</code>
      */
+    @java.lang.Override
     public int getNoteTxsCount() {
       return noteTxs_.size();
     }
     /**
      * <code>repeated .protocol.DecryptNotesTRC20.NoteTx noteTxs = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.DecryptNotesTRC20.NoteTx getNoteTxs(int index) {
       return noteTxs_.get(index);
     }
     /**
      * <code>repeated .protocol.DecryptNotesTRC20.NoteTx noteTxs = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.DecryptNotesTRC20.NoteTxOrBuilder getNoteTxsOrBuilder(
         int index) {
       return noteTxs_.get(index);
@@ -53703,7 +54394,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.TransactionInfoList}
    */
-  public  static final class TransactionInfoList extends
+  public static final class TransactionInfoList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TransactionInfoList)
       TransactionInfoListOrBuilder {
@@ -53796,12 +54487,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.TransactionInfo transactionInfo = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.TransactionInfo> getTransactionInfoList() {
       return transactionInfo_;
     }
     /**
      * <code>repeated .protocol.TransactionInfo transactionInfo = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.TransactionInfoOrBuilder> 
         getTransactionInfoOrBuilderList() {
       return transactionInfo_;
@@ -53809,18 +54502,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.TransactionInfo transactionInfo = 1;</code>
      */
+    @java.lang.Override
     public int getTransactionInfoCount() {
       return transactionInfo_.size();
     }
     /**
      * <code>repeated .protocol.TransactionInfo transactionInfo = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionInfo getTransactionInfo(int index) {
       return transactionInfo_.get(index);
     }
     /**
      * <code>repeated .protocol.TransactionInfo transactionInfo = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionInfoOrBuilder getTransactionInfoOrBuilder(
         int index) {
       return transactionInfo_.get(index);
@@ -54514,7 +55210,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.TransactionApprovedList}
    */
-  public  static final class TransactionApprovedList extends
+  public static final class TransactionApprovedList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TransactionApprovedList)
       TransactionApprovedListOrBuilder {
@@ -54657,7 +55353,7 @@ public final class Response {
     /**
      * Protobuf type {@code protocol.TransactionApprovedList.Result}
      */
-    public  static final class Result extends
+    public static final class Result extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.TransactionApprovedList.Result)
         ResultOrBuilder {
@@ -54833,6 +55529,10 @@ public final class Response {
 
         public final com.google.protobuf.Descriptors.EnumValueDescriptor
             getValueDescriptor() {
+          if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalStateException(
+                "Can't get the descriptor of an unrecognized enum value.");
+          }
           return getDescriptor().getValues().get(ordinal());
         }
         public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -54873,14 +55573,14 @@ public final class Response {
        * <code>.protocol.TransactionApprovedList.Result.response_code code = 1;</code>
        * @return The enum numeric value on the wire for code.
        */
-      public int getCodeValue() {
+      @java.lang.Override public int getCodeValue() {
         return code_;
       }
       /**
        * <code>.protocol.TransactionApprovedList.Result.response_code code = 1;</code>
        * @return The code.
        */
-      public org.tron.trident.proto.Response.TransactionApprovedList.Result.response_code getCode() {
+      @java.lang.Override public org.tron.trident.proto.Response.TransactionApprovedList.Result.response_code getCode() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Response.TransactionApprovedList.Result.response_code result = org.tron.trident.proto.Response.TransactionApprovedList.Result.response_code.valueOf(code_);
         return result == null ? org.tron.trident.proto.Response.TransactionApprovedList.Result.response_code.UNRECOGNIZED : result;
@@ -54892,6 +55592,7 @@ public final class Response {
        * <code>string message = 2;</code>
        * @return The message.
        */
+      @java.lang.Override
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
         if (ref instanceof java.lang.String) {
@@ -54908,6 +55609,7 @@ public final class Response {
        * <code>string message = 2;</code>
        * @return The bytes for message.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getMessageBytes() {
         java.lang.Object ref = message_;
@@ -54939,7 +55641,7 @@ public final class Response {
         if (code_ != org.tron.trident.proto.Response.TransactionApprovedList.Result.response_code.SUCCESS.getNumber()) {
           output.writeEnum(1, code_);
         }
-        if (!getMessageBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, message_);
         }
         unknownFields.writeTo(output);
@@ -54955,7 +55657,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeEnumSize(1, code_);
         }
-        if (!getMessageBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, message_);
         }
         size += unknownFields.getSerializedSize();
@@ -55245,7 +55947,7 @@ public final class Response {
          * <code>.protocol.TransactionApprovedList.Result.response_code code = 1;</code>
          * @return The enum numeric value on the wire for code.
          */
-        public int getCodeValue() {
+        @java.lang.Override public int getCodeValue() {
           return code_;
         }
         /**
@@ -55254,6 +55956,7 @@ public final class Response {
          * @return This builder for chaining.
          */
         public Builder setCodeValue(int value) {
+          
           code_ = value;
           onChanged();
           return this;
@@ -55262,6 +55965,7 @@ public final class Response {
          * <code>.protocol.TransactionApprovedList.Result.response_code code = 1;</code>
          * @return The code.
          */
+        @java.lang.Override
         public org.tron.trident.proto.Response.TransactionApprovedList.Result.response_code getCode() {
           @SuppressWarnings("deprecation")
           org.tron.trident.proto.Response.TransactionApprovedList.Result.response_code result = org.tron.trident.proto.Response.TransactionApprovedList.Result.response_code.valueOf(code_);
@@ -55426,6 +56130,7 @@ public final class Response {
      * <code>repeated bytes approved_list = 2;</code>
      * @return A list containing the approvedList.
      */
+    @java.lang.Override
     public java.util.List<com.google.protobuf.ByteString>
         getApprovedListList() {
       return approvedList_;
@@ -55452,6 +56157,7 @@ public final class Response {
      * <code>.protocol.TransactionApprovedList.Result result = 4;</code>
      * @return Whether the result field is set.
      */
+    @java.lang.Override
     public boolean hasResult() {
       return result_ != null;
     }
@@ -55459,12 +56165,14 @@ public final class Response {
      * <code>.protocol.TransactionApprovedList.Result result = 4;</code>
      * @return The result.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionApprovedList.Result getResult() {
       return result_ == null ? org.tron.trident.proto.Response.TransactionApprovedList.Result.getDefaultInstance() : result_;
     }
     /**
      * <code>.protocol.TransactionApprovedList.Result result = 4;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionApprovedList.ResultOrBuilder getResultOrBuilder() {
       return getResult();
     }
@@ -55475,6 +56183,7 @@ public final class Response {
      * <code>.protocol.TransactionExtention transaction = 5;</code>
      * @return Whether the transaction field is set.
      */
+    @java.lang.Override
     public boolean hasTransaction() {
       return transaction_ != null;
     }
@@ -55482,12 +56191,14 @@ public final class Response {
      * <code>.protocol.TransactionExtention transaction = 5;</code>
      * @return The transaction.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionExtention getTransaction() {
       return transaction_ == null ? org.tron.trident.proto.Response.TransactionExtention.getDefaultInstance() : transaction_;
     }
     /**
      * <code>.protocol.TransactionExtention transaction = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionExtentionOrBuilder getTransactionOrBuilder() {
       return getTransaction();
     }
@@ -56324,7 +57035,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.TransactionSignWeight}
    */
-  public  static final class TransactionSignWeight extends
+  public static final class TransactionSignWeight extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.TransactionSignWeight)
       TransactionSignWeightOrBuilder {
@@ -56485,7 +57196,7 @@ public final class Response {
     /**
      * Protobuf type {@code protocol.TransactionSignWeight.Result}
      */
-    public  static final class Result extends
+    public static final class Result extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.TransactionSignWeight.Result)
         ResultOrBuilder {
@@ -56695,6 +57406,10 @@ public final class Response {
 
         public final com.google.protobuf.Descriptors.EnumValueDescriptor
             getValueDescriptor() {
+          if (this == UNRECOGNIZED) {
+            throw new java.lang.IllegalStateException(
+                "Can't get the descriptor of an unrecognized enum value.");
+          }
           return getDescriptor().getValues().get(ordinal());
         }
         public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -56735,14 +57450,14 @@ public final class Response {
        * <code>.protocol.TransactionSignWeight.Result.response_code code = 1;</code>
        * @return The enum numeric value on the wire for code.
        */
-      public int getCodeValue() {
+      @java.lang.Override public int getCodeValue() {
         return code_;
       }
       /**
        * <code>.protocol.TransactionSignWeight.Result.response_code code = 1;</code>
        * @return The code.
        */
-      public org.tron.trident.proto.Response.TransactionSignWeight.Result.response_code getCode() {
+      @java.lang.Override public org.tron.trident.proto.Response.TransactionSignWeight.Result.response_code getCode() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Response.TransactionSignWeight.Result.response_code result = org.tron.trident.proto.Response.TransactionSignWeight.Result.response_code.valueOf(code_);
         return result == null ? org.tron.trident.proto.Response.TransactionSignWeight.Result.response_code.UNRECOGNIZED : result;
@@ -56754,6 +57469,7 @@ public final class Response {
        * <code>string message = 2;</code>
        * @return The message.
        */
+      @java.lang.Override
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
         if (ref instanceof java.lang.String) {
@@ -56770,6 +57486,7 @@ public final class Response {
        * <code>string message = 2;</code>
        * @return The bytes for message.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString
           getMessageBytes() {
         java.lang.Object ref = message_;
@@ -56801,7 +57518,7 @@ public final class Response {
         if (code_ != org.tron.trident.proto.Response.TransactionSignWeight.Result.response_code.ENOUGH_PERMISSION.getNumber()) {
           output.writeEnum(1, code_);
         }
-        if (!getMessageBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, message_);
         }
         unknownFields.writeTo(output);
@@ -56817,7 +57534,7 @@ public final class Response {
           size += com.google.protobuf.CodedOutputStream
             .computeEnumSize(1, code_);
         }
-        if (!getMessageBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, message_);
         }
         size += unknownFields.getSerializedSize();
@@ -57107,7 +57824,7 @@ public final class Response {
          * <code>.protocol.TransactionSignWeight.Result.response_code code = 1;</code>
          * @return The enum numeric value on the wire for code.
          */
-        public int getCodeValue() {
+        @java.lang.Override public int getCodeValue() {
           return code_;
         }
         /**
@@ -57116,6 +57833,7 @@ public final class Response {
          * @return This builder for chaining.
          */
         public Builder setCodeValue(int value) {
+          
           code_ = value;
           onChanged();
           return this;
@@ -57124,6 +57842,7 @@ public final class Response {
          * <code>.protocol.TransactionSignWeight.Result.response_code code = 1;</code>
          * @return The code.
          */
+        @java.lang.Override
         public org.tron.trident.proto.Response.TransactionSignWeight.Result.response_code getCode() {
           @SuppressWarnings("deprecation")
           org.tron.trident.proto.Response.TransactionSignWeight.Result.response_code result = org.tron.trident.proto.Response.TransactionSignWeight.Result.response_code.valueOf(code_);
@@ -57288,6 +58007,7 @@ public final class Response {
      * <code>.protocol.Permission permission = 1;</code>
      * @return Whether the permission field is set.
      */
+    @java.lang.Override
     public boolean hasPermission() {
       return permission_ != null;
     }
@@ -57295,12 +58015,14 @@ public final class Response {
      * <code>.protocol.Permission permission = 1;</code>
      * @return The permission.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Permission getPermission() {
       return permission_ == null ? org.tron.trident.proto.Common.Permission.getDefaultInstance() : permission_;
     }
     /**
      * <code>.protocol.Permission permission = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.PermissionOrBuilder getPermissionOrBuilder() {
       return getPermission();
     }
@@ -57311,6 +58033,7 @@ public final class Response {
      * <code>repeated bytes approved_list = 2;</code>
      * @return A list containing the approvedList.
      */
+    @java.lang.Override
     public java.util.List<com.google.protobuf.ByteString>
         getApprovedListList() {
       return approvedList_;
@@ -57337,6 +58060,7 @@ public final class Response {
      * <code>int64 current_weight = 3;</code>
      * @return The currentWeight.
      */
+    @java.lang.Override
     public long getCurrentWeight() {
       return currentWeight_;
     }
@@ -57347,6 +58071,7 @@ public final class Response {
      * <code>.protocol.TransactionSignWeight.Result result = 4;</code>
      * @return Whether the result field is set.
      */
+    @java.lang.Override
     public boolean hasResult() {
       return result_ != null;
     }
@@ -57354,12 +58079,14 @@ public final class Response {
      * <code>.protocol.TransactionSignWeight.Result result = 4;</code>
      * @return The result.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionSignWeight.Result getResult() {
       return result_ == null ? org.tron.trident.proto.Response.TransactionSignWeight.Result.getDefaultInstance() : result_;
     }
     /**
      * <code>.protocol.TransactionSignWeight.Result result = 4;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionSignWeight.ResultOrBuilder getResultOrBuilder() {
       return getResult();
     }
@@ -57370,6 +58097,7 @@ public final class Response {
      * <code>.protocol.TransactionExtention transaction = 5;</code>
      * @return Whether the transaction field is set.
      */
+    @java.lang.Override
     public boolean hasTransaction() {
       return transaction_ != null;
     }
@@ -57377,12 +58105,14 @@ public final class Response {
      * <code>.protocol.TransactionExtention transaction = 5;</code>
      * @return The transaction.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionExtention getTransaction() {
       return transaction_ == null ? org.tron.trident.proto.Response.TransactionExtention.getDefaultInstance() : transaction_;
     }
     /**
      * <code>.protocol.TransactionExtention transaction = 5;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.TransactionExtentionOrBuilder getTransactionOrBuilder() {
       return getTransaction();
     }
@@ -58026,6 +58756,7 @@ public final class Response {
        * <code>int64 current_weight = 3;</code>
        * @return The currentWeight.
        */
+      @java.lang.Override
       public long getCurrentWeight() {
         return currentWeight_;
       }
@@ -58376,7 +59107,7 @@ public final class Response {
    *
    * Protobuf type {@code protocol.NodeList}
    */
-  public  static final class NodeList extends
+  public static final class NodeList extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.NodeList)
       NodeListOrBuilder {
@@ -58490,7 +59221,7 @@ public final class Response {
      *
      * Protobuf type {@code protocol.NodeList.Node}
      */
-    public  static final class Node extends
+    public static final class Node extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.NodeList.Node)
         NodeOrBuilder {
@@ -58600,7 +59331,7 @@ public final class Response {
        *
        * Protobuf type {@code protocol.NodeList.Node.Address}
        */
-      public  static final class Address extends
+      public static final class Address extends
           com.google.protobuf.GeneratedMessageV3 implements
           // @@protoc_insertion_point(message_implements:protocol.NodeList.Node.Address)
           AddressOrBuilder {
@@ -58691,6 +59422,7 @@ public final class Response {
          * <code>bytes host = 1;</code>
          * @return The host.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString getHost() {
           return host_;
         }
@@ -58701,6 +59433,7 @@ public final class Response {
          * <code>int32 port = 2;</code>
          * @return The port.
          */
+        @java.lang.Override
         public int getPort() {
           return port_;
         }
@@ -59033,6 +59766,7 @@ public final class Response {
            * <code>bytes host = 1;</code>
            * @return The host.
            */
+          @java.lang.Override
           public com.google.protobuf.ByteString getHost() {
             return host_;
           }
@@ -59066,6 +59800,7 @@ public final class Response {
            * <code>int32 port = 2;</code>
            * @return The port.
            */
+          @java.lang.Override
           public int getPort() {
             return port_;
           }
@@ -59149,6 +59884,7 @@ public final class Response {
        * <code>.protocol.NodeList.Node.Address address = 1;</code>
        * @return Whether the address field is set.
        */
+      @java.lang.Override
       public boolean hasAddress() {
         return address_ != null;
       }
@@ -59156,12 +59892,14 @@ public final class Response {
        * <code>.protocol.NodeList.Node.Address address = 1;</code>
        * @return The address.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.NodeList.Node.Address getAddress() {
         return address_ == null ? org.tron.trident.proto.Response.NodeList.Node.Address.getDefaultInstance() : address_;
       }
       /**
        * <code>.protocol.NodeList.Node.Address address = 1;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Response.NodeList.Node.AddressOrBuilder getAddressOrBuilder() {
         return getAddress();
       }
@@ -59661,12 +60399,14 @@ public final class Response {
     /**
      * <code>repeated .protocol.NodeList.Node nodes = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Response.NodeList.Node> getNodesList() {
       return nodes_;
     }
     /**
      * <code>repeated .protocol.NodeList.Node nodes = 1;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Response.NodeList.NodeOrBuilder> 
         getNodesOrBuilderList() {
       return nodes_;
@@ -59674,18 +60414,21 @@ public final class Response {
     /**
      * <code>repeated .protocol.NodeList.Node nodes = 1;</code>
      */
+    @java.lang.Override
     public int getNodesCount() {
       return nodes_.size();
     }
     /**
      * <code>repeated .protocol.NodeList.Node nodes = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.NodeList.Node getNodes(int index) {
       return nodes_.get(index);
     }
     /**
      * <code>repeated .protocol.NodeList.Node nodes = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Response.NodeList.NodeOrBuilder getNodesOrBuilder(
         int index) {
       return nodes_.get(index);
@@ -60444,7 +61187,7 @@ public final class Response {
    *
    * Protobuf type {@code protocol.AccountNetMessage}
    */
-  public  static final class AccountNetMessage extends
+  public static final class AccountNetMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AccountNetMessage)
       AccountNetMessageOrBuilder {
@@ -60595,6 +61338,7 @@ public final class Response {
      * <code>int64 freeNetUsed = 1;</code>
      * @return The freeNetUsed.
      */
+    @java.lang.Override
     public long getFreeNetUsed() {
       return freeNetUsed_;
     }
@@ -60605,6 +61349,7 @@ public final class Response {
      * <code>int64 freeNetLimit = 2;</code>
      * @return The freeNetLimit.
      */
+    @java.lang.Override
     public long getFreeNetLimit() {
       return freeNetLimit_;
     }
@@ -60615,6 +61360,7 @@ public final class Response {
      * <code>int64 NetUsed = 3;</code>
      * @return The netUsed.
      */
+    @java.lang.Override
     public long getNetUsed() {
       return netUsed_;
     }
@@ -60625,6 +61371,7 @@ public final class Response {
      * <code>int64 NetLimit = 4;</code>
      * @return The netLimit.
      */
+    @java.lang.Override
     public long getNetLimit() {
       return netLimit_;
     }
@@ -60659,14 +61406,16 @@ public final class Response {
      * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
      */
 
+    @java.lang.Override
     public boolean containsAssetNetUsed(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAssetNetUsed().getMap().containsKey(key);
     }
     /**
      * Use {@link #getAssetNetUsedMap()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Long> getAssetNetUsed() {
       return getAssetNetUsedMap();
@@ -60674,6 +61423,7 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.Long> getAssetNetUsedMap() {
       return internalGetAssetNetUsed().getMap();
@@ -60681,11 +61431,12 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
      */
+    @java.lang.Override
 
     public long getAssetNetUsedOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetUsed().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -60693,10 +61444,11 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
      */
+    @java.lang.Override
 
     public long getAssetNetUsedOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetUsed().getMap();
       if (!map.containsKey(key)) {
@@ -60735,14 +61487,16 @@ public final class Response {
      * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
      */
 
+    @java.lang.Override
     public boolean containsAssetNetLimit(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAssetNetLimit().getMap().containsKey(key);
     }
     /**
      * Use {@link #getAssetNetLimitMap()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Long> getAssetNetLimit() {
       return getAssetNetLimitMap();
@@ -60750,6 +61504,7 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.Long> getAssetNetLimitMap() {
       return internalGetAssetNetLimit().getMap();
@@ -60757,11 +61512,12 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
      */
+    @java.lang.Override
 
     public long getAssetNetLimitOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetLimit().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -60769,10 +61525,11 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
      */
+    @java.lang.Override
 
     public long getAssetNetLimitOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetLimit().getMap();
       if (!map.containsKey(key)) {
@@ -60787,6 +61544,7 @@ public final class Response {
      * <code>int64 TotalNetLimit = 7;</code>
      * @return The totalNetLimit.
      */
+    @java.lang.Override
     public long getTotalNetLimit() {
       return totalNetLimit_;
     }
@@ -60797,6 +61555,7 @@ public final class Response {
      * <code>int64 TotalNetWeight = 8;</code>
      * @return The totalNetWeight.
      */
+    @java.lang.Override
     public long getTotalNetWeight() {
       return totalNetWeight_;
     }
@@ -61285,6 +62044,7 @@ public final class Response {
        * <code>int64 freeNetUsed = 1;</code>
        * @return The freeNetUsed.
        */
+      @java.lang.Override
       public long getFreeNetUsed() {
         return freeNetUsed_;
       }
@@ -61315,6 +62075,7 @@ public final class Response {
        * <code>int64 freeNetLimit = 2;</code>
        * @return The freeNetLimit.
        */
+      @java.lang.Override
       public long getFreeNetLimit() {
         return freeNetLimit_;
       }
@@ -61345,6 +62106,7 @@ public final class Response {
        * <code>int64 NetUsed = 3;</code>
        * @return The netUsed.
        */
+      @java.lang.Override
       public long getNetUsed() {
         return netUsed_;
       }
@@ -61375,6 +62137,7 @@ public final class Response {
        * <code>int64 NetLimit = 4;</code>
        * @return The netLimit.
        */
+      @java.lang.Override
       public long getNetLimit() {
         return netLimit_;
       }
@@ -61430,14 +62193,16 @@ public final class Response {
        * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
        */
 
+      @java.lang.Override
       public boolean containsAssetNetUsed(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAssetNetUsed().getMap().containsKey(key);
       }
       /**
        * Use {@link #getAssetNetUsedMap()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Long> getAssetNetUsed() {
         return getAssetNetUsedMap();
@@ -61445,6 +62210,7 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.Long> getAssetNetUsedMap() {
         return internalGetAssetNetUsed().getMap();
@@ -61452,11 +62218,12 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
        */
+      @java.lang.Override
 
       public long getAssetNetUsedOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetUsed().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -61464,10 +62231,11 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
        */
+      @java.lang.Override
 
       public long getAssetNetUsedOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetUsed().getMap();
         if (!map.containsKey(key)) {
@@ -61487,7 +62255,7 @@ public final class Response {
 
       public Builder removeAssetNetUsed(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAssetNetUsed().getMutableMap()
             .remove(key);
         return this;
@@ -61506,7 +62274,7 @@ public final class Response {
       public Builder putAssetNetUsed(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAssetNetUsed().getMutableMap()
             .put(key, value);
@@ -61553,14 +62321,16 @@ public final class Response {
        * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
        */
 
+      @java.lang.Override
       public boolean containsAssetNetLimit(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAssetNetLimit().getMap().containsKey(key);
       }
       /**
        * Use {@link #getAssetNetLimitMap()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Long> getAssetNetLimit() {
         return getAssetNetLimitMap();
@@ -61568,6 +62338,7 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.Long> getAssetNetLimitMap() {
         return internalGetAssetNetLimit().getMap();
@@ -61575,11 +62346,12 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
        */
+      @java.lang.Override
 
       public long getAssetNetLimitOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetLimit().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -61587,10 +62359,11 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
        */
+      @java.lang.Override
 
       public long getAssetNetLimitOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetLimit().getMap();
         if (!map.containsKey(key)) {
@@ -61610,7 +62383,7 @@ public final class Response {
 
       public Builder removeAssetNetLimit(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAssetNetLimit().getMutableMap()
             .remove(key);
         return this;
@@ -61629,7 +62402,7 @@ public final class Response {
       public Builder putAssetNetLimit(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAssetNetLimit().getMutableMap()
             .put(key, value);
@@ -61651,6 +62424,7 @@ public final class Response {
        * <code>int64 TotalNetLimit = 7;</code>
        * @return The totalNetLimit.
        */
+      @java.lang.Override
       public long getTotalNetLimit() {
         return totalNetLimit_;
       }
@@ -61681,6 +62455,7 @@ public final class Response {
        * <code>int64 TotalNetWeight = 8;</code>
        * @return The totalNetWeight.
        */
+      @java.lang.Override
       public long getTotalNetWeight() {
         return totalNetWeight_;
       }
@@ -61905,7 +62680,7 @@ public final class Response {
   /**
    * Protobuf type {@code protocol.AccountResourceMessage}
    */
-  public  static final class AccountResourceMessage extends
+  public static final class AccountResourceMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AccountResourceMessage)
       AccountResourceMessageOrBuilder {
@@ -62086,6 +62861,7 @@ public final class Response {
      * <code>int64 freeNetUsed = 1;</code>
      * @return The freeNetUsed.
      */
+    @java.lang.Override
     public long getFreeNetUsed() {
       return freeNetUsed_;
     }
@@ -62096,6 +62872,7 @@ public final class Response {
      * <code>int64 freeNetLimit = 2;</code>
      * @return The freeNetLimit.
      */
+    @java.lang.Override
     public long getFreeNetLimit() {
       return freeNetLimit_;
     }
@@ -62106,6 +62883,7 @@ public final class Response {
      * <code>int64 NetUsed = 3;</code>
      * @return The netUsed.
      */
+    @java.lang.Override
     public long getNetUsed() {
       return netUsed_;
     }
@@ -62116,6 +62894,7 @@ public final class Response {
      * <code>int64 NetLimit = 4;</code>
      * @return The netLimit.
      */
+    @java.lang.Override
     public long getNetLimit() {
       return netLimit_;
     }
@@ -62150,14 +62929,16 @@ public final class Response {
      * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
      */
 
+    @java.lang.Override
     public boolean containsAssetNetUsed(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAssetNetUsed().getMap().containsKey(key);
     }
     /**
      * Use {@link #getAssetNetUsedMap()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Long> getAssetNetUsed() {
       return getAssetNetUsedMap();
@@ -62165,6 +62946,7 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.Long> getAssetNetUsedMap() {
       return internalGetAssetNetUsed().getMap();
@@ -62172,11 +62954,12 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
      */
+    @java.lang.Override
 
     public long getAssetNetUsedOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetUsed().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -62184,10 +62967,11 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
      */
+    @java.lang.Override
 
     public long getAssetNetUsedOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetUsed().getMap();
       if (!map.containsKey(key)) {
@@ -62226,14 +63010,16 @@ public final class Response {
      * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
      */
 
+    @java.lang.Override
     public boolean containsAssetNetLimit(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       return internalGetAssetNetLimit().getMap().containsKey(key);
     }
     /**
      * Use {@link #getAssetNetLimitMap()} instead.
      */
+    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Long> getAssetNetLimit() {
       return getAssetNetLimitMap();
@@ -62241,6 +63027,7 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
      */
+    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.Long> getAssetNetLimitMap() {
       return internalGetAssetNetLimit().getMap();
@@ -62248,11 +63035,12 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
      */
+    @java.lang.Override
 
     public long getAssetNetLimitOrDefault(
         java.lang.String key,
         long defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetLimit().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -62260,10 +63048,11 @@ public final class Response {
     /**
      * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
      */
+    @java.lang.Override
 
     public long getAssetNetLimitOrThrow(
         java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (key == null) { throw new NullPointerException("map key"); }
       java.util.Map<java.lang.String, java.lang.Long> map =
           internalGetAssetNetLimit().getMap();
       if (!map.containsKey(key)) {
@@ -62278,6 +63067,7 @@ public final class Response {
      * <code>int64 TotalNetLimit = 7;</code>
      * @return The totalNetLimit.
      */
+    @java.lang.Override
     public long getTotalNetLimit() {
       return totalNetLimit_;
     }
@@ -62288,6 +63078,7 @@ public final class Response {
      * <code>int64 TotalNetWeight = 8;</code>
      * @return The totalNetWeight.
      */
+    @java.lang.Override
     public long getTotalNetWeight() {
       return totalNetWeight_;
     }
@@ -62298,6 +63089,7 @@ public final class Response {
      * <code>int64 EnergyUsed = 13;</code>
      * @return The energyUsed.
      */
+    @java.lang.Override
     public long getEnergyUsed() {
       return energyUsed_;
     }
@@ -62308,6 +63100,7 @@ public final class Response {
      * <code>int64 EnergyLimit = 14;</code>
      * @return The energyLimit.
      */
+    @java.lang.Override
     public long getEnergyLimit() {
       return energyLimit_;
     }
@@ -62318,6 +63111,7 @@ public final class Response {
      * <code>int64 TotalEnergyLimit = 15;</code>
      * @return The totalEnergyLimit.
      */
+    @java.lang.Override
     public long getTotalEnergyLimit() {
       return totalEnergyLimit_;
     }
@@ -62328,6 +63122,7 @@ public final class Response {
      * <code>int64 TotalEnergyWeight = 16;</code>
      * @return The totalEnergyWeight.
      */
+    @java.lang.Override
     public long getTotalEnergyWeight() {
       return totalEnergyWeight_;
     }
@@ -62338,6 +63133,7 @@ public final class Response {
      * <code>int64 storageUsed = 21;</code>
      * @return The storageUsed.
      */
+    @java.lang.Override
     public long getStorageUsed() {
       return storageUsed_;
     }
@@ -62348,6 +63144,7 @@ public final class Response {
      * <code>int64 storageLimit = 22;</code>
      * @return The storageLimit.
      */
+    @java.lang.Override
     public long getStorageLimit() {
       return storageLimit_;
     }
@@ -62940,6 +63737,7 @@ public final class Response {
        * <code>int64 freeNetUsed = 1;</code>
        * @return The freeNetUsed.
        */
+      @java.lang.Override
       public long getFreeNetUsed() {
         return freeNetUsed_;
       }
@@ -62970,6 +63768,7 @@ public final class Response {
        * <code>int64 freeNetLimit = 2;</code>
        * @return The freeNetLimit.
        */
+      @java.lang.Override
       public long getFreeNetLimit() {
         return freeNetLimit_;
       }
@@ -63000,6 +63799,7 @@ public final class Response {
        * <code>int64 NetUsed = 3;</code>
        * @return The netUsed.
        */
+      @java.lang.Override
       public long getNetUsed() {
         return netUsed_;
       }
@@ -63030,6 +63830,7 @@ public final class Response {
        * <code>int64 NetLimit = 4;</code>
        * @return The netLimit.
        */
+      @java.lang.Override
       public long getNetLimit() {
         return netLimit_;
       }
@@ -63085,14 +63886,16 @@ public final class Response {
        * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
        */
 
+      @java.lang.Override
       public boolean containsAssetNetUsed(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAssetNetUsed().getMap().containsKey(key);
       }
       /**
        * Use {@link #getAssetNetUsedMap()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Long> getAssetNetUsed() {
         return getAssetNetUsedMap();
@@ -63100,6 +63903,7 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.Long> getAssetNetUsedMap() {
         return internalGetAssetNetUsed().getMap();
@@ -63107,11 +63911,12 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
        */
+      @java.lang.Override
 
       public long getAssetNetUsedOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetUsed().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -63119,10 +63924,11 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetUsed = 5;</code>
        */
+      @java.lang.Override
 
       public long getAssetNetUsedOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetUsed().getMap();
         if (!map.containsKey(key)) {
@@ -63142,7 +63948,7 @@ public final class Response {
 
       public Builder removeAssetNetUsed(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAssetNetUsed().getMutableMap()
             .remove(key);
         return this;
@@ -63161,7 +63967,7 @@ public final class Response {
       public Builder putAssetNetUsed(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAssetNetUsed().getMutableMap()
             .put(key, value);
@@ -63208,14 +64014,16 @@ public final class Response {
        * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
        */
 
+      @java.lang.Override
       public boolean containsAssetNetLimit(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         return internalGetAssetNetLimit().getMap().containsKey(key);
       }
       /**
        * Use {@link #getAssetNetLimitMap()} instead.
        */
+      @java.lang.Override
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Long> getAssetNetLimit() {
         return getAssetNetLimitMap();
@@ -63223,6 +64031,7 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
        */
+      @java.lang.Override
 
       public java.util.Map<java.lang.String, java.lang.Long> getAssetNetLimitMap() {
         return internalGetAssetNetLimit().getMap();
@@ -63230,11 +64039,12 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
        */
+      @java.lang.Override
 
       public long getAssetNetLimitOrDefault(
           java.lang.String key,
           long defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetLimit().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -63242,10 +64052,11 @@ public final class Response {
       /**
        * <code>map&lt;string, int64&gt; assetNetLimit = 6;</code>
        */
+      @java.lang.Override
 
       public long getAssetNetLimitOrThrow(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         java.util.Map<java.lang.String, java.lang.Long> map =
             internalGetAssetNetLimit().getMap();
         if (!map.containsKey(key)) {
@@ -63265,7 +64076,7 @@ public final class Response {
 
       public Builder removeAssetNetLimit(
           java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         internalGetMutableAssetNetLimit().getMutableMap()
             .remove(key);
         return this;
@@ -63284,7 +64095,7 @@ public final class Response {
       public Builder putAssetNetLimit(
           java.lang.String key,
           long value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (key == null) { throw new NullPointerException("map key"); }
         
         internalGetMutableAssetNetLimit().getMutableMap()
             .put(key, value);
@@ -63306,6 +64117,7 @@ public final class Response {
        * <code>int64 TotalNetLimit = 7;</code>
        * @return The totalNetLimit.
        */
+      @java.lang.Override
       public long getTotalNetLimit() {
         return totalNetLimit_;
       }
@@ -63336,6 +64148,7 @@ public final class Response {
        * <code>int64 TotalNetWeight = 8;</code>
        * @return The totalNetWeight.
        */
+      @java.lang.Override
       public long getTotalNetWeight() {
         return totalNetWeight_;
       }
@@ -63366,6 +64179,7 @@ public final class Response {
        * <code>int64 EnergyUsed = 13;</code>
        * @return The energyUsed.
        */
+      @java.lang.Override
       public long getEnergyUsed() {
         return energyUsed_;
       }
@@ -63396,6 +64210,7 @@ public final class Response {
        * <code>int64 EnergyLimit = 14;</code>
        * @return The energyLimit.
        */
+      @java.lang.Override
       public long getEnergyLimit() {
         return energyLimit_;
       }
@@ -63426,6 +64241,7 @@ public final class Response {
        * <code>int64 TotalEnergyLimit = 15;</code>
        * @return The totalEnergyLimit.
        */
+      @java.lang.Override
       public long getTotalEnergyLimit() {
         return totalEnergyLimit_;
       }
@@ -63456,6 +64272,7 @@ public final class Response {
        * <code>int64 TotalEnergyWeight = 16;</code>
        * @return The totalEnergyWeight.
        */
+      @java.lang.Override
       public long getTotalEnergyWeight() {
         return totalEnergyWeight_;
       }
@@ -63486,6 +64303,7 @@ public final class Response {
        * <code>int64 storageUsed = 21;</code>
        * @return The storageUsed.
        */
+      @java.lang.Override
       public long getStorageUsed() {
         return storageUsed_;
       }
@@ -63516,6 +64334,7 @@ public final class Response {
        * <code>int64 storageLimit = 22;</code>
        * @return The storageLimit.
        */
+      @java.lang.Override
       public long getStorageLimit() {
         return storageLimit_;
       }

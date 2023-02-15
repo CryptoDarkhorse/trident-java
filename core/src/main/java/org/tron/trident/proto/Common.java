@@ -84,6 +84,10 @@ public final class Common {
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -197,6 +201,10 @@ public final class Common {
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -250,7 +258,7 @@ public final class Common {
   /**
    * Protobuf type {@code protocol.AccountId}
    */
-  public  static final class AccountId extends
+  public static final class AccountId extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.AccountId)
       AccountIdOrBuilder {
@@ -342,6 +350,7 @@ public final class Common {
      * <code>bytes name = 1;</code>
      * @return The name.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getName() {
       return name_;
     }
@@ -352,6 +361,7 @@ public final class Common {
      * <code>bytes address = 2;</code>
      * @return The address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAddress() {
       return address_;
     }
@@ -680,6 +690,7 @@ public final class Common {
        * <code>bytes name = 1;</code>
        * @return The name.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getName() {
         return name_;
       }
@@ -713,6 +724,7 @@ public final class Common {
        * <code>bytes address = 2;</code>
        * @return The address.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAddress() {
         return address_;
       }
@@ -821,7 +833,7 @@ public final class Common {
   /**
    * Protobuf type {@code protocol.authority}
    */
-  public  static final class authority extends
+  public static final class authority extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.authority)
       authorityOrBuilder {
@@ -920,6 +932,7 @@ public final class Common {
      * <code>.protocol.AccountId account = 1;</code>
      * @return Whether the account field is set.
      */
+    @java.lang.Override
     public boolean hasAccount() {
       return account_ != null;
     }
@@ -927,12 +940,14 @@ public final class Common {
      * <code>.protocol.AccountId account = 1;</code>
      * @return The account.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.AccountId getAccount() {
       return account_ == null ? org.tron.trident.proto.Common.AccountId.getDefaultInstance() : account_;
     }
     /**
      * <code>.protocol.AccountId account = 1;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.AccountIdOrBuilder getAccountOrBuilder() {
       return getAccount();
     }
@@ -943,6 +958,7 @@ public final class Common {
      * <code>bytes permission_name = 2;</code>
      * @return The permissionName.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getPermissionName() {
       return permissionName_;
     }
@@ -1403,6 +1419,7 @@ public final class Common {
        * <code>bytes permission_name = 2;</code>
        * @return The permissionName.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getPermissionName() {
         return permissionName_;
       }
@@ -1502,7 +1519,7 @@ public final class Common {
   /**
    * Protobuf type {@code protocol.Key}
    */
-  public  static final class Key extends
+  public static final class Key extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.Key)
       KeyOrBuilder {
@@ -1593,6 +1610,7 @@ public final class Common {
      * <code>bytes address = 1;</code>
      * @return The address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getAddress() {
       return address_;
     }
@@ -1603,6 +1621,7 @@ public final class Common {
      * <code>int64 weight = 2;</code>
      * @return The weight.
      */
+    @java.lang.Override
     public long getWeight() {
       return weight_;
     }
@@ -1932,6 +1951,7 @@ public final class Common {
        * <code>bytes address = 1;</code>
        * @return The address.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getAddress() {
         return address_;
       }
@@ -1965,6 +1985,7 @@ public final class Common {
        * <code>int64 weight = 2;</code>
        * @return The weight.
        */
+      @java.lang.Override
       public long getWeight() {
         return weight_;
       }
@@ -2128,7 +2149,7 @@ public final class Common {
   /**
    * Protobuf type {@code protocol.Permission}
    */
-  public  static final class Permission extends
+  public static final class Permission extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.Permission)
       PermissionOrBuilder {
@@ -2330,6 +2351,10 @@ public final class Common {
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -2370,14 +2395,14 @@ public final class Common {
      * <code>.protocol.Permission.PermissionType type = 1;</code>
      * @return The enum numeric value on the wire for type.
      */
-    public int getTypeValue() {
+    @java.lang.Override public int getTypeValue() {
       return type_;
     }
     /**
      * <code>.protocol.Permission.PermissionType type = 1;</code>
      * @return The type.
      */
-    public org.tron.trident.proto.Common.Permission.PermissionType getType() {
+    @java.lang.Override public org.tron.trident.proto.Common.Permission.PermissionType getType() {
       @SuppressWarnings("deprecation")
       org.tron.trident.proto.Common.Permission.PermissionType result = org.tron.trident.proto.Common.Permission.PermissionType.valueOf(type_);
       return result == null ? org.tron.trident.proto.Common.Permission.PermissionType.UNRECOGNIZED : result;
@@ -2393,6 +2418,7 @@ public final class Common {
      * <code>int32 id = 2;</code>
      * @return The id.
      */
+    @java.lang.Override
     public int getId() {
       return id_;
     }
@@ -2403,6 +2429,7 @@ public final class Common {
      * <code>string permission_name = 3;</code>
      * @return The permissionName.
      */
+    @java.lang.Override
     public java.lang.String getPermissionName() {
       java.lang.Object ref = permissionName_;
       if (ref instanceof java.lang.String) {
@@ -2419,6 +2446,7 @@ public final class Common {
      * <code>string permission_name = 3;</code>
      * @return The bytes for permissionName.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getPermissionNameBytes() {
       java.lang.Object ref = permissionName_;
@@ -2439,6 +2467,7 @@ public final class Common {
      * <code>int64 threshold = 4;</code>
      * @return The threshold.
      */
+    @java.lang.Override
     public long getThreshold() {
       return threshold_;
     }
@@ -2449,6 +2478,7 @@ public final class Common {
      * <code>int32 parent_id = 5;</code>
      * @return The parentId.
      */
+    @java.lang.Override
     public int getParentId() {
       return parentId_;
     }
@@ -2463,6 +2493,7 @@ public final class Common {
      * <code>bytes operations = 6;</code>
      * @return The operations.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOperations() {
       return operations_;
     }
@@ -2472,12 +2503,14 @@ public final class Common {
     /**
      * <code>repeated .protocol.Key keys = 7;</code>
      */
+    @java.lang.Override
     public java.util.List<org.tron.trident.proto.Common.Key> getKeysList() {
       return keys_;
     }
     /**
      * <code>repeated .protocol.Key keys = 7;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends org.tron.trident.proto.Common.KeyOrBuilder> 
         getKeysOrBuilderList() {
       return keys_;
@@ -2485,18 +2518,21 @@ public final class Common {
     /**
      * <code>repeated .protocol.Key keys = 7;</code>
      */
+    @java.lang.Override
     public int getKeysCount() {
       return keys_.size();
     }
     /**
      * <code>repeated .protocol.Key keys = 7;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.Key getKeys(int index) {
       return keys_.get(index);
     }
     /**
      * <code>repeated .protocol.Key keys = 7;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.KeyOrBuilder getKeysOrBuilder(
         int index) {
       return keys_.get(index);
@@ -2522,7 +2558,7 @@ public final class Common {
       if (id_ != 0) {
         output.writeInt32(2, id_);
       }
-      if (!getPermissionNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(permissionName_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, permissionName_);
       }
       if (threshold_ != 0L) {
@@ -2554,7 +2590,7 @@ public final class Common {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, id_);
       }
-      if (!getPermissionNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(permissionName_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, permissionName_);
       }
       if (threshold_ != 0L) {
@@ -2951,7 +2987,7 @@ public final class Common {
        * <code>.protocol.Permission.PermissionType type = 1;</code>
        * @return The enum numeric value on the wire for type.
        */
-      public int getTypeValue() {
+      @java.lang.Override public int getTypeValue() {
         return type_;
       }
       /**
@@ -2960,6 +2996,7 @@ public final class Common {
        * @return This builder for chaining.
        */
       public Builder setTypeValue(int value) {
+        
         type_ = value;
         onChanged();
         return this;
@@ -2968,6 +3005,7 @@ public final class Common {
        * <code>.protocol.Permission.PermissionType type = 1;</code>
        * @return The type.
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.Permission.PermissionType getType() {
         @SuppressWarnings("deprecation")
         org.tron.trident.proto.Common.Permission.PermissionType result = org.tron.trident.proto.Common.Permission.PermissionType.valueOf(type_);
@@ -3007,6 +3045,7 @@ public final class Common {
        * <code>int32 id = 2;</code>
        * @return The id.
        */
+      @java.lang.Override
       public int getId() {
         return id_;
       }
@@ -3121,6 +3160,7 @@ public final class Common {
        * <code>int64 threshold = 4;</code>
        * @return The threshold.
        */
+      @java.lang.Override
       public long getThreshold() {
         return threshold_;
       }
@@ -3151,6 +3191,7 @@ public final class Common {
        * <code>int32 parent_id = 5;</code>
        * @return The parentId.
        */
+      @java.lang.Override
       public int getParentId() {
         return parentId_;
       }
@@ -3185,6 +3226,7 @@ public final class Common {
        * <code>bytes operations = 6;</code>
        * @return The operations.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOperations() {
         return operations_;
       }
@@ -3595,7 +3637,7 @@ public final class Common {
   /**
    * Protobuf type {@code protocol.SmartContract}
    */
-  public  static final class SmartContract extends
+  public static final class SmartContract extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.SmartContract)
       SmartContractOrBuilder {
@@ -3765,7 +3807,7 @@ public final class Common {
     /**
      * Protobuf type {@code protocol.SmartContract.ABI}
      */
-    public  static final class ABI extends
+    public static final class ABI extends
         com.google.protobuf.GeneratedMessageV3 implements
         // @@protoc_insertion_point(message_implements:protocol.SmartContract.ABI)
         ABIOrBuilder {
@@ -3960,7 +4002,7 @@ public final class Common {
       /**
        * Protobuf type {@code protocol.SmartContract.ABI.Entry}
        */
-      public  static final class Entry extends
+      public static final class Entry extends
           com.google.protobuf.GeneratedMessageV3 implements
           // @@protoc_insertion_point(message_implements:protocol.SmartContract.ABI.Entry)
           EntryOrBuilder {
@@ -4194,6 +4236,10 @@ public final class Common {
 
           public final com.google.protobuf.Descriptors.EnumValueDescriptor
               getValueDescriptor() {
+            if (this == UNRECOGNIZED) {
+              throw new java.lang.IllegalStateException(
+                  "Can't get the descriptor of an unrecognized enum value.");
+            }
             return getDescriptor().getValues().get(ordinal());
           }
           public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -4325,6 +4371,10 @@ public final class Common {
 
           public final com.google.protobuf.Descriptors.EnumValueDescriptor
               getValueDescriptor() {
+            if (this == UNRECOGNIZED) {
+              throw new java.lang.IllegalStateException(
+                  "Can't get the descriptor of an unrecognized enum value.");
+            }
             return getDescriptor().getValues().get(ordinal());
           }
           public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -4404,7 +4454,7 @@ public final class Common {
         /**
          * Protobuf type {@code protocol.SmartContract.ABI.Entry.Param}
          */
-        public  static final class Param extends
+        public static final class Param extends
             com.google.protobuf.GeneratedMessageV3 implements
             // @@protoc_insertion_point(message_implements:protocol.SmartContract.ABI.Entry.Param)
             ParamOrBuilder {
@@ -4503,6 +4553,7 @@ public final class Common {
            * <code>bool indexed = 1;</code>
            * @return The indexed.
            */
+          @java.lang.Override
           public boolean getIndexed() {
             return indexed_;
           }
@@ -4513,6 +4564,7 @@ public final class Common {
            * <code>string name = 2;</code>
            * @return The name.
            */
+          @java.lang.Override
           public java.lang.String getName() {
             java.lang.Object ref = name_;
             if (ref instanceof java.lang.String) {
@@ -4529,6 +4581,7 @@ public final class Common {
            * <code>string name = 2;</code>
            * @return The bytes for name.
            */
+          @java.lang.Override
           public com.google.protobuf.ByteString
               getNameBytes() {
             java.lang.Object ref = name_;
@@ -4553,6 +4606,7 @@ public final class Common {
            * <code>string type = 3;</code>
            * @return The type.
            */
+          @java.lang.Override
           public java.lang.String getType() {
             java.lang.Object ref = type_;
             if (ref instanceof java.lang.String) {
@@ -4573,6 +4627,7 @@ public final class Common {
            * <code>string type = 3;</code>
            * @return The bytes for type.
            */
+          @java.lang.Override
           public com.google.protobuf.ByteString
               getTypeBytes() {
             java.lang.Object ref = type_;
@@ -4604,10 +4659,10 @@ public final class Common {
             if (indexed_ != false) {
               output.writeBool(1, indexed_);
             }
-            if (!getNameBytes().isEmpty()) {
+            if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
               com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
             }
-            if (!getTypeBytes().isEmpty()) {
+            if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
               com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
             }
             unknownFields.writeTo(output);
@@ -4623,10 +4678,10 @@ public final class Common {
               size += com.google.protobuf.CodedOutputStream
                 .computeBoolSize(1, indexed_);
             }
-            if (!getNameBytes().isEmpty()) {
+            if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
               size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
             }
-            if (!getTypeBytes().isEmpty()) {
+            if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
               size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
             }
             size += unknownFields.getSerializedSize();
@@ -4929,6 +4984,7 @@ public final class Common {
              * <code>bool indexed = 1;</code>
              * @return The indexed.
              */
+            @java.lang.Override
             public boolean getIndexed() {
               return indexed_;
             }
@@ -5184,6 +5240,7 @@ public final class Common {
          * <code>bool anonymous = 1;</code>
          * @return The anonymous.
          */
+        @java.lang.Override
         public boolean getAnonymous() {
           return anonymous_;
         }
@@ -5194,6 +5251,7 @@ public final class Common {
          * <code>bool constant = 2;</code>
          * @return The constant.
          */
+        @java.lang.Override
         public boolean getConstant() {
           return constant_;
         }
@@ -5204,6 +5262,7 @@ public final class Common {
          * <code>string name = 3;</code>
          * @return The name.
          */
+        @java.lang.Override
         public java.lang.String getName() {
           java.lang.Object ref = name_;
           if (ref instanceof java.lang.String) {
@@ -5220,6 +5279,7 @@ public final class Common {
          * <code>string name = 3;</code>
          * @return The bytes for name.
          */
+        @java.lang.Override
         public com.google.protobuf.ByteString
             getNameBytes() {
           java.lang.Object ref = name_;
@@ -5239,12 +5299,14 @@ public final class Common {
         /**
          * <code>repeated .protocol.SmartContract.ABI.Entry.Param inputs = 4;</code>
          */
+        @java.lang.Override
         public java.util.List<org.tron.trident.proto.Common.SmartContract.ABI.Entry.Param> getInputsList() {
           return inputs_;
         }
         /**
          * <code>repeated .protocol.SmartContract.ABI.Entry.Param inputs = 4;</code>
          */
+        @java.lang.Override
         public java.util.List<? extends org.tron.trident.proto.Common.SmartContract.ABI.Entry.ParamOrBuilder> 
             getInputsOrBuilderList() {
           return inputs_;
@@ -5252,18 +5314,21 @@ public final class Common {
         /**
          * <code>repeated .protocol.SmartContract.ABI.Entry.Param inputs = 4;</code>
          */
+        @java.lang.Override
         public int getInputsCount() {
           return inputs_.size();
         }
         /**
          * <code>repeated .protocol.SmartContract.ABI.Entry.Param inputs = 4;</code>
          */
+        @java.lang.Override
         public org.tron.trident.proto.Common.SmartContract.ABI.Entry.Param getInputs(int index) {
           return inputs_.get(index);
         }
         /**
          * <code>repeated .protocol.SmartContract.ABI.Entry.Param inputs = 4;</code>
          */
+        @java.lang.Override
         public org.tron.trident.proto.Common.SmartContract.ABI.Entry.ParamOrBuilder getInputsOrBuilder(
             int index) {
           return inputs_.get(index);
@@ -5274,12 +5339,14 @@ public final class Common {
         /**
          * <code>repeated .protocol.SmartContract.ABI.Entry.Param outputs = 5;</code>
          */
+        @java.lang.Override
         public java.util.List<org.tron.trident.proto.Common.SmartContract.ABI.Entry.Param> getOutputsList() {
           return outputs_;
         }
         /**
          * <code>repeated .protocol.SmartContract.ABI.Entry.Param outputs = 5;</code>
          */
+        @java.lang.Override
         public java.util.List<? extends org.tron.trident.proto.Common.SmartContract.ABI.Entry.ParamOrBuilder> 
             getOutputsOrBuilderList() {
           return outputs_;
@@ -5287,18 +5354,21 @@ public final class Common {
         /**
          * <code>repeated .protocol.SmartContract.ABI.Entry.Param outputs = 5;</code>
          */
+        @java.lang.Override
         public int getOutputsCount() {
           return outputs_.size();
         }
         /**
          * <code>repeated .protocol.SmartContract.ABI.Entry.Param outputs = 5;</code>
          */
+        @java.lang.Override
         public org.tron.trident.proto.Common.SmartContract.ABI.Entry.Param getOutputs(int index) {
           return outputs_.get(index);
         }
         /**
          * <code>repeated .protocol.SmartContract.ABI.Entry.Param outputs = 5;</code>
          */
+        @java.lang.Override
         public org.tron.trident.proto.Common.SmartContract.ABI.Entry.ParamOrBuilder getOutputsOrBuilder(
             int index) {
           return outputs_.get(index);
@@ -5310,14 +5380,14 @@ public final class Common {
          * <code>.protocol.SmartContract.ABI.Entry.EntryType type = 6;</code>
          * @return The enum numeric value on the wire for type.
          */
-        public int getTypeValue() {
+        @java.lang.Override public int getTypeValue() {
           return type_;
         }
         /**
          * <code>.protocol.SmartContract.ABI.Entry.EntryType type = 6;</code>
          * @return The type.
          */
-        public org.tron.trident.proto.Common.SmartContract.ABI.Entry.EntryType getType() {
+        @java.lang.Override public org.tron.trident.proto.Common.SmartContract.ABI.Entry.EntryType getType() {
           @SuppressWarnings("deprecation")
           org.tron.trident.proto.Common.SmartContract.ABI.Entry.EntryType result = org.tron.trident.proto.Common.SmartContract.ABI.Entry.EntryType.valueOf(type_);
           return result == null ? org.tron.trident.proto.Common.SmartContract.ABI.Entry.EntryType.UNRECOGNIZED : result;
@@ -5329,6 +5399,7 @@ public final class Common {
          * <code>bool payable = 7;</code>
          * @return The payable.
          */
+        @java.lang.Override
         public boolean getPayable() {
           return payable_;
         }
@@ -5339,14 +5410,14 @@ public final class Common {
          * <code>.protocol.SmartContract.ABI.Entry.StateMutabilityType stateMutability = 8;</code>
          * @return The enum numeric value on the wire for stateMutability.
          */
-        public int getStateMutabilityValue() {
+        @java.lang.Override public int getStateMutabilityValue() {
           return stateMutability_;
         }
         /**
          * <code>.protocol.SmartContract.ABI.Entry.StateMutabilityType stateMutability = 8;</code>
          * @return The stateMutability.
          */
-        public org.tron.trident.proto.Common.SmartContract.ABI.Entry.StateMutabilityType getStateMutability() {
+        @java.lang.Override public org.tron.trident.proto.Common.SmartContract.ABI.Entry.StateMutabilityType getStateMutability() {
           @SuppressWarnings("deprecation")
           org.tron.trident.proto.Common.SmartContract.ABI.Entry.StateMutabilityType result = org.tron.trident.proto.Common.SmartContract.ABI.Entry.StateMutabilityType.valueOf(stateMutability_);
           return result == null ? org.tron.trident.proto.Common.SmartContract.ABI.Entry.StateMutabilityType.UNRECOGNIZED : result;
@@ -5372,7 +5443,7 @@ public final class Common {
           if (constant_ != false) {
             output.writeBool(2, constant_);
           }
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             com.google.protobuf.GeneratedMessageV3.writeString(output, 3, name_);
           }
           for (int i = 0; i < inputs_.size(); i++) {
@@ -5407,7 +5478,7 @@ public final class Common {
             size += com.google.protobuf.CodedOutputStream
               .computeBoolSize(2, constant_);
           }
-          if (!getNameBytes().isEmpty()) {
+          if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
             size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, name_);
           }
           for (int i = 0; i < inputs_.size(); i++) {
@@ -5857,6 +5928,7 @@ public final class Common {
            * <code>bool anonymous = 1;</code>
            * @return The anonymous.
            */
+          @java.lang.Override
           public boolean getAnonymous() {
             return anonymous_;
           }
@@ -5887,6 +5959,7 @@ public final class Common {
            * <code>bool constant = 2;</code>
            * @return The constant.
            */
+          @java.lang.Override
           public boolean getConstant() {
             return constant_;
           }
@@ -6473,7 +6546,7 @@ public final class Common {
            * <code>.protocol.SmartContract.ABI.Entry.EntryType type = 6;</code>
            * @return The enum numeric value on the wire for type.
            */
-          public int getTypeValue() {
+          @java.lang.Override public int getTypeValue() {
             return type_;
           }
           /**
@@ -6482,6 +6555,7 @@ public final class Common {
            * @return This builder for chaining.
            */
           public Builder setTypeValue(int value) {
+            
             type_ = value;
             onChanged();
             return this;
@@ -6490,6 +6564,7 @@ public final class Common {
            * <code>.protocol.SmartContract.ABI.Entry.EntryType type = 6;</code>
            * @return The type.
            */
+          @java.lang.Override
           public org.tron.trident.proto.Common.SmartContract.ABI.Entry.EntryType getType() {
             @SuppressWarnings("deprecation")
             org.tron.trident.proto.Common.SmartContract.ABI.Entry.EntryType result = org.tron.trident.proto.Common.SmartContract.ABI.Entry.EntryType.valueOf(type_);
@@ -6525,6 +6600,7 @@ public final class Common {
            * <code>bool payable = 7;</code>
            * @return The payable.
            */
+          @java.lang.Override
           public boolean getPayable() {
             return payable_;
           }
@@ -6555,7 +6631,7 @@ public final class Common {
            * <code>.protocol.SmartContract.ABI.Entry.StateMutabilityType stateMutability = 8;</code>
            * @return The enum numeric value on the wire for stateMutability.
            */
-          public int getStateMutabilityValue() {
+          @java.lang.Override public int getStateMutabilityValue() {
             return stateMutability_;
           }
           /**
@@ -6564,6 +6640,7 @@ public final class Common {
            * @return This builder for chaining.
            */
           public Builder setStateMutabilityValue(int value) {
+            
             stateMutability_ = value;
             onChanged();
             return this;
@@ -6572,6 +6649,7 @@ public final class Common {
            * <code>.protocol.SmartContract.ABI.Entry.StateMutabilityType stateMutability = 8;</code>
            * @return The stateMutability.
            */
+          @java.lang.Override
           public org.tron.trident.proto.Common.SmartContract.ABI.Entry.StateMutabilityType getStateMutability() {
             @SuppressWarnings("deprecation")
             org.tron.trident.proto.Common.SmartContract.ABI.Entry.StateMutabilityType result = org.tron.trident.proto.Common.SmartContract.ABI.Entry.StateMutabilityType.valueOf(stateMutability_);
@@ -6659,12 +6737,14 @@ public final class Common {
       /**
        * <code>repeated .protocol.SmartContract.ABI.Entry entrys = 1;</code>
        */
+      @java.lang.Override
       public java.util.List<org.tron.trident.proto.Common.SmartContract.ABI.Entry> getEntrysList() {
         return entrys_;
       }
       /**
        * <code>repeated .protocol.SmartContract.ABI.Entry entrys = 1;</code>
        */
+      @java.lang.Override
       public java.util.List<? extends org.tron.trident.proto.Common.SmartContract.ABI.EntryOrBuilder> 
           getEntrysOrBuilderList() {
         return entrys_;
@@ -6672,18 +6752,21 @@ public final class Common {
       /**
        * <code>repeated .protocol.SmartContract.ABI.Entry entrys = 1;</code>
        */
+      @java.lang.Override
       public int getEntrysCount() {
         return entrys_.size();
       }
       /**
        * <code>repeated .protocol.SmartContract.ABI.Entry entrys = 1;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.SmartContract.ABI.Entry getEntrys(int index) {
         return entrys_.get(index);
       }
       /**
        * <code>repeated .protocol.SmartContract.ABI.Entry entrys = 1;</code>
        */
+      @java.lang.Override
       public org.tron.trident.proto.Common.SmartContract.ABI.EntryOrBuilder getEntrysOrBuilder(
           int index) {
         return entrys_.get(index);
@@ -7329,6 +7412,7 @@ public final class Common {
      * <code>bytes origin_address = 1;</code>
      * @return The originAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getOriginAddress() {
       return originAddress_;
     }
@@ -7339,6 +7423,7 @@ public final class Common {
      * <code>bytes contract_address = 2;</code>
      * @return The contractAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getContractAddress() {
       return contractAddress_;
     }
@@ -7349,6 +7434,7 @@ public final class Common {
      * <code>.protocol.SmartContract.ABI abi = 3;</code>
      * @return Whether the abi field is set.
      */
+    @java.lang.Override
     public boolean hasAbi() {
       return abi_ != null;
     }
@@ -7356,12 +7442,14 @@ public final class Common {
      * <code>.protocol.SmartContract.ABI abi = 3;</code>
      * @return The abi.
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.SmartContract.ABI getAbi() {
       return abi_ == null ? org.tron.trident.proto.Common.SmartContract.ABI.getDefaultInstance() : abi_;
     }
     /**
      * <code>.protocol.SmartContract.ABI abi = 3;</code>
      */
+    @java.lang.Override
     public org.tron.trident.proto.Common.SmartContract.ABIOrBuilder getAbiOrBuilder() {
       return getAbi();
     }
@@ -7372,6 +7460,7 @@ public final class Common {
      * <code>bytes bytecode = 4;</code>
      * @return The bytecode.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getBytecode() {
       return bytecode_;
     }
@@ -7382,6 +7471,7 @@ public final class Common {
      * <code>int64 call_value = 5;</code>
      * @return The callValue.
      */
+    @java.lang.Override
     public long getCallValue() {
       return callValue_;
     }
@@ -7392,6 +7482,7 @@ public final class Common {
      * <code>int64 consume_user_resource_percent = 6;</code>
      * @return The consumeUserResourcePercent.
      */
+    @java.lang.Override
     public long getConsumeUserResourcePercent() {
       return consumeUserResourcePercent_;
     }
@@ -7402,6 +7493,7 @@ public final class Common {
      * <code>string name = 7;</code>
      * @return The name.
      */
+    @java.lang.Override
     public java.lang.String getName() {
       java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
@@ -7418,6 +7510,7 @@ public final class Common {
      * <code>string name = 7;</code>
      * @return The bytes for name.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getNameBytes() {
       java.lang.Object ref = name_;
@@ -7438,6 +7531,7 @@ public final class Common {
      * <code>int64 origin_energy_limit = 8;</code>
      * @return The originEnergyLimit.
      */
+    @java.lang.Override
     public long getOriginEnergyLimit() {
       return originEnergyLimit_;
     }
@@ -7448,6 +7542,7 @@ public final class Common {
      * <code>bytes code_hash = 9;</code>
      * @return The codeHash.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getCodeHash() {
       return codeHash_;
     }
@@ -7458,6 +7553,7 @@ public final class Common {
      * <code>bytes trx_hash = 10;</code>
      * @return The trxHash.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getTrxHash() {
       return trxHash_;
     }
@@ -7494,7 +7590,7 @@ public final class Common {
       if (consumeUserResourcePercent_ != 0L) {
         output.writeInt64(6, consumeUserResourcePercent_);
       }
-      if (!getNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 7, name_);
       }
       if (originEnergyLimit_ != 0L) {
@@ -7539,7 +7635,7 @@ public final class Common {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(6, consumeUserResourcePercent_);
       }
-      if (!getNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, name_);
       }
       if (originEnergyLimit_ != 0L) {
@@ -7938,6 +8034,7 @@ public final class Common {
        * <code>bytes origin_address = 1;</code>
        * @return The originAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getOriginAddress() {
         return originAddress_;
       }
@@ -7971,6 +8068,7 @@ public final class Common {
        * <code>bytes contract_address = 2;</code>
        * @return The contractAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getContractAddress() {
         return contractAddress_;
       }
@@ -8123,6 +8221,7 @@ public final class Common {
        * <code>bytes bytecode = 4;</code>
        * @return The bytecode.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getBytecode() {
         return bytecode_;
       }
@@ -8156,6 +8255,7 @@ public final class Common {
        * <code>int64 call_value = 5;</code>
        * @return The callValue.
        */
+      @java.lang.Override
       public long getCallValue() {
         return callValue_;
       }
@@ -8186,6 +8286,7 @@ public final class Common {
        * <code>int64 consume_user_resource_percent = 6;</code>
        * @return The consumeUserResourcePercent.
        */
+      @java.lang.Override
       public long getConsumeUserResourcePercent() {
         return consumeUserResourcePercent_;
       }
@@ -8292,6 +8393,7 @@ public final class Common {
        * <code>int64 origin_energy_limit = 8;</code>
        * @return The originEnergyLimit.
        */
+      @java.lang.Override
       public long getOriginEnergyLimit() {
         return originEnergyLimit_;
       }
@@ -8322,6 +8424,7 @@ public final class Common {
        * <code>bytes code_hash = 9;</code>
        * @return The codeHash.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getCodeHash() {
         return codeHash_;
       }
@@ -8355,6 +8458,7 @@ public final class Common {
        * <code>bytes trx_hash = 10;</code>
        * @return The trxHash.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getTrxHash() {
         return trxHash_;
       }
@@ -8454,7 +8558,7 @@ public final class Common {
   /**
    * Protobuf type {@code protocol.Vote}
    */
-  public  static final class Vote extends
+  public static final class Vote extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.Vote)
       VoteOrBuilder {
@@ -8545,6 +8649,7 @@ public final class Common {
      * <code>bytes vote_address = 1;</code>
      * @return The voteAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getVoteAddress() {
       return voteAddress_;
     }
@@ -8555,6 +8660,7 @@ public final class Common {
      * <code>int64 vote_count = 2;</code>
      * @return The voteCount.
      */
+    @java.lang.Override
     public long getVoteCount() {
       return voteCount_;
     }
@@ -8884,6 +8990,7 @@ public final class Common {
        * <code>bytes vote_address = 1;</code>
        * @return The voteAddress.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getVoteAddress() {
         return voteAddress_;
       }
@@ -8917,6 +9024,7 @@ public final class Common {
        * <code>int64 vote_count = 2;</code>
        * @return The voteCount.
        */
+      @java.lang.Override
       public long getVoteCount() {
         return voteCount_;
       }
@@ -9035,7 +9143,7 @@ public final class Common {
   /**
    * Protobuf type {@code protocol.Note}
    */
-  public  static final class Note extends
+  public static final class Note extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:protocol.Note)
       NoteOrBuilder {
@@ -9139,6 +9247,7 @@ public final class Common {
      * <code>int64 value = 1;</code>
      * @return The value.
      */
+    @java.lang.Override
     public long getValue() {
       return value_;
     }
@@ -9149,6 +9258,7 @@ public final class Common {
      * <code>string payment_address = 2;</code>
      * @return The paymentAddress.
      */
+    @java.lang.Override
     public java.lang.String getPaymentAddress() {
       java.lang.Object ref = paymentAddress_;
       if (ref instanceof java.lang.String) {
@@ -9165,6 +9275,7 @@ public final class Common {
      * <code>string payment_address = 2;</code>
      * @return The bytes for paymentAddress.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getPaymentAddressBytes() {
       java.lang.Object ref = paymentAddress_;
@@ -9189,6 +9300,7 @@ public final class Common {
      * <code>bytes rcm = 3;</code>
      * @return The rcm.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getRcm() {
       return rcm_;
     }
@@ -9199,6 +9311,7 @@ public final class Common {
      * <code>bytes memo = 4;</code>
      * @return The memo.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString getMemo() {
       return memo_;
     }
@@ -9220,7 +9333,7 @@ public final class Common {
       if (value_ != 0L) {
         output.writeInt64(1, value_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, paymentAddress_);
       }
       if (!rcm_.isEmpty()) {
@@ -9242,7 +9355,7 @@ public final class Common {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(1, value_);
       }
-      if (!getPaymentAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(paymentAddress_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, paymentAddress_);
       }
       if (!rcm_.isEmpty()) {
@@ -9562,6 +9675,7 @@ public final class Common {
        * <code>int64 value = 1;</code>
        * @return The value.
        */
+      @java.lang.Override
       public long getValue() {
         return value_;
       }
@@ -9672,6 +9786,7 @@ public final class Common {
        * <code>bytes rcm = 3;</code>
        * @return The rcm.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getRcm() {
         return rcm_;
       }
@@ -9713,6 +9828,7 @@ public final class Common {
        * <code>bytes memo = 4;</code>
        * @return The memo.
        */
+      @java.lang.Override
       public com.google.protobuf.ByteString getMemo() {
         return memo_;
       }
